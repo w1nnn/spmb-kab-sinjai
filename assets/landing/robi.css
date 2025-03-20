@@ -1,0 +1,29 @@
+body{
+  font-family: Helvetica;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+a{
+  text-decoration: none;
+}
+
+.box{
+  background: #50bbe6e0;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  padding: 20px 3px;
+  border-radius: 10px;
+  display: block;
+  background-image: linear-gradient(to left, transparent, transparent 50%, #72f4fb 50%, #45a8d9);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all .25s ease-in;
+
+}
+.box:hover{
+background-position: 0 0;
+color:#333;
+}
