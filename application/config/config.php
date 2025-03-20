@@ -38,7 +38,7 @@ if (isset($_SERVER['HTTP_HOST'])) {
         );
 } else {
     // Default base_url untuk CLI
-    $config['base_url'] = 'http://localhost/SI-PPDB/';
+    $config['base_url'] = 'http://localhost/spmb-kab-sinjai/';
 }
 
 /*

@@ -1,14 +1,19 @@
 <?php
 ob_start();
 defined('BASEPATH') or exit('No direct script access allowed');
-
 class Login extends CI_Controller
 {
 
 	public function __construct()
 	{
 		parent::__construct();
+		// echo "Constructor running"; // Debug line
 		$this->load->model('Login_model', 'login');
+		// var_dump($this->login); // Debug line
+		$this->load->library('session');
+		// var_dump($this->session); // Debug line
+		$this->load->helper('url');
+		$this->load->helper('form');
 	}
 
 

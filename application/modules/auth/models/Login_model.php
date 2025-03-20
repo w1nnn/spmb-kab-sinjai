@@ -1,9 +1,9 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 class Login_model extends CI_Model
 {
-	
+
 	public function authAdmin($email, $password)
 	{
 		$password = sha1(md5($password));
@@ -26,8 +26,8 @@ class Login_model extends CI_Model
 			return FALSE;
 		}
 	}
-	
-	
+
+
 	public function authSekolah($email, $password)
 	{
 		$password = sha1(md5($password));
@@ -51,9 +51,4 @@ class Login_model extends CI_Model
 			return FALSE;
 		}
 	}
-	
-	
-	
-	
 }
- 
