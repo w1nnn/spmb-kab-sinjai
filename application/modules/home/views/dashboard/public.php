@@ -12,7 +12,7 @@
                         <div class="d-flex align-items-center">
                             <img src="<?= base_url() ?>assets/images/page-img/29.png" class="img-fluid">
                             <div class=" ml-3">
-                                <h4 class="">Selamat Datang di Sistem Penerimaan Peserta Didik Baru</h4>
+                                <h4 class="">Selamat Datang di Sistem Penerimaan Murid Baru</h4>
                                 <p class="mb-0">Dinas Pendidikan Kabupaten Sinjai .</p>
                             </div>
                         </div>
