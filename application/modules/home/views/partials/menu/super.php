@@ -7,7 +7,7 @@
 	</a>
 	<ul id="profil" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
 		<li><a href="<?= base_url() ?>profil/manage/sambutan">Sambutan </a></li>
-		<li><a href="<?= base_url() ?>profil/manage/ppdb">Apa itu PPDB ? </a></li>
+		<li><a href="<?= base_url() ?>profil/manage/ppdb">Apa itu SPMB ? </a></li>
 		<li><a href="<?= base_url() ?>profil/manage/kontak">Kontak </a></li>
 	</ul>
 </li>
@@ -58,7 +58,7 @@
 
 
 <li class="">
-	<a href="<?= base_url() ?>sekolah/zonasi" class="iq-waves-effect"><i class="ri-road-map-line "></i><span>Manajemen Zonasi </span></a>
+	<a href="<?= base_url() ?>sekolah/zonasi" class="iq-waves-effect"><i class="ri-road-map-line "></i><span>Manajemen Domisili </span></a>
 </li>
 
 
@@ -85,7 +85,7 @@
 		<i class="ri-arrow-right-s-line iq-arrow-right"></i>
 	</a>
 	<ul id="master" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
-		<li><a href="<?= base_url() ?>kecamatan/zonasi">Daerah Zonasi Kecamatan </a></li>
+		<li><a href="<?= base_url() ?>kecamatan/zonasi">Daerah Domisili Kecamatan </a></li>
 		<li><a href="<?= base_url() ?>kecamatan/manage">Kecamatan </a></li>
 		<li><a href="<?= base_url() ?>jalur/manage">Jalur Pendaftaran </a></li>
 	</ul>

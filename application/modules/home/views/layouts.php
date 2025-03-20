@@ -6,7 +6,7 @@
     <!-- Required meta tags -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>PPDB - Kabupaten Sinjai </title>
+    <title>SPMB - Kabupaten Sinjai </title>
 
     <link rel="shortcut icon" href="<?= base_url() ?>assets/images/page-img/29.png" />
     <meta name="description" content="Selamat Datang Di Sistem Penerimaan Peserta Didik Baru Kabupaten Sinjai  ">
@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/select2.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/toastr.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.min.css" rel="stylesheet">
-    
+
     <script src="<?= base_url() ?>assets/js/jquery.min.js"></script>
 
 
@@ -106,10 +106,10 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 ">
-                    Copyright &copy <?php echo date('Y') ?> <a href="#">PPDB Kabupaten Sinjai</a>. All Rights Reserved.
+                    Copyright &copy <?php echo date('Y') ?> <a href="#">SPMB Kabupaten Sinjai</a>. All Rights Reserved.
                 </div>
                 <div class="col-lg-6 text-right">
-                    Sistem Aplikasi PPDB Versi 1.2
+                    Sistem Aplikasi SPMB Versi 2.0
                 </div>
             </div>
         </div>

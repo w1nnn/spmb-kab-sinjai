@@ -38,7 +38,7 @@ class Sekolah extends CI_Controller
         }
 
         $data['title'] = "Profil Sekolah";
-        $data['subtitle'] = "PPDB Kabupaten Sinjai";
+        $data['subtitle'] = "SPMB Kabupaten Sinjai";
         $data['get'] = $this->sekolah->get_by_id($id);
         $data['kecamatans'] = $this->kecamatan->get_all();
         $this->template->load('home/layouts', 'vProfil', $data);
@@ -48,7 +48,7 @@ class Sekolah extends CI_Controller
     {
         cek_session();
         $data['title'] = "Tambah Sekolah";
-        $data['subtitle'] = "PPDB Kabupaten Sinjai";
+        $data['subtitle'] = "SPMB Kabupaten Sinjai";
         $data['tingkats'] = $this->sekolah->get_level_sekolah();
         $data['kecamatans'] = $this->kecamatan->get_all();
         $this->template->load('home/layouts', 'vAdd', $data);
@@ -96,7 +96,7 @@ class Sekolah extends CI_Controller
         $level = $this->input->get('level');
 
         $data['sekolah'] = $this->sekolah->get_sekolah($level);
-        
+
         $this->load->view('vExport', $data);
     }
 

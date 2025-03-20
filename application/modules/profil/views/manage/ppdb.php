@@ -6,7 +6,7 @@
 				<div class="iq-card-body">
 					<div class="iq-advance-course ">
 						<div class="form-group">
-							<label for=""> Penjelasan Singkat PPDB </label>
+							<label for=""> Penjelasan Singkat SPMB </label>
 							<textarea name="ppdb" class="form-control" id="tempalte"> <?= $get->ppdb ?> </textarea>
 						</div>
 						<div class="form-group">
