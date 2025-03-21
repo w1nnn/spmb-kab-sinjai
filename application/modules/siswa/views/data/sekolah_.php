@@ -71,7 +71,7 @@
 					<label for=""> Jalur Zonasi <span class="text-danger">*</span> </label>
 					<select name="area" class="form-control" id="area">
 						<option value=""> Pilih</option>
-						<option value="zonasi"> Area Zonasi</option>
+						<option value="zonasi"> Area Domisili</option>
 						<option value="all"> Area Jarak Terdekat</option>
 					</select>
 				</div>

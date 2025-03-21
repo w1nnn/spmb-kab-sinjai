@@ -343,6 +343,7 @@ class Siswa extends CI_Controller
 		$data['subtitle'] = "Pendaftaran";
 		$data['get'] = $this->siswa->profil($id);
 
+
 		$this->template->load('home/layouts', 'vPreview', $data);
 	}
 

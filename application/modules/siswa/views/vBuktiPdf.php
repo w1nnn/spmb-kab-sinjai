@@ -16,7 +16,7 @@
 	<div style="float: right;font-size: 0.8em">
 		Dicetak pada: <?php echo \Carbon\Carbon::now()->locale('id')->translatedFormat('j F Y H:i:s') ?>
 	</div>
-	<img src="assets/images/ppdb-logo-text.png" style="width:200px;" alt="">
+	<img src="assets/images/logo-br.jpg" style="width:200px;" alt="">
 
 	<h3 style="margin-bottom: 0"><b>BUKTI PENDAFTARAN </b></h3>
 	<h4 style="margin-bottom: 5px;margin-top: 0">Penerimaan Peserta Didik Baru Kabupaten Sinjai</h4>

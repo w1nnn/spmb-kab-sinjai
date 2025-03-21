@@ -83,7 +83,7 @@
 					</tr>
 					<tr>
 						<td><b onclick="$(this).closest('tr').find('input[type=file]').click()"> Foto <span class="text-danger">*</span> </b></td>
-						<td>Foto ukuran 3x4 , file jpg<br><input type="file" style="display: inline;width: auto" class="form-control-file" name="foto" <?= ($get->foto == "") ? "required" : ""; ?> accept="image/jpeg,image/x-png"></td>
+						<td>Foto ukuran 3x4 , file jpg, max 500 kb<br><input type="file" style="display: inline;width: auto" class="form-control-file" name="foto" <?= ($get->foto == "") ? "required" : ""; ?> accept="image/jpeg,image/x-png"></td>
 						<td>
 							<span class="text-danger"> <?= (!empty($this->session->flashdata('error_foto'))) ? " " . $this->session->flashdata('message') . " " : "";  ?> </span>
 							<img src="<?= base_url() ?>uploads/siswa/<?= $get->foto ?>" width="100px;" alt="" required>
@@ -91,7 +91,7 @@
 					</tr>
 					<tr>
 						<td><b onclick="$(this).closest('tr').find('input[type=file]').click()"> Kartu Keluarga <span class="text-danger">*</span></b></td>
-						<td>File pdf / jpg<br><input type="file" style="display: inline;width: auto" accept="image/jpeg,image/x-png,application/pdf" class="form-control-file" name="kk" <?= ($get->kk == "") ? "required" : ""; ?>></td>
+						<td>File pdf / jpg, max 500 kb<br><input type="file" style="display: inline;width: auto" accept="image/jpeg,image/x-png,application/pdf" class="form-control-file" name="kk" <?= ($get->kk == "") ? "required" : ""; ?>></td>
 						<td>
 							<span class="text-danger"> <?= (!empty($this->session->flashdata('error_kk'))) ? " " . $this->session->flashdata('message') . " " : "";  ?> </span>
 
@@ -105,7 +105,7 @@
 					</tr>
 					<tr>
 						<td><b onclick="$(this).closest('tr').find('input[type=file]').click()"> Akta Kelahiran Calon Siswa <span class="text-danger">*</span></b></td>
-						<td>File pdf / jpg<br><input type="file" style="display: inline;width: auto" accept="image/jpeg,image/x-png,application/pdf" class="form-control-file" name="akta" <?= ($get->akta_kelahiran_siswa == "") ? "required" : ""; ?>></td>
+						<td>File pdf / jpg, max 500 kb<br><input type="file" style="display: inline;width: auto" accept="image/jpeg,image/x-png,application/pdf" class="form-control-file" name="akta" <?= ($get->akta_kelahiran_siswa == "") ? "required" : ""; ?>></td>
 						<td>
 							<span class="text-danger"> <?= (!empty($this->session->flashdata('error_akta'))) ? " " . $this->session->flashdata('message') . " " : "";  ?> </span>
 							<?php if ($get->akta_kelahiran_siswa) : ?>
@@ -121,7 +121,7 @@
 						<td>
 							<b onclick="$(this).closest('tr').find('input[type=file]').click()"><?php echo ($get->tingkat_sekolah == "4") ? "Kartu Imunisasi" : "Surat Keterangan Lulus / Surat Tanda Selesai Belajar (STSB)"   ?></b>
 						</td>
-						<td>File pdf / jpg<br><input type="file" style="display: inline;width: auto" accept="image/jpeg,image/x-png,application/pdf" class="form-control-file" name="skl"></td>
+						<td>File pdf / jpg, max 500 kb<br><input type="file" style="display: inline;width: auto" accept="image/jpeg,image/x-png,application/pdf" class="form-control-file" name="skl"></td>
 						<td>
 							<span class="text-danger"> <?= (!empty($this->session->flashdata('error_skl'))) ? " " . $this->session->flashdata('message') . " " : "";  ?> </span>
 							<?php if ($get->skl) : ?>
@@ -144,7 +144,7 @@
 					?>
 						<tr>
 							<td><b onclick="$(this).closest('tr').find('input[type=file]').click()"><?= $title ?> <span class="text-danger">*</span> </b></td>
-							<td>File pdf / jpg<br><input type="file" accept="image/jpeg,image/x-png,application/pdf" style="display: inline;width: auto" class="form-control-file" name="suket" <?= ($get->suket == "") ? "required" : ""; ?>></td>
+							<td>File pdf / jpg, max 500 kb<br><input type="file" accept="image/jpeg,image/x-png,application/pdf" style="display: inline;width: auto" class="form-control-file" name="suket" <?= ($get->suket == "") ? "required" : ""; ?>></td>
 							<td>
 								<span class="text-danger"> <?= (!empty($this->session->flashdata('error_suket'))) ? " " . $this->session->flashdata('message') . " " : "";  ?> </span>
 								<?php if ($get->suket) : ?>
@@ -159,7 +159,7 @@
 					<?php if ($get->jalur == "117") { ?>
 						<tr>
 							<td><b onclick="$(this).closest('tr').find('input[type=file]').click()"> Lampiran Bukti Prestasi Lainnya </b></td>
-							<td>File pdf / jpg<br><input type="file" accept="image/jpeg,image/x-png,application/pdf" style="display: inline;width: auto" class="form-control-file" name="suket_prestasi"></td>
+							<td>File pdf / jpg, max 500 kb<br><input type="file" accept="image/jpeg,image/x-png,application/pdf" style="display: inline;width: auto" class="form-control-file" name="suket_prestasi"></td>
 							<td>
 								<span class="text-danger"> <?= (!empty($this->session->flashdata('error_suket'))) ? " " . $this->session->flashdata('message') . " " : "";  ?> </span>
 								<?php if ($get->suket_prestasi) : ?>
@@ -179,11 +179,6 @@
 
 
 					<?php } ?>
-
-
-
-
-
 
 				</table>
 			</div>

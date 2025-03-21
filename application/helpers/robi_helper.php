@@ -27,7 +27,7 @@ function nomorUrut()
 		$kode = 1;
 	}
 	$kode_max = str_pad($kode, 5, "0", STR_PAD_LEFT);
-	$kode_jadi = "PPDB-SNJ{$tahun}-" . $kode_max;
+	$kode_jadi = "SPMB-KAB-SINJAI-{$tahun}-" . $kode_max;
 
 	return $kode_jadi;
 }

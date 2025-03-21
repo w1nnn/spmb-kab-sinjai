@@ -15,7 +15,7 @@ if (!empty($check)) {
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Buat Akun - PPDB </title>
+	<title>Buat Akun - SPMB </title>
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="<?= base_url() ?>assets/images/page-img/29.png" />
 	<meta name="description" content="Selamat Datang Di Sistem Penerimaan Peserta Didik Baru Kabupaten Sinjai  ">

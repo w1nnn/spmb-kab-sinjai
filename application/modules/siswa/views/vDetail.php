@@ -136,6 +136,9 @@
 														<td width="2%">:</td>
 														<td>
 															<b> <?= $get->no_pendaftaran ?></b>
+															<?php
+															// var_dump($get->no_pendaftaran);
+															?>
 														</td>
 													</tr>
 												<?php } ?>
