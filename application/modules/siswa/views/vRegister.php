@@ -45,7 +45,7 @@ if (!empty($check)) {
 			<div class="row no-gutters">
 				<div class="col-sm-6 align-self-center">
 					<div class="sign-in-from">
-						<a class="sign-in-logo mb-3" href="<?= base_url() ?>"><img src="<?= base_url() ?>assets/images/ppdb-logo-text.png" class="img-fluid" alt="logo"></a>
+						<a class="sign-in-logo mb-3" href="<?= base_url() ?>"><img src="<?= base_url() ?>assets/images/logo-br.jpg" class="img-fluid" alt="logo"></a>
 
 						<?php if (registerAccess() || (date('Y-m-d') >= configs()->daftar->start && date('Y-m-d') <= configs()->daftar->end)) : ?>
 							<h2 class="mb-0">Buat Akun </h2>

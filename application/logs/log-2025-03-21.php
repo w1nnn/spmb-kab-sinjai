@@ -2005,3 +2005,4572 @@ DEBUG - 2025-03-21 23:00:24 --> File already loaded: C:\xampp\htdocs\spmb-kab-si
 DEBUG - 2025-03-21 23:00:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vDetail.php
 DEBUG - 2025-03-21 23:00:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
 DEBUG - 2025-03-21 23:00:24 --> Total execution time: 0.1799
+DEBUG - 2025-03-21 23:06:31 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:31 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:06:31 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/auth/models/Login_model.php
+DEBUG - 2025-03-21 23:06:31 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:31 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:06:31 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:06:31 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:06:31 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:06:31 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:06:31 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:06:31 --> Total execution time: 0.2690
+DEBUG - 2025-03-21 23:06:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:06:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-03-21 23:06:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 23:06:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:06:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-03-21 23:06:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-03-21 23:06:35 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-03-21 23:06:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vLogin.php
+DEBUG - 2025-03-21 23:06:35 --> Total execution time: 0.3747
+DEBUG - 2025-03-21 23:07:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:07:01 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-03-21 23:07:01 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 23:07:01 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:07:01 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-03-21 23:07:01 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-03-21 23:07:01 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-03-21 23:07:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:02 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:07:02 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-03-21 23:07:02 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 23:07:02 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:07:02 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-03-21 23:07:02 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-03-21 23:07:02 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-03-21 23:07:03 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vDetail.php
+DEBUG - 2025-03-21 23:07:03 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-03-21 23:07:03 --> Total execution time: 1.0229
+DEBUG - 2025-03-21 23:07:19 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:19 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:07:19 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/auth/models/Login_model.php
+DEBUG - 2025-03-21 23:07:19 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:19 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:07:19 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:07:19 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:07:19 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:07:19 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:07:19 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:07:19 --> Total execution time: 0.1133
+DEBUG - 2025-03-21 23:07:27 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:27 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:07:27 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-03-21 23:07:27 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 23:07:27 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:07:27 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-03-21 23:07:27 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-03-21 23:07:27 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-03-21 23:07:27 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vRegister.php
+DEBUG - 2025-03-21 23:07:27 --> Total execution time: 0.1576
+DEBUG - 2025-03-21 23:08:24 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:08:24 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:08:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-03-21 23:08:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 23:08:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:08:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-03-21 23:08:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-03-21 23:08:24 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-03-21 23:08:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vRegister.php
+DEBUG - 2025-03-21 23:08:24 --> Total execution time: 0.0876
+DEBUG - 2025-03-21 23:08:24 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:08:24 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:08:24 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:08:34 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:08:34 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:08:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-03-21 23:08:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 23:08:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:08:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-03-21 23:08:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-03-21 23:08:35 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-03-21 23:08:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vRegister.php
+DEBUG - 2025-03-21 23:08:35 --> Total execution time: 0.0687
+DEBUG - 2025-03-21 23:12:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:12:12 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:12:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:12:12 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:12:12 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:12:12 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:12:12 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:12:12 --> Total execution time: 0.0849
+DEBUG - 2025-03-21 23:12:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:12:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:12:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-03-21 23:12:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 23:12:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:12:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-03-21 23:12:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-03-21 23:12:14 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-03-21 23:12:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vLogin.php
+DEBUG - 2025-03-21 23:12:14 --> Total execution time: 0.0867
+DEBUG - 2025-03-21 23:12:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:12:57 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:12:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-03-21 23:12:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 23:12:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:12:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-03-21 23:12:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-03-21 23:12:57 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-03-21 23:12:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vLogin.php
+DEBUG - 2025-03-21 23:12:57 --> Total execution time: 0.0933
+DEBUG - 2025-03-21 23:13:04 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:13:04 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:13:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:13:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:13:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:13:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:13:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:13:04 --> Total execution time: 0.0618
+DEBUG - 2025-03-21 23:13:07 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:13:07 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:13:07 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/auth/models/Login_model.php
+DEBUG - 2025-03-21 23:13:07 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/auth/views/login.php
+DEBUG - 2025-03-21 23:13:07 --> Total execution time: 0.1010
+DEBUG - 2025-03-21 23:13:07 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:13:08 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:13:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:13:42 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:13:42 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:13:42 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/auth/models/Login_model.php
+DEBUG - 2025-03-21 23:13:42 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/auth/views/login.php
+DEBUG - 2025-03-21 23:13:42 --> Total execution time: 0.0783
+DEBUG - 2025-03-21 23:13:42 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:13:42 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:13:42 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:15:15 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:15 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:15:15 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/auth/models/Login_model.php
+DEBUG - 2025-03-21 23:15:15 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/auth/views/login.php
+DEBUG - 2025-03-21 23:15:15 --> Total execution time: 0.0761
+DEBUG - 2025-03-21 23:15:15 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:15 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:15:15 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:19:54 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:54 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:19:54 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:19:54 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:19:54 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:19:54 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:19:54 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:19:54 --> Total execution time: 0.1122
+DEBUG - 2025-03-21 23:23:20 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:20 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:23:20 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:23:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:23:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:23:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:23:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:23:20 --> Total execution time: 0.0685
+DEBUG - 2025-03-21 23:23:22 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:22 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:23:22 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:23:22 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:23:22 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:23:22 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:23:22 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:23:22 --> Total execution time: 0.0639
+DEBUG - 2025-03-21 23:23:24 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:24 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:23:24 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:23:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:23:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:23:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:23:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:23:24 --> Total execution time: 0.0766
+DEBUG - 2025-03-21 23:23:25 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:25 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:23:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:23:25 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:23:25 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:23:25 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:23:25 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:23:25 --> Total execution time: 0.0603
+DEBUG - 2025-03-21 23:24:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:35 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:24:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:24:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:24:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:24:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:24:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:24:35 --> Total execution time: 0.0667
+DEBUG - 2025-03-21 23:24:39 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:39 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:24:39 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:24:39 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:24:39 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:24:39 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:24:39 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:24:39 --> Total execution time: 0.0768
+DEBUG - 2025-03-21 23:24:41 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:41 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:24:41 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:24:41 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:24:41 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:24:41 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:24:41 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:24:41 --> Total execution time: 0.0818
+DEBUG - 2025-03-21 23:24:42 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:42 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:24:42 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:24:42 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:24:42 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:24:42 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:24:42 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:24:42 --> Total execution time: 0.0678
+DEBUG - 2025-03-21 23:25:03 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:03 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:25:03 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:25:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:25:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:25:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:25:04 --> Total execution time: 0.1160
+DEBUG - 2025-03-21 23:41:48 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:41:48 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:41:48 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:41:48 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:41:48 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:41:48 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/dashboard/public.php
+DEBUG - 2025-03-21 23:41:48 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 23:41:48 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-03-21 23:41:48 --> Total execution time: 0.1807
+DEBUG - 2025-03-21 23:41:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:41:57 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:41:57 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:41:58 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:41:58 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:41:58 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:41:58 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:41:58 --> Total execution time: 0.0625
+DEBUG - 2025-03-21 23:42:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:44 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:42:44 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:42:44 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:42:44 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:42:44 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:42:44 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:42:44 --> Total execution time: 0.0826
+DEBUG - 2025-03-21 23:42:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:44 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:42:44 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:42:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:44 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:42:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:44 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:42:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:44 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:42:44 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:42:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:44 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:42:44 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:42:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:45 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:42:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:45 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:42:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:45 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:42:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:45 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:42:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:46 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:46 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:13 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:45:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:45:13 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:45:13 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:45:13 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:45:13 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:45:13 --> Total execution time: 0.0811
+DEBUG - 2025-03-21 23:45:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:45:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:13 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:45:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:45:14 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:45:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:45:14 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:45:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:45:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:14 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:45:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:45:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:45:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:14 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:45:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:14 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:45:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:15 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:15 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:15 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:15 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:15 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:15 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:15 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:15 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:15 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:15 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:15 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:45:15 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:45:15 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:15 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:45:15 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:45:15 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:15 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:15 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:15 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:15 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:15 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:15 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:15 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:15 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:59 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:45:59 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:45:59 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:45:59 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:45:59 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:45:59 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:45:59 --> Total execution time: 0.0813
+DEBUG - 2025-03-21 23:45:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:59 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:59 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:59 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:59 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:45:59 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:45:59 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:45:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:00 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:00 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:00 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:00 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:00 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:00 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:00 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:00 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:00 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:00 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:46:00 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:00 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:46:00 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:46:00 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:00 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:46:00 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:00 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:00 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:00 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:00 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:46:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:46:00 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:00 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:00 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:00 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:46:00 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:46:00 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:46:00 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:46:00 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:46:00 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:00 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:46:00 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:00 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:00 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:46:00 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:00 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:46:00 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:46:00 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:00 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:46:00 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:46:01 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:01 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:46:01 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:01 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:01 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:01 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:01 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:44 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:46:44 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:46:44 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:46:44 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:46:44 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:46:44 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:46:44 --> Total execution time: 0.0850
+DEBUG - 2025-03-21 23:46:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:44 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:46:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:44 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:46:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:44 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:46:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:44 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:46:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:44 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:46:44 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:46:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:44 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:46:44 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:46:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:44 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:46:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:44 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:46:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:45 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:46:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:45 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:46:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:45 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:46:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:45 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:46:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:45 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:46:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:45 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:46:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:47:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:09 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:47:09 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:47:09 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:47:09 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:47:09 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:47:09 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:47:09 --> Total execution time: 0.0723
+DEBUG - 2025-03-21 23:47:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:09 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:47:09 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:47:09 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:47:09 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:47:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:09 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:47:09 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:47:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:09 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:47:09 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:47:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:47:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:47:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:47:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:47:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:47:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:47:10 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:47:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:47:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:47:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:47:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:47:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:47:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:47:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:47:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:47:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:47:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:47:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:47:10 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:47:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:47:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:47:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:47:10 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:47:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:47:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:47:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:47:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:47:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:47:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:47:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:47:10 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:47:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:47:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:47:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:47:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:47:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:47:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:47:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:47:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:47:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:47:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:47:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:49:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:13 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 22:49:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:49:13 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:49:13 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:49:13 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:49:13 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 22:49:13 --> Total execution time: 0.0903
+DEBUG - 2025-03-21 22:49:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:49:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:49:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:49:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:49:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:49:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:49:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:49:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:49:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:49:13 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 22:49:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:49:13 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 22:49:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:49:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:49:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:49:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:49:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:49:13 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 22:49:13 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 22:49:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:49:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:49:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:49:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:49:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:49:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:49:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:49:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:49:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:49:14 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 22:49:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:49:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:49:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:49:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:49:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:49:14 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 22:49:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:49:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:49:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:49:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:49:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:49:14 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 22:49:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:49:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:49:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:14 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 22:49:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:49:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:49:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:49:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:49:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:49:14 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 22:49:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:49:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:49:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:49:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:49:14 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 22:49:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:49:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:49:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:49:14 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 22:49:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:49:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:49:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:49:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:15 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:49:15 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 22:49:15 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:49:15 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:49:15 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:03:56 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:03:56 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:03:56 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:03:56 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:03:56 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:03:56 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:03:56 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:03:56 --> Total execution time: 0.0853
+DEBUG - 2025-03-21 23:03:56 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:03:56 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:03:56 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:03:56 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:03:56 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:03:56 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:03:56 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:03:56 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:03:56 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:03:56 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:03:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:03:57 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:03:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:03:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:03:57 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:03:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:03:57 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:03:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:03:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:03:57 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:03:57 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:03:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:03:57 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:03:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:03:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:03:57 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:03:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:03:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:03:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:03:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:03:57 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:03:57 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:03:57 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:03:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:03:57 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:03:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:03:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:03:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:03:57 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:03:57 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:03:57 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:03:57 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:03:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:03:57 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:03:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:03:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:03:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:03:57 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:03:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:03:57 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:03:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:03:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:03:57 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:03:57 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:03:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:03:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:03:57 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:03:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:03:57 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:03:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:03:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:03:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:03:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:03:57 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:03:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:03:57 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:03:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:03:57 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:03:57 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:03:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:03:57 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:03:58 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:03:58 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:03:58 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:03:58 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:04:11 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:11 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:04:11 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:04:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:04:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:04:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:04:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:04:11 --> Total execution time: 0.0630
+DEBUG - 2025-03-21 23:04:11 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:11 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:11 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:04:11 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:04:11 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:04:11 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:04:11 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:11 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:04:11 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:04:11 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:11 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:04:11 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:04:11 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:11 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:11 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:04:11 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:04:11 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:04:11 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:04:11 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:11 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:11 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:11 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:11 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:04:11 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:04:11 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:04:11 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:04:11 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:04:11 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:04:11 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:04:11 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:04:11 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:11 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:11 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:04:11 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:04:11 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:04:11 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:04:11 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:11 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:11 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:04:11 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:04:11 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:04:11 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:04:11 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:11 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:11 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:04:11 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:04:11 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:04:11 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:04:11 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:11 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:11 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:04:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:04:12 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:04:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:04:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:04:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:04:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:04:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:04:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:04:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:04:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:04:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:04:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:04:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:04:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:04:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:04:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:04:12 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:04:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:07 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:07 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:05:07 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:05:07 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:05:07 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:05:07 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:05:07 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:05:07 --> Total execution time: 0.0957
+DEBUG - 2025-03-21 23:05:07 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:07 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:07 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:07 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:07 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:07 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:07 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:07 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:07 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:07 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:07 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:07 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:07 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:07 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:07 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:07 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:07 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:07 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:07 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:07 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:07 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:07 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:07 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:07 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:07 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:07 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:07 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:05:07 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:07 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:05:07 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:07 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:07 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:07 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:07 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:08 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:08 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:08 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:05:08 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:05:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:08 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:08 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:08 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:08 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:08 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:08 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:08 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:08 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:08 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:08 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:08 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:08 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:08 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:08 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:05:08 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:08 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:05:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:08 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:05:08 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:08 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:05:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:08 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:08 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:08 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:08 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:08 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:28 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:28 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:05:28 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:05:28 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:05:28 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:05:28 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:05:28 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:05:28 --> Total execution time: 0.0660
+DEBUG - 2025-03-21 23:05:28 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:28 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:28 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:28 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:28 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:28 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:28 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:29 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:05:29 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:05:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:29 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:05:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:29 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:05:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:29 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:05:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:29 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:05:29 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:05:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:29 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:05:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:29 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:05:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:29 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:05:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:30 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:30 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:30 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:30 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:30 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:30 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:06:27 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:27 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:06:27 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:06:27 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:06:27 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:06:27 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:06:27 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:06:27 --> Total execution time: 0.0868
+DEBUG - 2025-03-21 23:06:27 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:27 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:27 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:06:27 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:06:27 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:06:27 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:06:28 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:28 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:06:28 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:06:28 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:28 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:28 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:06:28 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:06:28 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:28 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:28 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:28 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:06:28 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:06:28 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:06:28 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:06:28 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:06:28 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:28 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:06:28 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:06:28 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:06:28 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:06:28 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:06:28 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:06:28 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:06:28 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:06:28 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:28 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:28 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:06:28 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:06:28 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:06:28 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:06:28 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:28 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:06:28 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:06:28 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:28 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:28 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:28 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:06:28 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:06:28 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:28 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:06:28 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:06:28 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:06:28 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:06:28 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:06:28 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:06:28 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:28 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:28 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:06:28 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:06:28 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:06:28 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:06:28 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:28 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:28 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:06:28 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:06:28 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:06:28 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:06:28 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:06:28 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:28 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:06:28 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:06:28 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:06:28 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:06:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:29 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:06:29 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:06:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:06:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:06:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:39 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:39 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:07:39 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:07:39 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:07:39 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:07:39 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:07:39 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:07:39 --> Total execution time: 0.0877
+DEBUG - 2025-03-21 23:07:39 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:39 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:39 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:07:39 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:07:39 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:07:39 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:39 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:39 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:39 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:07:39 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:39 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:07:39 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:39 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:39 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:07:39 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:39 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:39 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:39 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:07:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:07:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:07:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:07:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:07:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:07:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:07:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:07:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:07:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:40 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:07:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:07:40 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:07:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:40 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:07:40 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:07:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:40 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:07:40 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:07:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:07:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:07:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:07:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:07:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:07:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:40 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:07:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:07:40 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:07:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:09:24 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:24 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:09:24 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:09:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:09:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:09:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:09:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:09:24 --> Total execution time: 0.1015
+DEBUG - 2025-03-21 23:09:24 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:24 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:24 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:09:24 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:09:24 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:09:24 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:09:24 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:24 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:09:24 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:09:24 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:24 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:24 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:09:24 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:09:24 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:09:24 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:09:24 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:24 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:24 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:24 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:09:24 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:09:24 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:09:24 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:09:24 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:09:24 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:09:24 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:24 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:24 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:09:24 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:09:24 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:09:24 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:09:24 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:09:24 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:25 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:09:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:09:25 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:09:25 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:09:25 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:09:25 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:09:25 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:09:25 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:25 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:09:25 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:09:25 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:25 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:09:25 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:09:25 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:09:25 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:09:25 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:25 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:25 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:25 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:25 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:09:25 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:09:25 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:25 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:09:25 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:09:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:09:25 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:09:25 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:09:25 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:09:25 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:25 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:09:25 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:09:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:09:25 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:09:25 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:09:25 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:09:25 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:09:25 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:25 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:25 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:09:25 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:09:25 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:09:25 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:09:27 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:27 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:09:27 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/auth/models/Login_model.php
+DEBUG - 2025-03-21 23:09:27 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/auth/views/login.php
+DEBUG - 2025-03-21 23:09:27 --> Total execution time: 0.2882
+DEBUG - 2025-03-21 23:09:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:09:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:09:33 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:09:33 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:09:33 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:09:33 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:09:33 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:09:33 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:09:33 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:09:33 --> Total execution time: 0.0711
+DEBUG - 2025-03-21 23:11:20 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:20 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:11:20 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:11:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:11:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:11:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:11:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:11:20 --> Total execution time: 0.0871
+DEBUG - 2025-03-21 23:11:20 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:20 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:20 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:20 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:20 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:11:20 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:11:20 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:20 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:20 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:20 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:11:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:21 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:11:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:11:21 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:11:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:11:21 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:11:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:11:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:11:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:21 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:11:21 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:11:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:11:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:21 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:11:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:11:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:21 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:11:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:51 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:51 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:11:51 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:11:52 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:11:52 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:11:52 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:11:52 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:11:52 --> Total execution time: 0.0741
+DEBUG - 2025-03-21 23:11:52 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:52 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:52 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:52 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:52 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:52 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:52 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:52 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:52 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:52 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:52 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:52 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:52 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:52 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:52 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:52 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:52 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:52 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:52 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:52 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:52 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:52 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:52 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:52 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:52 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:52 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:52 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:52 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:52 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:52 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:52 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:52 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:52 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:52 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:52 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:52 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:52 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:52 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:52 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:52 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:52 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:52 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:52 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:52 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:52 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:11:52 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:11:52 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:53 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:53 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:53 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:53 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:53 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:11:53 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:53 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:11:53 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:53 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:53 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:53 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:53 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:53 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:53 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:53 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:11:53 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:11:53 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:53 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:11:53 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:53 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:11:53 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:11:53 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:14:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:14:01 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:14:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:14:01 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:14:01 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:14:01 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:14:01 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:14:01 --> Total execution time: 0.0907
+DEBUG - 2025-03-21 23:14:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:14:01 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:14:01 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:14:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:14:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:14:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:14:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:14:01 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:14:01 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:14:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:14:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:14:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:14:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:14:01 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:14:01 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:14:01 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:14:01 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:14:01 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:14:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:14:01 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:14:01 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:14:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:14:01 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:14:01 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:14:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:14:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:14:01 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:14:01 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:14:01 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:14:01 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:14:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:14:01 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:14:01 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:14:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:14:01 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:14:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:14:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:14:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:14:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:14:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:14:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:14:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:14:02 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:14:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:14:02 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:14:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:14:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:14:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:14:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:14:02 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:14:02 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:14:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:14:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:14:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:14:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:14:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:14:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:14:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:14:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:14:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:14:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:14:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:14:02 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:14:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:14:02 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:14:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:14:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:14:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:14:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:15:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:09 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:15:09 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:15:09 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:15:09 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:15:09 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:15:09 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:15:09 --> Total execution time: 0.0861
+DEBUG - 2025-03-21 23:15:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:09 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:15:09 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:15:09 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:15:09 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:15:09 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:15:09 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:15:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:15:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:15:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:15:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:15:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:15:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:15:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:15:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:15:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:15:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:15:10 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:15:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:15:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:15:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:15:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:15:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:15:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:15:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:15:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:15:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:15:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:15:10 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:15:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:15:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:15:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:15:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:15:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:15:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:15:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:15:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:15:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:15:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:15:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:15:10 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:15:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:15:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:15:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:15:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:15:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:15:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:15:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:15:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:01 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:16:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:16:01 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:16:01 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:16:01 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:16:01 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:16:01 --> Total execution time: 0.0947
+DEBUG - 2025-03-21 23:16:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:01 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:01 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:16:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:16:01 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:16:01 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:01 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:01 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:16:01 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:16:01 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:16:01 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:01 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:01 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:02 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:16:02 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:16:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:02 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:16:02 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:16:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:44 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:16:44 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:16:44 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:16:44 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:16:44 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:16:44 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:16:44 --> Total execution time: 0.0893
+DEBUG - 2025-03-21 23:16:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:44 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:16:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:44 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:16:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:44 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:16:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:44 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:16:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:45 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:16:45 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:16:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:45 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:16:45 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:16:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:47 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:47 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:16:47 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-03-21 23:16:47 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 23:16:47 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:16:47 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-03-21 23:16:47 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-03-21 23:16:47 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-03-21 23:16:47 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vRegister.php
+DEBUG - 2025-03-21 23:16:47 --> Total execution time: 0.4611
+DEBUG - 2025-03-21 23:16:50 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:50 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:16:50 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:16:50 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:16:50 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:16:50 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:16:50 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:16:50 --> Total execution time: 0.0738
+DEBUG - 2025-03-21 23:16:50 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:50 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:50 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:50 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:50 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:50 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:50 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:50 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:16:51 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:51 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:16:51 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:16:51 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:51 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:51 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:51 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:51 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:16:51 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:16:51 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:19:34 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:34 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:19:34 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:19:34 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:19:34 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:19:34 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:19:34 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:19:34 --> Total execution time: 0.0883
+DEBUG - 2025-03-21 23:19:34 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:34 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:19:34 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:19:34 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:19:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:19:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:19:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:19:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:19:35 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:19:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:19:35 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:19:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:19:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:19:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:19:35 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:19:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:19:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:19:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:19:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:19:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:19:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:19:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:19:35 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:19:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:19:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:19:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:19:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:19:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:19:35 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:19:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:19:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:19:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:19:35 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:19:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:19:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:19:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:19:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:19:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:19:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:19:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:19:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:19:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:19:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:19:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:19:36 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:36 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:19:36 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:19:36 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:19:36 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:19:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:38 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:19:39 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 23:19:39 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-03-21 23:19:39 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-03-21 23:19:39 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:19:39 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/views/vFront.php
+DEBUG - 2025-03-21 23:19:39 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-03-21 23:19:39 --> Total execution time: 0.3463
+DEBUG - 2025-03-21 23:19:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:40 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:19:40 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 23:19:40 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-03-21 23:19:40 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-03-21 23:19:40 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:19:47 --> Total execution time: 6.9463
+DEBUG - 2025-03-21 23:19:50 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:50 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:19:50 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:19:50 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:19:50 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:19:50 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:19:50 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:19:50 --> Total execution time: 0.0642
+DEBUG - 2025-03-21 23:19:51 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:19:51 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:19:51 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:21:32 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:32 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:21:32 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:21:32 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:21:32 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:21:32 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:21:32 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:21:32 --> Total execution time: 0.0844
+DEBUG - 2025-03-21 23:21:32 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:32 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:33 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:21:33 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:21:33 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:21:33 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:21:33 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:33 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:21:33 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:21:33 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:33 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:33 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:33 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:21:33 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:21:33 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:21:33 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:21:33 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:21:33 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:21:33 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:33 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:21:33 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:21:33 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:33 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:33 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:21:33 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:21:33 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:21:33 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:21:33 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:33 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:33 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:33 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:33 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:21:33 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:21:33 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:21:33 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:21:33 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:33 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:33 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:21:33 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:21:33 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:21:33 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:21:33 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:21:33 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:21:33 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:21:33 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:21:33 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:33 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:21:33 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:21:33 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:33 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:33 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:21:33 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:21:34 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:34 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:21:34 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:21:34 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:34 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:21:34 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:21:34 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:21:34 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:34 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:21:34 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:21:34 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:21:34 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:21:34 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:21:34 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:21:34 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:34 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:21:34 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:03 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:03 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:22:03 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:22:03 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:22:03 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:22:03 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:22:03 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:22:03 --> Total execution time: 0.0609
+DEBUG - 2025-03-21 23:22:04 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:04 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:04 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:04 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:04 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:04 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:04 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:04 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:04 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:04 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:04 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:22:04 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:04 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:22:04 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:04 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:22:04 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:22:04 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:04 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:04 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:04 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:04 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:04 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:04 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:04 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:04 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:04 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:04 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:04 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:04 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:04 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:22:04 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:22:04 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:22:04 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:04 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:04 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:22:04 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:04 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:04 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:04 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:04 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:04 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:04 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:04 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:04 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:04 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:04 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:04 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:04 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:04 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:22:05 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:05 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:05 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:22:05 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:05 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:05 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:05 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:05 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:05 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:05 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:05 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:05 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:05 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:05 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:05 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:12 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:22:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:22:12 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:22:12 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:22:12 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:22:12 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:22:12 --> Total execution time: 0.0765
+DEBUG - 2025-03-21 23:22:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:22:12 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:22:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:22:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:12 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:22:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:22:13 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:22:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:22:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:13 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:22:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:22:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:22:13 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:22:13 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:22:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:22:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:13 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:22:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:22:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:22:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:22:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:02 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:23:02 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:23:02 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:23:02 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:23:02 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:23:02 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:23:02 --> Total execution time: 0.1153
+DEBUG - 2025-03-21 23:23:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:02 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:23:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:02 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:23:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:02 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:23:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:02 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:23:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:03 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:03 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:03 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:23:03 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:03 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:23:03 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:03 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:23:03 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:03 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:23:03 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:03 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:03 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:03 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:23:03 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:03 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:23:03 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:03 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:03 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:03 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:03 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:03 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:03 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:23:03 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:03 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:23:03 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:03 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:03 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:23:03 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:23:03 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:03 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:03 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:03 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:03 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:03 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:03 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:03 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:03 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:03 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:03 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:03 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:03 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:03 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:03 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:03 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:03 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:03 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:03 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:03 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:23:03 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:23:03 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:03 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:03 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:03 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:03 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:03 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:37 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:37 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:23:37 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:23:37 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:23:37 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:23:37 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:23:37 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:23:37 --> Total execution time: 0.0881
+DEBUG - 2025-03-21 23:23:37 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:37 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:37 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:23:37 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:37 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:23:37 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:37 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:37 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:37 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:37 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:37 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:37 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:37 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:37 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:37 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:37 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:37 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:37 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:37 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:38 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:23:38 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:23:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:38 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:23:38 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:23:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:38 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:23:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:38 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:23:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:23:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:38 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:23:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:23:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:23:38 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:23:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:09 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:24:09 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:24:09 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:24:09 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:24:09 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:24:09 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:24:09 --> Total execution time: 0.0896
+DEBUG - 2025-03-21 23:24:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:09 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:09 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:09 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:09 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:09 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:09 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:09 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:09 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:09 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:24:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:09 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:09 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:24:09 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:09 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:09 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:09 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:09 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:24:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:24:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:10 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:24:10 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:24:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:24:10 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:24:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:24:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:10 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:24:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:41 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:41 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:24:41 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:24:41 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:24:41 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:24:41 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:24:41 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:24:41 --> Total execution time: 0.0688
+DEBUG - 2025-03-21 23:24:41 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:41 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:41 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:41 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:41 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:41 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:41 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:41 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:24:41 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:24:41 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:41 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:41 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:24:41 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:41 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:24:41 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:41 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:41 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:41 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:41 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:41 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:41 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:42 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:42 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:42 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:42 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:42 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:42 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:42 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:42 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:24:42 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:42 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:24:42 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:42 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:42 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:42 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:42 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:42 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:42 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:42 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:42 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:42 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:42 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:42 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:42 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:42 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:42 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:42 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:42 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:42 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:42 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:42 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:42 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:42 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:42 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:42 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:42 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:42 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:42 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:42 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:42 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:42 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:42 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:42 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:42 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:42 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:42 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:42 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:42 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:42 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:53 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:53 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:24:53 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:24:53 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:24:53 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:24:53 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:24:53 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:24:53 --> Total execution time: 0.0727
+DEBUG - 2025-03-21 23:24:53 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:53 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:53 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:53 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:24:53 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:53 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:24:53 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:53 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:53 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:53 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:53 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:53 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:53 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:53 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:53 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:24:53 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:53 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:24:53 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:53 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:53 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:53 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:53 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:53 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:53 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:24:53 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:53 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:53 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:53 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:53 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:53 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:53 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:24:53 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:53 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:53 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:53 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:54 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:54 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:54 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:54 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:24:54 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:54 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:24:54 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:54 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:54 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:54 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:54 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:54 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:54 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:54 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:54 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:54 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:54 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:54 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:54 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:54 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:54 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:54 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:54 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:54 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:54 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:24:54 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:54 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:24:54 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:54 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:54 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:54 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:24:54 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:24:54 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:24:54 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:24:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:24:59 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:25:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:00 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:25:00 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:25:00 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:25:00 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:25:00 --> Total execution time: 0.3467
+DEBUG - 2025-03-21 23:25:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:01 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:01 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:25:01 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:01 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:25:01 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:01 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:01 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:01 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:01 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:25:01 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:02 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:02 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:25:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:02 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:02 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:25:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:02 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:02 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:25:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:02 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:02 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:11 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:11 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:25:11 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:25:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:25:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:25:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:25:11 --> Total execution time: 0.0802
+DEBUG - 2025-03-21 23:25:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:12 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:25:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:12 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:25:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:12 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:25:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:12 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:25:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:13 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:25:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:25 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:25 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:25:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:25 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:25:25 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:25:25 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:25:25 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:25:25 --> Total execution time: 0.0627
+DEBUG - 2025-03-21 23:25:25 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:25 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:25 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:25 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:25 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:25 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:25 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:25 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:25 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:25 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:25 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:25 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:25 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:25 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:26 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:26 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:26 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:26 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:25:26 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:26 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:26 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:25:26 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:26 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:26 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:26 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:26 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:25:26 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:26 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:26 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:26 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:26 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:26 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:26 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:26 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:26 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:26 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:25:26 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:25:26 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:25:26 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:26 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:26 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:26 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:26 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:26 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:26 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:26 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:26 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:26 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:26 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:26 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:26 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:26 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:26 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:26 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:26 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:26 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:26 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:26 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:26 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:26 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:25:26 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:26 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:26 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:26 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:26 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:26 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:26 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:26 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:25:26 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:46 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:46 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:25:46 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:25:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:25:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:25:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:25:46 --> Total execution time: 0.1466
+DEBUG - 2025-03-21 23:25:46 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:46 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:46 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:46 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:46 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:46 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:46 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:46 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:46 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:46 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:46 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:25:46 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:46 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:46 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:46 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:46 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:46 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:46 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:46 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:46 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:46 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:46 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:46 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:25:46 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:46 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:47 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:47 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:47 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:47 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:47 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:47 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:47 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:47 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:47 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:47 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:47 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:47 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:47 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:47 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:47 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:47 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:47 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:47 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:47 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:25:47 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:47 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:47 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:47 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:47 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:47 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:25:47 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:47 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:47 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:47 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:25:47 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:47 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:47 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:25:47 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:47 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:47 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:48 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:48 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:48 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:48 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:25:48 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:48 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:25:48 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:48 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:25:48 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:25:48 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:25:48 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:25:48 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:26:04 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:26:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 23:26:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-03-21 23:26:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-03-21 23:26:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:26:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/views/vFront.php
+DEBUG - 2025-03-21 23:26:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-03-21 23:26:04 --> Total execution time: 0.0757
+DEBUG - 2025-03-21 23:26:05 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:26:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 23:26:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-03-21 23:26:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-03-21 23:26:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:26:12 --> Total execution time: 6.5093
+DEBUG - 2025-03-21 23:26:18 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:18 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:26:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 23:26:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-03-21 23:26:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-03-21 23:26:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:26:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/views/vFront.php
+DEBUG - 2025-03-21 23:26:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-03-21 23:26:18 --> Total execution time: 0.1028
+DEBUG - 2025-03-21 23:26:19 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:19 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:26:19 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 23:26:19 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-03-21 23:26:19 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-03-21 23:26:19 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:26:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:26:26 --> Total execution time: 7.5554
+DEBUG - 2025-03-21 23:26:26 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 23:26:26 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-03-21 23:26:26 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-03-21 23:26:26 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:26:26 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/views/vFront.php
+DEBUG - 2025-03-21 23:26:26 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-03-21 23:26:26 --> Total execution time: 5.6563
+DEBUG - 2025-03-21 23:26:27 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:27 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:26:28 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 23:26:28 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-03-21 23:26:28 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-03-21 23:26:28 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:26:32 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:32 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:26:32 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:26:36 --> Total execution time: 9.0496
+DEBUG - 2025-03-21 23:26:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:26:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:26:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:26:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:26:36 --> Total execution time: 4.3529
+DEBUG - 2025-03-21 23:26:37 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:37 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:37 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:26:37 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:26:37 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:26:37 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:26:37 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:37 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:37 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:37 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:26:37 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:26:37 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:26:37 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:26:37 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:37 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:26:37 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:26:37 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:26:37 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:26:37 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:37 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:37 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:37 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:26:37 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:26:37 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:26:37 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:26:37 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:26:37 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:37 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:26:37 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:26:37 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:26:37 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:26:37 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:26:37 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:26:37 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:26:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:38 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:26:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:26:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:26:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:26:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:26:38 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:26:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:26:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:26:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:26:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:38 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:26:38 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:26:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:26:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:26:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:26:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:26:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:26:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:26:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:26:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:26:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:26:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:26:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:26:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:26:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:26:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:26:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:26:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:57 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:26:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/auth/models/Login_model.php
+DEBUG - 2025-03-21 23:26:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/auth/views/login.php
+DEBUG - 2025-03-21 23:26:57 --> Total execution time: 0.0761
+DEBUG - 2025-03-21 23:26:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:57 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:26:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:26:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:59 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:26:59 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:26:59 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:26:59 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:26:59 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:26:59 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:26:59 --> Total execution time: 0.0841
+DEBUG - 2025-03-21 23:26:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:26:59 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:26:59 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:19 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:19 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:28:19 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:19 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:28:19 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:28:19 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:28:19 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:28:19 --> Total execution time: 0.1104
+DEBUG - 2025-03-21 23:28:19 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:19 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:19 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:19 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:19 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:19 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:19 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:19 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:28:19 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:20 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:20 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:20 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:20 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:28:20 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:20 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:20 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:20 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:20 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:20 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:20 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:28:20 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:20 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:21 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:28:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:21 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:28:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:21 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:28:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:22 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:22 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:22 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:22 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:22 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:22 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:22 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:28:22 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:22 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:22 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:28:22 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:22 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:22 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:22 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:28:22 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:22 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:22 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:22 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:22 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:22 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:22 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:22 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:22 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:28:22 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:22 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:22 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:22 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:22 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:22 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:39 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:39 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:28:39 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:39 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:28:39 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:28:39 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:28:39 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:28:39 --> Total execution time: 0.0809
+DEBUG - 2025-03-21 23:28:39 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:39 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:39 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:39 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:39 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:39 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:39 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:39 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:39 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:28:39 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:39 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:39 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:39 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:28:39 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:39 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:39 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:39 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:28:39 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:39 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:39 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:39 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:39 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:39 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:28:39 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:28:39 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:40 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:40 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:28:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:40 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:40 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:28:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:40 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:40 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:28:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:58 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:58 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:28:58 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:58 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:28:58 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:28:58 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:28:58 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:28:58 --> Total execution time: 0.0702
+DEBUG - 2025-03-21 23:28:58 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:59 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:59 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:59 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:59 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:59 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:28:59 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:59 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:59 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:28:59 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:59 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:59 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:59 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:59 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:59 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:28:59 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:59 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:59 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:59 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:59 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:59 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:59 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:59 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:59 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:28:59 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:59 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:59 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:59 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:28:59 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:59 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:59 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:59 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:28:59 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:59 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:28:59 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:59 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:59 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:59 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:59 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:59 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:28:59 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:28:59 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:28:59 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:29:00 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:29:00 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:29:00 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:00 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:29:00 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:00 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:00 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:11 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:11 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:29:11 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:29:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:29:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:29:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:29:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:29:11 --> Total execution time: 0.2077
+DEBUG - 2025-03-21 23:29:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:29:12 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:29:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:29:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:12 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:29:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:12 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:29:13 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:29:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:29:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:13 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:29:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:18 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:18 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:29:18 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:29:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:29:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:29:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:29:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:29:18 --> Total execution time: 0.0906
+DEBUG - 2025-03-21 23:29:18 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:18 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:18 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:18 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:29:18 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:18 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:29:18 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:18 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:18 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:18 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:18 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:29:18 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:29:18 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:18 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:18 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:18 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:18 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:29:19 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:29:19 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:19 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:19 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:19 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:19 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:19 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:19 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:19 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:19 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:19 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:19 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:19 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:29:19 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:19 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:29:19 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:19 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:19 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:19 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:19 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:29:19 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:29:19 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:19 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:19 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:19 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:19 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:19 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:19 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:19 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:19 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:29:19 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:29:19 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:19 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:19 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:29:19 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:19 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:19 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:29:19 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:19 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:19 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:29:19 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:19 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:19 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:29:19 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:19 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:19 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:19 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:19 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:19 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:29:19 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:19 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:29:19 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:44 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:29:44 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:29:44 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:29:44 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:29:44 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:29:44 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:29:44 --> Total execution time: 0.0681
+DEBUG - 2025-03-21 23:29:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:44 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:44 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:44 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:45 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:29:45 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:29:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:45 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:29:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:45 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:29:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:45 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:29:45 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:29:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:45 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:29:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:29:45 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:29:45 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:29:45 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:29:45 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:30:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:30:35 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:30:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:30:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:30:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:30:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:30:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:30:35 --> Total execution time: 0.0819
+DEBUG - 2025-03-21 23:30:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:30:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:30:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:30:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:30:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:30:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:30:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:30:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:30:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:30:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:30:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:30:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:30:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:30:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:30:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:30:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:30:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:30:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:30:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:30:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:30:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:30:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:30:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:30:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:30:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:30:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:30:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:30:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:30:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:30:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:30:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:30:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:30:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:30:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:30:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:30:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:30:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:30:36 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:30:36 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:30:36 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:30:36 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:30:36 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:30:36 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:30:36 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:30:36 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:30:36 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:30:36 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:30:36 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:30:36 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:30:36 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:30:36 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:30:36 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:30:36 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:30:36 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:30:36 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:30:36 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:30:36 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:30:36 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:30:36 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:30:36 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:30:36 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:30:36 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:30:36 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:30:36 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:30:36 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:30:36 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:30:36 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:30:36 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:30:36 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:30:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:30:57 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:30:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:30:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/views/vPanduan.php
+DEBUG - 2025-03-21 23:30:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 23:30:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-03-21 23:30:57 --> Total execution time: 0.1343
+DEBUG - 2025-03-21 23:31:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:31:00 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:31:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:31:00 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:31:00 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:31:00 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:31:00 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:31:00 --> Total execution time: 0.0654
+DEBUG - 2025-03-21 23:33:07 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:33:07 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:33:07 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:33:07 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:33:07 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:33:07 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:33:07 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:33:07 --> Total execution time: 0.0846
+DEBUG - 2025-03-21 23:33:07 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:33:07 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:33:07 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:33:07 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:33:07 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:33:07 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:33:07 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:33:07 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:33:07 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:33:07 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:33:07 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:33:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:33:08 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:33:08 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:33:08 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:33:08 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:33:08 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:33:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:33:08 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:33:08 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:33:08 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:33:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:33:08 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:33:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:33:08 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:33:08 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:33:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:33:08 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:33:08 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:33:08 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:33:08 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:33:08 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:33:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:33:08 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:33:08 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:33:08 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:33:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:33:08 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:33:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:33:08 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:33:08 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:33:08 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:33:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:33:08 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:33:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:33:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:33:09 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:33:09 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:33:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:33:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:33:09 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:33:09 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:33:09 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:33:09 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:33:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:33:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:33:09 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:33:09 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:33:09 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:33:09 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:33:09 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:33:09 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:33:09 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:33:09 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:33:09 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:33:09 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:33:09 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:33:09 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:33:09 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:16 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:16 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:36:16 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:36:16 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:36:16 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:36:16 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:36:16 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:36:16 --> Total execution time: 0.0957
+DEBUG - 2025-03-21 23:36:16 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:16 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:16 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:16 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:16 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:36:16 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:16 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:36:16 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:36:16 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:36:16 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:16 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:36:16 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:16 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:16 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:36:16 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:36:16 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:16 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:16 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:36:16 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:16 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:36:16 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:16 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:16 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:16 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:16 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:36:16 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:36:16 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:16 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:36:16 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:16 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:36:16 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:16 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:36:16 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:17 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:17 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:36:17 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:20 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:20 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:36:20 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:36:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:36:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:36:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:36:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:36:20 --> Total execution time: 0.2962
+DEBUG - 2025-03-21 23:36:20 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:20 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:36:20 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:20 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:20 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:20 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:36:20 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:20 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:36:20 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:20 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:20 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:36:20 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:20 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:36:20 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:36:20 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:36:20 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:20 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:36:20 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:36:20 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:20 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:36:20 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:20 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:20 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:36:20 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:36:20 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:36:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:36:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:36:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:36:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:49 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:49 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:36:49 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:36:49 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:36:49 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:36:49 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:36:49 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:36:49 --> Total execution time: 0.0668
+DEBUG - 2025-03-21 23:36:50 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:50 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:36:50 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:53 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:53 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:36:53 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:36:53 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:36:53 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:36:53 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:36:53 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:36:53 --> Total execution time: 0.0726
+DEBUG - 2025-03-21 23:36:53 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:53 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:36:53 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:37:24 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:37:24 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:37:24 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:37:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:37:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:37:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:37:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:37:24 --> Total execution time: 0.0643
+DEBUG - 2025-03-21 23:37:24 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:37:24 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:37:24 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:37:56 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:37:56 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:37:56 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:37:56 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:37:56 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:37:56 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:37:56 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:37:56 --> Total execution time: 0.0935
+DEBUG - 2025-03-21 23:37:56 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:37:56 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:37:56 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:37:56 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:37:56 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:37:56 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:37:56 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:37:56 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:37:56 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:37:56 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:37:56 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:37:56 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:37:56 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:37:56 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:37:56 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:37:56 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:37:56 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:37:56 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:37:56 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:37:56 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:37:56 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:37:56 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:37:56 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:37:56 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:37:56 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:37:56 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:37:56 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:37:56 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:37:57 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:37:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:37:57 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:37:57 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:37:57 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:37:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:37:57 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:37:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:37:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:37:57 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:37:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:38:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:38:29 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:38:29 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:38:29 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:38:29 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:38:29 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:38:29 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:38:29 --> Total execution time: 0.0822
+DEBUG - 2025-03-21 23:38:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:38:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:38:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:38:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:38:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:38:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:38:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:38:29 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:38:29 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:38:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:38:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:38:29 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:38:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:38:29 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:38:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:38:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:38:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:38:29 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:38:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:38:29 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:38:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:38:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:38:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:38:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:38:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:38:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:38:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:38:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:38:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:38:29 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:38:29 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:38:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:38:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:38:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:38:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:38:29 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:38:29 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:38:30 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:38:30 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:38:30 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:38:30 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:38:30 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:38:30 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:38:30 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:38:30 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:38:30 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:38:30 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:38:30 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:38:30 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:38:30 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:38:30 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:38:30 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:38:30 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:38:30 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:38:30 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:38:30 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:38:30 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:38:30 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:38:30 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:38:30 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:38:30 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:38:30 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:38:30 --> UTF-8 Support Enabled
+ERROR - 2025-03-21 23:38:30 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:38:30 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:38:30 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:38:30 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:38:30 --> 404 Page Not Found: /index
+ERROR - 2025-03-21 23:38:30 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:39:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:39:40 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:39:40 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:39:40 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:39:40 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:39:40 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:39:40 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:39:40 --> Total execution time: 0.0895
+DEBUG - 2025-03-21 23:39:40 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:39:40 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:39:40 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:07 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:07 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:42:07 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:42:07 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:42:07 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:42:07 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:42:07 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:42:07 --> Total execution time: 0.0951
+DEBUG - 2025-03-21 23:42:07 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:07 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:07 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:42:34 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:34 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:42:34 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:42:34 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:42:34 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:42:34 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:42:34 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:42:34 --> Total execution time: 0.0614
+DEBUG - 2025-03-21 23:42:34 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:42:34 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:42:34 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:43:08 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:43:08 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:43:08 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:43:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:43:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:43:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:43:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:43:08 --> Total execution time: 0.0810
+DEBUG - 2025-03-21 23:43:08 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:43:08 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:43:08 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:43:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:43:14 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:43:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:43:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:43:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:43:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:43:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:43:14 --> Total execution time: 0.0935
+DEBUG - 2025-03-21 23:43:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:43:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:43:14 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:43:24 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:43:24 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:43:24 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:43:25 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:43:25 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:43:25 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:43:25 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:43:25 --> Total execution time: 0.0710
+DEBUG - 2025-03-21 23:43:25 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:43:25 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:43:25 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:43:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:43:38 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:43:38 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:43:38 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:43:38 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:43:38 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:43:38 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:43:38 --> Total execution time: 0.0711
+DEBUG - 2025-03-21 23:43:39 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:43:39 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:43:39 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:03 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:03 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:46:03 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:46:03 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:46:03 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:46:03 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:46:03 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:46:03 --> Total execution time: 0.0688
+DEBUG - 2025-03-21 23:46:04 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:04 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:04 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:46:33 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:33 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:46:33 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:46:33 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:46:33 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:46:33 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:46:33 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:46:33 --> Total execution time: 0.0719
+DEBUG - 2025-03-21 23:46:33 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:33 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:46:33 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:47:14 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:14 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:47:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:47:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:47:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:47:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:47:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:47:14 --> Total execution time: 0.0933
+DEBUG - 2025-03-21 23:47:15 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:15 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:47:15 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:47:37 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:37 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:47:37 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:47:37 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:47:37 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:47:37 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:47:37 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:47:37 --> Total execution time: 0.0622
+DEBUG - 2025-03-21 23:47:38 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:38 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:47:38 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:48:04 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:48:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:48:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:48:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:48:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:48:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/dashboard/public.php
+DEBUG - 2025-03-21 22:48:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 22:48:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-03-21 22:48:04 --> Total execution time: 0.0810
+DEBUG - 2025-03-21 22:48:18 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:48:18 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:48:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-03-21 22:48:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 22:48:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:48:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-03-21 22:48:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-03-21 22:48:18 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-03-21 22:48:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vRegister.php
+DEBUG - 2025-03-21 22:48:18 --> Total execution time: 0.0788
+DEBUG - 2025-03-21 22:48:20 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:48:20 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:48:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:48:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:48:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:48:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/dashboard/public.php
+DEBUG - 2025-03-21 22:48:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 22:48:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-03-21 22:48:20 --> Total execution time: 0.0710
+DEBUG - 2025-03-21 22:48:32 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:48:32 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:48:32 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:48:32 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/views/vPpdb.php
+DEBUG - 2025-03-21 22:48:32 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 22:48:32 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-03-21 22:48:32 --> Total execution time: 0.0768
+DEBUG - 2025-03-21 22:48:46 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:48:46 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:48:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:48:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/views/vFront.php
+DEBUG - 2025-03-21 22:48:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 22:48:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-03-21 22:48:46 --> Total execution time: 0.1312
+DEBUG - 2025-03-21 22:48:51 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:48:51 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:48:51 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:48:51 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/views/vPpdb.php
+DEBUG - 2025-03-21 22:48:51 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 22:48:51 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-03-21 22:48:51 --> Total execution time: 0.0640
+DEBUG - 2025-03-21 22:48:52 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:48:52 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:48:52 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:48:52 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:48:52 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:48:52 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/dashboard/public.php
+DEBUG - 2025-03-21 22:48:52 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 22:48:52 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-03-21 22:48:52 --> Total execution time: 0.0760
+DEBUG - 2025-03-21 22:49:01 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:01 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 22:49:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:49:01 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:49:01 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:49:01 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:49:01 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 22:49:01 --> Total execution time: 0.0673
+DEBUG - 2025-03-21 22:49:32 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:32 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 22:49:32 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:49:33 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:49:33 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:49:33 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:49:33 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 22:49:33 --> Total execution time: 0.0868
+DEBUG - 2025-03-21 22:49:33 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:49:33 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:49:33 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:50:34 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:50:34 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 22:50:34 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:50:34 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:50:34 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:50:34 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:50:34 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 22:50:34 --> Total execution time: 0.0844
+DEBUG - 2025-03-21 22:50:35 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:50:35 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:50:35 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:51:54 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:51:54 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 22:51:54 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:51:54 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:51:54 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:51:54 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:51:54 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 22:51:54 --> Total execution time: 0.0851
+DEBUG - 2025-03-21 22:51:54 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:51:54 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:51:54 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:53:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:53:10 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 22:53:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:53:10 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:53:10 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:53:10 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:53:10 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 22:53:10 --> Total execution time: 0.0848
+DEBUG - 2025-03-21 22:53:10 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:53:10 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:53:10 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:53:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:53:12 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 22:53:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:53:13 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:53:13 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:53:13 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:53:13 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 22:53:13 --> Total execution time: 0.0627
+DEBUG - 2025-03-21 22:53:13 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:53:13 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:53:13 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:55:31 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:55:31 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 22:55:31 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:55:31 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:55:31 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:55:31 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:55:31 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 22:55:31 --> Total execution time: 0.0860
+DEBUG - 2025-03-21 22:55:32 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:55:32 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:55:32 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:58:30 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:58:30 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 22:58:30 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:58:30 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:58:30 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:58:30 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:58:30 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 22:58:30 --> Total execution time: 0.0876
+DEBUG - 2025-03-21 22:58:31 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:58:31 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:58:31 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:58:46 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:58:46 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 22:58:47 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:58:47 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:58:47 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:58:47 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:58:47 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 22:58:47 --> Total execution time: 0.0854
+DEBUG - 2025-03-21 22:58:47 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:58:47 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:58:47 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:58:50 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:58:50 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 22:58:50 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:58:50 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:58:50 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:58:50 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:58:50 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 22:58:50 --> Total execution time: 0.0711
+DEBUG - 2025-03-21 22:58:50 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:58:50 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:58:50 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:58:52 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:58:52 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 22:58:52 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:58:52 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:58:52 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:58:52 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:58:52 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 22:58:52 --> Total execution time: 0.0783
+DEBUG - 2025-03-21 22:58:52 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:58:52 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:58:52 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:58:54 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:58:54 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 22:58:54 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:58:54 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:58:54 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:58:54 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:58:54 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 22:58:54 --> Total execution time: 0.0649
+DEBUG - 2025-03-21 22:58:55 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:58:55 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:58:55 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:58:56 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:58:56 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 22:58:56 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:58:56 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:58:56 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:58:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:58:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 22:58:57 --> Total execution time: 0.0827
+DEBUG - 2025-03-21 22:58:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:58:57 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:58:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:59:41 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:59:41 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 22:59:41 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:59:41 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:59:41 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:59:41 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:59:41 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 22:59:41 --> Total execution time: 0.0893
+DEBUG - 2025-03-21 22:59:42 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:59:42 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:59:42 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 22:59:56 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:59:56 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 22:59:56 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:59:56 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:59:56 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:59:56 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:59:56 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 22:59:56 --> Total execution time: 0.0694
+DEBUG - 2025-03-21 22:59:56 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:59:56 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 22:59:56 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:05:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:02 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:05:02 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:05:02 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:05:02 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:05:02 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:05:02 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:05:02 --> Total execution time: 0.0883
+DEBUG - 2025-03-21 23:05:03 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:05:03 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:05:03 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:06:27 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:27 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:06:27 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:06:27 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:06:27 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:06:27 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:06:27 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:06:27 --> Total execution time: 0.0833
+DEBUG - 2025-03-21 23:06:27 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:27 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:06:27 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:06:49 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:49 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:06:49 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:06:49 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:06:49 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:06:49 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:06:49 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:06:49 --> Total execution time: 0.0736
+DEBUG - 2025-03-21 23:06:49 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:06:49 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:06:49 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:00 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:07:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:07:00 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:07:00 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:07:00 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:07:00 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:07:00 --> Total execution time: 0.0764
+DEBUG - 2025-03-21 23:07:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:00 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:07:00 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:21 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:07:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:07:21 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:07:21 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:07:21 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:07:21 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:07:21 --> Total execution time: 0.0722
+DEBUG - 2025-03-21 23:07:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:07:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:48 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:48 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:07:48 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:07:48 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:07:48 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:07:48 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:07:48 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:07:48 --> Total execution time: 0.0629
+DEBUG - 2025-03-21 23:07:48 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:48 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:07:48 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:07:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:57 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:07:57 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:07:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:07:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:07:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:07:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:07:57 --> Total execution time: 0.0738
+DEBUG - 2025-03-21 23:07:57 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:07:57 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:07:57 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:10:05 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:10:05 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:10:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:10:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:10:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:10:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:10:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:10:05 --> Total execution time: 0.1017
+DEBUG - 2025-03-21 23:10:06 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:10:06 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:10:06 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:10:20 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:10:20 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:10:20 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:10:21 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:10:21 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:10:21 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:10:21 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:10:21 --> Total execution time: 0.3012
+DEBUG - 2025-03-21 23:10:21 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:10:21 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:10:21 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:10:42 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:10:42 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:10:42 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:10:42 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:10:42 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:10:42 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:10:42 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:10:42 --> Total execution time: 0.0711
+DEBUG - 2025-03-21 23:10:42 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:10:42 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:10:42 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:21:27 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:27 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:21:27 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:21:27 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:21:27 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:21:27 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:21:27 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:21:27 --> Total execution time: 0.0916
+DEBUG - 2025-03-21 23:21:27 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:21:27 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:21:27 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:36:19 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:19 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:36:19 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:36:19 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:36:19 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:36:19 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:36:19 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:36:19 --> Total execution time: 0.0839
+DEBUG - 2025-03-21 23:36:19 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:36:19 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:36:19 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:41:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:41:00 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:41:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:41:00 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:41:00 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:41:00 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:41:00 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:41:00 --> Total execution time: 0.0850
+DEBUG - 2025-03-21 23:41:00 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:41:00 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-03-21 23:41:00 --> 404 Page Not Found: /index
+DEBUG - 2025-03-21 23:43:56 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:43:56 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:43:56 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:43:56 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:43:56 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:43:56 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:43:56 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:43:56 --> Total execution time: 0.1216
+DEBUG - 2025-03-21 23:44:48 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:44:48 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:44:48 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:44:48 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:44:48 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:44:48 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:44:48 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:44:48 --> Total execution time: 0.0833
+DEBUG - 2025-03-21 23:46:52 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:46:52 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:46:52 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:46:52 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:46:52 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:46:52 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:46:52 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:46:52 --> Total execution time: 0.0810
+DEBUG - 2025-03-21 23:47:12 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 23:47:12 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 23:47:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 23:47:12 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 23:47:12 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 23:47:12 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 23:47:12 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 23:47:12 --> Total execution time: 0.0675
+DEBUG - 2025-03-21 22:55:18 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:55:18 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 22:55:18 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:55:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:55:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:55:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:55:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 22:55:18 --> Total execution time: 0.0851
+DEBUG - 2025-03-21 22:55:20 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:55:20 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 22:55:20 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:55:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:55:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:55:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:55:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 22:55:20 --> Total execution time: 0.0661
+DEBUG - 2025-03-21 22:55:30 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:55:30 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 22:55:30 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:55:30 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:55:30 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:55:30 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:55:30 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 22:55:30 --> Total execution time: 0.0766
+DEBUG - 2025-03-21 22:57:05 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:57:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:57:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-03-21 22:57:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-03-21 22:57:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:57:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-03-21 22:57:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-03-21 22:57:05 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-03-21 22:57:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vRegister.php
+DEBUG - 2025-03-21 22:57:05 --> Total execution time: 0.1054
+DEBUG - 2025-03-21 22:57:08 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:57:08 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 22:57:08 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:57:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:57:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:57:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:57:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 22:57:08 --> Total execution time: 0.0667
+DEBUG - 2025-03-21 22:57:23 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:57:23 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 22:57:23 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:57:23 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:57:23 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:57:23 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:57:23 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 22:57:23 --> Total execution time: 0.0630
+DEBUG - 2025-03-21 22:57:37 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:57:37 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 22:57:37 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:57:37 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:57:37 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:57:37 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:57:37 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 22:57:37 --> Total execution time: 0.0979
+DEBUG - 2025-03-21 22:58:02 --> UTF-8 Support Enabled
+DEBUG - 2025-03-21 22:58:02 --> No URI present. Default controller set.
+DEBUG - 2025-03-21 22:58:02 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-03-21 22:58:02 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/models/Home_model.php
+DEBUG - 2025-03-21 22:58:02 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-03-21 22:58:02 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/profil/models/Manage_model.php
+DEBUG - 2025-03-21 22:58:02 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/landing.php
+DEBUG - 2025-03-21 22:58:02 --> Total execution time: 0.0682

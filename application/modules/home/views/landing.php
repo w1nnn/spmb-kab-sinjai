@@ -1,233 +1,265 @@
 <!DOCTYPE html>
-<html lang="id-ID">
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>SPMB - Kabupaten Sinjai </title>
+	<title>Fruitables - Vegetable Website Template</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="" name="keywords">
+	<meta content="" name="description">
 
-	<link rel="shortcut icon" href="<?= base_url() ?>assets/images/page-img/29.png" />
-	<meta name="description" content="Selamat Datang Di Sistem Penerimaan Peserta Didik Baru Kabupaten Sinjai  ">
-	<meta property='fb:app_id' content='1617259004961144' />
-	<meta property='og:type' content='article' />
-	<meta property='og:url' content='<?= base_url() ?>' />
-	<meta property='og:title' content='Pendaftaran | Penerimaan Peserta Didik Baru Kabupaten Sinjai ' />
-	<meta property='og:image' content='<?= base_url() ?>assets/landing/slide1.png' />
-	<meta property='og:description' content='Selamat Datang Di Sistem Penerimaan Peserta Didik Baru Kabupaten Sinjai '>
+	<!-- Google Web Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet">
+
+	<!-- Icon Font Stylesheet -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+	<!-- Libraries Stylesheet -->
+	<link href="<?= base_url() ?>assets/landing/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+	<link href="<?= base_url() ?>assets/landing/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
 
-	<meta name="theme-color" content="#037afb">
-	<meta name="msapplication-navbutton-color" content="#037afb">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="#037afb">
+	<!-- Customized Bootstrap Stylesheet -->
+	<link href="<?= base_url() ?>assets/landing/css/bootstrap.min.css" rel="stylesheet">
 
-
-	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/landing/main.css" media="all">
-	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/landing/robi.css" media="all">
-	<link rel="stylesheet" href="<?= base_url() ?>assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-	<style>
-		/* Extra small devices (phones, 600px and down) */
-		@media only screen and (max-width: 600px) {
-			.desktop {
-				display: none;
-			}
-
-			.mobile {
-				display: block;
-			}
-
-			.marg {
-				margin-top: 220px;
-			}
-		}
-
-		/* Small devices (portrait tablets and large phones, 600px and up) */
-		@media only screen and (min-width: 600px) {
-			.desktop {
-				display: none;
-			}
-
-			.mobile {
-				display: block;
-			}
-
-			.marg {
-				margin-top: 220px;
-			}
-
-		}
-
-		/* Large devices (laptops/desktops, 992px and up) */
-		@media only screen and (min-width: 992px) {
-			.desktop {
-				display: block;
-			}
-
-			.mobile {
-				display: none;
-			}
-
-			.marg {
-				margin-top: 350px;
-			}
-
-		}
-
-		/* Extra large devices (large laptops and desktops, 1200px and up) */
-		@media only screen and (min-width: 1200px) {
-			.desktop {
-				display: block;
-			}
-
-			.mobile {
-				display: none;
-			}
-
-			.marg {
-				/* margin-top:60px; */
-				margin-top: 350px;
-			}
-
-		}
-	</style>
+	<!-- Template Stylesheet -->
+	<!-- <link href="css/style.css" rel="stylesheet"> -->
+	<link href="<?= base_url() ?>assets/landing/css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-	<!-- Gambar Slider -->
-	<div class="desktop">
-		<div class="carousel slide carousel-zoom" data-ride="carousel" data-interval="3500">
-			<div class="carousel-inner" role="listbox">
-				<div class="item active" style="background-image:url(<?= base_url() ?>assets/landing/s1.jpg);"></div>
-				<div class="item" style="background-image:url(<?= base_url() ?>assets/landing/s2.jpg);"></div>
-			</div>
-		</div>
+	<!-- Spinner Start -->
+	<div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+		<div class="spinner-grow text-primary" role="status"></div>
 	</div>
-	<!-- /Gambar Slider -->
-	<div class="mobile">
+	<!-- Spinner End -->
 
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-			</ol>
 
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner">
-				<div class="item active">
-					<img src="<?= base_url() ?>assets/landing/s1.jpg" alt="" style="border-radius:0% 0% 10% 10%;  box-shadow:2px 2px 12px #4bb4e6;">
+	<!-- Navbar start -->
+	<div class="container-fluid fixed-top">
+		<div class="container topbar d-none d-lg-block" style="background-color: #2e859a; background-image: linear-gradient(62deg, #2e859a 0%, #F7CE68 100%);
+">
+			<div class="d-flex justify-content-between">
+				<div class="top-info ps-2">
+					<small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">Jl. RA Kartini, Biringere, Kec. Sinjai Utara</a></small>
+					<small class="me-3"><i class="fas fa-phone me-2 text-secondary"></i><a href="#" class="text-white">(0482) 21145</a></small>
 				</div>
-
-				<div class="item">
-					<img src="<?= base_url() ?>assets/landing/s2.jpg" alt="" style="border-radius:0% 0% 10% 10%; box-shadow:2px 2px 12px #4bb4e6; ">
+				<div class="top-link pe-2">
+					<!-- <a href="#" class="text-white"><small class="text-white mx-2">Privacy Policy</small>/</a>
+					<a href="#" class="text-white"><small class="text-white mx-2">Terms of Use</small>/</a> -->
+					<a href="#" class="text-white"><small class="text-white ms-2">SPMB V2.0</small></a>
 				</div>
 			</div>
-
 		</div>
-
+		<div class="container px-0">
+			<nav class="navbar navbar-light bg-white navbar-expand-xl">
+				<a href="index.html" class="navbar-brand">
+					<img src="<?= base_url() ?>assets/images/logo-br.jpg" class="img-fluid" alt="" style="width: 160px; height: auto;">
+				</a>
+				<button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+					<span class="fa fa-bars text-primary"></span>
+				</button>
+				<div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+					<div class="navbar-nav mx-auto">
+						<a href="<?= base_url() ?>home/dashboard" class="nav-item nav-link active">Beranda</a>
+						<div class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Siswa</a>
+							<div class="dropdown-menu m-0 bg-secondary rounded-0">
+								<a href="<?= base_url() ?>siswa/register" class="dropdown-item">Daftar</a>
+								<a href="<?= base_url() ?>siswa/login" class="dropdown-item">Login</a>
+							</div>
+						</div>
+						<a href="<?= base_url() ?>sekolah" class="nav-item nav-link">Sekolah</a>
+						<a href="<?= base_url() ?>profil/panduan" class="nav-item nav-link">Panduan</a>
+						<a href="<?= base_url() ?>siswa/pengumuman" class="nav-item nav-link">Pengumuman</a>
+					</div>
+					<div class="d-flex m-3 me-0">
+						<button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
+						<!-- <a href="#" class="position-relative me-4 my-auto">
+							<i class="fa fa-shopping-bag fa-2x"></i>
+							<span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
+						</a> -->
+						<a href="<?= base_url() ?>login" class="my-auto">
+							<i class="fas fa-user fa-2x"></i>
+						</a>
+					</div>
+				</div>
+			</nav>
+		</div>
 	</div>
-	<section id="main-wrapper" style="position: relative">
-		<a href="https://disdik.macca.id/aduan-ppdb" class="btn btn-primary px-1 py-3" style="position: fixed;z-index: 1000;bottom: 10px; right: 13px;" target="_blank"><i class="fa fa-fw fa-question-circle"></i> Laporkan Masalah</a>
-
-		<header id="header-portal" style="padding-top:20px;">
-			<div class="container">
-
-				<div class="row">
-
-					<div class="col-md-8 col-md-offset-2 marg">
-						<main id="main-portal">
-
-							<div class="mobile" style="margin-bottom:10px; margin-top:-5px;">
-								<center>
-									<img src="<?= base_url() ?>assets/images/ppdb-logo-text-white.png" width="50%" alt="">
-								</center>
-							</div>
-							<div class="row d-flex justify-content-center">
-								<div class="col-sm-4 col-xs-4" style="margin-bottom:15px;">
-									<a href="<?= base_url() ?>home/dashboard" style="text-decoration:none;">
-										<div class="box">
-											<img src="<?= base_url() ?>assets/landing/icon/home.svg" alt="" width="60px">
-											<h5> Beranda </h5>
-										</div>
-									</a>
-								</div>
-								<div class="col-sm-4 col-xs-4" style="margin-bottom:15px;">
-									<a href="<?= base_url() ?>sekolah" style="text-decoration:none;">
-										<div class="box">
-											<img src="<?= base_url() ?>assets/landing/icon/school.svg" alt="" width="60px">
-											<h5> Sekolah </h5>
-										</div>
-									</a>
-								</div>
-								<div class="col-sm-4 col-xs-4" style="margin-bottom:15px;">
-									<a href="<?= base_url() ?>profil/panduan" style="text-decoration:none;">
-										<div class="box">
-											<img src="<?= base_url() ?>assets/landing/icon/notebook.svg" alt="" width="60px">
-											<h5> Panduan & Aplikasi </h5>
-										</div>
-									</a>
-								</div>
-								<div class="col-sm-4 col-xs-4" style="margin-bottom:15px;">
-									<a href="<?= base_url() ?>siswa/register" style="text-decoration:none;">
-										<div class="box">
-											<img src="<?= base_url() ?>assets/landing/icon/daftar.svg" alt="" width="60px">
-											<h5> Daftar </h5>
-										</div>
-									</a>
-								</div>
-								<div class="col-sm-4 col-xs-4" style="margin-bottom:15px;">
-									<a href="<?= base_url() ?>siswa/login" style="text-decoration:none;">
-										<div class="box">
-											<img src="<?= base_url() ?>assets/landing/icon/profil.svg" alt="" width="60px">
-											<h5> Masuk Siswa </h5>
-										</div>
-									</a>
-								</div>
-								<div class="col-sm-4 col-xs-4" style="margin-bottom:15px;">
-									<a href="<?= base_url() ?>login" style="text-decoration:none;">
-										<div class="box">
-											<img src="<?= base_url() ?>assets/landing/icon/admin.png" alt="" width="60px">
-											<h5> Masuk Admin </h5>
-										</div>
-									</a>
-								</div>
-								<div class="col-sm-4 col-xs-4" style="margin-bottom:15px;">
-									<a href="<?= base_url() ?>siswa/pengumuman" style="text-decoration:none;">
-										<div class="box">
-											<img src="<?= base_url() ?>assets/landing/icon/pengumuman.svg" alt="" width="60px">
-											<h5> Pengumuman </h5>
-										</div>
-									</a>
-								</div>
-							</div>
-
-							<div class="row desktop">
-								<div class="col-md-12">
-									<p class="copyright text-center ">
-										Copyright &copy <?php echo date('Y') ?> Dinas Pendidikan Kabupaten Sinjai <br>
-										Sistem Aplikasi PPDB Versi 1.2 <br>
-										<!-- <a href="http://linyjayainformatika.co.id/" target="_blank">
-									<img src="<?= base_url() ?>assets/images/logo-liny.png" width="120px;" alt="">
-									</a> -->
-									</p>
-
-								</div>
-							</div>
+	<!-- Navbar End -->
 
 
-						</main>
+	<!-- Modal Search Start -->
+	<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-fullscreen">
+			<div class="modal-content rounded-0">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body d-flex align-items-center">
+					<div class="input-group w-75 mx-auto d-flex">
+						<input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+						<span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
 					</div>
 				</div>
 			</div>
-		</header>
-	</section>
-	<script src="https://dprd.semarangkota.go.id/assets/portal/js/jquery.min.js"></script>
-	<script src="https://dprd.semarangkota.go.id/assets/portal/js/bootstrap.min.js"></script>
+		</div>
+	</div>
+	<!-- Modal Search End -->
 
+
+	<!-- Hero Start -->
+	<div class="container-fluid py-5 mb-5 hero-header">
+		<div class="container py-5">
+			<div class="row g-5 align-items-center">
+				<div class="col-md-12 col-lg-5">
+					<h4 class="mb-3 text-secondary">SPMB</h4>
+					<h1 class="mb-5 display-3 text-primary">Sistem Penerimaan Murid Baru</h1>
+					<!-- <div class="position-relative mx-auto">
+						<input class="form-control border-2 border-secondary w-75 py-3 px-4 rounded-pill" type="number" placeholder="Search">
+						<button type="submit" class="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100" style="top: 0; right: 25%;">Submit Now</button>
+					</div> -->
+				</div>
+				<div class="col-md-12 col-lg-7">
+					<div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
+						<div class="carousel-inner" role="listbox">
+							<div class="carousel-item active rounded">
+								<img src="<?= base_url() ?>assets/landing/s1.jpg" class="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide">
+								<a href="<?= base_url() ?>siswa/register" class="btn px-4 py-2 text-white rounded">Daftar</a>
+							</div>
+							<div class="carousel-item rounded">
+								<img src="<?= base_url() ?>assets/landing/s2.jpg" class="img-fluid w-100 h-100 rounded" alt="Second slide">
+								<a href="<?= base_url() ?>siswa/register" class="btn px-4 py-2 text-white rounded">Daftar</a>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Hero End -->
+
+	<!-- Footer Start -->
+	<!-- <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+		<div class="container py-5">
+			<div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+				<div class="row g-4">
+					<div class="col-lg-3">
+						<a href="#">
+							<h1 class="text-primary mb-0">Fruitables</h1>
+							<p class="text-secondary mb-0">Fresh products</p>
+						</a>
+					</div>
+					<div class="col-lg-6">
+						<div class="position-relative mx-auto">
+							<input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email">
+							<button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</button>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="d-flex justify-content-end pt-3">
+							<a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+							<a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+							<a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
+							<a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row g-5">
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-item">
+						<h4 class="text-light mb-3">Why People Like us!</h4>
+						<p class="mb-4">typesetting, remaining essentially unchanged. It was
+							popularised in the 1960s with the like Aldus PageMaker including of Lorem Ipsum.</p>
+						<a href="" class="btn border-secondary py-2 px-4 rounded-pill text-primary">Read More</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="d-flex flex-column text-start footer-item">
+						<h4 class="text-light mb-3">Shop Info</h4>
+						<a class="btn-link" href="">About Us</a>
+						<a class="btn-link" href="">Contact Us</a>
+						<a class="btn-link" href="">Privacy Policy</a>
+						<a class="btn-link" href="">Terms & Condition</a>
+						<a class="btn-link" href="">Return Policy</a>
+						<a class="btn-link" href="">FAQs & Help</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="d-flex flex-column text-start footer-item">
+						<h4 class="text-light mb-3">Account</h4>
+						<a class="btn-link" href="">My Account</a>
+						<a class="btn-link" href="">Shop details</a>
+						<a class="btn-link" href="">Shopping Cart</a>
+						<a class="btn-link" href="">Wishlist</a>
+						<a class="btn-link" href="">Order History</a>
+						<a class="btn-link" href="">International Orders</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-item">
+						<h4 class="text-light mb-3">Contact</h4>
+						<p>Address: 1429 Netus Rd, NY 48247</p>
+						<p>Email: Example@gmail.com</p>
+						<p>Phone: +0123 4567 8910</p>
+						<p>Payment Accepted</p>
+						<img src="img/payment.png" class="img-fluid" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!-- Footer End -->
+
+	<!-- Copyright Start -->
+	<div class="container-fluid copyright bg-dark py-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+					<p class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>CV All Teknologi Sinjai</a>, All right reserved.</p>
+				</div>
+				<div class="col-md-6 my-auto text-center text-md-end text-white">
+					<!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+					<!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+					<!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+					Copyright &copy <?php echo date('Y') ?> Dinas Pendidikan Kabupaten Sinjai <br>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Copyright End -->
+
+
+
+	<!-- Back to Top -->
+	<a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+	<!-- JavaScript Libraries -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="<?= base_url() ?>assets/landing/lib/easing/easing.min.js"></script>
+	<script src="<?= base_url() ?>assets/landing/lib/waypoints/waypoints.min.js"></script>
+	<script src="<?= base_url() ?>assets/landing/lib/lightbox/js/lightbox.min.js"></script>
+	<script src="<?= base_url() ?>assets/landing/lib/owlcarousel/owl.carousel.min.js"></script>
+
+	<!-- Template Javascript -->
+	<script src="<?= base_url() ?>assets/landing/js/main.js"></script>
 </body>
 
 </html>
