@@ -30,7 +30,13 @@
 	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/landing/main.css" media="all">
 	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/landing/robi.css" media="all">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<style>
+		body {
+			background-color: #FBAB7E;
+			background-image: linear-gradient(62deg, #FBAB7E 0%, #68d9f7 100%);
 
+		}
+	</style>
 </head>
 
 <body>
@@ -77,7 +83,7 @@
 								</div>
 								<button class="btn btn-primary"> Masuk</button>
 								<hr>
-								<a href="#" style="color:#fff; text-shadow:1px 1px 3px rgba(0, 0, 0, 0.9);"> Lupa Password ? </a>
+								<!-- <a href="#" style="color:#fff; text-shadow:1px 1px 3px rgba(0, 0, 0, 0.9);"> Lupa Password ? </a> -->
 							</form>
 
 						</main>

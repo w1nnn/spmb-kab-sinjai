@@ -42,10 +42,10 @@ if (!empty($check)) {
 	<!-- Sign in Start -->
 	<section class="sign-in-page bg-white">
 		<div class="container-fluid p-0">
-			<div class="row no-gutters">
-				<div class="col-sm-6 align-self-center">
+			<div class="row no-gutters" style="background-color: #e5e5e5;">
+				<div class="col-sm-6 align-self-center ">
 					<div class="sign-in-from">
-						<a class="sign-in-logo mb-3" href="<?= base_url() ?>"><img src="<?= base_url() ?>assets/images/logo-br.jpg" class="img-fluid" alt="logo"></a>
+						<a class="sign-in-logo mb-3" href="<?= base_url() ?>"><img src="<?= base_url() ?>assets/images/logo-brr.png" class="img-fluid" alt="logo"></a>
 
 						<?php if (registerAccess() || (date('Y-m-d') >= configs()->daftar->start && date('Y-m-d') <= configs()->daftar->end)) : ?>
 							<h2 class="mb-0">Buat Akun </h2>
@@ -86,7 +86,7 @@ if (!empty($check)) {
 				</div>
 
 				<div class="col-sm-6 text-center">
-					<div class="sign-in-detail text-white" style="background: url(<?= base_url() ?>assets/images/login/2.jpg) no-repeat 0 0; background-size: cover; height:100vh;">
+					<div class="sign-in-detail text-white" style="background: url(<?= base_url() ?>assets/landing/logban.jpg) no-repeat 0 0; background-size: cover; height:100vh;">
 						<div class="owl-carousel" style="margin-top:100px;" data-autoplay="true" data-loop="true" data-nav="false" data-dots="true" data-items="1" data-items-laptop="1" data-items-tab="1" data-items-mobile="1" data-items-mobile-sm="1" data-margin="0">
 						</div>
 					</div>

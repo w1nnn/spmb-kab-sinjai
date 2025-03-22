@@ -1,4 +1,4 @@
-<div class="iq-top-navbar">
+<div class="iq-top-navbar" style="background-color: #2e859a; background-image: linear-gradient(62deg, #2e859a 0%, #F7CE68 100%)">
 	<div class="iq-navbar-custom">
 		<div class="navbar-breadcrumb">
 			<h5 class="mb-0 text-white"> Penerimaan Murid Baru </h5>
@@ -31,7 +31,7 @@
 				</li>
 				<?php if ($this->session->userdata('isLogin') == 1) { ?>
 					<li>
-						<a href="#" class="search-toggle iq-waves-effect bg-primary text-white">
+						<a href="#" class="search-toggle iq-waves-effect text-white" style="#F7CE68">
 							<i class="fa fa-fw fa-user-circle"></i>
 							<span class="utext"><?= $this->session->userdata('nama'); ?></span>
 						</a>
@@ -53,7 +53,7 @@
 				<?php } else { ?>
 
 					<li>
-						<a href="#" class="search-toggle iq-waves-effect bg-primary text-white">
+						<a href="#" class="search-toggle iq-waves-effect text-white" style="#F7CE68">
 							<i class="ri-login-box-fill "></i>
 						</a>
 						<div class="iq-sub-dropdown iq-user-dropdown">

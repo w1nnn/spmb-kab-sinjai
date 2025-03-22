@@ -1,4 +1,4 @@
-<form action="<?= base_url() ?>siswa/save" method="POST" enctype="multipart/form-data">
+<form action="<?= base_url() ?>siswa/save" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
 	<input type="hidden" name="id" value="<?= $get->id_siswa ?>">
 	<input type="hidden" name="lanjut" value="lampiran">
 	<input type="hidden" name="page" value="orangtua">
@@ -75,37 +75,37 @@
 		<div class="col-md-12">
 			<div class="form-group">
 				<label for=""> Nomor Kartu Keluarga <span class="text-danger">*</span> </label>
-				<input type="number" maxlength="16" name="no_kk" class="form-control" value="<?= $get->no_kk ?>" required>
+				<input autocomplete="off" type="number" maxlength="16" name="no_kk" class="form-control" value="<?= $get->no_kk ?>" required>
 			</div>
 			<div class="form-group">
 				<label for=""> Nomor Handphone Ayah / Ibu <span class="text-danger">*</span> </label>
-				<input type="number" maxlength="14" name="no_hp_ortu" class="form-control" value="<?= $get->no_hp_ortu ?>" required>
+				<input autocomplete="off" type="number" maxlength="14" name="no_hp_ortu" class="form-control" value="<?= $get->no_hp_ortu ?>" required>
 			</div>
 			<div class="form-group">
 				<label for=""> Nama Ayah <span class="text-danger">*</span> </label>
-				<input type="text" name="nama_ayah" class="form-control" value="<?= $get->nm_ayah ?>" required>
+				<input autocomplete="off" type="text" name="nama_ayah" class="form-control" value="<?= $get->nm_ayah ?>" required>
 			</div>
 			<div class="form-group">
 				<label for=""> Pekerjaan Ayah <span class="text-danger">*</span> </label>
-				<input type="text" name="pekerjaan_ayah" class="form-control" value="<?= $get->pekerjaan_ayah ?>" required>
+				<input autocomplete="off" type="text" name="pekerjaan_ayah" class="form-control" value="<?= $get->pekerjaan_ayah ?>" required>
 			</div>
 
 			<div class="form-group">
 				<label for=""> Nama Ibu <span class="text-danger">*</span> </label>
-				<input type="text" name="nama_ibu" class="form-control" value="<?= $get->nm_ibu ?> " required>
+				<input autocomplete="off" type="text" name="nama_ibu" class="form-control" value="<?= $get->nm_ibu ?> " required>
 			</div>
 			<div class="form-group">
 				<label for=""> Pekerjaan Ibu <span class="text-danger">*</span> </label>
-				<input type="text" name="pekerjaan_ibu" class="form-control" value="<?= $get->pekerjaan_ibu ?> " required>
+				<input autocomplete="off" type="text" name="pekerjaan_ibu" class="form-control" value="<?= $get->pekerjaan_ibu ?> " required>
 			</div>
 
 			<div class="form-group">
 				<label for=""> Nama Wali </label>
-				<input type="text" name="nama_wali" class="form-control" value="<?= $get->nm_wali ?> ">
+				<input autocomplete="off" type="text" name="nama_wali" class="form-control" value="<?= $get->nm_wali ?> ">
 			</div>
 			<div class="form-group">
 				<label for=""> Pekerjaan Wali </label>
-				<input type="text" name="pekerjaan_wali" class="form-control" value="<?= $get->pekerjaan_wali ?> ">
+				<input autocomplete="off" type="text" name="pekerjaan_wali" class="form-control" value="<?= $get->pekerjaan_wali ?> ">
 			</div>
 		</div>
 
@@ -123,3 +123,23 @@
 	<!-- <a href="<?= base_url() ?>siswa/profil" class="btn btn-warning pull-right mr-3 " > <i class="ri-arrow-left-fill"></i> Kembali </a> -->
 
 </form>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+	function validateForm() {
+		// Get the value of the "no_kk" field
+		var noKk = document.querySelector('input[name="no_kk"]').value;
+
+		// Check if the length of the No. KK is not 16 digits
+		if (noKk.length !== 16) {
+			// Display SweetAlert message
+			Swal.fire({
+				icon: 'error',
+				title: 'Invalid Nomor Kartu Keluarga',
+				text: 'Nomor Kartu Keluarga harus terdiri dari 16 digit.',
+				confirmButtonText: 'Ok'
+			});
+			return false; // Prevent form submission
+		}
+		return true; // Allow form submission if validation passes
+	}
+</script>

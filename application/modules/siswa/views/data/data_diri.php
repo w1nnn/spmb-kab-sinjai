@@ -78,15 +78,15 @@ $eUsia = $this->session->flashdata('error');
 		<div class="col-md-6">
 			<div class="form-group">
 				<label for=""> Nomor Induk Kependudukan <span class="text-danger">*</span> </label>
-				<input type="number" maxlength="16" oninput="this.value=this.value.slice(0,this.maxLength)" value="<?= $get->no_ktp ?>" class="form-control" name="no_ktp" required>
+				<input type="number" readonly maxlength="16" oninput="this.value=this.value.slice(0,this.maxLength)" value="<?= $get->no_ktp ?>" class="form-control" name="no_ktp" required>
 			</div>
 			<div class="form-group">
 				<label for=""> Nama Calon Siswa <span class="text-danger">*</span> </label>
-				<input type="text" value="<?= $get->nama_siswa ?>" class="form-control" name="nama_siswa" required>
+				<input type="text" readonly value="<?= $get->nama_siswa ?>" class="form-control" name="nama_siswa" required>
 			</div>
 			<div class="form-group">
 				<label for=""> Tempat Lahir <span class="text-danger">*</span> </label>
-				<input type="text" value="<?= $get->tempat_lahir ?>" class="form-control" name="tempat_lahir" required>
+				<input autocomplete="off" type="text" value="<?= $get->tempat_lahir ?>" class="form-control" name="tempat_lahir" required>
 			</div>
 			<div class="form-group">
 				<label for=""> Tanggal Lahir <span class="text-danger">*</span> </label>
@@ -136,7 +136,7 @@ $eUsia = $this->session->flashdata('error');
 			<?php } ?>
 			<div class="form-group">
 				<label for=""> Alamat Rumah <span class="text-danger">*</span> </label>
-				<textarea name="alamat" class="form-control" required><?= $get->alamat ?> </textarea>
+				<textarea autocomplete="off" name="alamat" class="form-control" required><?= $get->alamat ?> </textarea>
 			</div>
 			<div class="form-group">
 				<label for=""> Kecamatan <span class="text-danger">*</span> </label>

@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Fruitables - Vegetable Website Template</title>
+	<title>SPMB - KAB SINJAI</title>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta content="" name="keywords">
 	<meta content="" name="description">
@@ -11,6 +11,7 @@
 	<!-- Google Web Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="shortcut icon" href="<?= base_url() ?>assets/images/page-img/29.png" />
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet">
 
 	<!-- Icon Font Stylesheet -->
@@ -76,16 +77,17 @@
 						<a href="<?= base_url() ?>sekolah" class="nav-item nav-link">Sekolah</a>
 						<a href="<?= base_url() ?>profil/panduan" class="nav-item nav-link">Panduan</a>
 						<a href="<?= base_url() ?>siswa/pengumuman" class="nav-item nav-link">Pengumuman</a>
+						<a href="<?= base_url() ?>login" class="nav-item nav-link">Admin</a>
 					</div>
 					<div class="d-flex m-3 me-0">
-						<button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
+						<!-- <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button> -->
 						<!-- <a href="#" class="position-relative me-4 my-auto">
 							<i class="fa fa-shopping-bag fa-2x"></i>
 							<span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
 						</a> -->
-						<a href="<?= base_url() ?>login" class="my-auto">
-							<i class="fas fa-user fa-2x"></i>
-						</a>
+						<!-- <a href="<?= base_url() ?>login" class="my-auto">
+							<i class="fas fa-user fa-1x"></i>
+						</a> -->
 					</div>
 				</div>
 			</nav>
@@ -119,8 +121,8 @@
 		<div class="container py-5">
 			<div class="row g-5 align-items-center">
 				<div class="col-md-12 col-lg-5">
-					<h4 class="mb-3 text-secondary">SPMB</h4>
-					<h1 class="mb-5 display-3 text-primary">Sistem Penerimaan Murid Baru</h1>
+					<!-- <h4 class="mb-3 text-secondary">SPMB</h4> -->
+					<!-- <h1 class="mb-5 display-3 text-primary">Sistem Penerimaan Murid Baru</h1> -->
 					<!-- <div class="position-relative mx-auto">
 						<input class="form-control border-2 border-secondary w-75 py-3 px-4 rounded-pill" type="number" placeholder="Search">
 						<button type="submit" class="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100" style="top: 0; right: 25%;">Submit Now</button>
