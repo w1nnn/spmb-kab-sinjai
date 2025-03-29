@@ -9,7 +9,7 @@ Sistem Penerimaan Murid Baru (SPMB) Kabupaten Sinjai adalah aplikasi berbasis we
 - **Database:** MySQL
 - **Server:** Apache/Nginx
 
-### Prasyarat
+### Requirement 
 
 Pastikan Anda memiliki perangkat dan perangkat lunak berikut:
 
