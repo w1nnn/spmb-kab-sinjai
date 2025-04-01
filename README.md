@@ -2,7 +2,7 @@ The New Student Admissions System (SPMB) of Sinjai Regency is a web-based applic
 
 ## Stack
 
-- **Frontend:** JavaScript, Tailwind
+- **Frontend:** JavaScript
 - **Backend:** CodeIgniter
 - **Database:** MySQL
 - **Server:** Apache/Nginx
