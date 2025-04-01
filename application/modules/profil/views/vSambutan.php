@@ -6,7 +6,7 @@
 					<div class="row">
 						<div class="col-md-3">
 							<center>
-								<img src="<?= base_url()?>uploads/etc/<?= $get->foto_kadis?>" class="rounded" alt="" style="width:70%;">
+								<img src="<?= base_url() ?>uploads/<?= $get->foto_kadis ?>" class="rounded" alt="" style="width:70%;">
 							</center>
 						</div>
 						<div class="col-md-9">

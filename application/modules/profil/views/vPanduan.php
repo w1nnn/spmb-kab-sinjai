@@ -50,7 +50,7 @@
 
 					</ul>
 
-					<a href="<?= base_url() ?>uploads/etc/<?= $get->panduan ?>" target="blank" class="btn btn-lg mt-1 btn-primary"> <i class="ri-download-2-fill"></i> Download Panduan Pendaftaran </a>
+					<a href="<?= base_url() ?>uploads/panduan/<?= $get->panduan ?>" target="blank" class="btn btn-lg mt-1 btn-primary"> <i class="ri-download-2-fill"></i> Download Panduan Pendaftaran </a>
 					<!-- <a href="<?= base_url() ?>assets/ppdb.apk" class="btn btn-lg mt-1 btn-success"> <i class="ri-download-2-fill"></i> Download Aplikasi PPDB  </a>
 				<a href="<?= base_url() ?>assets/ppdb-admin.apk" class="btn btn-lg mt-1 btn-danger"> <i class="ri-download-2-fill"></i> Download Aplikasi PPDB Admin  </a> -->
 

@@ -58,7 +58,7 @@ class Manage extends CI_Controller
 		$act = $this->input->post('act');
 		if ($act == "sambutan") {
 
-			$config['upload_path'] = './uploads/etc';
+			$config['upload_path'] = './uploads';
 			$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG|PNG|jpeg';
 			$this->load->library('upload', $config);
 
@@ -71,7 +71,7 @@ class Manage extends CI_Controller
 			}
 		} else if ($act == "ppdb") {
 
-			$config['upload_path'] = './uploads/etc';
+			$config['upload_path'] = './uploads';
 			$config['allowed_types'] = 'pdf';
 			$this->load->library('upload', $config);
 
@@ -84,14 +84,65 @@ class Manage extends CI_Controller
 			}
 		} elseif ($act == "panduan") {
 
-			$config['upload_path'] = './uploads/etc';
-			$config['allowed_types'] = 'pdf';
+			$config['upload_path'] = './uploads/panduan';  // Pastikan folder ini ada dan memiliki izin yang benar
+			$config['allowed_types'] = 'pdf';  // Hanya PDF yang diperbolehkan
+			$config['max_size'] = 2048;  // Maksimal ukuran file 2MB
 			$this->load->library('upload', $config);
 
-			if ($this->upload->do_upload("panduan")) {
+			if ($this->upload->do_upload('panduan')) {
+				// Mengambil data file yang di-upload
 				$file = $this->upload->data();
-				$panduan = $file['file_name'];
-				$data = array('panduan' => $panduan);
+				$panduan = $file['file_name'];  // Nama file yang di-upload
+
+				// Siapkan data untuk update
+				$data = array(
+					'panduan' => $panduan  // Nama file untuk disimpan dalam kolom 'panduan'
+				);
+
+				// Tentukan kondisi update, misalnya berdasarkan ID
+				$where = array('id_profil' => 1);  // Sesuaikan dengan kondisi yang kamu butuhkan
+
+				// Load model dan update data
+				$this->load->model('Manage_model');
+				$update = $this->Manage_model->update($where, $data);
+
+				if ($update > 0) {
+					// Jika berhasil update
+					echo "<script>
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Panduan berhasil di-upload!',
+                    showConfirmButton: false,
+                    timer: 1500
+                }).then(function() {
+                    window.location.href = '" . base_url('profil/manage/panduan') . "';
+                });
+              </script>";
+				} else {
+					// Jika gagal update
+					echo "<script>
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Gagal menyimpan data panduan!',
+                    text: 'Terjadi kesalahan saat menyimpan data.',
+                    showConfirmButton: true
+                }).then(function() {
+                    window.location.href = '" . base_url('profil/manage/panduan') . "';
+                });
+              </script>";
+				}
+			} else {
+				// Jika upload gagal
+				echo "<script>
+            Swal.fire({
+                icon: 'error',
+                title: 'Upload Gagal!',
+                text: '" . $this->upload->display_errors() . "',
+                showConfirmButton: true
+            }).then(function() {
+                window.location.href = '" . base_url('profil/manage/panduan') . "';
+            });
+          </script>";
 			}
 		} elseif ($act == "kontak") {
 

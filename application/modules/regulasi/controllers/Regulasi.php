@@ -59,8 +59,8 @@ class Regulasi extends CI_Controller
 			}
 		}
 
-		$data['title'] = "Jadwal PPDB";
-		$data['subtitle'] = "Pengaturan Jadwal PPDB";
+		$data['title'] = "Jadwal SPMB";
+		$data['subtitle'] = "Pengaturan Jadwal SPMB";
 		$data['jadwal'] = $jadwal;
 		$this->template->load('home/layouts', 'vJadwal', $data);
 	}

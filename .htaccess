@@ -4,14 +4,17 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
 
-
-#RewriteCond     %{SERVER_PORT} ^80$
+#RewriteCond %{SERVER_PORT} ^80$
 #RewriteRule     ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
 
-
 # php -- BEGIN cPanel-generated handler, do not edit
+
 ## Set the “ea-php72” package as the default “PHP” programming language.
+
 #<IfModule mime_module>
-#  AddHandler application/x-httpd-ea-php72 .php .php7 .phtml
+
+# AddHandler application/x-httpd-ea-php72 .php .php7 .phtml
+
 #</IfModule>
+
 # php -- END cPanel-generated handler, do not edit

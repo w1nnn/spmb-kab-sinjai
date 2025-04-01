@@ -1,13 +1,13 @@
-<div class="row ">
+<div class="row">
 	<div class="col-sm-12">
 		<form action="<?= base_url() ?>profil/manage/update" method="POST" enctype="multipart/form-data">
 			<input type="hidden" name="act" value="sambutan">
 			<div class="iq-card iq-card-block iq-card-stretch iq-card-height">
 				<div class="iq-card-body">
-					<div class="iq-advance-course ">
+					<div class="iq-advance-course">
 						<div class="form-group">
 							<label for=""> Sambutan Kepala Dinas </label>
-							<textarea class="form-control" id="" cols="30" name="sambutan"> <?= $get->sambutan ?> </textarea>
+							<textarea class="form-control" id="" cols="30" name="sambutan"><?= $get->sambutan ?></textarea>
 						</div>
 						<div class="form-group">
 							<label for=""> Nama Kepala Dinas </label>
@@ -16,9 +16,12 @@
 						<div class="form-group">
 							<label for=""> Foto Kepala Dinas </label> <br>
 
-							<img src="<?= base_url() ?>uploads/etc/<?= $get->foto_kadis ?>" class="rounded-circle" alt="" style="width:150px; height:150px;">
+							<!-- Display existing image -->
+							<img id="img-preview" src="<?= base_url() ?>uploads/<?= $get->foto_kadis ?>" class="rounded-circle" alt="Foto Kepala Dinas" style="width:150px; height:150px;">
 							<br>
-							<input type="file" class="form-control-file" name="fotokadis">
+
+							<!-- File input -->
+							<input type="file" class="form-control-file" name="fotokadis" id="foto_kadis" onchange="previewImage(event)">
 						</div>
 						<button type="submit" class="btn btn-primary">Simpan</button>
 						<button type="reset" class="btn iq-bg-danger">Batal</button>
@@ -29,21 +32,30 @@
 	</div>
 </div>
 
-<script src="https://cdn.tiny.cloud/1/1e7071suorrjx5e8l8vbnasbwuu0yhtrqqdsnmtnvit9u0xo/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-
+<script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
 <script>
-	tinymce.init({
-		selector: "textarea",
-		height: 200,
-		plugins: [
-			"advlist autolink lists link image charmap print preview anchor",
-			"searchreplace visualblocks code ",
-			"insertdatetime media table contextmenu paste code"
-		],
-		toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
-		content_css: [
-			"//fast.fonts.net/cssapi/e6dc9b99-64fe-4292-ad98-6974f93cd2a2.css",
-			"//www.tinymce.com/css/codepen.min.css"
-		]
-	});
+	// Initialize CKEditor for text area
+	ClassicEditor
+		.create(document.querySelector('textarea'))
+		.catch(error => {
+			console.error(error);
+		});
+
+	// Function to preview image before uploading
+	function previewImage(event) {
+		// Get the file from input
+		var file = event.target.files[0];
+		var reader = new FileReader();
+
+		// Set the image preview
+		reader.onload = function() {
+			var output = document.getElementById('img-preview');
+			output.src = reader.result;
+		};
+
+		// Read the file as a data URL
+		if (file) {
+			reader.readAsDataURL(file);
+		}
+	}
 </script>

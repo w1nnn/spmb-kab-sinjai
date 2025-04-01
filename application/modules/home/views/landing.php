@@ -29,6 +29,17 @@
 	<!-- Template Stylesheet -->
 	<!-- <link href="css/style.css" rel="stylesheet"> -->
 	<link href="<?= base_url() ?>assets/landing/css/style.css" rel="stylesheet">
+	<style>
+		body {
+			background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+		}
+
+		#sub-title {
+			background: linear-gradient(to right, rgb(82, 175, 82), rgb(212, 142, 10));
+			-webkit-background-clip: text;
+			color: transparent;
+		}
+	</style>
 </head>
 
 <body>
@@ -42,8 +53,7 @@
 
 	<!-- Navbar start -->
 	<div class="container-fluid fixed-top">
-		<div class="container topbar d-none d-lg-block" style="background-color: #2e859a; background-image: linear-gradient(62deg, #2e859a 0%, #F7CE68 100%);
-">
+		<div class="container topbar d-none d-lg-block" style="background-color: #2e859a; background-image: linear-gradient(62deg, #2e859a 0%, #F7CE68 100%);">
 			<div class="d-flex justify-content-between">
 				<div class="top-info ps-2">
 					<small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">Jl. RA Kartini, Biringere, Kec. Sinjai Utara</a></small>
@@ -58,7 +68,7 @@
 		</div>
 		<div class="container px-0">
 			<nav class="navbar navbar-light bg-white navbar-expand-xl">
-				<a href="index.html" class="navbar-brand">
+				<a href="" class="navbar-brand">
 					<img src="<?= base_url() ?>assets/images/logo-br.jpg" class="img-fluid" alt="" style="width: 160px; height: auto;">
 				</a>
 				<button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -120,24 +130,26 @@
 	<div class="container-fluid py-5 mb-5 hero-header">
 		<div class="container py-5">
 			<div class="row g-5 align-items-center">
-				<div class="col-md-12 col-lg-5">
-					<!-- <h4 class="mb-3 text-secondary">SPMB</h4> -->
-					<!-- <h1 class="mb-5 display-3 text-primary">Sistem Penerimaan Murid Baru</h1> -->
+				<div class="col-md-12 col-lg-4">
+					<h4 class="mb-3 text-secondary" id="title">SPMB</h4>
+					<h1 class="mb-5 display-4" id="sub-title">Sistem Penerimaan Murid Baru</h1>
 					<!-- <div class="position-relative mx-auto">
 						<input class="form-control border-2 border-secondary w-75 py-3 px-4 rounded-pill" type="number" placeholder="Search">
 						<button type="submit" class="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100" style="top: 0; right: 25%;">Submit Now</button>
 					</div> -->
 				</div>
-				<div class="col-md-12 col-lg-7">
+				<div class="col-md-12 col-lg-8" style="margin-top: -20px;">
 					<div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
 						<div class="carousel-inner" role="listbox">
 							<div class="carousel-item active rounded">
 								<img src="<?= base_url() ?>assets/landing/s1.jpg" class="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide">
-								<a href="<?= base_url() ?>siswa/register" class="btn px-4 py-2 text-white rounded">Daftar</a>
+								<a href="<?= base_url() ?>siswa/register" class="daftar btn text-white rounded" style="background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); font-size: 14px;
+">Daftar</a>
 							</div>
 							<div class="carousel-item rounded">
 								<img src="<?= base_url() ?>assets/landing/s2.jpg" class="img-fluid w-100 h-100 rounded" alt="Second slide">
-								<a href="<?= base_url() ?>siswa/register" class="btn px-4 py-2 text-white rounded">Daftar</a>
+								<a href="<?= base_url() ?>siswa/register" class=" daftar btn text-white rounded" style="background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); font-size: 14px;
+">Daftar</a>
 							</div>
 						</div>
 						<button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
@@ -229,16 +241,13 @@
 	<!-- Footer End -->
 
 	<!-- Copyright Start -->
-	<div class="container-fluid copyright bg-dark py-4">
+	<div class="container-fluid copyright bg-dark py-4" style="background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-					<p class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>CV All Teknologi Sinjai</a>, All right reserved.</p>
+					<p class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>SPMB</a>, All right reserved.</p>
 				</div>
-				<div class="col-md-6 my-auto text-center text-md-end text-white">
-					<!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-					<!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-					<!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+				<div class="col-md-6 my-auto text-center text-md-end text-white" style="text-align: center;">
 					Copyright &copy <?php echo date('Y') ?> Dinas Pendidikan Kabupaten Sinjai <br>
 				</div>
 			</div>
@@ -259,7 +268,6 @@
 	<script src="<?= base_url() ?>assets/landing/lib/waypoints/waypoints.min.js"></script>
 	<script src="<?= base_url() ?>assets/landing/lib/lightbox/js/lightbox.min.js"></script>
 	<script src="<?= base_url() ?>assets/landing/lib/owlcarousel/owl.carousel.min.js"></script>
-
 	<!-- Template Javascript -->
 	<script src="<?= base_url() ?>assets/landing/js/main.js"></script>
 </body>

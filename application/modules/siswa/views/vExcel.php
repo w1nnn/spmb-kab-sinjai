@@ -31,7 +31,7 @@ if (level_user() == "admin" || level_user()  == "superadmin") {
 			}
 		</style>
 
-		<h2> Macca PPDB - Kabupaten Sinjai </h2>
+		<h2>SPMB - Kabupaten Sinjai </h2>
 
 		<table>
 			<?php if ($tingkat) : ?>
@@ -48,10 +48,10 @@ if (level_user() == "admin" || level_user()  == "superadmin") {
 			<tr>
 				<td><b> JALUR </b> </td>
 				<td><b><?php if ($jalur == "all" || !$jalur) {
-									echo "Semua Jalur";
-								} else {
-									echo jalur($jalur)->nama;
-								}  ?> </b> </td>
+							echo "Semua Jalur";
+						} else {
+							echo jalur($jalur)->nama;
+						}  ?> </b> </td>
 			</tr>
 			<tr>
 				<td><b> TANGGAL DOWNLOAD </b> </td>
@@ -188,7 +188,7 @@ if (level_user() == "admin" || level_user()  == "superadmin") {
 
 	?>
 
-	<h2> Macca PPDB - Kabupaten Sinjai </h2>
+	<h2>SPMB - Kabupaten Sinjai </h2>
 
 	<table>
 		<tr>

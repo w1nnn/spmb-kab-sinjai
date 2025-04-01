@@ -331,6 +331,106 @@ class Siswa extends CI_Controller
 		}
 	}
 
+	// public function update_psikolog()
+	// {
+	// 	cek_session();
+	// 	$id = $this->input->post('id'); // Pastikan nama input sesuai dengan view
+
+	// 	// Konfigurasi upload file
+	// 	$config['upload_path'] = './uploads/siswa/psikolog/';
+	// 	$config['allowed_types'] = 'pdf|jpg|jpeg|png';
+	// 	$config['remove_spaces'] = TRUE;
+	// 	$config['encrypt_name'] = TRUE;
+
+	// 	$this->load->library('upload', $config);
+
+	// 	if (!is_dir($config['upload_path'])) {
+	// 		mkdir($config['upload_path'], 0777, true);
+	// 	}
+
+	// 	$data = [
+	// 		'sts_psikolog' => 1 // Menandakan bahwa surat telah diunggah
+	// 	];
+
+	// 	if ($this->upload->do_upload('lampiran')) {
+	// 		$file = $this->upload->data();
+	// 		$filename = $file['file_name'];
+
+	// 		// Hapus file lama jika ada
+	// 		$siswa = $this->siswa->get_by_id($id);
+	// 		if (!empty($siswa->lampiran_psikolog) && is_file(FCPATH . '/uploads/siswa/psikolog/' . $siswa->lampiran_psikolog)) {
+	// 			unlink(FCPATH . '/uploads/siswa/psikolog/' . $siswa->lampiran_psikolog);
+	// 		}
+
+	// 		$data['lampiran_psikolog'] = $filename;
+	// 	} else {
+	// 		$this->session->set_flashdata('status', 'danger');
+	// 		$this->session->set_flashdata('message', $this->upload->display_errors());
+	// 		redirect($_SERVER['HTTP_REFERER']);
+	// 	}
+
+	// 	// Update data siswa berdasarkan ID
+	// 	$this->siswa->update(array('id_siswa' => $id), $data);
+
+	// 	$this->session->set_flashdata('status', 'success');
+	// 	$this->session->set_flashdata('message', 'Surat keterangan psikolog berhasil diunggah.');
+	// 	redirect(base_url('siswa/profil/datadiri'));
+	// }
+	public function update_psikolog()
+	{
+		cek_session();
+		$id = $this->input->post('id');
+		$next = $this->input->post('lanjut'); // Ambil nilai next dari input tersembunyi
+
+		// Konfigurasi upload file
+		$config['upload_path'] = './uploads/siswa/psikolog/';
+		$config['allowed_types'] = 'pdf|jpg|jpeg|png';
+		$config['remove_spaces'] = TRUE;
+		$config['encrypt_name'] = TRUE;
+
+		$this->load->library('upload', $config);
+
+		if (!is_dir($config['upload_path'])) {
+			mkdir($config['upload_path'], 0777, true);
+		}
+
+		$data = [
+			'sts_psikolog' => 1 // Menandakan bahwa surat telah diunggah
+		];
+
+		if ($this->upload->do_upload('lampiran')) {
+			$file = $this->upload->data();
+			$filename = $file['file_name'];
+
+			// Hapus file lama jika ada
+			$siswa = $this->siswa->get_by_id($id);
+			if (!empty($siswa->lampiran_psikolog) && is_file(FCPATH . '/uploads/siswa/psikolog/' . $siswa->lampiran_psikolog)) {
+				unlink(FCPATH . '/uploads/siswa/psikolog/' . $siswa->lampiran_psikolog);
+			}
+
+			$data['lampiran_psikolog'] = $filename;
+		} else {
+			$this->session->set_flashdata('status', 'danger');
+			$this->session->set_flashdata('message', $this->upload->display_errors());
+			redirect($_SERVER['HTTP_REFERER']);
+		}
+
+		// Update data siswa berdasarkan ID
+		$this->siswa->update(array('id_siswa' => $id), $data);
+
+		$this->session->set_flashdata('status', 'success');
+		$this->session->set_flashdata('message', 'Surat keterangan psikolog berhasil diunggah.');
+
+		// Redirect ke halaman sekolah
+		if (level_user() == "siswa") {
+			redirect(base_url('siswa/profil/' . $next));
+		} else {
+			// redirect(base_url('siswa/edit/' . $next . '/?id=' . $id));
+			redirect($_SERVER['HTTP_REFERER']);
+		}
+	}
+
+
 	public function preview()
 	{
 		cek_session();

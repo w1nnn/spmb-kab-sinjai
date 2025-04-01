@@ -11,7 +11,7 @@
 header("Content-type: application/vnd-ms-excel");
 header("Content-Disposition: attachment; filename=Data Sekolah.xls");
 ?>
-<h2> Macca PPDB - Kabupaten Sinjai </h2>
+<h2> Macca SPMB - Kabupaten Sinjai </h2>
 
 <table>
     <tr>

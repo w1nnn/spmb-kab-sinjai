@@ -1,36 +1,35 @@
 <div class="row ">
-	<div class="col-sm-12">
-		<div class="iq-card iq-card-block iq-card-stretch iq-card-height">
-			<div class="iq-card-body">
-				<div class="iq-advance-course ">
-					<div class="table-responsive">
-						<table class="table table-hover" id="table">
-							<thead class="text-center iq-bg-primary">
-							<tr>
-								<th style="width:2%">No.</th>
-								<th>Nama Dokumen </th>
-								<th style="width:20%">Download </th>
-							</tr>
-							</thead>
-							<tbody>
-							
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="col-sm-12">
+        <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+            <div class="iq-card-body">
+                <div class="iq-advance-course ">
+                    <div class="table-responsive">
+                        <table class="table table-hover" id="table">
+                            <thead class="text-center iq-bg-primary">
+                                <tr>
+                                    <th style="width:2%">No.</th>
+                                    <th>Nama Dokumen </th>
+                                    <th style="width:20%">Download </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
 <script type="text/javascript">
-
     var save_method; //for save method string
     var table;
 
 
-    $(document).ready(function () {
+    $(document).ready(function() {
         //datatables
 
         table = $('#table').DataTable({
@@ -55,17 +54,15 @@
             },
 
             //Set column definition initialisation properties.
-            "columnDefs": [
-                {
-                    "targets": [-1], //last column
-                    "orderable": false, //set not orderable
-                },
-            ],
+            "columnDefs": [{
+                "targets": [-1], //last column
+                "orderable": false, //set not orderable
+            }, ],
 
         });
 
         //set input/textarea/select event when change value, remove class error and remove text help block
-        $("input").change(function () {
+        $("input").change(function() {
             $(this).parent().parent().removeClass('has-error');
             $(this).next().empty();
         });
@@ -83,22 +80,20 @@
             // ajax delete data to database
 
             $.ajax({
-                url: "<?php echo site_url('siswa/daftar/ajax_delete')?>/" + id,
+                url: "<?php echo site_url('siswa/daftar/ajax_delete') ?>/" + id,
                 type: "POST",
                 dataType: "JSON",
-                success: function (data) {
+                success: function(data) {
                     //if success reload ajax table
                     reload_table();
                     toastr.error('Berhasil Menghapus Data');
 
                 },
-                error: function (jqXHR, textStatus, errorThrown) {
+                error: function(jqXHR, textStatus, errorThrown) {
                     alert('Error deleting data');
                 }
             });
 
         }
     }
-
-
 </script>

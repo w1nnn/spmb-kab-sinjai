@@ -1,6 +1,50 @@
 <?php
 $eUsia = $this->session->flashdata('error');
+$statusError = $this->session->flashdata('status');
+$message = $this->session->flashdata('message');
 ?>
+<?php if ($eUsia && $statusError == 'danger'): ?>
+	<script>
+		$(document).ready(function() {
+			$('#uploadModal').modal('show');
+		});
+	</script>
+<?php endif; ?>
+
+
+<!-- Modal Upload File -->
+<div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="uploadModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="uploadModalLabel">Upload File Bukti Surat Keterangan Psikolog</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form action="<?= base_url() ?>siswa/update_psikolog" method="POST" enctype="multipart/form-data">
+					<div class="form-group">
+						<label for="fileUpload" style="color: red; font-style: italic;">
+							<?= $message; ?> untuk melanjutkan proses pendaftaran silahkan buktikan surat keterangan dari psikolog:</label>
+						<input type="hidden" name="id" value="<?= $get->id_siswa ?>">
+
+						<input type="hidden" name="lanjut" value="sekolah">
+						<input type="hidden" name="page" value="datadiri">
+						<input name="lampiran" type="file" class="form-control-file" id="fileUpload" name="fileUpload" required accept=".jpg,.jpeg,.png,.pdf">
+					</div>
+					<div id="filePreview" class="form-group" style="display:none;">
+						<div id="previewContainer"></div>
+					</div>
+					<hr>
+					<p><input type="checkbox" required> Saya nyatakan data yang saya unggah benar-benar sesuai dengan data yang asli dan saya siap mendapatkan sanksi apabila dikemudian hari data yang saya unggah terbukti rekayasa. </p>
+					<button type="submit" class="btn btn-primary" id="submitBtn">Upload</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Modal end -->
 <form action="<?= base_url() ?>siswa/save" method="POST" enctype="multipart/form-data">
 	<input type="hidden" name="id" value="<?= $get->id_siswa ?>">
 	<input type="hidden" name="lanjut" value="sekolah">
@@ -131,7 +175,7 @@ $eUsia = $this->session->flashdata('error');
 			<?php if ($get->tingkat_sekolah != "4") {  ?>
 				<div class="form-group">
 					<label for=""> Asal Sekolah <span class="text-danger">*</span> </label>
-					<input type="text" class="form-control" name="asal_sekolah" value="<?= $get->asal_sekolah ?>">
+					<input autocomplete="off" type="text" class="form-control" name="asal_sekolah" value="<?= $get->asal_sekolah ?>">
 				</div>
 			<?php } ?>
 			<div class="form-group">
@@ -165,6 +209,8 @@ $eUsia = $this->session->flashdata('error');
 
 	<?php } ?>
 </form>
+<!-- Menambahkan SweetAlert2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
 
 <script>
 	// alert($('.kecamatan').find(":selected").val());
@@ -221,6 +267,116 @@ $eUsia = $this->session->flashdata('error');
 					alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError); // Munculkan alert error
 				}
 			});
+		});
+	});
+</script>
+<!-- <script>
+	// Menampilkan preview dan validasi file
+	$(document).ready(function() {
+		// Menampilkan modal upload file jika ada error dan status 'danger'
+		<?php if ($eUsia && $statusError == 'danger'): ?>
+			$('#uploadModal').modal('show');
+		<?php endif; ?>
+
+		// File input change handler
+		$('#fileUpload').change(function() {
+			// Get the file input value and file size
+			var file = this.files[0];
+			var fileSize = file.size / 1024; // Size in KB
+			var fileName = file.name;
+			var fileExtension = fileName.split('.').pop().toLowerCase();
+
+			// Validasi file extension (hanya gambar dan pdf)
+			var validExtensions = ['jpg', 'jpeg', 'png', 'pdf'];
+			if ($.inArray(fileExtension, validExtensions) == -1) {
+				alert("File harus berupa gambar (JPG, JPEG, PNG) atau PDF.");
+				$('#fileUpload').val(''); // Clear the input
+				$('#filePreview').hide(); // Hide preview
+				return;
+			}
+
+			// Validasi ukuran file (maksimal 500 KB)
+			if (fileSize > 500) {
+				alert("Ukuran file maksimal 500 KB.");
+				$('#fileUpload').val(''); // Clear the input
+				$('#filePreview').hide(); // Hide preview
+				return;
+			}
+
+			// Menampilkan preview file berdasarkan jenis file
+			if (fileExtension == 'pdf') {
+				// Jika file PDF
+				$('#filePreview').show();
+				$('#previewContainer').html('<embed src="' + URL.createObjectURL(file) + '" width="100%" height="400px" type="application/pdf">');
+			} else if (['jpg', 'jpeg', 'png'].includes(fileExtension)) {
+				// Jika file gambar
+				var reader = new FileReader();
+				reader.onload = function(e) {
+					$('#filePreview').show();
+					$('#previewContainer').html('<img src="' + e.target.result + '" class="img-fluid" alt="Preview">');
+				};
+				reader.readAsDataURL(file);
+			}
+		});
+	});
+</script> -->
+<script>
+	// Menampilkan preview dan validasi file
+	$(document).ready(function() {
+		// Menampilkan modal upload file jika error dan status 'danger'
+		<?php if ($eUsia && $statusError == 'danger'): ?>
+			$('#uploadModal').modal('show');
+		<?php endif; ?>
+
+		// File input change handler
+		$('#fileUpload').change(function() {
+			// Get the file input value and file size
+			var file = this.files[0];
+			var fileSize = file.size / 1024; // Size in KB
+			var fileName = file.name;
+			var fileExtension = fileName.split('.').pop().toLowerCase();
+
+			// Validasi file extension (hanya gambar dan pdf)
+			var validExtensions = ['jpg', 'jpeg', 'png', 'pdf'];
+			if ($.inArray(fileExtension, validExtensions) == -1) {
+				// Menampilkan alert menggunakan SweetAlert2
+				Swal.fire({
+					icon: 'error',
+					title: 'File tidak valid!',
+					text: 'File harus berupa gambar (JPG, JPEG, PNG) atau PDF.'
+				});
+				$('#fileUpload').val(''); // Clear the input
+				$('#filePreview').hide(); // Hide preview
+				return;
+			}
+
+			// Validasi ukuran file (maksimal 500 KB)
+			if (fileSize > 500) {
+				// Menampilkan alert menggunakan SweetAlert2
+				Swal.fire({
+					icon: 'error',
+					title: 'Ukuran file terlalu besar!',
+					text: 'Ukuran file maksimal 500 KB.'
+				});
+				$('#fileUpload').val(''); // Clear the input
+				$('#filePreview').hide(); // Hide preview
+				return;
+			}
+
+			// Menampilkan preview file berdasarkan jenis file
+			if (fileExtension == 'pdf') {
+				// Jika file PDF
+				$('#filePreview').show();
+				$('#previewContainer').html('<embed src="' + URL.createObjectURL(file) + '" width="100%" height="400px" type="application/pdf">');
+			} else if (['jpg', 'jpeg', 'png'].includes(fileExtension)) {
+				// Jika file gambar
+				var reader = new FileReader();
+				reader.onload = function(e) {
+					$('#filePreview').show();
+					$('#previewContainer').html('<img src="' + e.target.result + '" class="img-fluid" alt="Preview">');
+				};
+				reader.readAsDataURL(file);
+			}
 		});
 	});
 </script>

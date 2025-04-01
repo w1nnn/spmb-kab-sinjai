@@ -34,7 +34,15 @@ if (!empty($check)) {
 	<link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css">
 	<!-- Responsive CSS -->
 	<link rel="stylesheet" href="<?= base_url() ?>assets/css/responsive.css">
-
+	<style>
+		/* Media query untuk menyembunyikan gambar pada layar mobile */
+		@media (max-width: 768px) {
+			#bg {
+				background-image: none !important;
+				/* Menghilangkan gambar latar belakang */
+			}
+		}
+	</style>
 </head>
 
 <body>
@@ -50,7 +58,7 @@ if (!empty($check)) {
 						<?php if (registerAccess() || (date('Y-m-d') >= configs()->daftar->start && date('Y-m-d') <= configs()->daftar->end)) : ?>
 							<h2 class="mb-0">Buat Akun </h2>
 							<p>Silahkan lengkapi form dibawah.</p>
-							<form class="mt-4" action="<?= base_url() ?>siswa/createAccount" method="POST">
+							<form class="mt-4" action="<?= base_url() ?>siswa/createAccount" method="POST" onsubmit="return validateForm()">
 								<div class="form-group">
 									<label for="exampleInputEmail1">Nama Calon Siswa </label>
 									<input type="text" class="form-control mb-0" id="exampleInputEmail1" name="nama" placeholder="Andi Tenri" autocomplete="off" required>
@@ -62,9 +70,17 @@ if (!empty($check)) {
 
 								<div class="form-group">
 									<label for="exampleInputPassword1">Password</label>
-									<input type="password" class="form-control mb-0" id="exampleInputPassword1" name="password" placeholder="Password" required>
+									<div class="input-group">
+										<input type="password" class="form-control mb-0" id="exampleInputPassword1" name="password" placeholder="Password" required>
+										<div class="input-group-append">
+											<span class="input-group-text" id="togglePassword" onclick="togglePassword()">
+												<img id="togglePasswordIcon" src="https://img.icons8.com/ios-filled/50/000000/invisible.png" width="20" height="20">
+											</span>
+										</div>
+									</div>
 								</div>
 								<p class="text-danger">Harap password anda dicatat agar tidak dilupa. </p>
+								<hr>
 								<div class="d-inline-block w-100">
 									<button type="submit" id="submit" class="btn btn-primary float-right"> Buat Akun </button>
 								</div>
@@ -86,7 +102,7 @@ if (!empty($check)) {
 				</div>
 
 				<div class="col-sm-6 text-center">
-					<div class="sign-in-detail text-white" style="background: url(<?= base_url() ?>assets/landing/logban.jpg) no-repeat 0 0; background-size: cover; height:100vh;">
+					<div id="bg" class="sign-in-detail text-white" style="background: url(<?= base_url() ?>assets/landing/logban.jpg) no-repeat 0 0; background-size: cover; height:100vh;">
 						<div class="owl-carousel" style="margin-top:100px;" data-autoplay="true" data-loop="true" data-nav="false" data-dots="true" data-items="1" data-items-laptop="1" data-items-tab="1" data-items-mobile="1" data-items-mobile-sm="1" data-margin="0">
 						</div>
 					</div>
@@ -96,6 +112,40 @@ if (!empty($check)) {
 			</div>
 		</div>
 	</section>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script>
+		function validateForm() {
+			// Get the value of the "no_kk" field
+			var noKk = document.querySelector('input[name="no_ktp"]').value;
+
+			// Check if the length of the No. KK is not 16 digits
+			if (noKk.length !== 16) {
+				// Display SweetAlert message
+				Swal.fire({
+					icon: 'error',
+					title: 'Invalid Nomor Induk Kependudukan',
+					text: 'Nomor Induk Kependudukan harus terdiri dari 16 digit.',
+					confirmButtonText: 'Ok'
+				});
+				return false; // Prevent form submission
+			}
+			return true; // Allow form submission if validation passes
+		}
+
+		function togglePassword() {
+			var passwordField = document.getElementById("exampleInputPassword1");
+			var toggleIcon = document.getElementById("togglePasswordIcon");
+
+			if (passwordField.type === "password") {
+				passwordField.type = "text"; // Menampilkan password
+				toggleIcon.src = "https://img.icons8.com/ios-filled/50/000000/visible.png"; // Ikon mata terbuka
+			} else {
+				passwordField.type = "password"; // Menyembunyikan password
+				toggleIcon.src = "https://img.icons8.com/ios-filled/50/000000/invisible.png"; // Ikon mata tertutup
+			}
+		}
+	</script>
+
 	<!-- Sign in END -->
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -37,12 +37,21 @@ class Profil extends CI_Controller
 		$this->template->load('home/layouts', 'vPanduan', $data);
 	}
 
-
 	public function jadwal()
 	{
-		$data['title'] = "Jadwal Pendaftaran";
+		// cek_session();
+		$jadwal_file = FCPATH . '/uploads/jadwal.json';
+		$jadwal = null;
+		if (is_file($jadwal_file)) {
+			$jadwal = file_get_contents($jadwal_file);
+			if (isValidJSON($jadwal)) {
+				$jadwal = json_decode($jadwal);
+			}
+		}
+
+		$data['title'] = "Jadwal Pendafataran";
 		$data['subtitle'] = "Informasi > Jadwal Pendaftaran";
-		$data['get'] = $this->manage->get();
+		$data['jadwal'] = $jadwal;
 		$this->template->load('home/layouts', 'vJadwal', $data);
 	}
 

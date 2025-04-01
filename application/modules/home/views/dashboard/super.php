@@ -10,7 +10,7 @@
 							<img src="<?= base_url() ?>assets/images/page-img/29.png" class="img-fluid">
 							<div class=" ml-3">
 								<h4 class="">Selamat Datang di Sistem Penerimaan Murid Baru</h4>
-								<p class="mb-0">Dinas Pendidikan Kabupaten Sinjai .</p>
+								<p class="mb-0">Dinas Pendidikan Kabupaten Sinjai</p>
 							</div>
 						</div>
 					</div>
@@ -52,7 +52,7 @@
 		<div class="row">
 			<?php foreach ($levelSekolahs as $levelSekolah) : ?>
 				<div class="col-md-4">
-					<div class="iq-card iq-card-block iq-card-stretch iq-card-height bg-<?= $levelSekolah->color ?> ">
+					<div class="iq-card iq-card-block iq-card-stretch iq-card-height" style="<?= $levelSekolah->color ?>">
 						<div class="iq-card-body relative-background">
 							<a href="#">
 								<div class="d-flex align-items-center">

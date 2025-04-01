@@ -365,7 +365,17 @@
 												<?php endif; ?>
 											</td>
 										</tr>
-
+										<?php if ($get->lampiran_psikolog) : ?>
+											<tr>
+												<td>Surat Keterangan Psikolog</td>
+												<td>: </td>
+												<td>
+													<a href="<?= base_url() ?>uploads/siswa/psikolog/<?= $get->lampiran_psikolog ?>" target="_blank" class="btn btn-sm btn-primary">
+														<i class="fa fa-search" aria-hidden="true"></i> Lihat Lampiran
+													</a>
+												</td>
+											</tr>
+										<?php endif; ?>
 										<?php if ($get->jalur == "117") { ?>
 
 											<tr>

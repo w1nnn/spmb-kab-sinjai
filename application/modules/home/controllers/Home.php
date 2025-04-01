@@ -50,7 +50,36 @@ class Home extends CI_Controller
 			$data['subtitle'] = "Dinas Pendidikan Kabupaten Sinjai";
 			$data['jalurs'] = $this->jalur->get_all();
 			$data['profil'] = $this->manage->get();
+			$jadwal_file = FCPATH . '/uploads/jadwal.json';
+			$jadwal = null;
+			if (is_file($jadwal_file)) {
+				$jadwal = file_get_contents($jadwal_file);
+				if (isValidJSON($jadwal)) {
+					$jadwal = json_decode($jadwal);
+				}
+			}
+
+			// $data['title'] = "Jadwal Pendafataran";
+			// $data['subtitle'] = "Informasi > Jadwal Pendaftaran";
+			$data['jadwal'] = $jadwal;
 			$this->template->load('layouts', 'dashboard/public', $data);
 		}
 	}
+	// public function jadwal()
+	// {
+	// 	// cek_session();
+	// 	$jadwal_file = FCPATH . '/uploads/jadwal.json';
+	// 	$jadwal = null;
+	// 	if (is_file($jadwal_file)) {
+	// 		$jadwal = file_get_contents($jadwal_file);
+	// 		if (isValidJSON($jadwal)) {
+	// 			$jadwal = json_decode($jadwal);
+	// 		}
+	// 	}
+
+	// 	// $data['title'] = "Jadwal Pendafataran";
+	// 	// $data['subtitle'] = "Informasi > Jadwal Pendaftaran";
+	// 	$data['jadwal'] = $jadwal;
+	// 	$this->template->load('home/layouts', 'dashboard/public', $data);
+	// }
 }

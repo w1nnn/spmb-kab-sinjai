@@ -120,7 +120,8 @@ class Sekolah_model extends CI_Model
         return $this->db->get();
     }
 
-    function count_size($npsn, $kelamin, $size) {
+    function count_size($npsn, $kelamin, $size)
+    {
         $qry = $this->db->query("SELECT COUNT(*) AS jumlah FROM ppdb.tbl_siswa WHERE pilihan_sekolah_1 = '$npsn' AND jk = '$kelamin' AND ukuran_baju = '$size' AND `lock` = 'y'");
         $row = $qry->row();
 

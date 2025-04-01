@@ -7,7 +7,8 @@
 					<div class="iq-advance-course ">
 						<div class="form-group">
 							<label for=""> Penjelasan Singkat SPMB </label>
-							<textarea name="ppdb" class="form-control" id="tempalte"> <?= $get->ppdb ?> </textarea>
+							<!-- Mengganti textarea dengan ID untuk CKEditor -->
+							<textarea name="ppdb" class="form-control" id="template"> <?= $get->ppdb ?> </textarea>
 						</div>
 						<div class="form-group">
 							<label for=""> Lampiran File PDF </label>
@@ -23,20 +24,14 @@
 	</div>
 </div>
 
-<script src="https://cdn.tiny.cloud/1/1e7071suorrjx5e8l8vbnasbwuu0yhtrqqdsnmtnvit9u0xo/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<!-- Menyertakan CKEditor -->
+<script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
+
 <script>
-	tinymce.init({
-		selector: "textarea",
-		height: 200,
-		plugins: [
-			"advlist autolink lists link image charmap print preview anchor",
-			"searchreplace visualblocks code ",
-			"insertdatetime media table contextmenu paste code"
-		],
-		toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
-		content_css: [
-			"//fast.fonts.net/cssapi/e6dc9b99-64fe-4292-ad98-6974f93cd2a2.css",
-			"//www.tinymce.com/css/codepen.min.css"
-		]
-	});
+	// Inisialisasi CKEditor
+	ClassicEditor
+		.create(document.querySelector('#template'))
+		.catch(error => {
+			console.error(error);
+		});
 </script>

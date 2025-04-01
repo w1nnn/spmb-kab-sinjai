@@ -5,41 +5,41 @@
                 <div class="iq-advance-course ">
 
                     <ul class="iq-timeline">
-                        <li>
+                        <!-- <li>
                             <div class="timeline-dots"></div>
                             <h6 class="float-left mb-1">Pengumuman Pendaftaran Secara Terbuka </h6>
                             <div class="d-inline-block w-100">
-                                <p> <b> <i class="ri-calendar-line text-primary"></i> 22 Juni 2024 </b> </p>
+                                <p> <b> <i class="ri-calendar-line text-primary"></i> WKWK </b> </p>
                             </div>
-                        </li>
+                        </li> -->
                         <li>
                             <div class="timeline-dots"></div>
                             <h6 class="float-left mb-1">Pendaftaran Online dan Offline </h6>
                             <div class="d-inline-block w-100">
-                                <p> <b> <i class="ri-calendar-line text-primary"></i> 15 Mei - 5 Juni 2024 </b> </p>
+                                <p> <b> <i class="ri-calendar-line text-primary"></i> <?php echo $jadwal ? $jadwal->daftar->start : null ?> - <?php echo $jadwal ? $jadwal->daftar->end : null ?></b> </p>
                             </div>
                         </li>
                         <li>
                             <div class="timeline-dots"></div>
-                            <h6 class="float-left mb-1">Seleksi Sesuai Jalur </h6>
+                            <h6 class="float-left mb-1">Jadwal Seleksi</h6>
                             <div class="d-inline-block w-100">
-                                <p> <b> <i class="ri-calendar-line text-primary"></i> 13 Juni - 15 Juni 2024 </b> </p>
+                                <p> <b> <i class="ri-calendar-line text-primary"></i> <?php echo $jadwal ? $jadwal->seleksi->start : null ?> - <?php echo $jadwal ? $jadwal->seleksi->end : null ?></b> </p>
                             </div>
                         </li>
                         <li>
                             <div class="timeline-dots"></div>
-                            <h6 class="float-left mb-1">Penetapan Pengumuman Hasil Seleksi </h6>
+                            <h6 class="float-left mb-1">Pengumuman</h6>
                             <div class="d-inline-block w-100">
-                                <p> <b> <i class="ri-calendar-line text-primary"></i> 13 Juni - 15 Juni 2024 </b> </p>
+                                <p> <b> <i class="ri-calendar-line text-primary"></i> <?php echo $jadwal ? $jadwal->pengumuman->start : null ?> - <?php echo $jadwal ? $jadwal->pengumuman->end : null ?></b> </p>
                             </div>
                         </li>
-                        <li>
+                        <!-- <li>
                             <div class="timeline-dots"></div>
                             <h6 class="float-left mb-1">Masa Sanggah </h6>
                             <div class="d-inline-block w-100">
                                 <p> <b> <i class="ri-calendar-line text-primary"></i> 16 Juni - 19 Juni 2024 </b> </p>
                             </div>
-                        </li>
+                        </li> -->
                         <li>
                             <div class="timeline-dots"></div>
                             <h6 class="float-left mb-1">Laporan ke Disdik </h6>
@@ -47,7 +47,7 @@
                                 <p class="text-danger"> <b> <i class="ri-file-info-line"></i> Jika daya tampung melebihi target </b> </p>
                             </div>
                         </li>
-                        <li>
+                        <!-- <li>
                             <div class="timeline-dots"></div>
                             <h6 class="float-left mb-1">Pengumuman Penetapan Peserta Didik Baru </h6>
                             <div class="d-inline-block w-100">
@@ -60,7 +60,7 @@
                             <div class="d-inline-block w-100">
                                 <p> <b> <i class="ri-calendar-line text-primary"></i> 22 Juni - 8 Juli 2024 </b> </p>
                             </div>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>

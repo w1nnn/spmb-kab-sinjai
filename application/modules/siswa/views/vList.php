@@ -23,7 +23,7 @@
 									<select name="jalur" class="form-control pull-left" onchange="$(this).closest('form').submit()">
 										<?php $jlur = [
 											'' => 'Semua Jalur',
-											114 => 'Jalur Zonasi',
+											114 => 'Jalur Domisili',
 											115 => 'Jalur Afirmasi',
 											116 => 'Jalur Pindah Tugas',
 											117 => 'Jalur Prestasi'

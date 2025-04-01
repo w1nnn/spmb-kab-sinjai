@@ -7,7 +7,7 @@
 						<div class="col-md-12">
 							<?= $get->ppdb ?>
 							<hr>
-							<a href="<?= base_url()?>uploads/etc/<?= $get->lampiran ?>" target="_blank" class="btn btn-primary"> <i class="ri-archive-line"></i> Lampiran  </a>
+							<a href="<?= base_url() ?>uploads/<?= $get->lampiran ?>" target="_blank" class="btn btn-primary"> <i class="ri-archive-line"></i> Lampiran </a>
 						</div>
 					</div>
 				</div>

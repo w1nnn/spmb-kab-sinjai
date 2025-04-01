@@ -282,6 +282,17 @@
 							<?php endif; ?>
 						</td>
 					</tr>
+					<?php if ($get->lampiran_psikolog) : ?>
+						<tr>
+							<td>Surat Keterangan Psikolog</td>
+							<td>: </td>
+							<td>
+								<a href="<?= base_url() ?>uploads/siswa/psikolog/<?= $get->lampiran_psikolog ?>" target="_blank" class="btn btn-sm btn-primary">
+									<i class="fa fa-search" aria-hidden="true"></i> Lihat Lampiran
+								</a>
+							</td>
+						</tr>
+					<?php endif; ?>
 					<?php
 					if ($get->jalur != "114") {
 						if ($get->jalur == "115") {
@@ -358,7 +369,7 @@
 	<hr>
 	<button class="btn btn-success pull-right " type="submit"> Simpan </button>
 	<?php if (level_user() == "siswa") { ?>
-		<a href="<?= base_url() ?>siswa/profil/lampiran" class="btn btn-warning pull-right mr-3 "> <i class="ri-arrow-left-fill"></i> Kembali </a>
+		<!-- <a href="<?= base_url() ?>siswa/profil/lampiran" class="btn btn-warning pull-right mr-3 "> <i class="ri-arrow-left-fill"></i> Kembali </a> -->
 	<?php } else { ?>
 		<a href="<?= base_url() ?>siswa/edit/lampiran?id=<?= $get->id_siswa ?>" class="btn btn-warning pull-right mr-3 "> <i class="ri-arrow-left-fill"></i> Kembali </a>
 
