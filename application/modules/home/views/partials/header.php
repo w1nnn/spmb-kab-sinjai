@@ -12,7 +12,6 @@
 			</nav>
 		</div>
 		<nav class="navbar navbar-expand-lg navbar-light p-0">
-
 			<div class="iq-menu-bt align-self-center">
 				<div class="wrapper-menu">
 					<div class="line-menu half start"></div>
@@ -25,7 +24,6 @@
 				</ul>
 			</div>
 			<ul class="navbar-list">
-
 				<li>
 					<!-- <a href="https://disdik.macca.id/aduan-ppdb" target="_blank"><i class="fa fa-fw fa-question-circle"></i> Laporkan Masalah</a> -->
 				</li>
@@ -41,8 +39,6 @@
 									<div class="bg-primary p-3">
 										<h5 class="mb-0 text-white line-height text-center"><?= $this->session->userdata('nama') ?></h5>
 									</div>
-
-
 									<div class="d-inline-block w-100 text-center p-3">
 										<a class="iq-bg-danger iq-sign-btn" href="<?= base_url() ?>logout" role="button">Sign out<i class="ri-login-box-line ml-2"></i></a>
 									</div>
@@ -51,7 +47,6 @@
 						</div>
 					</li>
 				<?php } else { ?>
-
 					<li>
 						<a href="#" class="search-toggle iq-waves-effect text-white" style="#F7CE68">
 							<i class="ri-login-box-fill "></i>
@@ -86,8 +81,6 @@
 							</div>
 						</div>
 					</li>
-
-
 				<?php  } ?>
 			</ul>
 		</nav>

@@ -32,120 +32,28 @@
 	<style>
 		body {
 			background-color: #fff;
+			/* Background utama tetap putih */
 			position: relative;
-			overflow-x: hidden;
-			/* Menonaktifkan scroll horizontal */
-			overflow-y: auto;
-			/* Scroll vertikal tetap aktif */
+			overflow: hidden;
 		}
 
 		body::before {
 			content: "";
 			position: absolute;
-			width: 30vw;
-			/* Ukuran lingkaran responsif */
-			height: 30vw;
-			/* Ukuran lingkaran responsif */
-			background: linear-gradient(to right, #21d4fd, #b721ff);
+			width: 300px;
+			/* Ukuran lingkaran */
+			height: 300px;
+			background: radial-gradient(circle, #21d4fd, #0070f3, #b721ff);
 			border-radius: 50%;
 			filter: blur(80px);
-			top: 15%;
-			left: 30px;
-			opacity: 0.7;
-			z-index: -1;
-		}
-
-		.navbar-nav .nav-link {
-			color: black;
-			/* Warna default */
-			transition: color 0.3s ease;
-		}
-
-		.navbar-nav .nav-link:hover,
-		.navbar-nav .nav-link.active {
-			color: #072ac8 !important;
-			/* Warna biru saat hover dan aktif */
-		}
-
-		/* Dropdown menu */
-		.dropdown-menu {
-			background-color: #fff;
-			/* Warna latar belakang dropdown */
-			border: 1px solid #fff;
-			/* Opsional: memberi border agar terlihat lebih jelas */
-		}
-
-		/* Mengubah warna teks dropdown item saat hover */
-		.dropdown-menu .dropdown-item:hover {
-			color: blue !important;
-			background-color: white !important;
-		}
-
-		.carousel-control-prev,
-		.carousel-control-next {
-			background-color: #1976d2 !important;
-		}
-
-		.navbar-nav .nav-link {
-			position: relative;
-			padding-bottom: 3px;
-			/* Bisa disesuaikan */
-			transition: color 0.3s ease-in-out;
-		}
-
-		.navbar-nav .nav-link::after {
-			content: "";
-			position: absolute;
-			left: 50%;
-			bottom: 0;
-			width: 0;
-			height: 2px;
-			/* Ketebalan garis */
-			background-color: blue;
-			/* Warna garis */
-			transition: width 0.3s ease-in-out;
+			top: 20%;
+			/* Sesuaikan posisi */
+			left: 20%;
 			transform: translateX(-50%);
-		}
-
-		.navbar-nav .nav-link:hover::after,
-		.navbar-nav .nav-link.active::after {
-			width: 40%;
-			/* Kurangi panjang garis */
-		}
-
-		@media (max-width: 991px) {
-
-			/* Bootstrap breakpoints: tablet & mobile */
-			.navbar-nav .nav-link::after {
-				display: none;
-			}
-		}
-
-
-		@media (max-width: 768px) {
-			.col-md-12.col-lg-9 {
-				margin-top: 20px !important;
-			}
-
-			body::before {
-				content: "";
-				position: absolute;
-				width: 70vw;
-				/* Ukuran lingkaran responsif */
-				height: 70vw;
-				/* Ukuran lingkaran responsif */
-				background: linear-gradient(to right, #21d4fd, #b721ff);
-				border-radius: 50%;
-				filter: blur(80px);
-				top: 30%;
-				left: 100px;
-				opacity: 0.7;
-				z-index: -1;
-			}
-
-			.navbar-nav .nav-link::after {
-				display: none;
-			}
+			opacity: 0.7;
+			/* Buat lebih transparan */
+			z-index: -1;
+			/* Pastikan tidak menutupi elemen lain */
 		}
 	</style>
 </head>
@@ -161,17 +69,16 @@
 
 	<!-- Navbar start -->
 	<div class="container-fluid fixed-top">
-		<div class="container topbar d-none d-lg-block" style="background-color: #fff; 
-">
+		<div class="container topbar d-none d-lg-block" style="background-color: #2e859a; background-image: linear-gradient(62deg, #2e859a 0%, #F7CE68 100%);">
 			<div class="d-flex justify-content-between">
 				<div class="top-info ps-2">
-					<small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-dark">Jl. RA Kartini, Biringere, Kec. Sinjai Utara</a></small>
-					<small class="me-3"><i class="fas fa-phone me-2 text-secondary"></i><a href="#" class="text-dark">(+62) 85240884732</a></small>
+					<small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">Jl. RA Kartini, Biringere, Kec. Sinjai Utara</a></small>
+					<small class="me-3"><i class="fas fa-phone me-2 text-secondary"></i><a href="#" class="text-white">(0482) 21145</a></small>
 				</div>
 				<div class="top-link pe-2">
 					<!-- <a href="#" class="text-white"><small class="text-white mx-2">Privacy Policy</small>/</a>
 					<a href="#" class="text-white"><small class="text-white mx-2">Terms of Use</small>/</a> -->
-					<a href="https://github.com/w1nnn/spmb-kab-sinjai" target="_blank" class="text-white"><small class="text-dark ms-1">SPMB V2.0</small></a>
+					<a href="#" class="text-white"><small class="text-white ms-2">SPMB V2.0</small></a>
 				</div>
 			</div>
 		</div>
@@ -181,7 +88,7 @@
 					<img src="<?= base_url() ?>assets/images/logo-br.jpg" class="img-fluid" alt="" style="width: 160px; height: auto;">
 				</a>
 				<button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-					<span class="fa fa-bars"></span>
+					<span class="fa fa-bars text-primary"></span>
 				</button>
 				<div class="collapse navbar-collapse bg-white" id="navbarCollapse">
 					<div class="navbar-nav mx-auto">
@@ -239,25 +146,25 @@
 	<div class="container-fluid py-5 mb-5 hero-header">
 		<div class="container py-5">
 			<div class="row g-5 align-items-center">
-				<div class="col-md-12 col-lg-3">
-					<h4 class="mb-3 text-secondary" id="title">Selamat Datang di Platform SPMB</h4>
-					<h3 class="mb-5 display-5" id="sub-title">Sistem Penerimaan Murid Baru</h3>
+				<div class="col-md-12 col-lg-4">
+					<h4 class="mb-3 text-secondary" id="title">SPMB</h4>
+					<h1 class="mb-5 display-4" id="sub-title">Sistem Penerimaan Murid Baru</h1>
 					<!-- <div class="position-relative mx-auto">
 						<input class="form-control border-2 border-secondary w-75 py-3 px-4 rounded-pill" type="number" placeholder="Search">
 						<button type="submit" class="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100" style="top: 0; right: 25%;">Submit Now</button>
 					</div> -->
 				</div>
-				<div class="col-md-12 col-lg-9" style="margin-top: -52px;">
+				<div class="col-md-12 col-lg-8" style="margin-top: -20px;">
 					<div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
 						<div class="carousel-inner" role="listbox">
 							<div class="carousel-item active rounded">
 								<img src="<?= base_url() ?>assets/landing/s1.jpg" class="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide">
-								<a href="<?= base_url() ?>siswa/register" class="daftar btn text-white rounded" style="background-color:rgb(255, 0, 0); font-size: 14px; box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+								<a href="<?= base_url() ?>siswa/register" class="daftar btn text-white rounded" style="background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); font-size: 14px;
 ">Daftar</a>
 							</div>
 							<div class="carousel-item rounded">
-								<img src="<?= base_url() ?>assets/landing/s22.jpg" class="img-fluid w-100 h-100 rounded" alt="Second slide">
-								<a href="<?= base_url() ?>siswa/register" class="daftar btn text-dark rounded" style="background-color:rgb(200, 255, 0); font-size: 14px; box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+								<img src="<?= base_url() ?>assets/landing/s2.jpg" class="img-fluid w-100 h-100 rounded" alt="Second slide">
+								<a href="<?= base_url() ?>siswa/register" class=" daftar btn text-white rounded" style="background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); font-size: 14px;
 ">Daftar</a>
 							</div>
 						</div>
@@ -276,13 +183,13 @@
 	</div>
 
 	<!-- Copyright Start -->
-	<div class="container-fluid copyright bg-white py-4 text-dark" style="background-color: #fff; color: #000;">
+	<div class="container-fluid copyright bg-dark py-4" style="background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-					<p class="text-dark"><a href="https://github.com/w1nnn/spmb-kab-sinjai" target="_blank"><i class="fas fa-copyright text-dark me-2"></i>SPMB</a>, All right reserved.</p>
+					<p class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>SPMB</a>, All right reserved.</p>
 				</div>
-				<div class="col-md-6 my-auto text-center text-md-end text-dark" style="text-align: center;">
+				<div class="col-md-6 my-auto text-center text-md-end text-white" style="text-align: center;">
 					Copyright &copy <?php echo date('Y') ?> Dinas Pendidikan Kabupaten Sinjai <br>
 				</div>
 			</div>
@@ -293,11 +200,10 @@
 
 
 	<!-- Back to Top -->
-	<!-- <a href="<?= base_url() ?>login" class="btn btn-sm btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-sign-in-alt"></i></a> -->
+	<a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
 
 
 	<!-- JavaScript Libraries -->
-	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="<?= base_url() ?>assets/landing/lib/easing/easing.min.js"></script>
