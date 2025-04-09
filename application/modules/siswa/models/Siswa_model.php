@@ -259,4 +259,20 @@ class Siswa_model extends CI_Model
 		$this->db->where('id_siswa', $id);
 		$this->db->delete($this->table);
 	}
+	// Cek token
+	public function getIdFromToken($token)
+	{
+		$query = $this->db->get_where('tbl_siswa', array('SHA1(id_siswa)' => $token));
+		if ($query->num_rows() > 0) {
+			return $query->row()->id_siswa;
+		}
+		return false;
+	}
+
+	// Aktivasi akun
+	public function activateAccount($id)
+	{
+		$this->db->where('id_siswa', $id);
+		$this->db->update('tbl_siswa', ['is_active' => 1]);
+	}
 }

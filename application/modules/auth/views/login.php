@@ -81,7 +81,7 @@
 									<label for=""> Password </label>
 									<input type="password" class="form-control" value="<?= $password ?>" name="password" autocomplete="off">
 								</div>
-								<button class="btn btn-primary"> Masuk</button>
+								<button class="btn" style="background-color: #0d6efd; color: #fff;"> Masuk</button>
 								<hr>
 								<!-- <a href="#" style="color:#fff; text-shadow:1px 1px 3px rgba(0, 0, 0, 0.9);"> Lupa Password ? </a> -->
 							</form>

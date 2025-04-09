@@ -251,13 +251,13 @@
 					<div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
 						<div class="carousel-inner" role="listbox">
 							<div class="carousel-item active rounded">
-								<img src="<?= base_url() ?>assets/landing/s1.jpg" class="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide">
-								<a href="<?= base_url() ?>siswa/register" class="daftar btn text-white rounded" style="background-color:rgb(255, 0, 0); font-size: 14px; box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+								<img src="<?= base_url() ?>assets/landing/s1.jpg" class="img-fluid w-100 h-100 rounded" alt="First slide">
+								<a href="<?= base_url() ?>siswa/register" class="daftar btn text-white rounded" style="background-color: #0d1b2a; font-size: 14px; box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 ">Daftar</a>
 							</div>
 							<div class="carousel-item rounded">
 								<img src="<?= base_url() ?>assets/landing/s22.jpg" class="img-fluid w-100 h-100 rounded" alt="Second slide">
-								<a href="<?= base_url() ?>siswa/register" class="daftar btn text-dark rounded" style="background-color:rgb(200, 255, 0); font-size: 14px; box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+								<a href="<?= base_url() ?>siswa/register" class="daftar btn text-white rounded" style="background-color: #0d1b2a; font-size: 14px; box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 ">Daftar</a>
 							</div>
 						</div>

@@ -1,10 +1,10 @@
-<div class="iq-top-navbar" style="background-color: #2e859a; background-image: linear-gradient(62deg, #2e859a 0%, #F7CE68 100%)">
+<div class="iq-top-navbar" style="background-color: #fff;">
 	<div class="iq-navbar-custom">
 		<div class="navbar-breadcrumb">
-			<h5 class="mb-0 text-white"> Penerimaan Murid Baru </h5>
+			<h5 class="mb-0 text-dark"> Penerimaan Murid Baru </h5>
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
-					<li class="breadcrumb-item text-white" aria-current="page"> <?= $subtitle ?> </li>
+					<li class="breadcrumb-item text-dark" aria-current="page"> <?= $subtitle ?> </li>
 					<!-- <?php
 							var_dump($subtitle);
 							?> -->
@@ -29,18 +29,18 @@
 				</li>
 				<?php if ($this->session->userdata('isLogin') == 1) { ?>
 					<li>
-						<a href="#" class="search-toggle iq-waves-effect text-white" style="#F7CE68">
+						<a href="#" class="search-toggle iq-waves-effect text-dark" style="#F7CE68">
 							<i class="fa fa-fw fa-user-circle"></i>
 							<span class="utext"><?= $this->session->userdata('nama'); ?></span>
 						</a>
-						<div class="iq-sub-dropdown iq-user-dropdown">
-							<div class="iq-card shadow-none m-0">
+						<div class="iq-sub-dropdown iq-user-dropdown" style="width: 180px;">
+							<div class="iq-card shadow-none">
 								<div class="iq-card-body p-0 ">
-									<div class="bg-primary p-3">
-										<h5 class="mb-0 text-white line-height text-center"><?= $this->session->userdata('nama') ?></h5>
+									<div class="bg-white p-1">
+										<h5 class="mb-0 text-dark line-height text-center"><?= $this->session->userdata('nama') ?></h5>
 									</div>
 									<div class="d-inline-block w-100 text-center p-3">
-										<a class="iq-bg-danger iq-sign-btn" href="<?= base_url() ?>logout" role="button">Sign out<i class="ri-login-box-line ml-2"></i></a>
+										<a class="iq-bg-danger btn btn-sm iq-sign-btn" href="<?= base_url() ?>logout" role="button">Sign out<i class="ri-login-box-line ml-2"></i></a>
 									</div>
 								</div>
 							</div>
@@ -48,7 +48,7 @@
 					</li>
 				<?php } else { ?>
 					<li>
-						<a href="#" class="search-toggle iq-waves-effect text-white" style="#F7CE68">
+						<a href="#" class="search-toggle iq-waves-effect text-dark" style="#F7CE68">
 							<i class="ri-login-box-fill "></i>
 						</a>
 						<div class="iq-sub-dropdown iq-user-dropdown">
