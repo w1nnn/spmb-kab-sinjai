@@ -9,7 +9,7 @@
 </style>
 <?php
 header("Content-type: application/vnd-ms-excel");
-header("Content-Disposition: attachment; filename=Data Sekolah.xls");
+header("Content-Disposition: attachment; filename=Data Ukuran Baju.xls");
 ?>
 <h2> Macca SPMB - Kabupaten Sinjai </h2>
 
@@ -17,6 +17,19 @@ header("Content-Disposition: attachment; filename=Data Sekolah.xls");
     <tr>
         <td><b> TANGGAL DOWNLOAD </b> </td>
         <td><b><?= tgl_indo(date('Y-m-d'))  ?> Pukul : <?= date('H:i:s'); ?> </b> </td>
+    </tr>
+    <tr>
+        <td><b>STATUS DTKS</b></td>
+        <td><b>
+        <?php if ($this->input->get('sts_dtks') == "1") {
+							echo "Data Terdaftar di DTKS";
+						} elseif ($this->input->get('sts_dtks') == "0") {
+							echo "Data Tidak Terdaftar di DTKS";
+						} else {
+							echo "Data Campuran";
+						}
+						?> 
+        </b></td>
     </tr>
 </table>
 <br>

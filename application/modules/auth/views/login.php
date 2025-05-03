@@ -26,7 +26,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#037afb">
 
-
+	<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/landing/main.css" media="all">
 	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/landing/robi.css" media="all">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -57,20 +57,8 @@
 
 					<div class="col-md-4 col-md-offset-4" style="margin-top:100px;">
 						<main style="background-color: #ffffffcf; border-radius:10px; padding:40px;">
-							<img src="<?= base_url() ?>assets/images/logo-brr.png" alt="" width="100%" style="margin-bottom:10px;">
+							<a href="<?= base_url() ?>"><img src="<?= base_url() ?>assets/images/logo-brr.png" alt="" width="100%" style="margin-bottom:10px;"></a>
 							<h3>Administrator</h3>
-							<?php
-							$username = $this->session->flashdata('email');
-							$password = $this->session->flashdata('password');
-							$status = $this->session->flashdata('message');
-							if (!empty($status)) {
-							?>
-								<div class="alert alert-danger" role="alert">
-									<p class="text-danger"> <b>Gagal</b>, Username atau Password Anda Salah, Silahkan Coba Lagi. </p>
-								</div>
-							<?php
-							}
-							?>
 
 							<form action="<?= base_url() ?>auth/login/validate" method="POST">
 								<div class="form-group">
@@ -94,6 +82,34 @@
 
 
 	</section>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+
+	<?php if ($this->input->get('alert') && $this->input->get('message')): ?>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				const Toast = Swal.mixin({
+					toast: true,
+					position: 'top-end',
+					showConfirmButton: false,
+					timer: 3000,
+					timerProgressBar: true
+				});
+
+				Toast.fire({
+					icon: <?= json_encode($this->input->get('alert')) ?>,
+					title: <?= json_encode(urldecode($this->input->get('message'))) ?>
+				});
+
+				if (history.pushState) {
+					const url = new URL(window.location);
+					url.searchParams.delete('alert');
+					url.searchParams.delete('message');
+					window.history.replaceState({}, document.title, url.toString());
+				}
+			});
+		</script>
+	<?php endif; ?>
+
 
 	<script src="<?= base_url() ?>assets/landing/jquery.min.js"></script>
 	<script src="<?= base_url() ?>assets/landing/bootstrap.min.js"></script>

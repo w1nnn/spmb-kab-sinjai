@@ -1,3 +1,4 @@
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet">
 <style>
 	.h1,
 	.h2,
@@ -14,8 +15,33 @@
 		margin-bottom: 0px;
 	}
 </style>
-
 <div class="row">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				<?php
+				// Query to check if NIK exists in tbl_status_dtks
+				$nik = $get->no_ktp;
+				$this->db->where('nik', $nik);
+				$query = $this->db->get('tbl_status_dtks');
+
+				if ($query->num_rows() > 0) {
+					// NIK found in DTKS table
+					echo '<div class="alert alert-primary" role="alert">
+                            <i class="ri-checkbox-circle-line mr-2"></i> Terdata di DTKS
+                          </div>';
+				} else {
+					// NIK not found in DTKS table
+					echo '<div class="alert alert-warning" role="alert">
+        <i class="ri-error-warning-line mr-2"></i> Proses Verifikasi DTKS
+    </div>';
+				}
+				?>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row" style="margin-top: -30px;">
 	<div class="col-sm-12">
 		<div class="iq-card iq-card-block iq-card-stretch iq-card-height ">
 			<div class="iq-card-body relative-background">
@@ -91,7 +117,7 @@
 											<a href="<?= base_url() ?>siswa/edit/?id=<?= $this->uri->segment(3) ?>" class="mt-2 btn btn-lg btn-warning btn-block"> <i class="ri-edit-line"></i> Edit </a>
 										</div>
 										<div class="col-md-4">
-											<a href="#" data-toggle="modal" data-target="#hapus" class="mt-2 btn btn-lg btn-danger btn-block"> <i class="ri-delete-bin-4-line "></i> Hapus</a>
+											<!-- <a href="#" data-toggle="modal" data-target="#hapus" class="mt-2 btn btn-lg btn-danger btn-block"> <i class="ri-delete-bin-4-line "></i> Hapus</a> -->
 										</div>
 									</div>
 
@@ -462,3 +488,55 @@
 		</div>
 	</div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+
+<?php if ($this->input->get('alert')): ?>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const Toast = Swal.mixin({
+				toast: true,
+				position: 'top-end',
+				showConfirmButton: false,
+				timer: 3000,
+				timerProgressBar: true
+			});
+
+			Toast.fire({
+				icon: '<?= $this->input->get('alert') ?>',
+				title: '<?= $this->input->get('message') ?>'
+			});
+
+			// Hapus parameter alert & message dari URL tanpa reload
+			if (history.pushState) {
+				const url = new URL(window.location);
+				url.searchParams.delete('alert');
+				url.searchParams.delete('message');
+				window.history.replaceState({}, document.title, url.toString());
+			}
+		});
+	</script>
+<?php endif; ?>
+<script>
+	function delete_(id) {
+		if (confirm('Anda yakin ingin menghapus data ?')) {
+			// ajax delete data to database
+
+			$.ajax({
+				url: "<?php echo site_url('regulasi/manage/ajax_delete') ?>/" + id,
+				type: "POST",
+				dataType: "JSON",
+				success: function(data) {
+					//if success reload ajax table
+					reload_table();
+					toastr.error('Berhasil Menghapus Data');
+
+				},
+				error: function(jqXHR, textStatus, errorThrown) {
+					alert('Error deleting data');
+				}
+			});
+
+		}
+	}
+</script>

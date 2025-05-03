@@ -1,5 +1,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet">
 <div class="row ">
 	<div class="col-sm-12">
 		<div class="iq-card iq-card-block iq-card-stretch iq-card-height">
@@ -318,11 +319,6 @@
 		}
 	});
 
-
-
-
-
-
 	var smp = document.getElementById("smp").getContext("2d");
 	var MeSeData_smp = {
 		labels: [
@@ -386,3 +382,31 @@
 		}
 	});
 </script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+
+<?php if ($this->input->get('alert')): ?>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const Toast = Swal.mixin({
+				toast: true,
+				position: 'top-end',
+				showConfirmButton: false,
+				timer: 3000,
+				timerProgressBar: true
+			});
+
+			Toast.fire({
+				icon: '<?= $this->input->get('alert') ?>',
+				title: '<?= $this->input->get('message') ?>'
+			});
+
+			// Hapus parameter alert & message dari URL tanpa reload
+			if (history.pushState) {
+				const url = new URL(window.location);
+				url.searchParams.delete('alert');
+				url.searchParams.delete('message');
+				window.history.replaceState({}, document.title, url.toString());
+			}
+		});
+	</script>
+<?php endif; ?>

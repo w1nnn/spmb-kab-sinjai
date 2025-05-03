@@ -618,7 +618,11 @@ function configs()
 		'pengumuman' => [
 			'start' => null,
 			'end' => null,
-		]
+		],
+		'kuota' => [
+			'start' => null,
+			'end' => null,
+		],
 	];
 
 	$jadwal_file = FCPATH . '/uploads/jadwal.json';

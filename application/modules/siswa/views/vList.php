@@ -1,12 +1,15 @@
+<!-- Add these in your <head> section -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <div class="row ">
-	<div class="col-sm-12">
+	<div class="col-md-12">
 		<div class="iq-card iq-card-block iq-card-stretch iq-card-height">
 			<div class="iq-card-body">
 				<div class="iq-advance-course ">
 					<?php if (level_user() == 'superadmin' || level_user() == 'admin') : ?>
 						<form class="form-list form-horizontal pull-left" method="get">
 							<div class="row">
-								<div class="form-group mb-1 mr-1">
+								<div class="form-group col-md-3">
 									<select name="tingkat" class="form-control pull-left" onchange="$(this).closest('form').submit()">
 										<?php $tnkt = [
 											'' => 'Semua Tingkat',
@@ -19,7 +22,7 @@
 										<?php endforeach; ?>
 									</select>
 								</div>
-								<div class="form-group">
+								<div class="form-group col-md-3">
 									<select name="jalur" class="form-control pull-left" onchange="$(this).closest('form').submit()">
 										<?php $jlur = [
 											'' => 'Semua Jalur',
@@ -33,14 +36,26 @@
 										<?php endforeach; ?>
 									</select>
 								</div>
-								<div class="form-group mb-1 ml-1">
+								<div class="form-group col-md-3">
 									<input type="text" name="npsn" class="form-control" value="<?php echo $this->input->get('npsn') ?>" placeholder="NPSN Sekolah">
+								</div>
+								<div class="form-group col-md-3">
+									<select name="sts_dtks" class="form-control pull-left" onchange="$(this).closest('form').submit()">
+										<?php $status_dtks = [
+											'' => 'Semua Status DTKS',
+											'1' => 'Terdaftar DTKS',
+											'0' => 'Tidak Terdaftar DTKS'
+										]; ?>
+										<?php foreach ($status_dtks as $v => $n) : ?>
+											<option <?= (string)$v == (string)$this->input->get('sts_dtks') ? 'selected' : '' ?> value="<?php echo $v ?>"><?php echo $n ?></option>
+										<?php endforeach; ?>
+									</select>
 								</div>
 							</div>
 						</form>
 						<div class="clearfix"></div>
 						<div class="bexcel">
-							<a href="<?= base_url() ?>siswa/daftar/excel?tingkat=<?= $this->input->get('tingkat') ?>&npsn=<?= $this->input->get('npsn') ?>&jalur=<?= $this->input->get('jalur') ?>" target="blank" class="btn btn-success btn-lg "> <i class="ri-file-excel-2-fill"></i> Export to Excel </a>
+							<a href="<?= base_url() ?>siswa/daftar/excel?tingkat=<?= $this->input->get('tingkat') ?>&npsn=<?= $this->input->get('npsn') ?>&jalur=<?= $this->input->get('jalur') ?>&sts_dtks=<?= $this->input->get('sts_dtks') ?>" target="blank" class="btn btn-success btn-lg "> <i class="ri-file-excel-2-fill"></i> Export to Excel </a>
 						</div>
 					<?php endif; ?>
 					<div class="table-responsive">
@@ -81,7 +96,10 @@
 
 	$(document).ready(function() {
 		//datatables
-
+		$("select[name=sts_dtks]").change(function() {
+        console.log("DTKS changed to: " + $(this).val());
+        table.ajax.reload();
+    });
 		table = $('#table').DataTable({
 			//
 			"oLanguage": {
@@ -100,7 +118,7 @@
 			// Load data for the table's content from an Ajax source
 			"ajax": {
 				"url": "<?php echo $url  ?>",
-				"type": "POST"
+				"type": "POST",
 			},
 
 			//Set column definition initialisation properties.
@@ -125,9 +143,16 @@
 			tl = setTimeout(() => {
 				th.closest('form').submit()
 			}, 3000);
-		})
+		});
 
-
+		// Make sure the table refreshes when the URL changes (due to form submission)
+		var currentUrl = window.location.href;
+		setInterval(function() {
+			if (currentUrl != window.location.href) {
+				currentUrl = window.location.href;
+				table.ajax.reload();
+			}
+		}, 500);
 	});
 
 	function reload_table() {

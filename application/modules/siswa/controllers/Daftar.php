@@ -24,7 +24,8 @@ class Daftar extends CI_Controller
 		} else if (level_user() == "admin" or level_user() == "superadmin" || level_user() == "kadis") {
 			$sekolah = $this->input->get('tingkat');
 			$npsn = $this->input->get('npsn');
-			$url = site_url('siswa/daftar/ajax_list?jalur=' . $jalur . '&tingkat=' . $sekolah . '&npsn=' . $npsn);
+			$sts_dtks = $this->input->get('sts_dtks');
+			$url = site_url('siswa/daftar/ajax_list?jalur=' . $jalur . '&tingkat=' . $sekolah . '&npsn=' . $npsn . '&sts_dtks=' . $sts_dtks . '');
 		}
 
 		if ($jalur == "") {
@@ -43,6 +44,10 @@ class Daftar extends CI_Controller
 		$data['title'] = "Data Calon Siswa - " . $jalur_ . " " . $tingkat . "  ";
 		$data['subtitle'] = "Daftar Siswa Yang Telah Mendaftar";
 		$data['url'] = $url;
+
+		// Tambahkan ini agar flashdata dibaca dan terhapus otomatis setelah 1 kali tampil
+		$data['status'] = $this->session->flashdata('status');
+		$data['message'] = $this->session->flashdata('message');
 		$this->template->load('home/layouts', 'vList', $data);
 	}
 
@@ -102,16 +107,27 @@ class Daftar extends CI_Controller
 	{
 		cek_session();
 		$id = $this->input->post('id');
-		$data = array('status_verifikasi' => $this->input->post('status_verifikasi') ?? null, 'catatan_verifikasi' => $this->input->post('catatan_verifikasi') ?? null);
+
+		$data = array(
+			'status_verifikasi'   => $this->input->post('status_verifikasi') ?? null,
+			'catatan_verifikasi'  => $this->input->post('catatan_verifikasi') ?? null
+		);
+
 		$this->siswa->update(array('id_siswa' => $id), $data);
-		$this->session->set_flashdata(array('status' => "info", 'message' => "Data berhasil disimpan"));
-		redirect(base_url('siswa/profil/' . $id . ''));
+
+		// Buat pesan dan status untuk query string
+		$status  = 'info';
+		$message = urlencode('Verifikasi berhasil disimpan');
+
+		// Redirect dengan query string
+		redirect(base_url("siswa/profil/{$id}?alert={$status}&message={$message}"));
 	}
+
 
 	public function ajax_delete($id)
 	{
 		$this->siswa->delete_by_id($id);
-		$this->session->set_flashdata(array('status' => "danger"));
+		// $this->session->set_flashdata(array('status' => "danger"));
 
 		echo json_encode(array("status" => TRUE));
 	}

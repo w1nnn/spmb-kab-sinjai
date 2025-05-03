@@ -1,10 +1,207 @@
+<style>
+	.progress-tracker {
+		margin-bottom: 2rem;
+		position: relative;
+	}
+
+	.progress-tracker ul::after {
+		content: '';
+		position: absolute;
+		top: 25px;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background-color: #e0e0e0;
+		z-index: 1;
+	}
+
+	.progress-step {
+		position: relative;
+		text-align: center;
+		z-index: 2;
+		width: 16.666%;
+	}
+
+	.progress-marker {
+		position: relative;
+		display: flex;
+		height: 50px;
+		width: 50px;
+		margin: 0 auto 12px;
+		background-color: #f5f7fa;
+		border: 3px solid #e0e0e0;
+		border-radius: 50%;
+		justify-content: center;
+		align-items: center;
+		z-index: 3;
+		transition: all 0.3s ease;
+	}
+
+	.progress-marker i {
+		font-size: 20px;
+		color: #6c757d;
+		transition: all 0.3s ease;
+	}
+
+	.progress-text {
+		padding: 0 8px;
+	}
+
+	.step-number {
+		display: block;
+		font-size: 12px;
+		font-weight: 600;
+		color: #6c757d;
+	}
+
+	.step-title {
+		display: block;
+		font-size: 14px;
+		font-weight: 500;
+		color: #6c757d;
+	}
+
+	/* Completed step */
+	.progress-step.completed .progress-marker {
+		background-color: rgba(var(--primary-rgb), 0.1);
+		border-color: var(--primary);
+	}
+
+	.progress-step.completed .progress-marker i {
+		color: var(--primary);
+	}
+
+	/* Active step */
+	.progress-step.active .progress-marker {
+		background-color: var(--primary);
+		border-color: var(--primary);
+		transform: scale(1.05);
+		box-shadow: 0 0 12px rgba(var(--primary-rgb), 0.4);
+	}
+
+	.progress-step.active .progress-marker i {
+		color: white;
+	}
+
+	.progress-step.active .step-number,
+	.progress-step.active .step-title {
+		color: var(--primary);
+		font-weight: 700;
+	}
+
+	@media (max-width: 768px) {
+		.progress-marker {
+			height: 40px;
+			width: 40px;
+		}
+
+		.progress-marker i {
+			font-size: 16px;
+		}
+
+		.step-title {
+			font-size: 12px;
+		}
+
+		.progress-tracker ul::after {
+			top: 20px;
+		}
+	}
+</style>
 <form action="<?= base_url() ?>siswa/save" method="POST" enctype="multipart/form-data">
 	<input type="hidden" name="id" value="<?= $get->id_siswa ?>">
 	<input type="hidden" name="ukuran_baju" value="<?= $get->ukuran_baju ?>">
 	<input type="hidden" name="lanjut" value="selesai">
 	<input type="hidden" name="page" value="lampiran">
 	<input type="hidden" name="jalur" value="<?= $get->jalur ?>">
+	<div class="row mb-0">
+		<div class="col-12">
+			<div class="card">
+				<div class="card-body">
+					<?php
+					// Query to check if NIK exists in tbl_status_dtks
+					$nik = $get->no_ktp;
+					$this->db->where('nik', $nik);
+					$query = $this->db->get('tbl_status_dtks');
 
+					if ($query->num_rows() > 0) {
+						// NIK found in DTKS table
+						echo '<div class="alert alert-primary" role="alert">
+                            <i class="ri-checkbox-circle-line mr-2"></i> Terdata di DTKS
+                          </div>';
+					} else {
+						// NIK not found in DTKS table
+						echo '<div class="alert alert-warning" role="alert">
+        <i class="ri-error-warning-line mr-2"></i> Proses Verifikasi DTKS
+    </div>';
+					}
+					?>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row mb-4">
+		<div class="col-12">
+			<div class="progress-tracker">
+				<ul class="d-flex justify-content-between list-unstyled position-relative">
+					<li class="progress-step">
+						<div class="progress-marker">
+							<i class="ri-guide-fill"></i>
+						</div>
+						<div class="progress-text">
+							<span class="step-number">1</span>
+							<span class="step-title">Jalur</span>
+						</div>
+					</li>
+					<li class="progress-step ">
+						<div class="progress-marker">
+							<i class="ri-user-2-fill"></i>
+						</div>
+						<div class="progress-text">
+							<span class="step-number">2</span>
+							<span class="step-title">Data Diri</span>
+						</div>
+					</li>
+					<li class="progress-step">
+						<div class="progress-marker">
+							<i class="ri-building-fill"></i>
+						</div>
+						<div class="progress-text">
+							<span class="step-number">3</span>
+							<span class="step-title">Sekolah</span>
+						</div>
+					</li>
+					<li class="progress-step">
+						<div class="progress-marker">
+							<i class="ri-parent-fill"></i>
+						</div>
+						<div class="progress-text">
+							<span class="step-number">4</span>
+							<span class="step-title">Orang Tua</span>
+						</div>
+					</li>
+					<li class="progress-step active">
+						<div class="progress-marker">
+							<i class="ri-booklet-fill"></i>
+						</div>
+						<div class="progress-text">
+							<span class="step-number">5</span>
+							<span class="step-title">Dokumen</span>
+						</div>
+					</li>
+					<li class="progress-step">
+						<div class="progress-marker">
+							<i class="ri-folder-chart-fill"></i>
+						</div>
+						<div class="progress-text">
+							<span class="step-number">6</span>
+							<span class="step-title">Selesai</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	<div class="row">
 		<div class="col-md-12">
 			<div class="table-responsive">
@@ -36,8 +233,9 @@
 						<td>
 							<span class="text-danger"> <?= (!empty($this->session->flashdata('error_kk'))) ? " " . $this->session->flashdata('message') . " " : ""; ?> </span>
 							<div id="kkPreview" style="display: <?= $get->kk ? 'block' : 'none'; ?>">
-								<?php if ($get->kk && is_image($get->kk)) : ?>
-									<img src="<?= base_url() ?>uploads/siswa/<?= $get->kk ?>" width="100px;" alt="">
+								<?php if ($get->kk) : ?>
+									<!-- <img src="<?= base_url() ?>uploads/siswa/<?= $get->kk ?>" width="100px;" alt=""> -->
+									<a href="<?= base_url() ?>uploads/siswa/<?= $get->kk ?>" target="_blank" class="btn btn-sm btn-primary"><i class="fa fa-search" aria-hidden="true"></i> Lihat</a>
 								<?php elseif ($get->kk) : ?>
 									<a href="<?= base_url() ?>uploads/siswa/<?= $get->kk ?>" target="_blank" class="btn btn-sm btn-primary"><i class="fa fa-search" aria-hidden="true"></i> Lihat</a>
 								<?php else : ?>
@@ -56,8 +254,9 @@
 						<td>
 							<span class="text-danger"> <?= (!empty($this->session->flashdata('error_akta'))) ? " " . $this->session->flashdata('message') . " " : ""; ?> </span>
 							<div id="aktaPreview" style="display: <?= $get->akta_kelahiran_siswa ? 'block' : 'none'; ?>">
-								<?php if ($get->akta_kelahiran_siswa && is_image($get->akta_kelahiran_siswa)) : ?>
-									<img src="<?= base_url() ?>uploads/siswa/<?= $get->akta_kelahiran_siswa ?>" width="100px;" alt="">
+								<?php if ($get->akta_kelahiran_siswa) : ?>
+									<!-- <img src="<?= base_url() ?>uploads/siswa/<?= $get->akta_kelahiran_siswa ?>" width="100px;" alt=""><i class="fa fa-search" aria-hidden="true"></i> Lihat</a> -->
+									<a href="<?= base_url() ?>uploads/siswa/<?= $get->akta_kelahiran_siswa ?>" target="_blank" class="btn btn-sm btn-primary"><i class="fa fa-search" aria-hidden="true"></i> Lihat</a>
 								<?php elseif ($get->akta_kelahiran_siswa) : ?>
 									<a href="<?= base_url() ?>uploads/siswa/<?= $get->akta_kelahiran_siswa ?>" target="_blank" class="btn btn-sm btn-primary"><i class="fa fa-search" aria-hidden="true"></i> Lihat</a>
 								<?php else : ?>
@@ -78,8 +277,9 @@
 						<td>
 							<span class="text-danger"> <?= (!empty($this->session->flashdata('error_skl'))) ? " " . $this->session->flashdata('message') . " " : ""; ?> </span>
 							<div id="sklPreview" style="display: <?= $get->skl ? 'block' : 'none'; ?>">
-								<?php if ($get->skl && is_image($get->skl)) : ?>
-									<img src="<?= base_url() ?>uploads/siswa/<?= $get->skl ?>" width="100px;" alt="">
+								<?php if ($get->skl) : ?>
+									<a href="<?= base_url() ?>uploads/siswa/<?= $get->skl ?>" target="_blank" class="btn btn-sm btn-primary"><i class="fa fa-search" aria-hidden="true"></i> Lihat</a>
+									<!-- <img src="<?= base_url() ?>uploads/siswa/<?= $get->skl ?>" width="100px;" alt=""> -->
 								<?php elseif ($get->skl) : ?>
 									<a href="<?= base_url() ?>uploads/siswa/<?= $get->skl ?>" target="_blank" class="btn btn-sm btn-primary"><i class="fa fa-search" aria-hidden="true"></i> Lihat</a>
 								<?php else : ?>
@@ -105,8 +305,9 @@
 							<td>
 								<span class="text-danger"> <?= (!empty($this->session->flashdata('error_suket'))) ? " " . $this->session->flashdata('message') . " " : "";  ?> </span>
 								<div id="suketPreview" style="display: <?= $get->suket ? 'block' : 'none'; ?>">
-									<?php if ($get->suket && is_image($get->suket)) : ?>
-										<img src="<?= base_url() ?>uploads/siswa/<?= $get->suket ?>" width="100px;" alt="">
+									<?php if ($get->suket) : ?>
+										<a href="<?= base_url() ?>uploads/siswa/<?= $get->suket ?>" target="_blank" class="btn btn-sm btn-primary"><i class="fa fa-search" aria-hidden="true"></i> Lihat</a>
+										<!-- <img src="<?= base_url() ?>uploads/siswa/<?= $get->suket ?>" width="100px;" alt=""> -->
 									<?php elseif ($get->suket) : ?>
 										<a href="<?= base_url() ?>uploads/siswa/<?= $get->suket ?>" target="_blank" class="btn btn-sm btn-primary"><i class="fa fa-search" aria-hidden="true"></i> Lihat</a>
 									<?php else : ?>

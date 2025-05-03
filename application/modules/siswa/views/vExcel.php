@@ -57,6 +57,21 @@ if (level_user() == "admin" || level_user()  == "superadmin") {
 				<td><b> TANGGAL DOWNLOAD </b> </td>
 				<td><b><?= tgl_indo(date('Y-m-d'))  ?> Pukul : <?= date('H:i:s'); ?> </b> </td>
 			</tr>
+			<!-- Jenis Data DTKS -->
+			<tr>
+				<td><b> Jenis Data </b> </td>
+				<td><b>
+					<?php if ($this->input->get('sts_dtks') == "1") {
+							echo "Data Terdaftar di DTKS";
+						} elseif ($this->input->get('sts_dtks') == "0") {
+							echo "Data Tidak Terdaftar di DTKS";
+						} else {
+							echo "Data Campuran";
+						}
+						?> 
+						
+					</b> </td>
+			</tr>
 		</table>
 		<br>
 		<div class="table-responsive">
@@ -100,6 +115,8 @@ if (level_user() == "admin" || level_user()  == "superadmin") {
 					<th style="border:1px solid black;">No. Pendaftaran </th>
 					<th style="border:1px solid black;">Tanggal Terdaftar </th>
 					<th style="border:1px solid black;">Tanggal Buat Akun </th>
+					<!-- Status DTKS -->
+					<th style="border:1px solid black;">Status DTKS</th>
 				</tr>
 
 
@@ -164,6 +181,13 @@ if (level_user() == "admin" || level_user()  == "superadmin") {
 						<td style="border:1px solid black;"> <?= $siswa->no_pendaftaran ?> </td>
 						<td style="border:1px solid black;"> <?= tgl_indo($siswa->tgl_daftar) ?> </td>
 						<td style="border:1px solid black;"> <?= tgl_indo($siswa->tgl_buat_akun) ?> </td>
+						<td style="border:1px solid black;">
+							<?php if ($siswa->sts_dtks == "1") {
+								echo "Terdaftar di DTKS";
+							} elseif ($siswa->sts_dtks == "0") {
+								echo "Tidak Terdaftar di DTKS";
+							} else
+							?>
 					</tr>
 				<?php } ?>
 

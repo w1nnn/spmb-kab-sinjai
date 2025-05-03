@@ -1,15 +1,130 @@
+<style>
+	.progress-tracker {
+		margin-bottom: 2rem;
+		position: relative;
+	}
+
+	.progress-tracker ul::after {
+		content: '';
+		position: absolute;
+		top: 25px;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background-color: #e0e0e0;
+		z-index: 1;
+	}
+
+	.progress-step {
+		position: relative;
+		text-align: center;
+		z-index: 2;
+		width: 16.666%;
+	}
+
+	.progress-marker {
+		position: relative;
+		display: flex;
+		height: 50px;
+		width: 50px;
+		margin: 0 auto 12px;
+		background-color: #f5f7fa;
+		border: 3px solid #e0e0e0;
+		border-radius: 50%;
+		justify-content: center;
+		align-items: center;
+		z-index: 3;
+		transition: all 0.3s ease;
+	}
+
+	.progress-marker i {
+		font-size: 20px;
+		color: #6c757d;
+		transition: all 0.3s ease;
+	}
+
+	.progress-text {
+		padding: 0 8px;
+	}
+
+	.step-number {
+		display: block;
+		font-size: 12px;
+		font-weight: 600;
+		color: #6c757d;
+	}
+
+	.step-title {
+		display: block;
+		font-size: 14px;
+		font-weight: 500;
+		color: #6c757d;
+	}
+
+	/* Completed step */
+	.progress-step.completed .progress-marker {
+		background-color: rgba(var(--primary-rgb), 0.1);
+		border-color: var(--primary);
+	}
+
+	.progress-step.completed .progress-marker i {
+		color: var(--primary);
+	}
+
+	/* Active step */
+	.progress-step.active .progress-marker {
+		background-color: var(--primary);
+		border-color: var(--primary);
+		transform: scale(1.05);
+		box-shadow: 0 0 12px rgba(var(--primary-rgb), 0.4);
+	}
+
+	.progress-step.active .progress-marker i {
+		color: white;
+	}
+
+	.progress-step.active .step-number,
+	.progress-step.active .step-title {
+		color: var(--primary);
+		font-weight: 700;
+	}
+
+	@media (max-width: 768px) {
+		.progress-marker {
+			height: 40px;
+			width: 40px;
+		}
+
+		.progress-marker i {
+			font-size: 16px;
+		}
+
+		.step-title {
+			font-size: 12px;
+		}
+
+		.progress-tracker ul::after {
+			top: 20px;
+		}
+	}
+</style>
 <?php
-$eUsia = $this->session->flashdata('error');
-$statusError = $this->session->flashdata('status');
-$message = $this->session->flashdata('message');
+$eUsia = $this->session->userdata('error_usia');
+$statusError = $this->session->userdata('status_error');
+$message = $this->session->userdata('error_message');
+
+// Jangan lupa untuk menghapus data setelah digunakan
+if ($eUsia == 'usia' && $statusError == 'danger') {
+	$this->session->unset_userdata('error_usia');
+	$this->session->unset_userdata('status_error');
+	$this->session->unset_userdata('error_message');
 ?>
-<?php if ($eUsia && $statusError == 'danger'): ?>
 	<script>
 		$(document).ready(function() {
 			$('#uploadModal').modal('show');
 		});
 	</script>
-<?php endif; ?>
+<?php } ?>
 
 
 <!-- Modal Upload File -->
@@ -23,23 +138,44 @@ $message = $this->session->flashdata('message');
 				</button>
 			</div>
 			<div class="modal-body">
-				<form action="<?= base_url() ?>siswa/update_psikolog" method="POST" enctype="multipart/form-data">
+				<?php
+				$hasLampiran = !empty($get->lampiran_psikolog);
+				?>
+
+				<form action="<?= base_url('siswa/update_psikolog') ?>" method="POST" enctype="multipart/form-data">
 					<div class="form-group">
 						<label for="fileUpload" style="color: red; font-style: italic;">
-							<?= $message; ?> untuk melanjutkan proses pendaftaran silahkan buktikan surat keterangan dari psikolog:</label>
-						<input type="hidden" name="id" value="<?= $get->id_siswa ?>">
+							<?= $message ?? "Untuk melanjutkan proses pendaftaran silakan unggah surat keterangan dari psikolog:"; ?>
+						</label>
 
+						<input type="hidden" name="id" value="<?= $get->id_siswa ?>">
 						<input type="hidden" name="lanjut" value="sekolah">
 						<input type="hidden" name="page" value="datadiri">
-						<input name="lampiran" type="file" class="form-control-file" id="fileUpload" name="fileUpload" required accept=".jpg,.jpeg,.png,.pdf">
+
+						<?php if ($hasLampiran): ?>
+							<p class="text-success">✅ File sebelumnya sudah diunggah:</p>
+							<a href="<?= base_url('uploads/siswa/psikolog/' . $get->lampiran_psikolog) ?>" target="_blank" class="btn btn-outline-info btn-sm">
+								Lihat File
+							</a>
+							<p class="mt-2">Jika ingin mengganti file, unggah file baru di bawah ini:</p>
+						<?php endif; ?>
+
+						<input name="lampiran" type="file" class="form-control-file" id="fileUpload" accept=".jpg,.jpeg,.png,.pdf" <?= !$hasLampiran ? 'required' : '' ?>>
 					</div>
+
 					<div id="filePreview" class="form-group" style="display:none;">
 						<div id="previewContainer"></div>
 					</div>
+
 					<hr>
-					<p><input type="checkbox" required> Saya nyatakan data yang saya unggah benar-benar sesuai dengan data yang asli dan saya siap mendapatkan sanksi apabila dikemudian hari data yang saya unggah terbukti rekayasa. </p>
+					<p>
+						<input type="checkbox" required>
+						Saya nyatakan data yang saya unggah benar-benar sesuai dengan data yang asli dan saya siap mendapatkan sanksi apabila di kemudian hari data yang saya unggah terbukti rekayasa.
+					</p>
+
 					<button type="submit" class="btn btn-primary" id="submitBtn">Upload</button>
 				</form>
+
 			</div>
 		</div>
 	</div>
@@ -49,70 +185,91 @@ $message = $this->session->flashdata('message');
 	<input type="hidden" name="id" value="<?= $get->id_siswa ?>">
 	<input type="hidden" name="lanjut" value="sekolah">
 	<input type="hidden" name="page" value="datadiri">
-
-	<div class="row">
-		<div class="col">
-			<div class="card text-white iq-bg-primary iq-mb-3">
+	<div class="row mb-0">
+		<div class="col-12">
+			<div class="card">
 				<div class="card-body">
-					<h5 class="card-title text-primary text-center">
-						<i style="font-size:30px;" class="ri-guide-fill fs-30"></i> <br>
-						1. Jalur
-					</h5>
+					<?php
+					// Query to check if NIK exists in tbl_status_dtks
+					$nik = $get->no_ktp;
+					$this->db->where('nik', $nik);
+					$query = $this->db->get('tbl_status_dtks');
+
+					if ($query->num_rows() > 0) {
+						// NIK found in DTKS table
+						echo '<div class="alert alert-primary" role="alert">
+                            <i class="ri-checkbox-circle-line mr-2"></i> Terdata di DTKS
+                          </div>';
+					} else {
+						// NIK not found in DTKS table
+						echo '<div class="alert alert-warning" role="alert">
+        <i class="mr-2"></i> Proses Verifikasi DTKS
+    </div>';
+					}
+					?>
 				</div>
 			</div>
 		</div>
-		<div class="col">
-			<div class="card text-white bg-primary iq-mb-3">
-				<div class="card-body">
-					<h5 class="card-title text-white text-center">
-						<i style="font-size:30px;" class="ri-user-2-fill fs-30"></i> <br>
-						2. Data Diri
-					</h5>
-				</div>
-			</div>
-		</div>
-
-		<div class="col">
-			<div class="card text-white iq-bg-primary iq-mb-3">
-				<div class="card-body">
-					<h5 class="card-title text-primary text-center">
-						<i style="font-size:30px;" class="ri-building-fill fs-30"></i> <br>
-						3. Sekolah
-					</h5>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="col">
-			<div class="card text-white iq-bg-primary iq-mb-3">
-				<div class="card-body">
-					<h5 class="card-title text-primary text-center">
-						<i style="font-size:30px;" class="ri-parent-fill fs-30"></i> <br>
-						4. Orang Tua
-					</h5>
-				</div>
-			</div>
-		</div>
-
-		<div class="col">
-			<div class="card text-white iq-bg-primary iq-mb-3">
-				<div class="card-body">
-					<h5 class="card-title text-primary text-center">
-						<i style="font-size:30px;" class="ri-booklet-fill fs-30"></i> <br>
-						5. Dokumen
-					</h5>
-				</div>
-			</div>
-		</div>
-		<div class="col">
-			<div class="card text-white iq-bg-primary iq-mb-3">
-				<div class="card-body">
-					<h5 class="card-title text-primary text-center">
-						<i style="font-size:30px;" class="ri-folder-chart-fill fs-30"></i> <br>
-						6. Selesai
-					</h5>
-				</div>
+	</div>
+	<div class="row mb-4">
+		<div class="col-12">
+			<div class="progress-tracker">
+				<ul class="d-flex justify-content-between list-unstyled position-relative">
+					<li class="progress-step">
+						<div class="progress-marker">
+							<i class="ri-guide-fill"></i>
+						</div>
+						<div class="progress-text">
+							<span class="step-number">1</span>
+							<span class="step-title">Jalur</span>
+						</div>
+					</li>
+					<li class="progress-step active">
+						<div class="progress-marker">
+							<i class="ri-user-2-fill"></i>
+						</div>
+						<div class="progress-text">
+							<span class="step-number">2</span>
+							<span class="step-title">Data Diri</span>
+						</div>
+					</li>
+					<li class="progress-step">
+						<div class="progress-marker">
+							<i class="ri-building-fill"></i>
+						</div>
+						<div class="progress-text">
+							<span class="step-number">3</span>
+							<span class="step-title">Sekolah</span>
+						</div>
+					</li>
+					<li class="progress-step">
+						<div class="progress-marker">
+							<i class="ri-parent-fill"></i>
+						</div>
+						<div class="progress-text">
+							<span class="step-number">4</span>
+							<span class="step-title">Orang Tua</span>
+						</div>
+					</li>
+					<li class="progress-step">
+						<div class="progress-marker">
+							<i class="ri-booklet-fill"></i>
+						</div>
+						<div class="progress-text">
+							<span class="step-number">5</span>
+							<span class="step-title">Dokumen</span>
+						</div>
+					</li>
+					<li class="progress-step">
+						<div class="progress-marker">
+							<i class="ri-folder-chart-fill"></i>
+						</div>
+						<div class="progress-text">
+							<span class="step-number">6</span>
+							<span class="step-title">Selesai</span>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -173,9 +330,21 @@ $message = $this->session->flashdata('message');
 				</select>
 			</div>
 			<?php if ($get->tingkat_sekolah != "4") {  ?>
-				<div class="form-group">
+				<!-- <div class="form-group">
 					<label for=""> Asal Sekolah <span class="text-danger">*</span> </label>
 					<input autocomplete="off" type="text" class="form-control" name="asal_sekolah" value="<?= $get->asal_sekolah ?>">
+				</div> -->
+				<div class="form-group">
+					<label for=""> Asal Sekolah <span class="text-danger">*</span> </label>
+					<select name="asal_sekolah" class="form-control select2 sekolah" id="sekolah_1" style="width: 100%;" required data-tags="true">
+						<option value=""></option>
+						<?php if(!empty($get->asal_sekolah)): ?>
+							<option value="<?= $get->asal_sekolah ?>" selected><?= $get->asal_sekolah ?></option>
+						<?php endif; ?>
+					</select>
+					<!-- <small id="quota_info" class="form-text text-muted"></small> -->
+					<!-- Input Kuota Update -->
+					 <input type="hidden" name="kuota_lulusan" id="kuota_lulusan">
 				</div>
 			<?php } ?>
 			<div class="form-group">
@@ -184,7 +353,7 @@ $message = $this->session->flashdata('message');
 			</div>
 			<div class="form-group">
 				<label for=""> Kecamatan <span class="text-danger">*</span> </label>
-				<select name="kec" class="form-control select2 kecamatan" id="kecamatan" required>
+				<select name="kec" class="form-control select2 kecamatan" id="kecamatan" required data-tags="true">
 					<option value="">Pilih Kecamatan</option>
 					<?php foreach ($kecamatan as $value) : $selected = ($get->kec == $value->id_kec) ? "selected" : ""; ?>
 						<option value="<?= $value->id_kec ?>" <?= $selected ?>> <?= $value->nama_kec ?> </option>
@@ -194,14 +363,14 @@ $message = $this->session->flashdata('message');
 			<div class="form-group">
 				<label for=""> Desa / Dusun / Jalan / Lingkungan Tempat Tinggal <span class="text-danger">*</span>
 				</label>
-				<select name="dusun" class="form-control select2" id="zonasi" required>
+				<select name="dusun" class="form-control select2" id="zonasi" required data-tags="true">
 					<option value=""></option>
 				</select>
 			</div>
 		</div>
 	</div>
 	<hr>
-	<button class="btn btn-primary pull-right " type="submit"> Selanjutnya <i class="ri-arrow-right-fill"></i></button>
+	<button class="btn btn-primary btn-lanjut pull-right" type="submit"> Selanjutnya <i class="ri-arrow-right-fill"></i></button>
 	<?php if (level_user() == "siswa") { ?>
 		<a href="<?= base_url() ?>siswa/profil" class="btn btn-warning pull-right mr-3 "> <i class="ri-arrow-left-fill"></i> Kembali </a>
 	<?php } else { ?>
@@ -213,6 +382,80 @@ $message = $this->session->flashdata('message');
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
 
 <script>
+
+
+$(document).ready(function() {
+	// $('#sekolah_1').select2({
+    //     tags: true, // Memungkinkan input manual
+    //     placeholder: "Pilih atau ketik nama sekolah",
+    //     allowClear: true
+    // });
+    // Initialize select2
+    $('.select2').select2({
+		tags: true,
+        placeholder: "Pilih Sekolah Asal",
+        allowClear: true
+    });
+
+    // Load schools with Ajax
+    loadSekolahAsal();
+
+    function loadSekolahAsal() {
+        $.ajax({
+            type: "POST",
+            url: "<?= base_url('sekolah/get_all_sekolah') ?>",
+            dataType: "JSON",
+            beforeSend: function(e) {
+                if (e && e.overrideMimeType) {
+                    e.overrideMimeType("application/json;charset=UTF-8");
+                }
+            },
+            success: function(response) {
+                $("#sekolah_1").html(response.list_sekolah).show();
+                
+                // Preserve selected value if exists
+                <?php if(!empty($get->asal_sekolah)): ?>
+                $("#sekolah_1").val("<?= $get->asal_sekolah ?>").trigger('change');
+                <?php endif; ?>
+            },
+            error: function(xhr, ajaxOptions, thrownError) {
+                alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+            }
+        });
+    }
+    
+    // Display quota information when a school is selected
+    $('#sekolah_1').on('change', function() {
+        var selectedSchool = $(this).val();
+        
+        if (selectedSchool) {
+            $.ajax({
+                type: "POST",
+                url: "<?= base_url('sekolah/get_school_quota') ?>",
+                data: { school_name: selectedSchool },
+                dataType: "JSON",
+                success: function(response) {
+                    if (response.exists) {
+                        if (response.quota > 0) {
+                            $('#quota_info').html('<span class="text-success">Kuota tersisa:</span> ' + '<b>' + response.quota +'</b>');
+							// $('.btn-lanjut').attr('disabled', false);
+							// Tampung nilai kuota
+							var quotaLulusanUpdate = response.quota - 1;
+							$('#kuota_lulusan').val(quotaLulusanUpdate);
+						} else {
+                            $('#quota_info').html('<span class="text-danger">Tidak ada Kuota lulusan Tersedia!</span>');
+							// $('.btn-lanjut').attr('disabled', true);
+                        }
+                    } else {
+                        $('#quota_info').html('');
+                    }
+                }
+            });
+        } else {
+            $('#quota_info').html('');
+        }
+    });
+});
 	// alert($('.kecamatan').find(":selected").val());
 	$(document).ready(function() {
 		if ('<?php echo $eUsia ?>' == 'usia') {

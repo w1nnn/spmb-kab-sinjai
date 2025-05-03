@@ -110,21 +110,50 @@ class Sekolah_model extends CI_Model
         return $this->db->get();
     }
 
-    function get_sekolah($level)
-    {
-        $this->db->select("s.npsn, s.nama, s.kuota, p.pendaftar");
-        $this->db->from("tbl_sekolah AS s");
-        $this->db->join('(SELECT s.pilihan_sekolah_1 AS npsn, COUNT(*) AS pendaftar FROM tbl_siswa AS s WHERE `lock` = "y" GROUP BY s.pilihan_sekolah_1 ) AS p', 'p.npsn = s.npsn', 'LEFT');
-        $this->db->where('s.level_sekolah', $level);
-        $this->db->order_by('s.npsn', 'ASC');
-        return $this->db->get();
+    function get_sekolah($level, $kecamatan = '', $status_dtks = '')
+{
+    $this->db->select("s.npsn, s.nama, s.kuota, p.pendaftar");
+    $this->db->from("tbl_sekolah AS s");
+    
+    // Modify the subquery to include DTKS status filter if needed
+    $subquery = "SELECT s.pilihan_sekolah_1 AS npsn, COUNT(*) AS pendaftar FROM tbl_siswa AS s WHERE `lock` = 'y'";
+    
+    if ($status_dtks !== '' && $status_dtks !== null) {
+        $subquery .= " AND s.sts_dtks = '$status_dtks'";
     }
+    
+    $subquery .= " GROUP BY s.pilihan_sekolah_1";
+    
+    $this->db->join("($subquery) AS p", 'p.npsn = s.npsn', 'LEFT');
+    
+    // Join kecamatan table if filtering by kecamatan
+    if ($kecamatan != '') {
+        $this->db->join('kecamatan', 's.kec = kecamatan.id_kec');
+        $this->db->where('kecamatan.nama_kec', $kecamatan);
+    }
+    
+    $this->db->where('s.level_sekolah', $level);
+    $this->db->order_by('s.npsn', 'ASC');
+    return $this->db->get();
+}
 
-    function count_size($npsn, $kelamin, $size)
+    function count_size($npsn, $kelamin, $size, $status_dtks = '')
     {
-        $qry = $this->db->query("SELECT COUNT(*) AS jumlah FROM ppdb.tbl_siswa WHERE pilihan_sekolah_1 = '$npsn' AND jk = '$kelamin' AND ukuran_baju = '$size' AND `lock` = 'y'");
-        $row = $qry->row();
-
+        $this->db->select("COUNT(*) AS jumlah");
+        $this->db->from("ppdb.tbl_siswa");
+        $this->db->where('pilihan_sekolah_1', $npsn);
+        $this->db->where('jk', $kelamin);
+        $this->db->where('ukuran_baju', $size);
+        $this->db->where('lock', 'y');
+        
+        // Add DTKS status filter if specified
+        if ($status_dtks !== '' && $status_dtks !== null) {
+            $this->db->where('sts_dtks', $status_dtks);
+        }
+        
+        $query = $this->db->get();
+        $row = $query->row();
+        
         return $row->jumlah;
     }
 
@@ -158,6 +187,29 @@ class Sekolah_model extends CI_Model
         $this->db->order_by('level_sekolah', 'ASC');
         $query = $this->db->get();
         return $query->result();
+    }
+
+    public function fetch_data_by_kecamatan($kecamatan = '', $level = '')
+    {
+        $this->db->select("tbl_sekolah.*, tbl_level_sekolah.*, kecamatan.nama_kec, p.pendaftar");
+        $this->db->from("tbl_sekolah");
+        $this->db->join('tbl_level_sekolah', 'tbl_sekolah.level_sekolah = tbl_level_sekolah.id');
+        $this->db->join('kecamatan', 'tbl_sekolah.kec = kecamatan.id_kec');
+        $this->db->join('( SELECT s.pilihan_sekolah_1 AS npsn, COUNT(*) AS pendaftar FROM tbl_siswa AS s WHERE `lock` = \'y\' GROUP BY s.pilihan_sekolah_1 ) AS p', 'p.npsn = tbl_sekolah.npsn', 'LEFT');
+    
+        // Filter berdasarkan kecamatan
+        if ($kecamatan != '') {
+            $this->db->where('kecamatan.nama_kec', $kecamatan);
+        }
+    
+        // Filter berdasarkan level sekolah jika ada
+        if ($level != '') {
+            $this->db->where('tbl_sekolah.level_sekolah', $level);
+        }
+    
+        $this->db->order_by('tbl_sekolah.nama', 'ASC');
+    
+        return $this->db->get();
     }
 
 

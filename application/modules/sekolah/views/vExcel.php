@@ -19,7 +19,7 @@
 		if(!empty($npsn) AND !empty($jalur)) {
 ?>
 
-<h2> Macca PPDB - Kabupaten Sinjai  </h2>
+<h2> Macca SPMB - Kabupaten Sinjai  </h2>
 
 <table>
 	<tr>

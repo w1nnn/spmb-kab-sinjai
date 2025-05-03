@@ -25,7 +25,7 @@
 			</div>
 			<ul class="navbar-list">
 				<li>
-					<!-- <a href="https://disdik.macca.id/aduan-ppdb" target="_blank"><i class="fa fa-fw fa-question-circle"></i> Laporkan Masalah</a> -->
+					<a href="https://bit.ly/Formpengaduanspmb" class="text-dark" target="_blank"><i class="fa text-white fa-fw fa-question-circle"></i> Pengaduan SPMB</a>
 				</li>
 				<?php if ($this->session->userdata('isLogin') == 1) { ?>
 					<li>

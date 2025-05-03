@@ -1,3 +1,4 @@
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet">
 <div class="row">
 	<div class="container-fluid">
 		<?php if ($this->session->flashdata('msg')) : ?>
@@ -58,12 +59,53 @@
 					</div>
 				</div>
 			</div>
+			<div class="form-group border border-info rounded p-3">
+				<label class="font-weight-bold h6">Jadwal Edit Kuota Diterima</label>
+				<div class="row">
+					<div class="col-md-6">
+						<label for="kuota_start">Mulai</label>
+						<input id="kuota_start" type="date" name="kuota[start]" class="form-control" value="<?php echo $jadwal ? $jadwal->kuota->start : null ?>">
+					</div>
+					<div class="col-md-6">
+						<label for="kuota_end">Selesai</label>
+						<input id="kuota_end" type="date" name="kuota[end]" class="form-control" value="<?php echo $jadwal ? $jadwal->kuota->end : null ?>">
+					</div>
+				</div>
+			</div>
 			<div class="form-group pt-3">
 				<button class="btn btn-primary btn-lg btn-block" type="submit">SIMPAN JADWAL</button>
 			</div>
 		</form>
 	</div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+
+<?php if ($this->input->get('alert')): ?>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const Toast = Swal.mixin({
+				toast: true,
+				position: 'top-end',
+				showConfirmButton: false,
+				timer: 3000,
+				timerProgressBar: true
+			});
+
+			Toast.fire({
+				icon: '<?= $this->input->get('alert') ?>',
+				title: '<?= $this->input->get('message') ?>'
+			});
+
+			// Hapus parameter alert & message dari URL tanpa reload
+			if (history.pushState) {
+				const url = new URL(window.location);
+				url.searchParams.delete('alert');
+				url.searchParams.delete('message');
+				window.history.replaceState({}, document.title, url.toString());
+			}
+		});
+	</script>
+<?php endif; ?>
 <script>
 	if ($("#notif").length > 0) {
 		setTimeout(() => {

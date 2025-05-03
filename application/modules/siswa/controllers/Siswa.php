@@ -118,8 +118,21 @@ class Siswa extends CI_Controller
 	{
 		cek_session();
 		$id = $this->input->post('id');
-		$page = $this->input->post('page');
-		$next = $this->input->post('lanjut');
+$page = $this->input->post('page');
+$next = $this->input->post('lanjut');
+
+// Ambil data siswa berdasarkan ID
+
+
+// die(); // Stop biar output bisa dibaca
+
+
+
+// die();
+
+
+		
+
 		if ($page == "jalur") {
 
 			$data = array(
@@ -135,6 +148,59 @@ class Siswa extends CI_Controller
 				$this->session->set_flashdata(array('status' => "danger", 'message' => "NIK \"" . $this->input->post('no_ktp') . "\" telah digunakan!"));
 				redirect($_SERVER['HTTP_REFERER']);
 			}
+
+			$this->db->where('id_siswa', $id);
+$student = $this->db->get('tbl_siswa')->row();
+
+if ($student) {
+    // Debug status daftar siswa
+    echo "Status Daftar Sebelumnya: " . $student->sts_daftar . "<br>";
+
+    if ((int)$student->sts_daftar !== 1) {
+        $kuotaLulusan = $this->input->post('kuota_lulusan');
+        $nama_sekolah = trim($this->input->post('asal_sekolah'));
+
+        // Debug nilai input
+        echo "Nama Sekolah: $nama_sekolah<br>";
+        echo "Kuota Lulusan Baru: $kuotaLulusan<br>";
+
+        // Cek apakah sekolah ada
+        $this->db->where('nama', $nama_sekolah);
+        $school = $this->db->get('tbl_sekolah')->row();
+
+        if ($school) {
+            echo "Sekolah ditemukan, update kuota lulusan...<br>";
+
+            $this->db->where('nama', $nama_sekolah);
+            $this->db->update('tbl_sekolah', [
+                'kuota_lulusan' => $kuotaLulusan
+            ]);
+
+            if ($this->db->affected_rows() > 0) {
+                echo "Update kuota sekolah: <strong>Berhasil</strong><br>";
+            } else {
+                echo "Update kuota sekolah: <strong>Gagal / Tidak ada perubahan</strong><br>";
+            }
+        } else {
+            echo "Sekolah tidak ditemukan: $nama_sekolah<br>";
+        }
+    } else {
+        echo "Siswa sudah terdaftar, kuota sekolah tidak diupdate.<br>";
+    }
+
+    // Update status daftar siswa ke 1
+    $this->db->where('id_siswa', $id);
+    $this->db->update('tbl_siswa', ['sts_daftar' => 1]);
+
+    if ($this->db->affected_rows() > 0) {
+        echo "Update status daftar siswa: <strong>Berhasil</strong><br>";
+    } else {
+        echo "Update status daftar siswa: <strong>Gagal / Tidak ada perubahan</strong><br>";
+    }
+} else {
+    echo "Data siswa tidak ditemukan.<br>";
+}
+			
 
 			$data = array(
 				'no_ktp' => $this->input->post('no_ktp', TRUE),
@@ -157,19 +223,25 @@ class Siswa extends CI_Controller
 
 			if ($ts == 4) {
 				if ($age->y < 4) {
-					$this->session->set_flashdata(array('error' => 'usia', 'status' => "danger", 'message' => "Batas umur untuk jenjang TK adalah paling rendah 4 Tahun pada bulan Juli!"));
+					$this->session->set_userdata('error_usia', 'usia');
+					$this->session->set_userdata('status_error', 'danger');
+					$this->session->set_userdata('error_message', "Batas umur untuk jenjang TK adalah paling rendah 4 Tahun pada bulan Juli!");
 					$this->siswa->update(array('id_siswa' => $id), $data);
 					redirect($_SERVER['HTTP_REFERER']);
 				}
 			} elseif ($ts == 5) {
 				if ($age->y < 5 || ($age->y == 5 && $age->m < 6)) {
-					$this->session->set_flashdata(array('error' => 'usia', 'status' => "danger", 'message' => "Batas umur untuk jenjang SD adalah paling rendah 5 Tahun 6 Bulan pada bulan Juli!"));
+					$this->session->set_userdata('error_usia', 'usia');
+					$this->session->set_userdata('status_error', 'danger');
+					$this->session->set_userdata('error_message', "Batas umur untuk jenjang SD adalah paling rendah 5 Tahun 6 Bulan pada bulan Juli!");
 					$this->siswa->update(array('id_siswa' => $id), $data);
 					redirect($_SERVER['HTTP_REFERER']);
 				}
 			} elseif ($ts == 6) {
 				if ($age->y > 15) {
-					$this->session->set_flashdata(array('error' => 'usia', 'status' => "danger", 'message' => "Batas umur untuk jenjang SMP adalah paling tinggi 15 Tahun pada bulan Juli!"));
+					$this->session->set_userdata('error_usia', 'usia');
+					$this->session->set_userdata('status_error', 'danger');
+					$this->session->set_userdata('error_message', "Batas umur untuk jenjang SMP adalah paling tinggi 15 Tahun pada bulan Juli!");
 					$this->siswa->update(array('id_siswa' => $id), $data);
 					redirect($_SERVER['HTTP_REFERER']);
 				}
@@ -315,70 +387,25 @@ class Siswa extends CI_Controller
 		}
 
 		$this->siswa->update(array('id_siswa' => $id), $data);
-		$this->session->set_flashdata(array('status' => "info", 'message' => "Data sementara berhasil disimpan"));
+		// $this->session->set_flashdata(array('status' => "info", 'message' => "Data sementara berhasil disimpan"));
 
 		if (level_user() == "siswa") {
-			redirect(base_url('siswa/profil/' . $next . ' '));
+			redirect(base_url('siswa/profil/' . $next . '?alert=info&message=' . urlencode('Data berhasil disimpan')));
 		} else {
 			$id_siswa = $this->siswa->get_by_id($id)->id_siswa;
 
 			if ($page == "selesai") {
-				redirect(base_url('siswa/profil/' . $id_siswa . ' '));
+				redirect(base_url('siswa/profil/' . $id_siswa . '?alert=info&message=' . urlencode('Data berhasil disimpan')));
 			} else {
-
-				redirect(base_url('siswa/edit/' . $next . '/?id=' . $id_siswa . ' '));
+				redirect(base_url('siswa/edit/' . $next . '/?id=' . $id_siswa . '&alert=info&message=' . urlencode('Data berhasil disimpan')));
 			}
 		}
 	}
 
-	// public function update_psikolog()
-	// {
-	// 	cek_session();
-	// 	$id = $this->input->post('id'); // Pastikan nama input sesuai dengan view
-
-	// 	// Konfigurasi upload file
-	// 	$config['upload_path'] = './uploads/siswa/psikolog/';
-	// 	$config['allowed_types'] = 'pdf|jpg|jpeg|png';
-	// 	$config['remove_spaces'] = TRUE;
-	// 	$config['encrypt_name'] = TRUE;
-
-	// 	$this->load->library('upload', $config);
-
-	// 	if (!is_dir($config['upload_path'])) {
-	// 		mkdir($config['upload_path'], 0777, true);
-	// 	}
-
-	// 	$data = [
-	// 		'sts_psikolog' => 1 // Menandakan bahwa surat telah diunggah
-	// 	];
-
-	// 	if ($this->upload->do_upload('lampiran')) {
-	// 		$file = $this->upload->data();
-	// 		$filename = $file['file_name'];
-
-	// 		// Hapus file lama jika ada
-	// 		$siswa = $this->siswa->get_by_id($id);
-	// 		if (!empty($siswa->lampiran_psikolog) && is_file(FCPATH . '/uploads/siswa/psikolog/' . $siswa->lampiran_psikolog)) {
-	// 			unlink(FCPATH . '/uploads/siswa/psikolog/' . $siswa->lampiran_psikolog);
-	// 		}
-
-	// 		$data['lampiran_psikolog'] = $filename;
-	// 	} else {
-	// 		$this->session->set_flashdata('status', 'danger');
-	// 		$this->session->set_flashdata('message', $this->upload->display_errors());
-	// 		redirect($_SERVER['HTTP_REFERER']);
-	// 	}
-
-	// 	// Update data siswa berdasarkan ID
-	// 	$this->siswa->update(array('id_siswa' => $id), $data);
-
-	// 	$this->session->set_flashdata('status', 'success');
-	// 	$this->session->set_flashdata('message', 'Surat keterangan psikolog berhasil diunggah.');
-	// 	redirect(base_url('siswa/profil/datadiri'));
-	// }
 	public function update_psikolog()
 	{
 		cek_session();
+
 		$id = $this->input->post('id');
 		$next = $this->input->post('lanjut'); // Ambil nilai next dari input tersembunyi
 
@@ -390,45 +417,57 @@ class Siswa extends CI_Controller
 
 		$this->load->library('upload', $config);
 
+		// Buat folder jika belum ada
 		if (!is_dir($config['upload_path'])) {
 			mkdir($config['upload_path'], 0777, true);
 		}
 
+		// Data default (selalu disimpan)
 		$data = [
 			'sts_psikolog' => 1 // Menandakan bahwa surat telah diunggah
 		];
 
-		if ($this->upload->do_upload('lampiran')) {
-			$file = $this->upload->data();
-			$filename = $file['file_name'];
+		// Cek apakah file baru diupload
+		if (!empty($_FILES['lampiran']['name'])) {
+			if ($this->upload->do_upload('lampiran')) {
+				$file = $this->upload->data();
+				$filename = $file['file_name'];
 
-			// Hapus file lama jika ada
-			$siswa = $this->siswa->get_by_id($id);
-			if (!empty($siswa->lampiran_psikolog) && is_file(FCPATH . '/uploads/siswa/psikolog/' . $siswa->lampiran_psikolog)) {
-				unlink(FCPATH . '/uploads/siswa/psikolog/' . $siswa->lampiran_psikolog);
+				// Hapus file lama jika ada
+				$siswa = $this->siswa->get_by_id($id);
+				if (!empty($siswa->lampiran_psikolog)) {
+					$old_file = FCPATH . 'uploads/siswa/psikolog/' . $siswa->lampiran_psikolog;
+					if (is_file($old_file)) {
+						unlink($old_file);
+					}
+				}
+
+				$data['lampiran_psikolog'] = $filename;
+			} else {
+				$this->session->set_flashdata('status', 'danger');
+				$this->session->set_flashdata('message', $this->upload->display_errors());
+				redirect($_SERVER['HTTP_REFERER']);
+				return;
 			}
-
-			$data['lampiran_psikolog'] = $filename;
-		} else {
-			$this->session->set_flashdata('status', 'danger');
-			$this->session->set_flashdata('message', $this->upload->display_errors());
-			redirect($_SERVER['HTTP_REFERER']);
 		}
 
-		// Update data siswa berdasarkan ID
-		$this->siswa->update(array('id_siswa' => $id), $data);
+		// Update data ke database
+		$this->siswa->update(['id_siswa' => $id], $data);
 
-		$this->session->set_flashdata('status', 'success');
-		$this->session->set_flashdata('message', 'Surat keterangan psikolog berhasil diunggah.');
+		// Flash pesan berhasil
+		// $this->session->set_flashdata('status', 'success');
+		// $this->session->set_flashdata('message', 'Surat keterangan psikolog berhasil diproses.');
 
-		// Redirect ke halaman sekolah
+		// Redirect
 		if (level_user() == "siswa") {
 			redirect(base_url('siswa/profil/' . $next));
 		} else {
-			// redirect(base_url('siswa/edit/' . $next . '/?id=' . $id));
-			redirect($_SERVER['HTTP_REFERER']);
+			redirect(base_url('siswa/edit/' . $next . '/?id=' . $id));
 		}
 	}
+
+
+
 
 
 	public function preview()
@@ -463,12 +502,18 @@ class Siswa extends CI_Controller
 	}
 
 
+	// public function delete()
+	// {
+	// 	$id = $this->uri->segment(3);
+	// 	$this->siswa->delete_by_id($id);
+	// 	$this->session->set_flashdata(array('status' => "danger", "message" => "Berhasil menghapus data "));
+	// 	redirect(base_url('siswa/daftar/index'));
+	// }
 	public function delete()
 	{
 		$id = $this->uri->segment(3);
 		$this->siswa->delete_by_id($id);
-		$this->session->set_flashdata(array('status' => "danger", "message" => "Berhasil menghapus data "));
-		redirect(base_url('siswa/daftar/index'));
+		redirect(base_url('siswa/daftar/index?alert=danger&message=' . urlencode('Berhasil menghapus data')));
 	}
 
 
@@ -497,7 +542,6 @@ class Siswa extends CI_Controller
 				'id_siswa' => $key,
 				'nama_siswa' => $this->input->post('nama', TRUE),
 				'no_ktp' => $this->input->post('no_ktp', TRUE),
-				'email' => $this->input->post('email', TRUE),
 				'password' => sha1(md5($this->input->post('password', TRUE))),
 				'tgl_buat_akun' => date('Y-m-d')
 			);
@@ -508,13 +552,12 @@ class Siswa extends CI_Controller
 				'id' => $key,
 				'nama' => $this->input->post('nama', TRUE),
 				'no_ktp' => $this->input->post('no_ktp', TRUE),
-				'email' => $this->input->post('email', TRUE),
 				'level' => "siswa",
 				'isLogin' => TRUE
 			);
 			$this->session->set_userdata($accountSession);
 
-			$this->session->set_flashdata(array('status' => "success", 'message' => "Berhasil Registrasi Akun"));
+			// $this->session->set_flashdata(array('status' => "success", 'message' => "Berhasil Registrasi Akun"));
 			redirect(base_url('siswa/profil'));
 		} else {
 
@@ -541,7 +584,7 @@ class Siswa extends CI_Controller
 		$hp = $this->input->post('no_ktp', TRUE);
 		$password = $this->input->post('password', TRUE);
 		if ($this->siswa->auth($hp, $password)) {
-			$this->session->set_flashdata(array('status' => "success", 'message' => "Login Berhasil"));
+			// $this->session->set_flashdata(array('status' => "success", 'message' => "Login Berhasil"));
 			redirect(base_url('siswa/profil'));
 		} else {
 			$this->session->set_flashdata(array('status' => "error", "email" => $hp, 'password' => $password));

@@ -1,3 +1,5 @@
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet">
+
 <style>
 	.h1,
 	.h2,
@@ -13,80 +15,209 @@
 	h6 {
 		margin-bottom: 0px;
 	}
+
+	.progress-tracker {
+		margin-bottom: 2rem;
+		position: relative;
+	}
+
+	.progress-tracker ul::after {
+		content: '';
+		position: absolute;
+		top: 25px;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background-color: #e0e0e0;
+		z-index: 1;
+	}
+
+	.progress-step {
+		position: relative;
+		text-align: center;
+		z-index: 2;
+		width: 16.666%;
+	}
+
+	.progress-marker {
+		position: relative;
+		display: flex;
+		height: 50px;
+		width: 50px;
+		margin: 0 auto 12px;
+		background-color: #f5f7fa;
+		border: 3px solid #e0e0e0;
+		border-radius: 50%;
+		justify-content: center;
+		align-items: center;
+		z-index: 3;
+		transition: all 0.3s ease;
+	}
+
+	.progress-marker i {
+		font-size: 20px;
+		color: #6c757d;
+		transition: all 0.3s ease;
+	}
+
+	.progress-text {
+		padding: 0 8px;
+	}
+
+	.step-number {
+		display: block;
+		font-size: 12px;
+		font-weight: 600;
+		color: #6c757d;
+	}
+
+	.step-title {
+		display: block;
+		font-size: 14px;
+		font-weight: 500;
+		color: #6c757d;
+	}
+
+	/* Completed step */
+	.progress-step.completed .progress-marker {
+		background-color: rgba(var(--primary-rgb), 0.1);
+		border-color: var(--primary);
+	}
+
+	.progress-step.completed .progress-marker i {
+		color: var(--primary);
+	}
+
+	/* Active step */
+	.progress-step.active .progress-marker {
+		background-color: var(--primary);
+		border-color: var(--primary);
+		transform: scale(1.05);
+		box-shadow: 0 0 12px rgba(var(--primary-rgb), 0.4);
+	}
+
+	.progress-step.active .progress-marker i {
+		color: white;
+	}
+
+	.progress-step.active .step-number,
+	.progress-step.active .step-title {
+		color: var(--primary);
+		font-weight: 700;
+	}
+
+	@media (max-width: 768px) {
+		.progress-marker {
+			height: 40px;
+			width: 40px;
+		}
+
+		.progress-marker i {
+			font-size: 16px;
+		}
+
+		.step-title {
+			font-size: 12px;
+		}
+
+		.progress-tracker ul::after {
+			top: 20px;
+		}
+	}
 </style>
 <form action="<?= base_url() ?>siswa/save" method="POST" enctype="multipart/form-data">
 	<input type="hidden" name="id" value="<?= $get->id_siswa ?>">
 	<input type="hidden" name="lanjut" value="detail">
 	<input type="hidden" name="page" value="selesai">
 
+	<div class="row mb-0">
+		<div class="col-12">
+			<div class="card">
+				<div class="card-body">
+					<?php
+					// Query to check if NIK exists in tbl_status_dtks
+					$nik = $get->no_ktp;
+					$this->db->where('nik', $nik);
+					$query = $this->db->get('tbl_status_dtks');
 
-	<div class="row">
-		<div class="col">
-			<div class="card text-white iq-bg-primary iq-mb-3">
-				<div class="card-body">
-					<h5 class="card-title text-primary text-center">
-						<i style="font-size:30px;" class="ri-guide-fill fs-30"></i> <br>
-						1. Jalur
-					</h5>
-				</div>
-			</div>
-		</div>
-		<div class="col">
-			<div class="card text-white iq-bg-primary iq-mb-3">
-				<div class="card-body">
-					<h5 class="card-title text-primary text-center">
-						<i style="font-size:30px;" class="ri-user-2-fill fs-30"></i> <br>
-						2. Data Diri
-					</h5>
-				</div>
-			</div>
-		</div>
-
-		<div class="col">
-			<div class="card text-white iq-bg-primary iq-mb-3">
-				<div class="card-body">
-					<h5 class="card-title text-primary text-center">
-						<i style="font-size:30px;" class="ri-building-fill fs-30"></i> <br>
-						3. Sekolah
-					</h5>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="col">
-			<div class="card text-white iq-bg-primary iq-mb-3">
-				<div class="card-body">
-					<h5 class="card-title text-primary text-center">
-						<i style="font-size:30px;" class="ri-parent-fill fs-30"></i> <br>
-						4. Orang Tua
-					</h5>
-				</div>
-			</div>
-		</div>
-
-		<div class="col">
-			<div class="card text-white iq-bg-primary iq-mb-3">
-				<div class="card-body">
-					<h5 class="card-title text-primary text-center">
-						<i style="font-size:30px;" class="ri-booklet-fill fs-30"></i> <br>
-						5. Dokumen
-					</h5>
-				</div>
-			</div>
-		</div>
-		<div class="col">
-			<div class="card text-white bg-success iq-mb-3">
-				<div class="card-body">
-					<h5 class="card-title text-white text-center">
-						<i style="font-size:30px;" class="ri-folder-chart-fill fs-30"></i> <br>
-						6. Selesai
-					</h5>
+					if ($query->num_rows() > 0) {
+						// NIK found in DTKS table
+						echo '<div class="alert alert-primary" role="alert">
+                            <i class="ri-checkbox-circle-line mr-2"></i> Terdata di DTKS
+                          </div>';
+					} else {
+						// NIK not found in DTKS table
+						echo '<div class="alert alert-warning" role="alert">
+        <i class="ri-error-warning-line mr-2"></i> Proses Verifikasi DTKS
+    </div>';
+					}
+					?>
 				</div>
 			</div>
 		</div>
 	</div>
-
+	<div class="row mb-4">
+		<div class="col-12">
+			<div class="progress-tracker">
+				<ul class="d-flex justify-content-between list-unstyled position-relative">
+					<li class="progress-step">
+						<div class="progress-marker">
+							<i class="ri-guide-fill"></i>
+						</div>
+						<div class="progress-text">
+							<span class="step-number">1</span>
+							<span class="step-title">Jalur</span>
+						</div>
+					</li>
+					<li class="progress-step ">
+						<div class="progress-marker">
+							<i class="ri-user-2-fill"></i>
+						</div>
+						<div class="progress-text">
+							<span class="step-number">2</span>
+							<span class="step-title">Data Diri</span>
+						</div>
+					</li>
+					<li class="progress-step">
+						<div class="progress-marker">
+							<i class="ri-building-fill"></i>
+						</div>
+						<div class="progress-text">
+							<span class="step-number">3</span>
+							<span class="step-title">Sekolah</span>
+						</div>
+					</li>
+					<li class="progress-step">
+						<div class="progress-marker">
+							<i class="ri-parent-fill"></i>
+						</div>
+						<div class="progress-text">
+							<span class="step-number">4</span>
+							<span class="step-title">Orang Tua</span>
+						</div>
+					</li>
+					<li class="progress-step">
+						<div class="progress-marker">
+							<i class="ri-booklet-fill"></i>
+						</div>
+						<div class="progress-text">
+							<span class="step-number">5</span>
+							<span class="step-title">Dokumen</span>
+						</div>
+					</li>
+					<li class="progress-step active">
+						<div class="progress-marker">
+							<i class="ri-folder-chart-fill"></i>
+						</div>
+						<div class="progress-text">
+							<span class="step-number">6</span>
+							<span class="step-title">Selesai</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
 	<div class="row">
 		<div class="col-md-12">
@@ -377,3 +508,33 @@
 
 	<!-- <a href="<?= base_url() ?>siswa/profil/lampiran" class="btn btn-warning pull-right mr-3 "> <i class="ri-arrow-left-fill"></i> Kembali </a> -->
 </form>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+
+<!-- Notifikasi Toast -->
+<?php if ($this->input->get('alert')): ?>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const Toast = Swal.mixin({
+				toast: true,
+				position: 'top-end',
+				showConfirmButton: false,
+				timer: 3000,
+				timerProgressBar: true
+			});
+
+			Toast.fire({
+				icon: '<?= $this->input->get('alert') ?>',
+				title: '<?= $this->input->get('message') ?>'
+			});
+
+			// Hapus parameter alert & message dari URL tanpa reload
+			if (history.pushState) {
+				const url = new URL(window.location);
+				url.searchParams.delete('alert');
+				url.searchParams.delete('message');
+				window.history.replaceState({}, document.title, url.toString());
+			}
+		});
+	</script>
+<?php endif; ?>
