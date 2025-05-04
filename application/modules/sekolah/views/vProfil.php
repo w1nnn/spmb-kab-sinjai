@@ -1,3 +1,116 @@
+<?php
+function getHeaders() {
+    $userAgents = [
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0",
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15",
+    ];
+    $randomUA = $userAgents[array_rand($userAgents)];
+    
+    return [
+        "User-Agent: $randomUA",
+        "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Language: en-US,en;q=0.5",
+        "Accept-Encoding: gzip, deflate, br",
+        "Connection: keep-alive",
+        "Upgrade-Insecure-Requests: 1",
+        "Cache-Control: max-age=0"
+    ];
+}
+
+function saveHtml($url, $filename = "page_content.html") {
+    $headers = getHeaders();
+
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    curl_setopt($ch, CURLOPT_ENCODING, ""); // agar bisa decode gzip
+    $html = curl_exec($ch);
+    curl_close($ch);
+
+    if (!$html) {
+        return false;
+    }
+// Ubah kolom maps menjadi col-12
+$html = preg_replace(
+    '/<div class="col-lg-6 col-md-6">\s*<div id="maps">/i',
+    '<div class="col-lg-12 col-md-12"><div id="maps">',
+    $html
+);
+
+// Pindahkan informasi Lintang dan Bujur ke dalam div maps
+$html = preg_replace(
+    '/<\/div>\s*<\/div>\s*<div class="col-lg-4 col-md-4">\s*Lintang: ([^<]*)<br>\s*Bujur: ([^<]*)<br>\s*<\/div>/i',
+    'Lintang: $1<br>Bujur: $2<br></div></div>',
+    $html
+);
+    // Hapus <img> spesifik
+    $html = preg_replace(
+        '/<img[^>]*src="https:\/\/referensi\.data\.kemdikbud\.go\.id\/template\/images\/logodatarefnewok\.png"[^>]*>/i',
+        '',
+        $html
+    );
+    // Hapus tag h4
+    $html = preg_replace(
+        '/<h4[^>]*>[ \s\S]*?<\/h4>/i',
+        '',
+        $html
+    );
+    // Hapus <footer>
+    // $html = preg_replace(
+    //     '/<footer[^>]*>[\s\S]*?<\/footer>/i',
+    //     '',
+    //     $html
+    // );
+    
+    
+    file_put_contents($filename, $html);
+    return true;
+}
+
+// ✅ Jalankan saat file diakses (misalnya dengan parameter GET npsn)
+$npsn = $get->npsn;
+
+if ($npsn) {
+    $url = "https://referensi.data.kemdikbud.go.id/pendidikan/npsn/$npsn";
+    $filename = "result.php";
+
+    if (saveHtml($url, $filename)) {
+        // echo "✅ Halaman berhasil disimpan ke <strong>$filename</strong>";
+    } else {
+        // echo "❌ Gagal mengambil halaman.";
+    }
+} else {
+    // echo "⚠️ Harap berikan parameter ?npsn=xxxxxxxx";
+}
+?>
+
+<?php
+echo '<style>
+@media (max-width: 1024px) {
+  .scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .scroll-inner {
+    display: inline-block;
+    min-width: 800px; /* sesuaikan dengan lebar konten */
+  }
+}
+</style>';
+
+echo '<div class="scroll-container">';
+echo '<div class="scroll-inner">';
+// Tampilkan LogoSchool Logo
+echo '<img src="' . base_url() . 'assets/images/logokon.png" alt="Logo" class="img-fluid" style="max-width: 250px;">';
+include 'result.php';
+echo '</div>';
+echo '</div>';
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -212,7 +325,8 @@
     </style>
 </head>
 <body>
-    <div class="container py-5">
+    <div class="container py-0">
+
         <div class="row">
             <div class="col-lg-4 mb-4">
                 <div class="profile-card">
@@ -322,9 +436,11 @@
                             <p>
                                 <i class='bx bxs-badge-check'></i> <?= $get->status ?>
                             </p>
+                           
                         </div>
                     </div>
                 </div>
+                
                 
                 <div class="row">
                     <div class="col-md-4">

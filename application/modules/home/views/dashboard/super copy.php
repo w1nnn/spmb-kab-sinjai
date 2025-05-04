@@ -49,28 +49,22 @@
 	</div>
 
 
-	<?php
-		$gradients = [
-			'background: linear-gradient(135deg, #ffffff,rgb(194, 228, 236));', // Putih ke biru cerah
-			'background: linear-gradient(135deg, #ffffff,rgb(237, 201, 201));', // Putih ke hijau mint
-			'background: linear-gradient(135deg, #ffffff,rgb(235, 219, 199));', // Putih ke oranye segar
-		];
-	?>
 	<div class="col-md-12">
 		<div class="row">
-			<?php foreach ($levelSekolahs as $index => $levelSekolah) : ?>
+			<?php foreach ($levelSekolahs as $levelSekolah) : ?>
 				<div class="col-md-4">
-					<div class="iq-card iq-card-block iq-card-stretch iq-card-height shadow" style="<?= $gradients[$index % count($gradients)] ?> border-radius: 15px;">
+					<div class="iq-card iq-card-block iq-card-stretch iq-card-height" style="<?= $levelSekolah->color ?>">
 						<div class="iq-card-body relative-background">
 							<a href="#">
 								<div class="d-flex align-items-center">
 									<img src="<?= base_url() ?>assets/images/<?= $levelSekolah->logo ?>" alt="" width="80px" style="padding-right:10px;">
 									<div class="text-left">
-										<h6 class="text-dark"> <?= $levelSekolah->level_sekolah ?></h6>
-										<h2 class="text-dark"> <?= totalByTingkatan('', $levelSekolah->id) ?> <small style="font-size:14px;"></small> </h2>
-										<a class="text-dark" href="<?= base_url() ?>siswa/daftar/index/?tingkat=<?= $levelSekolah->id ?>">Selengkapnya...</a>
+										<h6 class="text-white"> <?= $levelSekolah->level_sekolah ?></h6>
+										<h2 class="text-white"> <?= totalByTingkatan('', $levelSekolah->id) ?> <small style="font-size:14px;"></small> </h2>
+										<a class="text-white" href="<?= base_url() ?>siswa/daftar/index/?tingkat=<?= $levelSekolah->id ?>">Selengkapnya...</a>
 									</div>
 								</div>
+
 							</a>
 						</div>
 					</div>
@@ -78,7 +72,6 @@
 			<?php endforeach; ?>
 		</div>
 	</div>
-
 
 
 
@@ -112,7 +105,9 @@
 				</div>
 			</div>
 		</div>
+
 	</div>
+
 
 </div>
 
