@@ -657,19 +657,33 @@ echo '</div>';
                                     <input type="text" value="<?= $get->alamat ?>" class="form-control" name="alamat" autocomplete="off" required>
                                 </div>
                                 <div class="form-group mb-3">
-                                    <label>Kelurahan</label>
-                                    <input type="text" class="form-control" name="kel" autocomplete="off" value="<?= $get->kel ?>" required>
+                                    <!-- <label>Kelurahan</label> -->
+                                    <input type="hidden" class="form-control" name="kel" autocomplete="off" value="<?= $get->kel ?>">
+                                </div>
+                                <!-- Kordinat -->
+                                <div class="form-group mb-3">
+                                    <label>Titik Kordinat <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" name="kordinat" autocomplete="off" value="<?= $get->kordinat ?>" required>
+                                    <!-- cth -->
+                                    <small style="font-style:italic; font-weight: bold; color: #ff0000;">Contoh Inputan: -5.20594, 120.290005</small>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group mb-3">
                                     <label>Kecamatan</label>
-                                    <select name="kec" class="form-control select2" style="width:100%" required>
+                                    <select name="kec" id="kecamatan" class="form-control select2" style="width:100%" required>
                                         <option value="">Pilih</option>
                                         <?php foreach ($kecamatans as $value): $selected = ($value->id_kec == $get->kec) ? "selected" : ""; ?>
                                             <option value="<?= $value->id_kec ?>" <?= $selected ?>><?= $value->nama_kec ?></option>
                                         <?php endforeach; ?>
                                     </select>
+                                    <div class="form-group mt-3">
+                                    <label for=""> Desa / Dusun / Lingkungan Tempat Sekolah <span class="text-danger">*</span>
+                                    </label>
+                                    <select name="dusun" class="form-control select2" id="zonasi" required data-tags="true" style="width:100%"> 
+                                    <option value="<?= $get->dusun ?>"><?= $get->dusun ?></option>
+                                    </select>
+                                </div>
                                 </div>
                                 <div class="form-group mb-3">
                                     <label>Status</label>
@@ -804,11 +818,60 @@ echo '</div>';
     <?php } ?>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
-    
+    <script>
+    $(document).ready(function() {
+        $('#zonasi').select2({
+		    tags: true,
+            placeholder: 'Pilih',
+            allowClear: true
+        });
+    });
+    </script>
+    <script>
+    $(document).ready(function() {  
+		$("#kecamatan").change(function() {
+			const kecamatanValue = $('#kecamatan').val();
+
+			$.ajax({
+				type: "POST",
+				url: "<?php echo base_url("sekolah/zonasi/getDaerahKecamatan"); ?>",
+				data: {
+					kecamatan: kecamatanValue,
+				}, // data yang akan dikirim ke file yang dituju
+				dataType: "JSON",
+				beforeSend: function(e) {
+					if (e && e.overrideMimeType) {
+						e.overrideMimeType("application/json;charset=UTF-8");
+					}
+				},
+				success: function(response) {
+                const tempContainer = document.createElement('div');
+                tempContainer.innerHTML = "<select>" + response.list_daerah + "</select>"; // bungkus biar bisa query
+                const options = tempContainer.querySelectorAll('option');
+
+                let newOptions = "";
+                options.forEach(option => {
+                    const name = option.textContent.trim(); // ambil nama dusun
+                    if (name !== "") {
+                        newOptions += `<option>${name}</option>`;
+                    }
+                });
+
+                // Tambahkan ke #zonasi tanpa menghapus option pertama (<?= $get->dusun ?>)
+                $("#zonasi").append(newOptions).show();
+            },
+
+				error: function(xhr, ajaxOptions, thrownError) { // Ketika ada error
+					alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError); // Munculkan alert error
+				}
+			});
+		});
+	});
+    </script>
     <?php if ($this->input->get('alert')): ?>
         <script>
             $(document).ready(function() {

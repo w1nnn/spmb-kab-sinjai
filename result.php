@@ -106,7 +106,7 @@
                         <td>&nbsp;&nbsp;&nbsp;</td>
                         <td>Nama</td>
                         <td>:</td>
-                        <td>UPTD SMP NEGERI 19 SINJAI</td>
+                        <td>UPTD SMP NEGERI 7 SINJAI</td>
                     </tr>
                     <!-- edit 20200602 -->
                     <tr>
@@ -114,7 +114,7 @@
                         <td>NPSN</td>
                         <td>:</td>
                         <td>
-                            <a style="text-decoration: none;" class="link1" target="_blank" href="https://sekolah.data.kemdikbud.go.id/index.php/Chome/profil/003458C0-0D26-E111-9D34-9B0B63636291">40304524</a>
+                            <a style="text-decoration: none;" class="link1" target="_blank" href="https://sekolah.data.kemdikbud.go.id/index.php/Chome/profil/A0A954C0-0D26-E111-9A8F-4F27F192E922">40304535</a>
                         </td>
 
                     </tr>
@@ -122,7 +122,7 @@
                         <td>&nbsp;</td>
                         <td>Alamat</td>
                         <td>:</td>
-                        <td>Jl. Pendidikan Lappae</td>
+                        <td>Jl. Muh. Husni Thamrin No. 1</td>
                     </tr>
                     <tr>
                         <td></td>
@@ -131,13 +131,13 @@
                         <td>&nbsp;</td>
                         <td>Desa/Kelurahan</td>
                         <td>:</td>
-                        <td>SAOTENGAH</td>
+                        <td>BIRINGERE</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Kecamatan/Kota (LN)</td>
                         <td>:</td>
-                        <td>KEC. TELLU LIMPOE</td>
+                        <td>KEC. SINJAI UTARA</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
@@ -200,45 +200,45 @@
                         <td>&nbsp;</td>
                         <td>No. SK. Pendirian</td>
                         <td>:</td>
-                        <td>0260/O/1994</td>
+                        <td>03410111997</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Tanggal SK. Pendirian</td>
                         <td>:</td>
-                        <td>05-10-1994</td>
+                        <td>07-03-1997</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Nomor SK Operasional</td>
                         <td>:</td>
-                        <td>2129/26.c/04/DPM-PTSP/IX/2019</td>
+                        <td>0030/U/1979</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Tanggal SK Operasional</td>
                         <td>:</td>
-                        <td>17-09-2019</td>
+                        <td>06-03-1979</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>File SK Operasional ()</td>
                         <td>:</td>
-                        <td>                                    <a class="link1" target="_blank" href="https://vervalsp.data.kemdikbud.go.id/verval/dokumen/skoperasional/771856-749903-379748-146530875-652455233.pdf">Lihat SK Operasional</a>
+                        <td>                                    <a class="link2" target="_blank" href="https://vervalsp.data.kemdikbud.go.id">Silakan Upload SK (link file tidak valid)</a> => [1021003-620386--]
                                                         </td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Tanggal Upload SK Op.</td>
                         <td>:</td>
-                        <td>                                07-02-2023 14:32:25                            </td>
+                        <td>                                21-06-2024 10:07:47                            </td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Akreditasi</td>
                         <td>:</td>
                         <td>
-                            <a target="_blank" class="btn-link" href="https://ban-pdm.id/satuanpendidikan/40304524">B</a></td>
+                            <a target="_blank" class="btn-link" href="https://ban-pdm.id/satuanpendidikan/40304535">A</a></td>
                     </tr>
                 </table>
             </div>
@@ -253,7 +253,7 @@
                         <td>&nbsp;&nbsp;&nbsp;</td>
                         <td>Luas Tanah</td>
                         <td>:</td>
-                        <td>20.000 m<sup>2</sup></td>
+                        <td>9.074 m<sup>2</sup></td>
                     </tr>
                     <!-- edit 20200602 -->
                     <tr>
@@ -266,7 +266,7 @@
                         <td></td>
                         <td></td>
                         <td>:</td>
-                        <td>2. 10 Mb</td>
+                        <td>2. 300 Mb</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
@@ -287,32 +287,32 @@
                         <td>&nbsp;&nbsp;&nbsp;</td>
                         <td>Fax</td>
                         <td>:</td>
-                        <td>-</td>
+                        <td>048221091</td>
                     </tr>
                     <tr>
                         <td>&nbsp;&nbsp;&nbsp;</td>
                         <td>Telepon</td>
                         <td>:</td>
-                        <td></td>
+                        <td>048221091</td>
                     </tr>
                     <!-- edit 20200602 -->
                     <tr>
                         <td>&nbsp;</td>
                         <td>Email</td>
                         <td>:</td>
-                        <td>uptdsmp19@gmail.com</td>
+                        <td>40304535.sinjaikab@gmail.com</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Website</td>
                         <td>:</td>
-                        <td><a class='link1' target='_blank' href='http://www.smpn19sinjai.mysch.id'>http://www.smpn19sinjai.mysch.id</a></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Operator</td>
                         <td>:</td>
-                        <td>Andi Warna</td>
+                        <td>MUHAMMAD SALEH MUSTAFA</td>
                     </tr>
                                     </table>
             </div>
@@ -325,7 +325,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12"><div id="maps">
 
-                        Lintang: -5.272500000000<br>Bujur: 120.180900000000<br></div></div>
+                        Lintang: -5.130171700000<br>Bujur: 120.253131700000<br></div></div>
                 </div>
             </div>
         </div>
@@ -364,15 +364,15 @@
 
       <script>
         var map = L.map('maps').setView({
-            lat: -5.272500000000,
-            lon: 120.180900000000        }, 8);
+            lat: -5.130171700000,
+            lon: 120.253131700000        }, 8);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '© OpenStreetMap'
         }).addTo(map);
         L.marker({
-            lat: -5.272500000000,
-            lon: 120.180900000000        }).bindPopup('UPTD SMP NEGERI 19 SINJAI').addTo(map);
+            lat: -5.130171700000,
+            lon: 120.253131700000        }).bindPopup('UPTD SMP NEGERI 7 SINJAI').addTo(map);
     </script>
     
   </div><!-- Body inner end -->

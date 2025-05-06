@@ -785,6 +785,10 @@ class Sekolah extends CI_Controller
             'alamat' => $this->input->post('alamat', TRUE),
             'kel' => $this->input->post('kel', TRUE),
             'kec' => $this->input->post('kec', TRUE),
+            // kordinat
+            'kordinat' => $this->input->post('kordinat', TRUE),
+            // Dusun
+            'dusun' => $this->input->post('dusun', TRUE),
             'status' => $this->input->post('status', TRUE),
             'email' => $this->input->post('email', TRUE),
             'no_hp' => $this->input->post('no_hp', TRUE),

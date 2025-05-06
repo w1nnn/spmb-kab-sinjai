@@ -48,6 +48,11 @@ header("Content-Disposition: attachment; filename=Data Kuota Pendaftar.xls");
             <th style="border:1px solid black;">Nama</th>
             <th style="border:1px solid black;">Kuota</th>
             <th style="border:1px solid black;">Pendaftar</th>
+            <!-- Jumlah Lulusan -->
+            <th style="border:1px solid black;">Jumlah Lulusan</th>
+            <!-- Jumlah Telah Mendaftar -->
+            <!-- <th style="border:1px solid black;">Jumlah Telah Mendaftar</th> -->
+             
         </tr>
 
         <?php
@@ -66,7 +71,8 @@ header("Content-Disposition: attachment; filename=Data Kuota Pendaftar.xls");
                 <td style="border:1px solid black;"><?= $row->nama ?></td>
                 <td style="border:1px solid black;"><?= $kuota ?></td>
                 <td style="border:1px solid black;"><?= $pendaftar ?></td>
-            </tr>
+                <!-- Jumlah Lulusan -->
+                <td style="border:1px solid black;"><?= $row->lulusan ?></td>
         <?php } ?>
         <tr>
             <td colspan="3" style="border:1px solid black;text-align:right;"><strong>Total</strong></td>

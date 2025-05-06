@@ -112,7 +112,7 @@ class Sekolah_model extends CI_Model
 
     function get_sekolah($level, $kecamatan = '', $status_dtks = '')
 {
-    $this->db->select("s.npsn, s.nama, s.kuota, p.pendaftar");
+    $this->db->select("s.npsn, s.nama, s.kuota, p.pendaftar, s.lulusan");
     $this->db->from("tbl_sekolah AS s");
     
     // Modify the subquery to include DTKS status filter if needed
