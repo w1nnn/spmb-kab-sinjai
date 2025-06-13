@@ -35,6 +35,7 @@
                             <option value="">Semua Pendaftar</option>
                             <option value="1">Terdaftar DTKS</option>
                             <option value="0">Tidak Terdaftar DTKS</option>
+                            <option value="3">Proses Verivikasi DTKS</option>
                         </select>
 					</div>
                     <?php } ?>

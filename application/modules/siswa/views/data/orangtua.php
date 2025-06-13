@@ -106,7 +106,7 @@
 		.progress-tracker ul::after {
 			top: 20px;
 		}
-	}
+	}     
 </style>
 <form action="<?= base_url() ?>siswa/save" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
 	<input type="hidden" name="id" value="<?= $get->id_siswa ?>">
@@ -134,7 +134,7 @@
         <i class="ri-error-warning-line mr-2"></i> Proses Verifikasi DTKS
     </div>';
 					}
-					?>
+					?>  
 				</div>
 			</div>
 		</div>
@@ -152,7 +152,7 @@
 							<span class="step-title">Jalur</span>
 						</div>
 					</li>
-					<li class="progress-step ">
+					<li class="progress-step ">  
 						<div class="progress-marker">
 							<i class="ri-user-2-fill"></i>
 						</div>
@@ -201,7 +201,7 @@
 			</div>
 		</div>
 	</div>
-
+    
 	<div class="row">
 		<div class="col-md-12">
 			<div class="form-group">

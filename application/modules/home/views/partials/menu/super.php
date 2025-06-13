@@ -77,6 +77,9 @@
 <li class="">
 	<a href="<?= base_url() ?>regulasi/manage" class="iq-waves-effect"> <i class="ri-auction-line"></i><span>Regulasi </span></a>
 </li>
+<li class="">
+	<a href="<?= base_url() ?>dtks/manage" class="iq-waves-effect"> <i class="ri-id-card-line"></i><span>DTKS </span></a>
+</li>
 
 
 <li class="">

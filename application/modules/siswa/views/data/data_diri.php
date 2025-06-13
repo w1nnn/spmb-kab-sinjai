@@ -274,12 +274,11 @@ if ($eUsia == 'usia' && $statusError == 'danger') {
 		</div>
 	</div>
 
-
 	<div class="row">
 		<div class="col-md-6">
 			<div class="form-group">
 				<label for=""> Nomor Induk Kependudukan <span class="text-danger">*</span> </label>
-				<input type="number" readonly maxlength="16" oninput="this.value=this.value.slice(0,this.maxLength)" value="<?= $get->no_ktp ?>" class="form-control" name="no_ktp" required>
+				<input type="number" maxlength="16" oninput="this.value=this.value.slice(0,this.maxLength)" value="<?= $get->no_ktp ?>" class="form-control" name="no_ktp" required>
 			</div>
 			<div class="form-group">
 				<label for=""> Nama Calon Siswa <span class="text-danger">*</span> </label>
@@ -344,7 +343,7 @@ if ($eUsia == 'usia' && $statusError == 'danger') {
 					</select>
 					<!-- <small id="quota_info" class="form-text text-muted"></small> -->
 					<!-- Input Kuota Update -->
-					 <input type="hidden" name="kuota_lulusan" id="kuota_lulusan">
+					 <!-- <input type="text" name="kuota_lulusan" id="kuota_lulusan"> -->
 				</div>
 			<?php } ?>
 			<div class="form-group">

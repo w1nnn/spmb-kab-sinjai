@@ -51,13 +51,17 @@ class Daftar extends CI_Controller
 		$this->template->load('home/layouts', 'vList', $data);
 	}
 
-
 	public function ajax_list()
 	{
 		cek_session();
+		
+		// Update status DTKS secara massal sebelum menampilkan data
+		$this->bulk_update_dtks_status();
+		
 		$list = $this->siswa->get_datatables();
 		$data = array();
 		$no = $_POST['start'];
+		
 		foreach ($list as $siswa) {
 			if ($siswa->status_verifikasi == "y") {
 				$status = "Diterima";
@@ -69,13 +73,14 @@ class Daftar extends CI_Controller
 				$status = "Belum Diproses";
 				$color = "secondary";
 			}
+			
 			$no++;
 			$row = array();
 			$row[] = $no;
 			$row[] = "<img src='" . base_url() . "uploads/siswa/" . $siswa->foto . "' width='70px;' class='rounded'> ";
 			$row[] = "<a href='" . base_url() . "siswa/profil/" . $siswa->id_siswa . "'><b>" . strtoupper($siswa->nama_siswa) . "</b> </a> <br> <b > " . jalur($siswa->jalur)->nama . " </b>  ";
 			$row[] = $siswa->tempat_lahir . " / " . tgl_indo($siswa->tgl_lahir);
-
+			$row[] = $siswa->no_ktp;
 
 			if (level_user() == "admin" || level_user() == "superadmin" || level_user() == "kadis") {
 				$row[] = sekolah($siswa->pilihan_sekolah_1)->nama;
@@ -83,9 +88,7 @@ class Daftar extends CI_Controller
 
 			$row[] = kecamatan($siswa->kec)->nama_kec;
 			$row[] = dusun($siswa->dusun)->daerah_zonasi;
-
 			$row[] = "<span class='badge badge-" . $color . "'>" . $status . "</span> ";
-
 			$row[] = '<a href="' . base_url() . 'siswa/profil/' . $siswa->id_siswa . '"  class="btn btn-sm btn-warning mr-1 "> <i class="ri-search-2-line "></i> Detail</a>
 					  <a href="#" class="btn btn-danger btn-sm "  onclick="delete_(' . "'" . $siswa->id_siswa . "'" . ')">  <i class="ri-delete-bin-2-line "></i> Hapus</a> ';
 
@@ -98,10 +101,108 @@ class Daftar extends CI_Controller
 			"recordsFiltered" => $this->siswa->count_filtered(),
 			"data" => $data,
 		);
-		//output to json format
+		
 		echo json_encode($output);
 	}
 
+	/**
+	 * Method untuk melakukan update status DTKS secara massal
+	 * Lebih efisien dibanding update satu per satu
+	 */
+// 	private function bulk_update_dtks_status()
+// {
+//     // Single query yang lebih efisien
+//     $sql = "UPDATE tbl_siswa 
+//             SET sts_dtks = CASE 
+//                 WHEN no_ktp IS NOT NULL 
+//                 AND no_ktp != '' 
+//                 AND EXISTS (
+//                     SELECT 1 
+//                     FROM tbl_status_dtks 
+//                     WHERE nik = tbl_siswa.no_ktp 
+//                     AND status = 'Terdaftar'
+//                 ) THEN 1 
+//                 ELSE 0 
+//             END";
+    
+//     return $this->db->query($sql);
+// }
+private function bulk_update_dtks_status()
+{
+    // Query dengan 3 kondisi: Terdaftar=1, Tidak Terdaftar=0, Tidak Ada Data=3
+    $sql = "UPDATE tbl_siswa 
+            SET sts_dtks = CASE 
+                WHEN no_ktp IS NOT NULL 
+                AND no_ktp != '' 
+                AND EXISTS (
+                    SELECT 1 
+                    FROM tbl_status_dtks 
+                    WHERE nik = tbl_siswa.no_ktp 
+                    AND status = 'Terdaftar'
+                ) THEN 1
+                WHEN no_ktp IS NOT NULL 
+                AND no_ktp != '' 
+                AND EXISTS (
+                    SELECT 1 
+                    FROM tbl_status_dtks 
+                    WHERE nik = tbl_siswa.no_ktp 
+                    AND status = 'Tidak Terdaftar'
+                ) THEN 0
+                ELSE 3 
+            END";
+    
+    return $this->db->query($sql);
+}
+
+	/**
+	 * Alternative method menggunakan JOIN untuk database yang sangat besar
+	 * Uncomment dan gunakan method ini jika data lebih dari 100rb records
+	 */
+	/*
+	private function bulk_update_dtks_status_join()
+	{
+		// Reset semua sts_dtks menjadi 0
+		$this->db->update('tbl_siswa', array('sts_dtks' => 0));
+		
+		// Update menggunakan JOIN - lebih efisien untuk data besar
+		$sql = "UPDATE tbl_siswa s 
+				INNER JOIN tbl_status_dtks d ON s.no_ktp = d.nik 
+				SET s.sts_dtks = 1 
+				WHERE s.no_ktp IS NOT NULL 
+				AND s.no_ktp != '' 
+				AND d.nik IS NOT NULL 
+				AND d.nik != ''";
+		
+		$this->db->query($sql);
+	}
+	*/
+
+	/**
+	 * Method untuk melakukan update DTKS secara manual/terpisah
+	 * Bisa dipanggil melalui URL atau dijadwalkan via cron job
+	 */
+	public function update_dtks_manual()
+	{
+		cek_session();
+		
+		// Pastikan hanya admin yang bisa akses
+		if (!in_array(level_user(), ['admin', 'superadmin'])) {
+			show_error('Unauthorized access', 403);
+		}
+		
+		$start_time = microtime(true);
+		$this->bulk_update_dtks_status();
+		$end_time = microtime(true);
+		
+		$execution_time = round(($end_time - $start_time), 2);
+		
+		$this->session->set_flashdata(array(
+			'status' => 'success',
+			'message' => "Update DTKS berhasil dilakukan dalam {$execution_time} detik"
+		));
+		
+		redirect('siswa/daftar');
+	}
 
 	public function verifikasi()
 	{
@@ -123,12 +224,9 @@ class Daftar extends CI_Controller
 		redirect(base_url("siswa/profil/{$id}?alert={$status}&message={$message}"));
 	}
 
-
 	public function ajax_delete($id)
 	{
 		$this->siswa->delete_by_id($id);
-		// $this->session->set_flashdata(array('status' => "danger"));
-
 		echo json_encode(array("status" => TRUE));
 	}
 

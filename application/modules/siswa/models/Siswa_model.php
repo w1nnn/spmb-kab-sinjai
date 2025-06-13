@@ -175,26 +175,27 @@ class Siswa_model extends CI_Model
     }
 
 
-    public function getBySekolah($npsn, $jalur)
-    {
-        $jalur = $this->input->get('jalur');
-        $sts_dtks = $this->input->get('sts_dtks');
-        
-        $this->db->select('*');
-        $this->db->from('tbl_siswa');
-        $this->db->where('pilihan_sekolah_1', $npsn);
-        $this->db->where('lock', 'y');
-        
-        if ($jalur != "all" && $jalur != "") {
-            $this->db->where('jalur', $jalur);
-        }
-        
-        if ($sts_dtks !== null && $sts_dtks !== '') {
-            $this->db->where('sts_dtks', $sts_dtks);
-        }
-
-        return $this->db->get()->result();
+   public function getBySekolah($npsn, $jalur, $sts_dtks)
+{
+    $this->db->select('*');
+    $this->db->from('tbl_siswa');
+    $this->db->where('pilihan_sekolah_1', $npsn);
+    $this->db->where('lock', 'y');
+    
+    // Filter berdasarkan jalur jika ada dan bukan "all"
+    if ($jalur != "all" && $jalur != "" && $jalur !== null) {
+        $this->db->where('jalur', $jalur);
     }
+    
+    // Filter berdasarkan status DTKS jika ada
+    if ($sts_dtks !== null && $sts_dtks !== '') {
+        $this->db->where('sts_dtks', $sts_dtks);
+    }
+
+    $this->db->order_by('tgl_daftar', 'DESC');
+    
+    return $this->db->get()->result();
+}
 
     public function getByCustom()
     {

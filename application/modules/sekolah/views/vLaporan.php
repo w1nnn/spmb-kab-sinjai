@@ -1,6 +1,7 @@
 <?php 
 	$npsn  = $this->input->get('npsn');
 	$jalur = $this->input->get('jalur');
+	$sts_dtks = $this->input->get('sts_dtks');
 ?>
 <div class="row">
 	<div class="col-sm-12">
@@ -11,7 +12,7 @@
 						<form action="#">
 						<div class="row mb-4">
 							<div class="col-md-3">
-								<select name="jalur" class="form-control select2" id="" required>
+								<select name="jalur" class="form-control select2" id="jalur" required>
 									<option value=""> Tampilkan Berdasarkan Jalur </option>
 									<option value="all" <?= ($jalur == "all") ? "selected":"";  ?> > Semua Jalur  </option>
 									<?php 
@@ -35,7 +36,16 @@
 								</select>
 							</div>
 							<?php } ?>
-
+							<?php  if(level_user() == "admin" || level_user()  == "superadmin"  || level_user()  == "sekolah" ){   ?>
+							<div class="col-md-4 mb-2">
+								<select id="sts_dtks" name="sts_dtks" class="form-control">
+									<option value="" <?= ($sts_dtks == "") ? "selected" : ""; ?>>Semua Pendaftar</option>
+									<option value="1" <?= ($sts_dtks == "1") ? "selected" : ""; ?>>Terdaftar DTKS</option>
+									<option value="0" <?= ($sts_dtks == "0") ? "selected" : ""; ?>>Tidak Terdaftar DTKS</option>
+									<option value="3" <?= ($sts_dtks == "3") ? "selected" : ""; ?>>Proses Verivikasi DTKS</option>
+								</select>
+							</div>
+							<?php } ?>
 
 							<div class="col-md-2">
 								<button type="submit" class="btn btn-lg btn-block btn-primary"> <i class="ri-search-2-line"></i> Tampilkan </button>
@@ -43,7 +53,7 @@
 
 							<div class="col-md-2">
 								<div class="pull-right">
-									<a href="<?= base_url()?>sekolah/excel?jalur=<?= $this->input->get('jalur') ?>&npsn=<?= $this->input->get('npsn') ?>" target="blank" class="btn btn-success btn-lg "> <i class="ri-file-excel-2-fill"></i> Export to Excel  </a>
+									<a href="<?= base_url()?>sekolah/excel?jalur=<?= $this->input->get('jalur') ?>&npsn=<?= $this->input->get('npsn') ?>&sts_dtks=<?= $this->input->get('sts_dtks') ?>" target="blank" class="btn btn-success btn-lg "> <i class="ri-file-excel-2-fill"></i> Export to Excel  </a>
 								</div>
 								<div class="clearfix"></div>
 							</div>

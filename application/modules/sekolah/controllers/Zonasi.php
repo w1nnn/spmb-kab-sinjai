@@ -238,8 +238,8 @@ class Zonasi extends CI_Controller
 			} else {
 				$selected = "";
 			}
-
-			$lists .= "<option value='" . $data->npsn . "' " . $selected . " >" . $data->nama . " </option>"; // Tambahkan tag option ke variabel $lists
+			$lists .= "<option value='" . $data->npsn . "' data-kordinat='" . $data->kordinat . "' " . $selected . ">" . $data->nama . "</option>";
+			// $lists .= "<option value='" . $data->npsn . "' " . $selected . " >" . $data->nama . " </option>"; // Tambahkan tag option ke variabel $lists
 		}
 
 		$callback = array('list_sekolah' => $lists); // Masukan variabel lists tadi ke dalam array $callback dengan index array
@@ -267,8 +267,9 @@ class Zonasi extends CI_Controller
 			} else {
 				$selected = "";
 			}
+			$lists .= "<option value='" . $data->npsn . "' data-kordinat='" . $data->kordinat . "' " . $selected . ">" . $data->nama . "</option>";
 
-			$lists .= "<option value='" . $data->npsn . "' " . $selected . " >" . $data->nama . " " . $jalur . " - " . $area . " </option>"; // Tambahkan tag option ke variabel $lists
+			// $lists .= "<option value='" . $data->npsn . "' " . $selected . " >" . $data->nama . " " . $jalur . " - " . $area . " </option>"; // Tambahkan tag option ke variabel $lists
 		}
 
 		$callback = array('list_sekolah' => $lists); // Masukan variabel lists tadi ke dalam array $callback dengan index array

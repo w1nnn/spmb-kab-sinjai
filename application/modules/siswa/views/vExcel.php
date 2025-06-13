@@ -65,6 +65,8 @@ if (level_user() == "admin" || level_user()  == "superadmin") {
 							echo "Data Terdaftar di DTKS";
 						} elseif ($this->input->get('sts_dtks') == "0") {
 							echo "Data Tidak Terdaftar di DTKS";
+						} elseif ($this->input->get('sts_dtks') == "3") {
+							echo "Proses Verifikasi Data DTKS";
 						} else {
 							echo "Data Campuran";
 						}
@@ -186,7 +188,11 @@ if (level_user() == "admin" || level_user()  == "superadmin") {
 								echo "Terdaftar di DTKS";
 							} elseif ($siswa->sts_dtks == "0") {
 								echo "Tidak Terdaftar di DTKS";
-							} else
+							} elseif ($siswa->sts_dtks == "3") {
+								echo "Proses Verifikasi DTKS";
+							} else {
+								echo "Tidak Diketahui";
+							}
 							?>
 					</tr>
 				<?php } ?>

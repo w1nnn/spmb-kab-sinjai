@@ -55,37 +55,40 @@ class Sekolah extends CI_Controller
     }
 
 
-    public function laporan()
-    {
-        cek_session();
-        $jalur = $this->input->get('jalur');
-        if (level_user() == "sekolah") {
-            $npsn = $this->session->userdata('npsn');
-            $data['siswas'] = $this->siswa->getBySekolah($npsn, $jalur);
-        } elseif (level_user() == "admin" || level_user() == "superadmin") {
-            $npsn = $this->input->get('npsn');
-            $data['siswas'] = $this->siswa->getBySekolah($npsn, $jalur);
-            $data['sekolah'] = $this->sekolah->get_all();
-        }
-
-        $data['title'] = "Laporan";
-        $data['subtitle'] = "Laporan Pendaftar";
-        $data['jalurs'] = $this->jalur->get_all();
-
-        $this->template->load('home/layouts', 'vLaporan', $data);
+   public function laporan()
+{
+    cek_session();
+    $jalur = $this->input->get('jalur');
+    $sts_dtks = $this->input->get('sts_dtks'); // Tambahkan parameter status DTKS
+    
+    if (level_user() == "sekolah") {
+        $npsn = $this->session->userdata('npsn');
+        $data['siswas'] = $this->siswa->getBySekolah($npsn, $jalur, $sts_dtks);
+    } elseif (level_user() == "admin" || level_user() == "superadmin") {
+        $npsn = $this->input->get('npsn');
+        $data['siswas'] = $this->siswa->getBySekolah($npsn, $jalur, $sts_dtks);
+        $data['sekolah'] = $this->sekolah->get_all();
     }
+
+    $data['title'] = "Laporan";
+    $data['subtitle'] = "Laporan Pendaftar";
+    $data['jalurs'] = $this->jalur->get_all();
+
+    $this->template->load('home/layouts', 'vLaporan', $data);
+}
 
 
     public function excel()
     {
         cek_session();
         $jalur = $this->input->get('jalur');
+        $sts_dtks = $this->input->get('sts_dtks'); // Tambahkan parameter status DTKS
         if (level_user() == "sekolah") {
             $npsn = $this->session->userdata('npsn');
-            $data['siswas'] = $this->siswa->getBySekolah($npsn, $jalur);
+            $data['siswas'] = $this->siswa->getBySekolah($npsn, $jalur, $sts_dtks);
         } elseif (level_user() == "admin" || level_user() == "superadmin") {
             $npsn = $this->input->get('npsn');
-            $data['siswas'] = $this->siswa->getBySekolah($npsn, $jalur);
+            $data['siswas'] = $this->siswa->getBySekolah($npsn, $jalur, $sts_dtks);
         }
 
         $this->load->view('vExcel', $data);
@@ -961,13 +964,15 @@ class Sekolah extends CI_Controller
         $school_name = $this->input->post('school_name');
         
         // Get school data from database
-        $school = $this->db->get_where('tbl_sekolah', ['nama' => $school_name])->row();
-        
+        $school = $this->db->get_where('tbl_sekolah', ['npsn' => $school_name])->row();
+        $pendaftar = jumlahPendaftar($school_name);
         if ($school) {
             echo json_encode([
                 'exists' => true,
-                'quota' => (int)$school->kuota_lulusan,
-                'npsn' => $school->npsn
+                'quota' => (int)$school->kuota,
+                'npsn' => $school->npsn,
+                'pendaftar' => $pendaftar
+
             ]);
         } else {
             echo json_encode([

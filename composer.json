@@ -17,7 +17,8 @@
     "dompdf/dompdf": "^3.1",
     "chriskacerguis/codeigniter-restserver": "^3.1",
     "nesbot/carbon": "^2.46",
-    "phpmailer/phpmailer": "^6.9"
+    "phpmailer/phpmailer": "^6.9",
+    "phpoffice/phpspreadsheet": "^4.3"
   },
   "suggest": {
     "paragonie/random_compat": "Provides better randomness in PHP 5.x"

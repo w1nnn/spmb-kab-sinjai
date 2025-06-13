@@ -1,0 +1,2 @@
+__ci_last_regenerate|i:1749707292;id|N;username|s:3:"dev";nama|s:3:"Dev";level|s:10:"superadmin";isLogin|b:1;alert|s:7:"warning";__ci_vars|a:2:{s:5:"alert";s:3:"old";s:7:"message";s:3:"old";}message|s:334:"Import selesai! Berhasil: 0, Error: 1953, Duplikat: 0
+Detail error: Baris 2: NIK harus 16 digit (11307052012120001), Baris 3: NIK harus 16 digit (21671024506130008), Baris 4: NIK harus 16 digit (33172045706131002), Baris 5: NIK harus 16 digit (43510166904120001), Baris 6: NIK harus 16 digit (53674072003120001) dan 1948 error lainnya";

@@ -544,11 +544,11 @@ echo '</div>';
                                     </a>
                                 <?php } ?>
                             </div>
-                            <div class="progress">
+                            <!-- <div class="progress">
                                 <div class="progress-bar progress-bar-success" role="progressbar" 
                                     style="width: <?= ($get->lulusan > 0) ? (($get->lulusan - $get->kuota_lulusan) / $get->lulusan * 100) : 0 ?>%" 
                                     aria-valuenow="<?= $get->lulusan - $get->kuota_lulusan ?>" aria-valuemin="0" aria-valuemax="<?= $get->lulusan ?>"></div>
-                            </div>
+                            </div> -->
                             <!-- <div class="progress-text">
                                 <span><?= $get->lulusan - $get->kuota_lulusan ?> Terdaftar</span>
                                 <span><?= ($get->lulusan > 0) ? round((($get->lulusan - $get->kuota_lulusan) / $get->lulusan * 100), 1) : 0 ?>%</span>
