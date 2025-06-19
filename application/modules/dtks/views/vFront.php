@@ -26,13 +26,11 @@
 
 <script type="text/javascript">
 
-    var save_method; //for save method string
+    var save_method; 
     var table;
 
 
     $(document).ready(function () {
-        //datatables
-
         table = $('#table').DataTable({
             //
             "oLanguage": {
@@ -99,6 +97,5 @@
 
         }
     }
-
 
 </script>
