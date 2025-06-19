@@ -40,7 +40,10 @@ header("Content-Disposition: attachment; filename=Data Ukuran Baju.xls");
         <tr>
             <th rowspan="2" style="border:1px solid black;">No.</th>
             <th rowspan="2" style="border:1px solid black;">NPSN</th>
-            <th rowspan="2" style="border:1px solid black;">Nama</th>
+            <th rowspan="2" style="border:1px solid black;">Nama Sekolah</th>
+            <th rowspan="2" style="border:1px solid black;">Kecamatan</th>
+            <th rowspan="2" style="border:1px solid black;">Desa/Kelurahan</th>
+            <!-- <th rowspan="2" style="border:1px solid black;">Alamat</th> -->
             <th colspan="<?= count($ukuran) ?>" style="border:1px solid black;">Laki - laki</th>
             <th rowspan="2" style="border:1px solid black;">Jumlah</th>
             <th colspan="<?= count($ukuran) ?>" style="border:1px solid black;">Perempuan</th>
@@ -64,6 +67,10 @@ header("Content-Disposition: attachment; filename=Data Ukuran Baju.xls");
                 <td style="border:1px solid black;"><?= $no++ ?> </td>
                 <td style="border:1px solid black;"><?= $row['npsn'] ?> </td>
                 <td style="border:1px solid black;"><?= $row['nama'] ?> </td>
+                <td style="border:1px solid black;"><?= strtoupper($row['kec']) ?> </td>
+                <!-- <td style="border:1px solid black;"><?= strtoupper($this->input->get('kecamatan')) ?></td> -->
+                <td style="border:1px solid black;"><?= strtoupper($row['kel']) ?> </td>
+                <!-- <td style="border:1px solid black;"><?= $row['alamat'] ?> </td> -->
                 <?php foreach ($row['ukuran_l'] as $val) { ?>
                     <td style="border:1px solid black;"><?= $val ?> </td>
                 <?php } ?>

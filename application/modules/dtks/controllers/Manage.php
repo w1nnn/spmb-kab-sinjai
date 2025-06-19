@@ -63,6 +63,16 @@ class Manage extends CI_Controller
 		echo json_encode($output);
 	}
 
+    public function ajax_reset_all() {
+    // Hapus semua data dari tabel tbl_status_dtks
+    $this->db->empty_table('tbl_status_dtks');
+    
+    // Atau jika ingin menggunakan delete:
+    // $this->db->delete('tbl_status_dtks');
+    
+    echo json_encode(array("status" => TRUE));
+}
+
 	public function save()
 {
 	cek_session();

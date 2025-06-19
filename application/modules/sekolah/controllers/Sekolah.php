@@ -25,6 +25,7 @@ class Sekolah extends CI_Controller
         $data['title'] = "Daftar " . $sekolah . "";
         $data['subtitle'] = "Kabupaten Sinjai";
         $data['level'] = $level;
+        $data['kecamatans'] = $this->kecamatan->get_all();
         $this->template->load('home/layouts', 'vFront', $data);
     }
 
@@ -432,6 +433,8 @@ class Sekolah extends CI_Controller
             $level = $this->input->post('level');
         }
 
+        // var_dump($kecamatan, $level);
+
         $data = $this->sekolah->fetch_data_by_kecamatan($kecamatan, $level);
         $output .= '
         <style>
@@ -639,80 +642,313 @@ class Sekolah extends CI_Controller
         echo $output;
     }
 
-    public function ukuran()
-    {
-        $kecamatan = $this->input->get('kecamatan');
-        $level = $this->input->get('level');
-        $status_dtks = $this->input->get('sts_dtks'); // Get DTKS status from URL parameter
+    public function cari_dusun()
+{
+    $output = '';
+    $dusun = '';
+    $level = '';
+    $keamatan = '';
 
-        $qry_sekolah = $this->sekolah->fetch_data_by_kecamatan($kecamatan, $level)->result();
-
-        $record = [];
-        $l = [];
-        $p = [];
-        $ukuran = [
-            'S',
-            'M',
-            'L',
-            'XL',
-            'XXL'
-        ];
-
-        foreach ($qry_sekolah as $key => $value) {
-            foreach ($ukuran as $v) {
-                // Pass DTKS status to count_size method
-                $count_l = $this->sekolah->count_size($value->npsn, 'L', $v, $status_dtks);
-                $count_p = $this->sekolah->count_size($value->npsn, 'P', $v, $status_dtks);
-
-                $l[$value->npsn][$v] = $count_l;
-                $p[$value->npsn][$v] = $count_p;
-            }
-
-            $record[] = [
-                'npsn'     => $value->npsn,
-                'nama'     => $value->nama,
-                'ukuran_l' => $l[$value->npsn],
-                'ukuran_p' => $p[$value->npsn]
-            ];
-        }
-
-        $data = [
-            'record' => $record,
-            'ukuran' => $ukuran,
-            'status_dtks' => $status_dtks // Pass DTKS status to view for display
-        ];
-        $this->load->view('vUkuran', $data);
+    if ($this->input->post('dusun')) {
+        $dusun = $this->input->post('dusun');
     }
-    // public function export()
-    // {
-    //     $level = $this->input->get('level');
 
-    //     $data['sekolah'] = $this->sekolah->get_sekolah($level);
+    if ($this->input->post('level')) {
+        $level = $this->input->post('level');
+    }
+   
+    $data = $this->sekolah->fetch_data_by_dusun($dusun, $level);
+    // var_dump($data);
+    $output .= '
+    <style>
+        .modern-school-card {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            padding: 20px;
+            transition: all 0.3s ease;
+            height: 100%;
+            border: 1px solid #f0f0f0;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 25px;
+        }
+        
+        .modern-school-card:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #3498db, #2ecc71);
+            transform: scaleX(0);
+            transform-origin: 0 50%;
+            transition: transform 0.4s ease;
+        }
+        
+        .modern-school-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        }
+        
+        .modern-school-card:hover:before {
+            transform: scaleX(1);
+        }
+        
+        .school-card-body {
+            padding: 0;
+        }
+        
+        .school-logo {
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            background: #f8f9fa;
+            padding: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .school-logo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+        
+        .modern-school-card:hover .school-logo img {
+            transform: scale(1.1);
+        }
+        
+        .modern-school-card:hover .school-logo {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .school-info {
+            margin-left: 16px;
+            flex: 1;
+        }
+        
+        .school-name {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 6px;
+            font-size: 17px;
+            transition: color 0.3s ease;
+            line-height: 1.3;
+        }
+        
+        .modern-school-card:hover .school-name {
+            color: #3498db;
+        }
+        
+        .school-address {
+            font-size: 13px;
+            color: #6c757d;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .school-address i {
+            margin-right: 5px;
+            color: #3498db;
+            font-size: 14px;
+            margin-top: 3px;
+        }
+        
+        .school-stats {
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+        }
+        
+        .stat-item {
+            font-size: 12px;
+            color: #6c757d;
+            padding: 5px;
+            border-radius: 6px;
+            background: #f8f9fa;
+            transition: all 0.3s ease;
+        }
+        
+        .modern-school-card:hover .stat-item {
+            background: #edf7ff;
+        }
+        
+        .stat-item i {
+            color: #3498db;
+            margin-right: 4px;
+        }
+        
+        .stat-value {
+            font-weight: 600;
+            color: #333;
+            display: block;
+            font-size: 14px;
+            padding-top: 3px;
+        }
+        
+        .sisa-kuota {
+            color: #2ecc71;
+        }
+        
+        .no-result-card {
+            border-left: 4px solid #e74c3c;
+        }
+    </style>';
+    
+    if ($data->num_rows() > 0) {
+        foreach ($data->result() as $value) {
+            $sisaKuota = ($value->kuota - $value->pendaftar) ?? 0;
+            $kuotaClass = $sisaKuota > 0 ? 'sisa-kuota' : 'text-danger';
+            
+            $output .= '
+            <div class="col-lg-4">
+                <a href="' . base_url() . 'sekolah/profil/' . $value->npsn . '/' . slug($value->nama) . '" class="text-decoration-none">
+                    <div class="modern-school-card">
+                        <div class="school-card-body">
+                            <div class="d-flex align-items-start">
+                                <div class="school-logo">
+                                    <img src="' . base_url() . 'assets/images/' . $value->logo . '" class="img-fluid" alt="logo">
+                                </div>
+                                <div class="school-info">
+                                    <h6 class="school-name">' . $value->nama . '</h6>
+                                    <div class="school-address">
+                                        <i class="ri-map-pin-fill"></i>
+                                        <div>' . ucwords(strtolower($value->alamat)) . ', Dusun ' . $value->dusun . ', Kecamatan ' . kecamatan($value->kec)->nama_kec . '</div>
+                                    </div>
+                                    
+                                    <div class="school-stats">
+                                        <div class="stat-item">
+                                            <i class="ri-user-fill"></i> Kuota
+                                            <span class="stat-value">' . ($value->kuota ?? 0) . ' Orang</span>
+                                        </div>
+                                        <div class="stat-item">
+                                            <i class="ri-registered-fill"></i> Pendaftar
+                                            <span class="stat-value">' . ($value->pendaftar ?? 0) . ' Orang</span>
+                                        </div>
+                                        <div class="stat-item">
+                                            <i class="ri-user-fill"></i> Sisa
+                                            <span class="stat-value ' . $kuotaClass . '">' . $sisaKuota . ' Orang</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>';
+        }
+    } else {
+        $output .= '
+        <div class="col-md-6 offset-3">
+            <div class="modern-school-card no-result-card">
+                <div class="school-card-body">
+                    <div class="d-flex align-items-center">
+                        <div class="school-logo">
+                            <img src="' . base_url() . 'assets/images/blank.svg" class="img-fluid" alt="logo">
+                        </div>
+                        <div class="school-info">
+                            <h5 class="text-danger"><b>Sekolah Tidak Ditemukan di Dusun ' . $dusun . '!</b></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>';
+    }
 
-    //     $this->load->view('vExport', $data);
-    // }
+    echo $output;
+}
 
-    // public function export()
-    // {
-    //     $kecamatan = $this->input->get('kecamatan');
-    //     $level = $this->input->get('level');
-
-    //     $data['sekolah'] = $this->sekolah->fetch_data_by_kecamatan($kecamatan, $level);
-
-    //     $this->load->view('vExport', $data);
-    // }
-    public function export()
+   // Fungsi ukuran yang diperbaiki untuk mendukung dusun
+public function ukuran()
 {
     $kecamatan = $this->input->get('kecamatan');
+    $dusun = $this->input->get('dusun');
     $level = $this->input->get('level');
     $status_dtks = $this->input->get('sts_dtks');
+
+    // Tentukan method yang akan digunakan berdasarkan parameter
+    if (!empty($dusun) && $dusun !== 'Pilih Dusun') {
+        $qry_sekolah = $this->sekolah->fetch_data_by_dusun($dusun, $level)->result();
+    } elseif (!empty($kecamatan)) {
+        $qry_sekolah = $this->sekolah->fetch_data_by_kecamatan($kecamatan, $level)->result();
+    } else {
+        $qry_sekolah = $this->sekolah->get_by_level($level);
+    }
+
+    $record = [];
+    $l = [];
+    $p = [];
+    $ukuran = [
+        'S',
+        'M',
+        'L',
+        'XL',
+        'XXL'
+    ];
+
+    foreach ($qry_sekolah as $key => $value) {
+        foreach ($ukuran as $v) {
+            $count_l = $this->sekolah->count_size($value->npsn, 'L', $v, $status_dtks);
+            $count_p = $this->sekolah->count_size($value->npsn, 'P', $v, $status_dtks);
+
+            $l[$value->npsn][$v] = $count_l;
+            $p[$value->npsn][$v] = $count_p;
+        }
+
+        $record[] = [
+            'npsn'     => $value->npsn,
+            'nama'     => $value->nama,
+            'alamat'   => $value->alamat,
+            'kel'      => $value->kel,
+            'kec'      => $value->nama_kec,
+            'dusun'    => $value->dusun,
+            'ukuran_l' => $l[$value->npsn],
+            'ukuran_p' => $p[$value->npsn]
+        ];
+    }
+
+    $data = [
+        'record' => $record,
+        'ukuran' => $ukuran,
+        'status_dtks' => $status_dtks,
+        'dusun' => $dusun
+    ];
     
-    // Get sekolah data with filters
-    $sekolah = $this->sekolah->get_sekolah($level, $kecamatan, $status_dtks);
+    $this->load->view('vUkuran', $data);
+}
+
+// Fungsi export yang diperbaiki untuk mendukung dusun
+public function export()
+{
+    $kecamatan = $this->input->get('kecamatan');
+    $dusun = $this->input->get('dusun');
+    $level = $this->input->get('level');
+    $status_dtks = $this->input->get('sts_dtks'); 
+    
+    // Tentukan method yang akan digunakan berdasarkan parameter
+    if (!empty($dusun) && $dusun !== 'Pilih Dusun') {
+        // Jika ada filter dusun, gunakan method khusus untuk dusun
+        $sekolah = $this->sekolah->get_sekolah_by_dusun($level, $dusun, $status_dtks);
+    } elseif (!empty($kecamatan)) {
+        // Jika ada filter kecamatan, gunakan method yang sudah ada
+        $sekolah = $this->sekolah->get_sekolah($level, $kecamatan, $status_dtks);
+    } else {    
+        // Jika tidak ada filter lokasi, ambil berdasarkan level saja
+        $sekolah = $this->sekolah->get_sekolah($level, '', $status_dtks);
+    }
     
     $data = [
         'sekolah' => $sekolah,
         'kecamatan' => $kecamatan,
+        'dusun' => $dusun,
         'status_dtks' => $status_dtks
     ];
     
@@ -786,7 +1022,7 @@ class Sekolah extends CI_Controller
             'npsn' => $npsn,
             'nama' => $this->input->post('nama', TRUE),
             'alamat' => $this->input->post('alamat', TRUE),
-            'kel' => $this->input->post('kel', TRUE),
+            'kel' => $this->input->post('dusun', TRUE),
             'kec' => $this->input->post('kec', TRUE),
             // kordinat
             'kordinat' => $this->input->post('kordinat', TRUE),

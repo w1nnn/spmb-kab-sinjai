@@ -75,14 +75,17 @@ class Sekolah_model extends CI_Model
 
 
     public function get_by_level($level)
-    {
-        $this->db->from('tbl_sekolah');
-        $this->db->join('tbl_level_sekolah', 'tbl_sekolah.level_sekolah = tbl_level_sekolah.id');
-        $this->db->where('tbl_sekolah.level_sekolah', $level);
-        $this->db->order_by('npsn', 'ASC');
-        $query = $this->db->get();
-        return $query->result();
-    }
+{
+    $this->db->select('tbl_sekolah.*, tbl_level_sekolah.*, kecamatan.nama_kec');
+    $this->db->from('tbl_sekolah');
+    $this->db->join('tbl_level_sekolah', 'tbl_sekolah.level_sekolah = tbl_level_sekolah.id');
+    $this->db->join('kecamatan', 'tbl_sekolah.kec = kecamatan.id_kec', 'LEFT');
+    $this->db->where('tbl_sekolah.level_sekolah', $level);
+    $this->db->order_by('kecamatan.nama_kec', 'ASC');
+    $this->db->order_by('tbl_sekolah.kel', 'ASC');
+    $query = $this->db->get();
+    return $query->result();
+}
 
     function fetch_data($query, $level)
     {
@@ -110,14 +113,69 @@ class Sekolah_model extends CI_Model
         return $this->db->get();
     }
 
-    function get_sekolah($level, $kecamatan = '', $status_dtks = '')
+   // Tambahkan method baru di Sekolah_model untuk mendukung export berdasarkan dusun
+function get_sekolah_by_dusun($level, $dusun = '', $status_dtks = '')
 {
-    $this->db->select("s.npsn, s.nama, s.kuota, p.pendaftar, s.lulusan");
+    $this->db->select("s.npsn, s.nama, s.kuota, p.pendaftar, s.lulusan, s.kel, s.dusun, s.alamat, kec");
     $this->db->from("tbl_sekolah AS s");
+
+    // Join s.kecamatan ambil nama kecamatan
+    $this->db->join('kecamatan AS k', 's.kec = k.id_kec', 'LEFT');
+    $this->db->select('k.nama_kec AS kec'); 
+
     
     // Modify the subquery to include DTKS status filter if needed
     $subquery = "SELECT s.pilihan_sekolah_1 AS npsn, COUNT(*) AS pendaftar FROM tbl_siswa AS s WHERE `lock` = 'y'";
     
+    if ($status_dtks !== '' && $status_dtks !== null) {
+        $subquery .= " AND s.sts_dtks = '$status_dtks'";
+    }
+    
+    $subquery .= " GROUP BY s.pilihan_sekolah_1";
+    
+    $this->db->join("($subquery) AS p", 'p.npsn = s.npsn', 'LEFT');
+    
+    // Filter berdasarkan dusun jika ada
+    if ($dusun != '' && $dusun !== 'Pilih Dusun') {
+        // Hapus kata "DUSUN" dan bersihkan (sama seperti di fetch_data_by_dusun)
+        $clean_dusun = str_replace(['DUSUN ', 'KELURAHAN ', 'KEL ', 'DESA '], '', strtoupper($dusun));
+        $clean_dusun = trim($clean_dusun);
+        
+        $this->db->group_start();
+        // Cari dengan kata asli
+        $this->db->like('UPPER(s.kel)', strtoupper($dusun));
+        $this->db->or_like('UPPER(s.alamat)', strtoupper($dusun));
+        $this->db->or_like('UPPER(s.dusun)', strtoupper($dusun));
+        
+        // Cari juga dengan kata yang sudah dibersihkan
+        if ($clean_dusun != strtoupper($dusun)) {
+            $this->db->or_like('UPPER(s.kel)', $clean_dusun);
+            $this->db->or_like('UPPER(s.alamat)', $clean_dusun);
+            $this->db->or_like('UPPER(s.dusun)', $clean_dusun);
+        }
+        $this->db->group_end();
+    }
+    
+    $this->db->where('s.level_sekolah', $level);
+    // Group by npsn to avoid duplicates
+    // $this->db->group_by('s.kel');
+    $this->db->order_by('s.kel', 'ASC');
+    return $this->db->get();
+}
+
+// Update method get_sekolah yang sudah ada untuk menambahkan parameter dusun (opsional)
+function get_sekolah($level, $kecamatan = '', $status_dtks = '', $dusun = '')
+{
+    $this->db->select("s.npsn, s.nama, s.kuota, p.pendaftar, s.lulusan, s.kel, s.dusun, s.alamat, kec");
+    $this->db->from("tbl_sekolah AS s");
+
+    // Join s.kecamatan ambil nama kecamatan
+    $this->db->join('kecamatan AS k', 's.kec = k.id_kec', 'LEFT');
+    $this->db->select('k.nama_kec AS kec'); 
+    
+    // Modify the subquery to include DTKS status filter if needed
+    $subquery = "SELECT s.pilihan_sekolah_1 AS npsn, COUNT(*) AS pendaftar FROM tbl_siswa AS s WHERE `lock` = 'y'";
+
     if ($status_dtks !== '' && $status_dtks !== null) {
         $subquery .= " AND s.sts_dtks = '$status_dtks'";
     }
@@ -132,15 +190,37 @@ class Sekolah_model extends CI_Model
         $this->db->where('kecamatan.nama_kec', $kecamatan);
     }
     
+    // Filter berdasarkan dusun jika ada (tambahan baru)
+    if ($dusun != '' && $dusun !== 'Pilih Dusun') {
+        $clean_dusun = str_replace(['DUSUN ', 'KELURAHAN ', 'KEL ', 'DESA '], '', strtoupper($dusun));
+        $clean_dusun = trim($clean_dusun);
+        
+        $this->db->group_start();
+        $this->db->like('UPPER(s.kel)', strtoupper($dusun));
+        $this->db->or_like('UPPER(s.alamat)', strtoupper($dusun));
+        $this->db->or_like('UPPER(s.dusun)', strtoupper($dusun));
+        
+        if ($clean_dusun != strtoupper($dusun)) {
+            $this->db->or_like('UPPER(s.kel)', $clean_dusun);
+            $this->db->or_like('UPPER(s.alamat)', $clean_dusun);
+            $this->db->or_like('UPPER(s.dusun)', $clean_dusun);
+        }
+        $this->db->group_end();
+    }
+    
     $this->db->where('s.level_sekolah', $level);
-    $this->db->order_by('s.npsn', 'ASC');
+    // Group by npsn to avoid duplicates
+    // $this->db->group_by('s.kel');
+    $this->db->order_by('k.nama_kec', 'ASC');
+    $this->db->order_by('s.kel', 'ASC');
+    // order by kecamatan name
     return $this->db->get();
 }
 
     function count_size($npsn, $kelamin, $size, $status_dtks = '')
     {
         $this->db->select("COUNT(*) AS jumlah");
-        $this->db->from("ppdb.tbl_siswa");
+        $this->db->from("spmg9739_spmb.tbl_siswa");
         $this->db->where('pilihan_sekolah_1', $npsn);
         $this->db->where('jk', $kelamin);
         $this->db->where('ukuran_baju', $size);
@@ -207,10 +287,55 @@ class Sekolah_model extends CI_Model
             $this->db->where('tbl_sekolah.level_sekolah', $level);
         }
     
-        $this->db->order_by('tbl_sekolah.nama', 'ASC');
+        $this->db->order_by('tbl_sekolah.kel', 'ASC');
     
         return $this->db->get();
     }
+
+    public function fetch_data_by_dusun($dusun = '', $level = '')
+{
+    $this->db->select("tbl_sekolah.*, tbl_level_sekolah.*, kecamatan.nama_kec, p.pendaftar");
+    $this->db->from("tbl_sekolah");
+    $this->db->join('tbl_level_sekolah', 'tbl_sekolah.level_sekolah = tbl_level_sekolah.id');
+    $this->db->join('kecamatan', 'tbl_sekolah.kec = kecamatan.id_kec');
+    $this->db->join('( SELECT s.pilihan_sekolah_1 AS npsn, COUNT(*) AS pendaftar FROM tbl_siswa AS s WHERE `lock` = \'y\' GROUP BY s.pilihan_sekolah_1 ) AS p', 'p.npsn = tbl_sekolah.npsn', 'LEFT');
+
+//    if ($dusun != '') {
+//     $this->db->group_start();
+//     $this->db->like('tbl_sekolah.kel', $dusun);
+//     $this->db->or_like('tbl_sekolah.alamat', $dusun);
+//     $this->db->or_like('tbl_sekolah.dusun', $dusun);
+//     $this->db->group_end();
+//     }
+    if ($dusun != '') {
+        // Hapus kata "DUSUN" dan bersihkan
+        $clean_dusun = str_replace(['DUSUN ', 'KELURAHAN ', 'KEL ', 'DESA '], '', strtoupper($dusun));
+        $clean_dusun = trim($clean_dusun);
+        
+        $this->db->group_start();
+        // Cari dengan kata asli
+        $this->db->like('UPPER(tbl_sekolah.kel)', strtoupper($dusun));
+        $this->db->or_like('UPPER(tbl_sekolah.alamat)', strtoupper($dusun));
+        $this->db->or_like('UPPER(tbl_sekolah.dusun)', strtoupper($dusun));
+        
+        // Cari juga dengan kata yang sudah dibersihkan
+        if ($clean_dusun != strtoupper($dusun)) {
+            $this->db->or_like('UPPER(tbl_sekolah.kel)', $clean_dusun);
+            $this->db->or_like('UPPER(tbl_sekolah.alamat)', $clean_dusun);
+            $this->db->or_like('UPPER(tbl_sekolah.dusun)', $clean_dusun);
+        }
+        $this->db->group_end();
+    }
+
+
+    if ($level != '') {
+        $this->db->where('tbl_sekolah.level_sekolah', $level);
+    }
+
+    $this->db->order_by('tbl_sekolah.nama', 'ASC');
+
+    return $this->db->get();
+}
 
 
     public function get_by_id($id)
@@ -252,9 +377,6 @@ class Sekolah_model extends CI_Model
         $query = $this->db->get();
         return $query->num_rows();
     }
-
-
-
 
     function save($data)
     {

@@ -47,7 +47,10 @@ header("Content-Disposition: attachment; filename=Data Kuota Pendaftar.xls");
         <tr>
             <th style="border:1px solid black;">No.</th>
             <th style="border:1px solid black;">NPSN</th>
-            <th style="border:1px solid black;">Nama</th>
+            <th style="border:1px solid black;">Nama Sekolah</th>
+            <th style="border:1px solid black;">Kecamatan</th>
+            <th style="border:1px solid black;">Desa/Kelurahan</th>
+            <!-- <th style="border:1px solid black;">Alamat</th> -->
             <th style="border:1px solid black;">Kuota</th>
             <th style="border:1px solid black;">Pendaftar</th>
             <!-- Jumlah Lulusan -->
@@ -71,13 +74,16 @@ header("Content-Disposition: attachment; filename=Data Kuota Pendaftar.xls");
                 <td style="border:1px solid black;"><?= $no++ ?></td>
                 <td style="border:1px solid black;"><?= $row->npsn ?></td>
                 <td style="border:1px solid black;"><?= $row->nama ?></td>
+                <td style="border:1px solid black;"><?= strtoupper($row->kec) ?></td>
+                <!-- <td style="border:1px solid black;"><?= strtoupper($this->input->get('kecamatan')) ?></td> -->
+                <td style="border:1px solid black;"><?= strtoupper($row->kel) ?></td>
                 <td style="border:1px solid black;"><?= $kuota ?></td>
                 <td style="border:1px solid black;"><?= $pendaftar ?></td>
                 <!-- Jumlah Lulusan -->
                 <td style="border:1px solid black;"><?= $row->lulusan ?></td>
         <?php } ?>
         <tr>
-            <td colspan="3" style="border:1px solid black;text-align:right;"><strong>Total</strong></td>
+            <td colspan="5" style="border:1px solid black;text-align:right;"><strong>Total</strong></td>
             <td style="border:1px solid black;"><strong><?= $total_kuota ?></strong></td>
             <td style="border:1px solid black;"><strong><?= $total_pendaftar ?></strong></td>
         </tr>

@@ -4,7 +4,17 @@
         <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
             <div class="iq-card-body">
                 <div class="iq-advance-course ">
-                    <a href="<?= base_url() ?>dtks/manage/add" class="btn btn-primary  pull-right btn-datatb "> <i class="ri-add-circle-line "></i> Tambah </a>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="card-title mb-0">Data DTKS</h5>
+                        <div class="btn-group" role="group">
+                            <a href="<?= base_url() ?>dtks/manage/add" class="btn btn-primary"> 
+                                <i class="ri-add-circle-line"></i> Tambah 
+                            </a>
+                            <button type="button" class="btn btn-info" onclick="reset_all_data()"> 
+                                <i class="ri-loop-left-line"></i> Reset Semua Data 
+                            </button>
+                        </div>
+                    </div>
                     <div class="table-responsive">
                         <table class="table table-hover" id="table">
                             <thead class="text-center iq-bg-primary">
@@ -133,6 +143,66 @@
                         Swal.fire({
                             title: 'Error!',
                             text: 'Gagal menghapus data.',
+                            icon: 'error'
+                        });
+                    }
+                });
+            }
+        });
+    }
+
+    function reset_all_data() {
+        Swal.fire({
+            title: 'Konfirmasi Reset Semua Data',
+            text: 'Anda yakin ingin menghapus SEMUA data DTKS?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+            confirmButtonText: 'Ya, Reset Semua!',
+            cancelButtonText: 'Batal',
+            input: 'text',
+            inputPlaceholder: 'Ketik "RESET" untuk konfirmasi',
+            inputValidator: (value) => {
+                if (value !== 'RESET') {
+                    return 'Ketik "RESET" untuk melanjutkan!'
+                }
+            }
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Show loading
+                Swal.fire({
+                    title: 'Sedang Menghapus...',
+                    text: 'Mohon tunggu, sedang menghapus semua data.',
+                    allowOutsideClick: false,
+                    allowEscapeKey: false,
+                    showConfirmButton: false,
+                    didOpen: () => {
+                        Swal.showLoading();
+                    }
+                });
+
+                // ajax reset all data from database
+                $.ajax({
+                    url: "<?php echo site_url('dtks/manage/ajax_reset_all') ?>",
+                    type: "POST",
+                    dataType: "JSON",
+                    success: function(data) {
+                        //if success reload ajax table
+                        reload_table();
+                        
+                        Swal.fire({
+                            title: 'Berhasil!',
+                            text: 'Semua data berhasil dihapus dari tabel.',
+                            icon: 'success',
+                            timer: 3000,
+                            showConfirmButton: false
+                        });
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                        Swal.fire({
+                            title: 'Error!',
+                            text: 'Gagal menghapus semua data. Silakan coba lagi.',
                             icon: 'error'
                         });
                     }

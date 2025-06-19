@@ -70,7 +70,7 @@
 							<h5><b><?= jalur($jalur)->nama ?></b> </h5>
 							<br>
 							<div class="table-responsive">
-							<table class="table table-hover" id="table">
+							<table class="table table-hover table-sm" id="table">
 								<thead class="text-center iq-bg-primary">
 								<tr>
 									<th style="width:2%">No.</th>
@@ -86,6 +86,7 @@
 									<th>Nama Ibu</th>
 									<th>No. Hp</th>
 									<th>Tanggal Terdaftar </th>
+									<th>Aksi</th>
 								</tr>
 								</thead>
 								<tbody>
@@ -107,6 +108,13 @@
 									<td> <?= $siswa->nm_ibu ?> </td>
 									<td> <?= $siswa->no_hp_ortu ?> </td>
 									<td> <?= tgl_indo($siswa->tgl_daftar) ?> </td>
+									<td>
+										<a href="<?= base_url() ?>siswa/profil/<?= $siswa->id_siswa ?>" class="btn btn-sm btn-info"> <i class="ri-verified-badge-line"></i> Verivikasi Kelulusan </a>
+										<?php if($siswa->status_verifikasi == "y"){ ?>
+											<a href="<?= base_url() ?>siswa/cetak/<?= $siswa->id_siswa ?>" target="_blank" class="btn btn-sm btn-success"> <i class="ri-printer
+-line"></i> Cetak Bukti Pendaftaran </a>
+										<?php } ?>
+									</td>
 								</tr>
 								<?php } ?>
 								</tbody>
@@ -119,7 +127,7 @@
 						}elseif (level_user() == "sekolah" ) { ?>
 
 						<div class="table-responsive">
-							<table class="table table-hover" id="table">
+							<table class="table table-hover table-sm" id="table">
 								<thead class="text-center iq-bg-primary">
 								<tr>
 									<th style="width:2%">No.</th>
@@ -137,6 +145,7 @@
 									<th>Nama Ibu</th>
 									<th>No. Hp</th>
 									<th>Tanggal Terdaftar </th>
+									<th>Aksi</th>
 								</tr>
 								</thead>
 								<tbody>
@@ -162,6 +171,13 @@
 									<td> <?= $siswa->nm_ibu ?> </td>
 									<td> <?= $siswa->no_hp_ortu ?> </td>
 									<td> <?= tgl_indo($siswa->tgl_daftar) ?> </td>
+									<td>
+										<a href="<?= base_url() ?>siswa/profil/<?= $siswa->id_siswa ?>" class="btn btn-sm btn-info"> <i class="ri-verified-badge-line"></i> Verivikasi Kelulusan </a>
+										<?php if($siswa->status_verifikasi == "y"){ ?>
+											<a href="<?= base_url() ?>siswa/cetak/<?= $siswa->id_siswa ?>" target="_blank" class="btn btn-sm btn-success"> <i class="ri-printer
+-line"></i> Cetak Bukti Pendaftaran </a>
+										<?php } ?>
+									</td>
 								</tr>
 								<?php } ?>
 								</tbody>

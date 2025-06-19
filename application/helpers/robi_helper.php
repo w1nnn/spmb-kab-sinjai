@@ -623,6 +623,10 @@ function configs()
 			'start' => null,
 			'end' => null,
 		],
+		'edit_siswa' => [
+			'start' => null,
+			'end' => null,
+		],
 	];
 
 	$jadwal_file = FCPATH . '/uploads/jadwal.json';

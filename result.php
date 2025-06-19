@@ -106,7 +106,7 @@
                         <td>&nbsp;&nbsp;&nbsp;</td>
                         <td>Nama</td>
                         <td>:</td>
-                        <td>SD Neg. No. 127 Takkalala</td>
+                        <td>SD Neg. No. 91 Bulupoddo</td>
                     </tr>
                     <!-- edit 20200602 -->
                     <tr>
@@ -114,7 +114,7 @@
                         <td>NPSN</td>
                         <td>:</td>
                         <td>
-                            <a style="text-decoration: none;" class="link1" target="_blank" href="https://sekolah.data.kemdikbud.go.id/index.php/Chome/profil/B05F0CBD-0D26-E111-A508-750999FBDF9A">40304728</a>
+                            <a style="text-decoration: none;" class="link1" target="_blank" href="https://sekolah.data.kemdikbud.go.id/index.php/Chome/profil/A04B17BD-0D26-E111-8C23-9F78DC7B0E71">40304496</a>
                         </td>
 
                     </tr>
@@ -122,7 +122,7 @@
                         <td>&nbsp;</td>
                         <td>Alamat</td>
                         <td>:</td>
-                        <td>Takkalala</td>
+                        <td>Lamatti Riattang</td>
                     </tr>
                     <tr>
                         <td></td>
@@ -131,13 +131,13 @@
                         <td>&nbsp;</td>
                         <td>Desa/Kelurahan</td>
                         <td>:</td>
-                        <td>SANJAI</td>
+                        <td>LAMATTI RIATTANG</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Kecamatan/Kota (LN)</td>
                         <td>:</td>
-                        <td>KEC. SINJAI TIMUR</td>
+                        <td>KEC. BULUPODDO</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
@@ -200,45 +200,45 @@
                         <td>&nbsp;</td>
                         <td>No. SK. Pendirian</td>
                         <td>:</td>
-                        <td>1980-12-31</td>
+                        <td>030/SKPS/LG/BP/VIII/2020</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Tanggal SK. Pendirian</td>
                         <td>:</td>
-                        <td>31-12-1980</td>
+                        <td>31-12-1975</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Nomor SK Operasional</td>
                         <td>:</td>
-                        <td>421.1/13.4003/DPPOR</td>
+                        <td>0014/SD/07/II/2025</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Tanggal SK Operasional</td>
                         <td>:</td>
-                        <td>01-01-1910</td>
+                        <td>07-02-2025</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>File SK Operasional ()</td>
                         <td>:</td>
-                        <td>                                    <a class="link1" target="_blank" href="https://vervalsp.data.kemdikbud.go.id/verval/dokumen/skoperasional/933605-398566-453723-49856941-1487523803.pdf">Lihat SK Operasional</a>
+                        <td>                                    <a class="link1" target="_blank" href="https://vervalsp.data.kemdikbud.go.id/verval/dokumen/skoperasional/1135307-639908-386484-23397804-313605887.pdf">Lihat SK Operasional</a>
                                                         </td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Tanggal Upload SK Op.</td>
                         <td>:</td>
-                        <td>                                31-08-2023 21:59:25                            </td>
+                        <td>                                14-02-2025 12:54:46                            </td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Akreditasi</td>
                         <td>:</td>
                         <td>
-                            <a target="_blank" class="btn-link" href="https://ban-pdm.id/satuanpendidikan/40304728">B</a></td>
+                            <a target="_blank" class="btn-link" href="https://ban-pdm.id/satuanpendidikan/40304496">B</a></td>
                     </tr>
                 </table>
             </div>
@@ -253,7 +253,7 @@
                         <td>&nbsp;&nbsp;&nbsp;</td>
                         <td>Luas Tanah</td>
                         <td>:</td>
-                        <td>3.250 m<sup>2</sup></td>
+                        <td>5.610 m<sup>2</sup></td>
                     </tr>
                     <!-- edit 20200602 -->
                     <tr>
@@ -266,7 +266,7 @@
                         <td></td>
                         <td></td>
                         <td>:</td>
-                        <td>2. 30 Mb</td>
+                        <td>2. 500 Mb</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
@@ -300,7 +300,7 @@
                         <td>&nbsp;</td>
                         <td>Email</td>
                         <td>:</td>
-                        <td>takkalalasdnno127@gmail.com</td>
+                        <td>sdnegeri91bulupoddo@gmail.com</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
@@ -312,7 +312,7 @@
                         <td>&nbsp;</td>
                         <td>Operator</td>
                         <td>:</td>
-                        <td>DINA ARIANA</td>
+                        <td>Juharni Amal</td>
                     </tr>
                                     </table>
             </div>
@@ -325,7 +325,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12"><div id="maps">
 
-                        Lintang: -5.223900000000<br>Bujur: 120.310600000000<br></div></div>
+                        Lintang: -5.100700000000<br>Bujur: 120.155700000000<br></div></div>
                 </div>
             </div>
         </div>
@@ -364,15 +364,15 @@
 
       <script>
         var map = L.map('maps').setView({
-            lat: -5.223900000000,
-            lon: 120.310600000000        }, 8);
+            lat: -5.100700000000,
+            lon: 120.155700000000        }, 8);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '© OpenStreetMap'
         }).addTo(map);
         L.marker({
-            lat: -5.223900000000,
-            lon: 120.310600000000        }).bindPopup('SD Neg. No. 127 Takkalala').addTo(map);
+            lat: -5.100700000000,
+            lon: 120.155700000000        }).bindPopup('SD Neg. No. 91 Bulupoddo').addTo(map);
     </script>
     
   </div><!-- Body inner end -->

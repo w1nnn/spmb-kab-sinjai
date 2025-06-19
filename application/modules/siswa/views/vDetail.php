@@ -119,20 +119,62 @@ if ($query->num_rows() > 0) {
 								}
 								?>
 
-								<?php if (level_user() == "admin" || level_user() == "superadmin" || level_user() == "sekolah") { ?>
-									<div class="row mb-2">
-										<div class="col-md-4">
-											<a href="<?= base_url() ?>siswa/cetak/<?= $this->uri->segment(3) ?>" target="blank" class="mt-2 btn btn-lg btn-outline-primary btn-block"> <i class="ri-printer-line"></i> Cetak Bukti Pendaftaran </a>
-										</div>
-										<div class="col-md-4">
-											<a href="<?= base_url() ?>siswa/edit/?id=<?= $this->uri->segment(3) ?>" class="mt-2 btn btn-lg btn-warning btn-block"> <i class="ri-edit-line"></i> Edit </a>
-										</div>
-										<div class="col-md-4">
-											<!-- <a href="#" data-toggle="modal" data-target="#hapus" class="mt-2 btn btn-lg btn-danger btn-block"> <i class="ri-delete-bin-4-line "></i> Hapus</a> -->
-										</div>
-									</div>
-
-								<?php } ?>
+				<?php 
+				// Pengecekan untuk level admin/superadmin dengan kontrol berdasarkan jadwal
+				if (level_user() == "admin" || level_user() == "superadmin") { 
+					// Admin dan superadmin dapat mengakses kapan saja
+					?>
+					<div class="row mb-2">
+						<div class="col-md-4">
+							<a href="<?= base_url() ?>siswa/cetak/<?= $this->uri->segment(3) ?>" target="blank" class="mt-2 btn btn-lg btn-outline-primary btn-block">
+								<i class="ri-printer-line"></i> Cetak Bukti Pendaftaran
+							</a>
+						</div>
+						<div class="col-md-4">
+							<a href="<?= base_url() ?>siswa/edit/?id=<?= $this->uri->segment(3) ?>" class="mt-2 btn btn-lg btn-warning btn-block">
+								<i class="ri-edit-line"></i> Edit
+							</a>
+						</div>
+						<div class="col-md-4">
+							<!-- <a href="#" data-toggle="modal" data-target="#hapus" class="mt-2 btn btn-lg btn-danger btn-block"> <i class="ri-delete-bin-4-line "></i> Hapus</a> -->
+						</div>
+					</div>
+					<?php 
+				} elseif (level_user() == "sekolah") {
+					// Level sekolah mengikuti jadwal yang sama seperti registrasi
+					if (registerAccess() || (date('Y-m-d') >= configs()->edit_siswa->start && date('Y-m-d') <= configs()->edit_siswa->end)) {
+						?>
+						<div class="row mb-2">
+							<div class="col-md-4">
+								<a href="<?= base_url() ?>siswa/cetak/<?= $this->uri->segment(3) ?>" target="blank" class="mt-2 btn btn-lg btn-outline-primary btn-block">
+									<i class="ri-printer-line"></i> Cetak Bukti Pendaftaran
+								</a>
+							</div>
+							<div class="col-md-4">
+								<a href="<?= base_url() ?>siswa/edit/?id=<?= $this->uri->segment(3) ?>" class="mt-2 btn btn-lg btn-warning btn-block">
+									<i class="ri-edit-line"></i> Edit
+								</a>
+							</div>
+							<div class="col-md-4">
+								<!-- <a href="#" data-toggle="modal" data-target="#hapus" class="mt-2 btn btn-lg btn-danger btn-block"> <i class="ri-delete-bin-4-line "></i> Hapus</a> -->
+							</div>
+						</div>
+						<?php 
+					} elseif (date('Y-m-d') > configs()->edit_siswa->end) {
+						?>
+						<div class="alert alert-danger">
+							<p>Periode pengelolaan data siswa telah berakhir. Silahkan hubungi administrator untuk akses lebih lanjut.</p>
+						</div>
+						<?php 
+					} elseif (date('Y-m-d') < configs()->edit_siswa->start) {
+						?>
+						<div class="alert alert-info">
+							<h3>Pengelolaan data siswa akan dibuka pada tanggal <?php echo (\Carbon\Carbon::parse(configs()->daftar->start)->locale('id')->translatedFormat('j F Y')) . ' s.d. ' . (\Carbon\Carbon::parse(configs()->daftar->end)->locale('id')->translatedFormat('j F Y')) ?></h3>
+						</div>
+					<?php 
+					}
+} 
+?>
 								<ul class="list-group">
 									<li class="list-group-item active">
 										<h5> Data Diri </h5>

@@ -277,12 +277,35 @@ if ($eUsia == 'usia' && $statusError == 'danger') {
 	<div class="row">
 		<div class="col-md-6">
 			<div class="form-group">
-				<label for=""> Nomor Induk Kependudukan <span class="text-danger">*</span> </label>
-				<input type="number" maxlength="16" oninput="this.value=this.value.slice(0,this.maxLength)" value="<?= $get->no_ktp ?>" class="form-control" name="no_ktp" required>
+				<label for="no_ktp"> Nomor Induk Kependudukan <span class="text-danger">*</span> </label>
+				<?php if (level_user() == "admin" || level_user() == "superadmin") { ?>
+					<!-- Input untuk admin/superadmin - bisa diedit -->
+					<input 
+						type="number" 
+						value="<?= $get->no_ktp ?>" 
+						class="form-control" 
+						name="no_ktp" 
+						id="no_ktp"
+						required
+					>
+				<?php } else { ?>
+					<!-- Input untuk sekolah - readonly -->
+					<input 
+						type="number" 
+						value="<?= $get->no_ktp ?>" 
+						class="form-control" 
+						name="no_ktp" 
+						id="no_ktp"
+						readonly
+						required
+					>
+					<!-- quote -->
+					<small class="text-muted text-danger">* Anda Tidak di Izinkan Untuk Melakukan Perubahan Nomor Induk Kependudukan (NIK) !</small>
+				<?php } ?>
 			</div>
 			<div class="form-group">
 				<label for=""> Nama Calon Siswa <span class="text-danger">*</span> </label>
-				<input type="text" readonly value="<?= $get->nama_siswa ?>" class="form-control" name="nama_siswa" required>
+				<input type="text" value="<?= $get->nama_siswa ?>" class="form-control" name="nama_siswa" required>
 			</div>
 			<div class="form-group">
 				<label for=""> Tempat Lahir <span class="text-danger">*</span> </label>
@@ -335,7 +358,7 @@ if ($eUsia == 'usia' && $statusError == 'danger') {
 				</div> -->
 				<div class="form-group">
 					<label for=""> Asal Sekolah <span class="text-danger">*</span> </label>
-					<select name="asal_sekolah" class="form-control select2 sekolah" id="sekolah_1" style="width: 100%;" required data-tags="true">
+					<select name="asal_sekolah" class="form-control select2 sekolah" id="sekolah_1" style="width: 100%;" data-tags="true">
 						<option value=""></option>
 						<?php if(!empty($get->asal_sekolah)): ?>
 							<option value="<?= $get->asal_sekolah ?>" selected><?= $get->asal_sekolah ?></option>
@@ -352,7 +375,7 @@ if ($eUsia == 'usia' && $statusError == 'danger') {
 			</div>
 			<div class="form-group">
 				<label for=""> Kecamatan <span class="text-danger">*</span> </label>
-				<select name="kec" class="form-control select2 kecamatan" id="kecamatan" required data-tags="true">
+				<select name="kec" class="form-control select2 kecamatan" id="kecamatan" data-tags="true">
 					<option value="">Pilih Kecamatan</option>
 					<?php foreach ($kecamatan as $value) : $selected = ($get->kec == $value->id_kec) ? "selected" : ""; ?>
 						<option value="<?= $value->id_kec ?>" <?= $selected ?>> <?= $value->nama_kec ?> </option>
@@ -362,7 +385,7 @@ if ($eUsia == 'usia' && $statusError == 'danger') {
 			<div class="form-group">
 				<label for=""> Desa / Dusun / Jalan / Lingkungan Tempat Tinggal <span class="text-danger">*</span>
 				</label>
-				<select name="dusun" class="form-control select2" id="zonasi" required data-tags="true">
+				<select name="dusun" class="form-control select2" id="zonasi" data-tags="true">
 					<option value=""></option>
 				</select>
 			</div>

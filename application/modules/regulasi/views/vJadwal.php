@@ -72,6 +72,21 @@
 					</div>
 				</div>
 			</div>
+			<!-- JadwalEdit Data Siswa -->
+			<div class="form-group border border-info rounded p-3">
+				<label class="font-weight-bold h6">Jadwal Edit Data Siswa</label>
+				<div class="row">
+					<div class="col-md-6">
+						<label for="edit_siswa_start">Mulai</label>
+						<input id="edit_siswa_start" type="date" name="edit_siswa[start]" class="form-control" value="<?php echo $jadwal ? $jadwal->edit_siswa->start : null ?>">
+					</div>
+					<div class="col-md-6">
+						<label for="edit_siswa_end">Selesai</label>
+						<input id="edit_siswa_end" type="date" name="edit_siswa[end]" class="form-control" value="<?php echo $jadwal ? $jadwal->edit_siswa->end : null ?>">
+					</div>
+				</div>
+			</div>
+			<!-- Jadwal Edit Data Siswa End -->
 			<div class="form-group pt-3">
 				<button class="btn btn-primary btn-lg btn-block" type="submit">SIMPAN JADWAL</button>
 			</div>
