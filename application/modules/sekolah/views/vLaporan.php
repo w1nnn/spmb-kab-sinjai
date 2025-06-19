@@ -65,7 +65,6 @@
 							
 								if(!empty($npsn) AND !empty($jalur)) {
 						?>
-							
 							<h4>Daftar Calon Siswa <b><?= sekolah($npsn)->nama; ?></b> </h4>
 							<h5><b><?= jalur($jalur)->nama ?></b> </h5>
 							<br>
@@ -184,8 +183,6 @@
 							</table>
 						</div>
 						<?php } ?>
-
-
 					</div>
 				</div>
 			</div>

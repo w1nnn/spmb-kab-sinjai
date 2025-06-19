@@ -14,7 +14,6 @@ class Sekolah extends CI_Controller
         $this->load->model('jalur/jalur_model', 'jalur');
     }
 
-
     public function index()
     {
         // die('ads');
@@ -95,16 +94,6 @@ class Sekolah extends CI_Controller
         $this->load->view('vExcel', $data);
     }
 
-    // public function export()
-    // {
-    //     $level = $this->input->get('level');
-
-    //     $data['sekolah'] = $this->sekolah->get_sekolah($level);
-
-    //     $this->load->view('vExport', $data);
-    // }
-
-
     public function save()
     {
         cek_session();
@@ -151,7 +140,6 @@ class Sekolah extends CI_Controller
     
         $data = $this->sekolah->fetch_data($query, $level);
     
-        // Add CSS for the modern card design and hover animations
         $output .= '
         <style>
             .modern-school-card {
@@ -355,10 +343,8 @@ class Sekolah extends CI_Controller
                 </div>
             </div>';
         }
-    
         echo $output;
     }
-
 
     public function cari_all()
     {
@@ -432,9 +418,6 @@ class Sekolah extends CI_Controller
         if ($this->input->post('level')) {
             $level = $this->input->post('level');
         }
-
-        // var_dump($kecamatan, $level);
-
         $data = $this->sekolah->fetch_data_by_kecamatan($kecamatan, $level);
         $output .= '
         <style>
@@ -583,7 +566,6 @@ class Sekolah extends CI_Controller
             foreach ($data->result() as $value) {
                 $sisaKuota = ($value->kuota - $value->pendaftar) ?? 0;
                 $kuotaClass = $sisaKuota > 0 ? 'sisa-kuota' : 'text-danger';
-                // var_dump($value->pendaftar);
                 $output .= '
                 <div class="col-lg-4">
                     <a href="' . base_url() . 'sekolah/profil/' . $value->npsn . '/' . slug($value->nama) . '" class="text-decoration-none">
@@ -638,7 +620,6 @@ class Sekolah extends CI_Controller
                 </div>
             </div>';
         }
-
         echo $output;
     }
 
@@ -658,7 +639,6 @@ class Sekolah extends CI_Controller
     }
    
     $data = $this->sekolah->fetch_data_by_dusun($dusun, $level);
-    // var_dump($data);
     $output .= '
     <style>
         .modern-school-card {
@@ -865,8 +845,6 @@ class Sekolah extends CI_Controller
 
     echo $output;
 }
-
-   // Fungsi ukuran yang diperbaiki untuk mendukung dusun
 public function ukuran()
 {
     $kecamatan = $this->input->get('kecamatan');
@@ -874,7 +852,6 @@ public function ukuran()
     $level = $this->input->get('level');
     $status_dtks = $this->input->get('sts_dtks');
 
-    // Tentukan method yang akan digunakan berdasarkan parameter
     if (!empty($dusun) && $dusun !== 'Pilih Dusun') {
         $qry_sekolah = $this->sekolah->fetch_data_by_dusun($dusun, $level)->result();
     } elseif (!empty($kecamatan)) {
@@ -925,7 +902,6 @@ public function ukuran()
     $this->load->view('vUkuran', $data);
 }
 
-// Fungsi export yang diperbaiki untuk mendukung dusun
 public function export()
 {
     $kecamatan = $this->input->get('kecamatan');
@@ -933,15 +909,11 @@ public function export()
     $level = $this->input->get('level');
     $status_dtks = $this->input->get('sts_dtks'); 
     
-    // Tentukan method yang akan digunakan berdasarkan parameter
     if (!empty($dusun) && $dusun !== 'Pilih Dusun') {
-        // Jika ada filter dusun, gunakan method khusus untuk dusun
         $sekolah = $this->sekolah->get_sekolah_by_dusun($level, $dusun, $status_dtks);
     } elseif (!empty($kecamatan)) {
-        // Jika ada filter kecamatan, gunakan method yang sudah ada
         $sekolah = $this->sekolah->get_sekolah($level, $kecamatan, $status_dtks);
     } else {    
-        // Jika tidak ada filter lokasi, ambil berdasarkan level saja
         $sekolah = $this->sekolah->get_sekolah($level, '', $status_dtks);
     }
     
@@ -954,47 +926,7 @@ public function export()
     
     $this->load->view('vExport', $data);
 }
-    // public function ukuran()
-    // {
-    //     $level = $this->input->get('level');
-
-    //     $qry_sekolah = $this->sekolah->get_sekolah($level)->result();
-
-    //     $record = [];
-    //     $l = [];
-    //     $p = [];
-    //     $ukuran = [
-    //         'S',
-    //         'M',
-    //         'L',
-    //         'XL',
-    //         'XXL'
-    //     ];
-
-    //     foreach ($qry_sekolah as $key => $value) {
-    //         foreach ($ukuran as $v) {
-    //             $count_l = $this->sekolah->count_size($value->npsn, 'L', $v);
-    //             $count_p = $this->sekolah->count_size($value->npsn, 'P', $v);
-
-    //             $l[$value->npsn][$v] = $count_l;
-    //             $p[$value->npsn][$v] = $count_p;
-    //         }
-
-    //         $record[] = [
-    //             'npsn'     => $value->npsn,
-    //             'nama'     => $value->nama,
-    //             'ukuran_l' => $l[$value->npsn],
-    //             'ukuran_p' => $p[$value->npsn]
-    //         ];
-    //     }
-
-    //     $data = [
-    //         'record' => $record,
-    //         'ukuran' => $ukuran
-    //     ];
-
-    //     $this->load->view('vUkuran', $data);
-    // }
+   
     public function delete()
     {
         if (level_user() == "superadmin") {
@@ -1005,13 +937,6 @@ public function export()
             echo "Anda siapa ? Ada masalah ? -> robikurniawan.it@gmail.com ";
         }
     }
-
-
-
-    /*
-	 *  Kecamatan -> Daerah Zonasi -> Sekolah
-	 *
-	 * */
 
     public function update()
     {
@@ -1024,9 +949,7 @@ public function export()
             'alamat' => $this->input->post('alamat', TRUE),
             'kel' => $this->input->post('dusun', TRUE),
             'kec' => $this->input->post('kec', TRUE),
-            // kordinat
             'kordinat' => $this->input->post('kordinat', TRUE),
-            // Dusun
             'dusun' => $this->input->post('dusun', TRUE),
             'status' => $this->input->post('status', TRUE),
             'email' => $this->input->post('email', TRUE),
@@ -1065,23 +988,7 @@ public function export()
         }
     }
     
-    // Kuota Kelulusan
-    // public function updateKuotaLulusan()
-    // {
-    //     cek_session();
-    //     $npsn = $this->input->post('npsn');
-    //     $data = array('kuota_lulusan' => $this->input->post('kuota_lulusan', TRUE));
-    //     $this->sekolah->update(array('npsn' => $npsn), $data);
-
-    //     $alert = urlencode('info');
-    //     $message = urlencode('Sukses update data');
-
-    //     if (level_user() == "superadmin" || level_user() == "admin") {
-    //         redirect(base_url('sekolah/profil/' . $npsn . '?alert=' . $alert . '&message=' . $message));
-    //     } else {
-    //         redirect(base_url('sekolah/profil?alert=' . $alert . '&message=' . $message));
-    //     }
-    // }
+   
     public function updateKuotaLulusan()
 {
     cek_session();
@@ -1090,7 +997,7 @@ public function export()
 
     $data = array(
         'kuota_lulusan' => $kuota,
-        'lulusan' => $kuota // update kolom 'lulusan' dengan nilai yang sama
+        'lulusan' => $kuota 
     );
 
     $this->sekolah->update(array('npsn' => $npsn), $data);
@@ -1104,8 +1011,6 @@ public function export()
         redirect(base_url('sekolah/profil?alert=' . $alert . '&message=' . $message));
     }
 }
-
-
     public function updatePassword()
     {
         cek_session();
@@ -1134,9 +1039,6 @@ public function export()
         }
     }
 
-
-
-
     public function resetpassword()
     {
         cek_session();
@@ -1157,17 +1059,12 @@ public function export()
         }
     }
 
-    /**
- * Method to get all schools for select2 dropdown
- */
     public function get_all_sekolah()
     {
-        // Check if this is an AJAX request
         if (!$this->input->is_ajax_request()) {
             exit('No direct script access allowed');
         }
         
-        // Query to get all schools from database
         $query = $this->db->select('nama')
                         ->from('tbl_sekolah')
                         ->order_by('nama', 'ASC')
@@ -1175,14 +1072,12 @@ public function export()
         
         $schools = $query->result();
         
-        // Build options for select2
         $options = '<option value=""></option>';
         
         foreach ($schools as $school) {
             $options .= '<option value="' . htmlspecialchars($school->nama) . '">' . htmlspecialchars($school->nama) . '</option>';
         }
         
-        // Return response as JSON
         $response = array(
             'list_sekolah' => $options
         );
@@ -1192,14 +1087,12 @@ public function export()
 
         public function get_school_quota()
     {
-        // Check if this is an AJAX request
         if (!$this->input->is_ajax_request()) {
             exit('No direct script access allowed');
         }
         
         $school_name = $this->input->post('school_name');
         
-        // Get school data from database
         $school = $this->db->get_where('tbl_sekolah', ['npsn' => $school_name])->row();
         $pendaftar = jumlahPendaftar($school_name);
         if ($school) {

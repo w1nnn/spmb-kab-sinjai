@@ -1,5 +1,4 @@
 <?php
-
 // File: vLulusan.php
 ?>
 
@@ -29,7 +28,6 @@
                                         <th>JK</th>
                                         <th>Tempat, Tgl Lahir</th>
                                         <th>Asal Sekolah</th>
-                                        <!-- <th>Jalur</th> -->
                                         <th>Sekolah Tujuan</th>
                                         <th>Tgl Daftar</th>
                                         <th>Kartu Pendaftaran</th>

@@ -24,51 +24,39 @@ function saveHtml($url, $filename = "page_content.html") {
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-    curl_setopt($ch, CURLOPT_ENCODING, ""); // agar bisa decode gzip
+    curl_setopt($ch, CURLOPT_ENCODING, ""); 
     $html = curl_exec($ch);
     curl_close($ch);
 
     if (!$html) {
         return false;
     }
-// Ubah kolom maps menjadi col-12
 $html = preg_replace(
     '/<div class="col-lg-6 col-md-6">\s*<div id="maps">/i',
     '<div class="col-lg-12 col-md-12"><div id="maps">',
     $html
 );
 
-// Pindahkan informasi Lintang dan Bujur ke dalam div maps
 $html = preg_replace(
     '/<\/div>\s*<\/div>\s*<div class="col-lg-4 col-md-4">\s*Lintang: ([^<]*)<br>\s*Bujur: ([^<]*)<br>\s*<\/div>/i',
     'Lintang: $1<br>Bujur: $2<br></div></div>',
     $html
 );
-    // Hapus <img> spesifik
     $html = preg_replace(
         '/<img[^>]*src="https:\/\/referensi\.data\.kemdikbud\.go\.id\/template\/images\/logodatarefnewok\.png"[^>]*>/i',
         '',
         $html
     );
-    // Hapus tag h4
     $html = preg_replace(
         '/<h4[^>]*>[ \s\S]*?<\/h4>/i',
         '',
         $html
     );
-    // Hapus <footer>
-    // $html = preg_replace(
-    //     '/<footer[^>]*>[\s\S]*?<\/footer>/i',
-    //     '',
-    //     $html
-    // );
-    
     
     file_put_contents($filename, $html);
     return true;
 }
 
-// ✅ Jalankan saat file diakses (misalnya dengan parameter GET npsn)
 $npsn = $get->npsn;
 
 if ($npsn) {
@@ -76,12 +64,9 @@ if ($npsn) {
     $filename = "result.php";
 
     if (saveHtml($url, $filename)) {
-        // echo "✅ Halaman berhasil disimpan ke <strong>$filename</strong>";
     } else {
-        // echo "❌ Gagal mengambil halaman.";
     }
 } else {
-    // echo "⚠️ Harap berikan parameter ?npsn=xxxxxxxx";
 }
 ?>
 
@@ -101,15 +86,11 @@ echo '<style>
 
 echo '<div class="scroll-container">';
 echo '<div class="scroll-inner">';
-// Tampilkan LogoSchool Logo
 echo '<img src="' . base_url() . 'assets/images/logokon.png" alt="Logo" class="img-fluid" style="max-width: 250px;">';
 include 'result.php';
 echo '</div>';
 echo '</div>';
 ?>
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -117,7 +98,6 @@ echo '</div>';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Profile</title>
-    <!-- Load Bootstrap 4 since the original code uses Bootstrap 4 modals -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet">
@@ -299,7 +279,6 @@ echo '</div>';
             color: #6c757d;
         }
         
-        /* Fix for Bootstrap 4 mb-3 not directly from BS5 */
         .mb-3 {
             margin-bottom: 1rem !important;
         }
@@ -312,7 +291,6 @@ echo '</div>';
             float: right !important;
         }
         
-        /* Add compatibility for Bootstrap 4 */
         .ms-2 {
             margin-left: 0.5rem !important;
         }
@@ -390,9 +368,6 @@ echo '</div>';
                             <a href="#" data-toggle="modal" data-target="#kuotaLulusan" class="btn btn-action w-100" style="background-color: #15616d; color: white;">
                                 <i class='bx bxs-edit-alt'></i> Edit Jumlah Lulusan
                             </a>
-                            <!-- <a href="#" data-toggle="modal" data-target="#kuotaLulusan" class="btn mb-1 btn-outline-info w-100" style="text-align: left;">
-                                <i class='bx bxs-edit'></i> Edit Jumlah Lulusan
-                            </a> -->
                             <a href="#" data-toggle="modal" data-target="#ubahPassword" class="btn btn-action btn-primary w-100">
                                 <i class='bx bxs-lock-alt'></i> Ubah Password
                             </a>
@@ -506,8 +481,6 @@ echo '</div>';
                         </div>
                     </div>
                 </div>
-
-                
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <div class="stat-card">
@@ -544,15 +517,6 @@ echo '</div>';
                                     </a>
                                 <?php } ?>
                             </div>
-                            <!-- <div class="progress">
-                                <div class="progress-bar progress-bar-success" role="progressbar" 
-                                    style="width: <?= ($get->lulusan > 0) ? (($get->lulusan - $get->kuota_lulusan) / $get->lulusan * 100) : 0 ?>%" 
-                                    aria-valuenow="<?= $get->lulusan - $get->kuota_lulusan ?>" aria-valuemin="0" aria-valuemax="<?= $get->lulusan ?>"></div>
-                            </div> -->
-                            <!-- <div class="progress-text">
-                                <span><?= $get->lulusan - $get->kuota_lulusan ?> Terdaftar</span>
-                                <span><?= ($get->lulusan > 0) ? round((($get->lulusan - $get->kuota_lulusan) / $get->lulusan * 100), 1) : 0 ?>%</span>
-                            </div> -->
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -595,7 +559,6 @@ echo '</div>';
             </div>
         </div>
     </div>
-
 
     <!-- Modal Update Password -->
     <form action="<?= base_url() ?>sekolah/updatePassword" method="POST">
@@ -657,14 +620,11 @@ echo '</div>';
                                     <input type="text" value="<?= $get->alamat ?>" class="form-control" name="alamat" autocomplete="off" required>
                                 </div>
                                 <div class="form-group mb-3">
-                                    <!-- <label>Kelurahan</label> -->
                                     <input type="hidden" class="form-control" name="kel" autocomplete="off" value="<?= $get->kel ?>">
                                 </div>
-                                <!-- Kordinat -->
                                 <div class="form-group mb-3">
                                     <label>Titik Kordinat <span class="text-danger">*</span></label>
                                     <input type="text" class="form-control" name="kordinat" autocomplete="off" value="<?= $get->kordinat ?>" required>
-                                    <!-- cth -->
                                     <small style="font-style:italic; font-weight: bold; color: #ff0000;">Contoh Inputan: -5.20594, 120.290005</small>
                                 </div>
                             </div>
@@ -717,7 +677,6 @@ echo '</div>';
             </div>
         </div>
     </form>
-
     <!-- Modal Update Kuota -->
     <form action="<?= base_url() ?>sekolah/updateKuota" method="POST">
         <input type="hidden" name="npsn" value="<?= $get->npsn ?>">
@@ -745,7 +704,6 @@ echo '</div>';
             </div>
         </div>
     </form>
-
     <!-- Modal Kuota Lulusan -->
     <form action="<?= base_url() ?>sekolah/updateKuotaLulusan" method="POST">
     <input type="hidden" name="npsn" value="<?= $get->npsn ?>">
@@ -794,7 +752,6 @@ echo '</div>';
             </div>
         </div>
     </div>
-    
     <!-- Modal Hapus Sekolah -->
     <?php if (level_user() == "superadmin") { ?>
     <div class="modal fade" id="hapus" tabindex="-1" role="dialog" aria-labelledby="hapusModalLabel" aria-hidden="true">
@@ -817,10 +774,6 @@ echo '</div>';
     </div>
     <?php } ?>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
     <script>
     $(document).ready(function() {
@@ -841,7 +794,7 @@ echo '</div>';
 				url: "<?php echo base_url("sekolah/zonasi/getDaerahKecamatan"); ?>",
 				data: {
 					kecamatan: kecamatanValue,
-				}, // data yang akan dikirim ke file yang dituju
+				}, 
 				dataType: "JSON",
 				beforeSend: function(e) {
 					if (e && e.overrideMimeType) {
@@ -850,18 +803,17 @@ echo '</div>';
 				},
 				success: function(response) {
                 const tempContainer = document.createElement('div');
-                tempContainer.innerHTML = "<select>" + response.list_daerah + "</select>"; // bungkus biar bisa query
+                tempContainer.innerHTML = "<select>" + response.list_daerah + "</select>"; 
                 const options = tempContainer.querySelectorAll('option');
 
                 let newOptions = "";
                 options.forEach(option => {
-                    const name = option.textContent.trim(); // ambil nama dusun
+                    const name = option.textContent.trim(); 
                     if (name !== "") {
                         newOptions += `<option>${name}</option>`;
                     }
                 });
 
-                // Tambahkan ke #zonasi tanpa menghapus option pertama (<?= $get->dusun ?>)
                 $("#zonasi").append(newOptions).show();
             },
 
@@ -888,7 +840,6 @@ echo '</div>';
                     title: '<?= $this->input->get('message') ?>'
                 });
 
-                // Hapus parameter alert & message dari URL tanpa reload
                 if (history.pushState) {
                     const url = new URL(window.location);
                     url.searchParams.delete('alert');

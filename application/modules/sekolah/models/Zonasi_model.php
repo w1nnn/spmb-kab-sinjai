@@ -5,9 +5,9 @@ class Zonasi_model extends CI_Model
 {
 
 	var $table = 'tbl_zonasi_sekolah';
-	var $column_order = array('id_zonasi', NULL); //set column field database for datatable orderable
-	var $column_search = array('daerah_zonasi'); //set column field database for datatable searchable just fizonasitname , lastname , address are searchable
-	var $order = array('id_zonasi' => 'DESC'); // default order
+	var $column_order = array('id_zonasi', NULL);
+	var $column_search = array('daerah_zonasi'); 
+	var $order = array('id_zonasi' => 'DESC'); 
 
 	public function __construct()
 	{
@@ -17,8 +17,6 @@ class Zonasi_model extends CI_Model
 
 	private function _get_datatables_query()
 	{
-		// active record
-
 		if (level_user() == "admin" || level_user() == "superadmin") {
 			$this->db->select('*');
 			$this->db->from('tbl_zonasi_sekolah');
@@ -40,14 +38,14 @@ class Zonasi_model extends CI_Model
 
 		$i = 0;
 
-		foreach ($this->column_search as $item) // loop column
+		foreach ($this->column_search as $item) 
 		{
-			if ($_POST['search']['value']) // if datatable send POST for search
+			if ($_POST['search']['value']) 
 			{
 
-				if ($i === 0) // fizonasit loop
+				if ($i === 0) 
 				{
-					$this->db->group_start(); // open bracket. query Where with OR clause better with bracket. because maybe can combine with other WHERE with AND.
+					$this->db->group_start(); 
 					$this->db->like($item, $_POST['search']['value']);
 					$this->db->or_like('tbl_sekolah.nama', $_POST['search']['value']);
 					$this->db->or_like('tbl_sekolah.npsn', $_POST['search']['value']);
@@ -57,13 +55,13 @@ class Zonasi_model extends CI_Model
 					$this->db->or_like('tbl_sekolah.npsn', $_POST['search']['value']);
 				}
 
-				if (count($this->column_search) - 1 == $i) //last loop
-					$this->db->group_end(); //close bracket
+				if (count($this->column_search) - 1 == $i)
+					$this->db->group_end();
 			}
 			$i++;
 		}
 
-		if (isset($_POST['order'])) // here order processing
+		if (isset($_POST['order'])) 
 		{
 			$this->db->order_by($this->column_order[$_POST['order']['0']['column']], $_POST['order']['0']['dir']);
 		} else if (isset($this->order)) {
@@ -81,7 +79,6 @@ class Zonasi_model extends CI_Model
 		return $query->result();
 	}
 
-
 	function count_filtered()
 	{
 		$this->_get_datatables_query();
@@ -95,7 +92,6 @@ class Zonasi_model extends CI_Model
 		return $this->db->count_all_results();
 	}
 
-
 	public function get_all()
 	{
 		$this->db->from('tbl_zonasi');
@@ -103,7 +99,6 @@ class Zonasi_model extends CI_Model
 		$query = $this->db->get();
 		return $query->result();
 	}
-
 
 	public function get_by_id($id)
 	{
@@ -114,20 +109,17 @@ class Zonasi_model extends CI_Model
 		return $query->row();
 	}
 
-
 	function save($data)
 	{
 		$result = $this->db->insert($this->table, $data);
 		return $result;
 	}
 
-
 	public function update($where, $data)
 	{
 		$this->db->update($this->table, $data, $where);
 		return $this->db->affected_rows();
 	}
-
 
 	public function delete_by_id($id)
 	{
@@ -186,7 +178,5 @@ class Zonasi_model extends CI_Model
 		$query = $this->db->get();
 		return $query->result();
 	}
-
-
 
 }

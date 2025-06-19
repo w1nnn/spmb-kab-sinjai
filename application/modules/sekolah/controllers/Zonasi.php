@@ -65,7 +65,6 @@ class Zonasi extends CI_Controller
 				$dataDaerah[] = $break . "" . $i . ". " . $d->daerah_zonasi . ' - ' . strtoupper($dKec->nama_kec);
 				$i++;
 			}
-
 			$no++;
 			$row = array();
 			$row[] = $no;
@@ -80,14 +79,12 @@ class Zonasi extends CI_Controller
 
 			$data[] = $row;
 		}
-
 		$output = array(
 			"draw" => $_POST['draw'],
 			"recordsTotal" => $this->zonasi->count_all(),
 			"recordsFiltered" => $this->zonasi->count_filtered(),
 			"data" => $data,
 		);
-		//output to json format
 		echo json_encode($output);
 	}
 
@@ -110,8 +107,6 @@ class Zonasi extends CI_Controller
 			redirect(base_url('sekolah/zonasi'));
 		}
 	}
-
-
 
 	public function update()
 	{
@@ -136,15 +131,12 @@ class Zonasi extends CI_Controller
 		}
 	}
 
-
-
 	public function ajax_delete($id)
 	{
 		$this->zonasi->delete_by_id($id);
 
 		echo json_encode(array("status" => TRUE));
 	}
-
 
 	public function getDaerah()
 	{
@@ -179,11 +171,8 @@ class Zonasi extends CI_Controller
 			}
 		}
 
-
-
-
-		$callback = array('list_daerah' => $lists); // Masukan variabel lists tadi ke dalam array $callback dengan index array
-		echo json_encode($callback); // konversi varibael $callback menjadi JSON
+		$callback = array('list_daerah' => $lists);
+		echo json_encode($callback); 
 	}
 
 
@@ -208,14 +197,12 @@ class Zonasi extends CI_Controller
 		}
 
 
-		$callback = array('list_daerah' => $lists); // Masukan variabel lists tadi ke dalam array $callback dengan index array
-		echo json_encode($callback); // konversi varibael $callback menjadi JSON
+		$callback = array('list_daerah' => $lists); 
+		echo json_encode($callback); 
 	}
-
 
 	public function get_sekolah()
 	{
-
 		$jalur  = $this->input->post('jalur');
 		$siswa  = $this->input->post('id_siswa');
 		$daerah = $this->input->post('zonasi');
@@ -229,7 +216,6 @@ class Zonasi extends CI_Controller
 			$sekolah = $this->zonasi->get_sekolah_by_tingkat($tingkat);
 		}
 
-
 		$lists = "<option value=''>Pilih  </option>";
 
 		foreach ($sekolah as $data) {
@@ -239,17 +225,14 @@ class Zonasi extends CI_Controller
 				$selected = "";
 			}
 			$lists .= "<option value='" . $data->npsn . "' data-kordinat='" . $data->kordinat . "' " . $selected . ">" . $data->nama . "</option>";
-			// $lists .= "<option value='" . $data->npsn . "' " . $selected . " >" . $data->nama . " </option>"; // Tambahkan tag option ke variabel $lists
 		}
 
-		$callback = array('list_sekolah' => $lists); // Masukan variabel lists tadi ke dalam array $callback dengan index array
-		echo json_encode($callback); // konversi varibael $callback menjadi JSON
+		$callback = array('list_sekolah' => $lists); 
+		echo json_encode($callback); 
 	}
-
 
 	public function get_sekolah_zonasi()
 	{
-
 		$jalur  = $this->input->post('jalur');
 		$daerah = $this->input->post('zonasi');
 		$siswa  = $this->input->post('id_siswa');
@@ -269,10 +252,9 @@ class Zonasi extends CI_Controller
 			}
 			$lists .= "<option value='" . $data->npsn . "' data-kordinat='" . $data->kordinat . "' " . $selected . ">" . $data->nama . "</option>";
 
-			// $lists .= "<option value='" . $data->npsn . "' " . $selected . " >" . $data->nama . " " . $jalur . " - " . $area . " </option>"; // Tambahkan tag option ke variabel $lists
 		}
 
-		$callback = array('list_sekolah' => $lists); // Masukan variabel lists tadi ke dalam array $callback dengan index array
-		echo json_encode($callback); // konversi varibael $callback menjadi JSON
+		$callback = array('list_sekolah' => $lists); 
+		echo json_encode($callback); 
 	}
 }

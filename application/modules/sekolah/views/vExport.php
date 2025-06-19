@@ -1,5 +1,4 @@
 <?php
-// These headers must be at the very top of the file, before any HTML or whitespace
 header("Content-type: application/vnd-ms-excel");
 header("Content-Disposition: attachment; filename=Data Kuota Pendaftar.xls");
 ?>
@@ -50,14 +49,9 @@ header("Content-Disposition: attachment; filename=Data Kuota Pendaftar.xls");
             <th style="border:1px solid black;">Nama Sekolah</th>
             <th style="border:1px solid black;">Kecamatan</th>
             <th style="border:1px solid black;">Desa/Kelurahan</th>
-            <!-- <th style="border:1px solid black;">Alamat</th> -->
             <th style="border:1px solid black;">Kuota</th>
             <th style="border:1px solid black;">Pendaftar</th>
-            <!-- Jumlah Lulusan -->
             <th style="border:1px solid black;">Jumlah Lulusan</th>
-            <!-- Jumlah Telah Mendaftar -->
-            <!-- <th style="border:1px solid black;">Jumlah Telah Mendaftar</th> -->
-             
         </tr>
 
         <?php
@@ -75,11 +69,9 @@ header("Content-Disposition: attachment; filename=Data Kuota Pendaftar.xls");
                 <td style="border:1px solid black;"><?= $row->npsn ?></td>
                 <td style="border:1px solid black;"><?= $row->nama ?></td>
                 <td style="border:1px solid black;"><?= strtoupper($row->kec) ?></td>
-                <!-- <td style="border:1px solid black;"><?= strtoupper($this->input->get('kecamatan')) ?></td> -->
                 <td style="border:1px solid black;"><?= strtoupper($row->kel) ?></td>
                 <td style="border:1px solid black;"><?= $kuota ?></td>
                 <td style="border:1px solid black;"><?= $pendaftar ?></td>
-                <!-- Jumlah Lulusan -->
                 <td style="border:1px solid black;"><?= $row->lulusan ?></td>
         <?php } ?>
         <tr>

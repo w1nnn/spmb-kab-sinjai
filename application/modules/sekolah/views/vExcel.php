@@ -183,7 +183,6 @@
 ?>
 
 <h2> Macca SPMB - Kabupaten Sinjai  </h2>
-
 <table>
 	<tr>
 		<td><b> SEKOLAH</b> </td>
@@ -226,34 +225,27 @@
 				<th style="border:1px solid black;">Nama </th>
 				<th style="border:1px solid black;">Tempat, Tanggal lahir </th>
 				<th style="border:1px solid black;">Jenis Kelamin </th>
-
 				<th style="border:1px solid black;">Agama </th>
 				<th style="border:1px solid black;">Alamat </th>
-
 				<th style="border:1px solid black;">Jalur </th>
 				<th style="border:1px solid black;">Sekolah Pilihan </th>
 				<th style="border:1px solid black;">Kecamatan </th>
 				<th style="border:1px solid black;">Lingkungan </th>
-
 				<th style="border:1px solid black;">Asal Sekolah </th>
 				<th style="border:1px solid black;">Nama Ayah</th>
 				<th style="border:1px solid black;">Pekerjaan Ayah</th>
 				<th style="border:1px solid black;">Nama Ibu</th>
 				<th style="border:1px solid black;">Pekerjaan Ibu</th>
-
 				<th style="border:1px solid black;">Nama Wali </th>
 				<th style="border:1px solid black;">Pekerjaan Wali</th>
-
 				<th style="border:1px solid black;">No. Handphone</th>
 				<th style="border:1px solid black;">No. Kartu Keluarga </th>
-
 				<th style="border:1px solid black;">Ukuran Baju  </th>
 				<th style="border:1px solid black;">Link File Foto  </th>
 				<th style="border:1px solid black;">Link File Akta Kelahiran  </th>
 				<th style="border:1px solid black;">Link File Kartu Keluarga  </th>
 				<th style="border:1px solid black;">Link File SKL / Kartu Imunisasi  </th>
 				<th style="border:1px solid black;">Link File Lampiran  </th>
-
 				<th style="border:1px solid black;">Status Kelulusan </th>
 				<th style="border:1px solid black;">Catatan Sekolah </th>
 				<th style="border:1px solid black;">No. Pendaftaran </th>

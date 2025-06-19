@@ -46,8 +46,6 @@
 
 							<p style=""> Lihat referensi tentang zonasi sesuai Peraturan Bupati Sinjai Nomor 4 Tahun 2020 Pedoman Pelaksanaan Penerimaan Peserta Didik Baru Pada Satuan Pendidikan <a href="<?= base_url() ?>uploads/lampiran/lampiran_perbup.pdf" target="blank"> disini </a> </p>
 						</div>
-
-
 					</div>
 				</div>
 			</div>
@@ -66,7 +64,7 @@
 				url: "<?php echo base_url("sekolah/zonasi/getDaerah"); ?>",
 				data: {
 					sekolah: sekolahSelected
-				}, // data yang akan dikirim ke file yang dituju
+				}, 
 				dataType: "JSON",
 				beforeSend: function(e) {
 					if (e && e.overrideMimeType) {
@@ -77,12 +75,10 @@
 					$("#zonasi").html(response.list_daerah).show();
 
 				},
-				error: function(xhr, ajaxOptions, thrownError) { // Ketika ada error
-					alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError); // Munculkan alert error
+				error: function(xhr, ajaxOptions, thrownError) { 
+					alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError); 
 				}
 			});
-
-
 
 			$(".sekolah").change(function() {
 
@@ -91,7 +87,7 @@
 					url: "<?php echo base_url("sekolah/zonasi/getDaerah"); ?>",
 					data: {
 						sekolah: $(".sekolah").val()
-					}, // data yang akan dikirim ke file yang dituju
+					}, 
 					dataType: "JSON",
 					beforeSend: function(e) {
 						if (e && e.overrideMimeType) {
@@ -102,8 +98,8 @@
 						$("#zonasi").html(response.list_daerah).show();
 
 					},
-					error: function(xhr, ajaxOptions, thrownError) { // Ketika ada error
-						alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError); // Munculkan alert error
+					error: function(xhr, ajaxOptions, thrownError) {
+						alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
 					}
 				});
 			});

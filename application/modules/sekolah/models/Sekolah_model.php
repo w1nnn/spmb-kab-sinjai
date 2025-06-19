@@ -5,9 +5,9 @@ class Sekolah_model extends CI_Model
 {
 
     var $table = 'tbl_sekolah';
-    var $column_order = array('id_sekolah', NULL); //set column field database for datatable orderable
-    var $column_search = array('nama', '',); //set column field database for datatable searchable just fisekolahtname , lastname , address are searchable
-    var $order = array('id_sekolah' => 'DESC'); // default order
+    var $column_order = array('id_sekolah', NULL); 
+    var $column_search = array('nama', '',); 
+    var $order = array('id_sekolah' => 'DESC'); 
 
     public function __construct()
     {
@@ -17,31 +17,30 @@ class Sekolah_model extends CI_Model
 
     private function _get_datatables_query()
     {
-        // active record
         $this->db->select('*')->from('tbl_sekolah');
 
         $i = 0;
 
-        foreach ($this->column_search as $item) // loop column
+        foreach ($this->column_search as $item) 
         {
-            if ($_POST['search']['value']) // if datatable send POST for search
+            if ($_POST['search']['value']) 
             {
 
-                if ($i === 0) // fisekolaht loop
+                if ($i === 0) 
                 {
-                    $this->db->group_start(); // open bracket. query Where with OR clause better with bracket. because maybe can combine with other WHERE with AND.
+                    $this->db->group_start(); 
                     $this->db->like($item, $_POST['search']['value']);
                 } else {
                     $this->db->or_like($item, $_POST['search']['value']);
                 }
 
-                if (count($this->column_search) - 1 == $i) //last loop
-                    $this->db->group_end(); //close bracket
+                if (count($this->column_search) - 1 == $i) 
+                    $this->db->group_end(); 
             }
             $i++;
         }
 
-        if (isset($_POST['order'])) // here order processing
+        if (isset($_POST['order'])) 
         {
             $this->db->order_by($this->column_order[$_POST['order']['0']['column']], $_POST['order']['0']['dir']);
         } else if (isset($this->order)) {
@@ -59,7 +58,6 @@ class Sekolah_model extends CI_Model
         return $query->result();
     }
 
-
     function count_filtered()
     {
         $this->_get_datatables_query();
@@ -72,8 +70,6 @@ class Sekolah_model extends CI_Model
         $this->db->from($this->table);
         return $this->db->count_all_results();
     }
-
-
     public function get_by_level($level)
 {
     $this->db->select('tbl_sekolah.*, tbl_level_sekolah.*, kecamatan.nama_kec');
@@ -108,23 +104,19 @@ class Sekolah_model extends CI_Model
             $this->db->limit(20);
         }
 
-
         $this->db->order_by('tbl_sekolah.npsn', 'ASC');
         return $this->db->get();
     }
 
-   // Tambahkan method baru di Sekolah_model untuk mendukung export berdasarkan dusun
 function get_sekolah_by_dusun($level, $dusun = '', $status_dtks = '')
 {
     $this->db->select("s.npsn, s.nama, s.kuota, p.pendaftar, s.lulusan, s.kel, s.dusun, s.alamat, kec");
     $this->db->from("tbl_sekolah AS s");
 
-    // Join s.kecamatan ambil nama kecamatan
     $this->db->join('kecamatan AS k', 's.kec = k.id_kec', 'LEFT');
     $this->db->select('k.nama_kec AS kec'); 
 
     
-    // Modify the subquery to include DTKS status filter if needed
     $subquery = "SELECT s.pilihan_sekolah_1 AS npsn, COUNT(*) AS pendaftar FROM tbl_siswa AS s WHERE `lock` = 'y'";
     
     if ($status_dtks !== '' && $status_dtks !== null) {
@@ -135,19 +127,15 @@ function get_sekolah_by_dusun($level, $dusun = '', $status_dtks = '')
     
     $this->db->join("($subquery) AS p", 'p.npsn = s.npsn', 'LEFT');
     
-    // Filter berdasarkan dusun jika ada
     if ($dusun != '' && $dusun !== 'Pilih Dusun') {
-        // Hapus kata "DUSUN" dan bersihkan (sama seperti di fetch_data_by_dusun)
         $clean_dusun = str_replace(['DUSUN ', 'KELURAHAN ', 'KEL ', 'DESA '], '', strtoupper($dusun));
         $clean_dusun = trim($clean_dusun);
         
         $this->db->group_start();
-        // Cari dengan kata asli
         $this->db->like('UPPER(s.kel)', strtoupper($dusun));
         $this->db->or_like('UPPER(s.alamat)', strtoupper($dusun));
         $this->db->or_like('UPPER(s.dusun)', strtoupper($dusun));
         
-        // Cari juga dengan kata yang sudah dibersihkan
         if ($clean_dusun != strtoupper($dusun)) {
             $this->db->or_like('UPPER(s.kel)', $clean_dusun);
             $this->db->or_like('UPPER(s.alamat)', $clean_dusun);
@@ -157,23 +145,18 @@ function get_sekolah_by_dusun($level, $dusun = '', $status_dtks = '')
     }
     
     $this->db->where('s.level_sekolah', $level);
-    // Group by npsn to avoid duplicates
-    // $this->db->group_by('s.kel');
     $this->db->order_by('s.kel', 'ASC');
     return $this->db->get();
 }
 
-// Update method get_sekolah yang sudah ada untuk menambahkan parameter dusun (opsional)
 function get_sekolah($level, $kecamatan = '', $status_dtks = '', $dusun = '')
 {
     $this->db->select("s.npsn, s.nama, s.kuota, p.pendaftar, s.lulusan, s.kel, s.dusun, s.alamat, kec");
     $this->db->from("tbl_sekolah AS s");
 
-    // Join s.kecamatan ambil nama kecamatan
     $this->db->join('kecamatan AS k', 's.kec = k.id_kec', 'LEFT');
     $this->db->select('k.nama_kec AS kec'); 
     
-    // Modify the subquery to include DTKS status filter if needed
     $subquery = "SELECT s.pilihan_sekolah_1 AS npsn, COUNT(*) AS pendaftar FROM tbl_siswa AS s WHERE `lock` = 'y'";
 
     if ($status_dtks !== '' && $status_dtks !== null) {
@@ -184,13 +167,11 @@ function get_sekolah($level, $kecamatan = '', $status_dtks = '', $dusun = '')
     
     $this->db->join("($subquery) AS p", 'p.npsn = s.npsn', 'LEFT');
     
-    // Join kecamatan table if filtering by kecamatan
     if ($kecamatan != '') {
         $this->db->join('kecamatan', 's.kec = kecamatan.id_kec');
         $this->db->where('kecamatan.nama_kec', $kecamatan);
     }
     
-    // Filter berdasarkan dusun jika ada (tambahan baru)
     if ($dusun != '' && $dusun !== 'Pilih Dusun') {
         $clean_dusun = str_replace(['DUSUN ', 'KELURAHAN ', 'KEL ', 'DESA '], '', strtoupper($dusun));
         $clean_dusun = trim($clean_dusun);
@@ -209,11 +190,8 @@ function get_sekolah($level, $kecamatan = '', $status_dtks = '', $dusun = '')
     }
     
     $this->db->where('s.level_sekolah', $level);
-    // Group by npsn to avoid duplicates
-    // $this->db->group_by('s.kel');
     $this->db->order_by('k.nama_kec', 'ASC');
     $this->db->order_by('s.kel', 'ASC');
-    // order by kecamatan name
     return $this->db->get();
 }
 
@@ -226,7 +204,6 @@ function get_sekolah($level, $kecamatan = '', $status_dtks = '', $dusun = '')
         $this->db->where('ukuran_baju', $size);
         $this->db->where('lock', 'y');
         
-        // Add DTKS status filter if specified
         if ($status_dtks !== '' && $status_dtks !== null) {
             $this->db->where('sts_dtks', $status_dtks);
         }
@@ -236,7 +213,6 @@ function get_sekolah($level, $kecamatan = '', $status_dtks = '', $dusun = '')
         
         return $row->jumlah;
     }
-
 
     function cari_sekolah($query)
     {
@@ -253,12 +229,9 @@ function get_sekolah($level, $kecamatan = '', $status_dtks = '', $dusun = '')
         } else {
             $this->db->limit('0');
         }
-
         $this->db->order_by('npsn', 'ASC');
-
         return $this->db->get();
     }
-
 
     public function get_all()
     {
@@ -277,18 +250,15 @@ function get_sekolah($level, $kecamatan = '', $status_dtks = '', $dusun = '')
         $this->db->join('kecamatan', 'tbl_sekolah.kec = kecamatan.id_kec');
         $this->db->join('( SELECT s.pilihan_sekolah_1 AS npsn, COUNT(*) AS pendaftar FROM tbl_siswa AS s WHERE `lock` = \'y\' GROUP BY s.pilihan_sekolah_1 ) AS p', 'p.npsn = tbl_sekolah.npsn', 'LEFT');
     
-        // Filter berdasarkan kecamatan
         if ($kecamatan != '') {
             $this->db->where('kecamatan.nama_kec', $kecamatan);
         }
     
-        // Filter berdasarkan level sekolah jika ada
         if ($level != '') {
             $this->db->where('tbl_sekolah.level_sekolah', $level);
         }
     
         $this->db->order_by('tbl_sekolah.kel', 'ASC');
-    
         return $this->db->get();
     }
 
@@ -300,25 +270,15 @@ function get_sekolah($level, $kecamatan = '', $status_dtks = '', $dusun = '')
     $this->db->join('kecamatan', 'tbl_sekolah.kec = kecamatan.id_kec');
     $this->db->join('( SELECT s.pilihan_sekolah_1 AS npsn, COUNT(*) AS pendaftar FROM tbl_siswa AS s WHERE `lock` = \'y\' GROUP BY s.pilihan_sekolah_1 ) AS p', 'p.npsn = tbl_sekolah.npsn', 'LEFT');
 
-//    if ($dusun != '') {
-//     $this->db->group_start();
-//     $this->db->like('tbl_sekolah.kel', $dusun);
-//     $this->db->or_like('tbl_sekolah.alamat', $dusun);
-//     $this->db->or_like('tbl_sekolah.dusun', $dusun);
-//     $this->db->group_end();
-//     }
     if ($dusun != '') {
-        // Hapus kata "DUSUN" dan bersihkan
         $clean_dusun = str_replace(['DUSUN ', 'KELURAHAN ', 'KEL ', 'DESA '], '', strtoupper($dusun));
         $clean_dusun = trim($clean_dusun);
         
         $this->db->group_start();
-        // Cari dengan kata asli
         $this->db->like('UPPER(tbl_sekolah.kel)', strtoupper($dusun));
         $this->db->or_like('UPPER(tbl_sekolah.alamat)', strtoupper($dusun));
         $this->db->or_like('UPPER(tbl_sekolah.dusun)', strtoupper($dusun));
         
-        // Cari juga dengan kata yang sudah dibersihkan
         if ($clean_dusun != strtoupper($dusun)) {
             $this->db->or_like('UPPER(tbl_sekolah.kel)', $clean_dusun);
             $this->db->or_like('UPPER(tbl_sekolah.alamat)', $clean_dusun);
@@ -327,13 +287,10 @@ function get_sekolah($level, $kecamatan = '', $status_dtks = '', $dusun = '')
         $this->db->group_end();
     }
 
-
     if ($level != '') {
         $this->db->where('tbl_sekolah.level_sekolah', $level);
     }
-
     $this->db->order_by('tbl_sekolah.nama', 'ASC');
-
     return $this->db->get();
 }
 
@@ -384,13 +341,11 @@ function get_sekolah($level, $kecamatan = '', $status_dtks = '', $dusun = '')
         return $result;
     }
 
-
     public function update($where, $data)
     {
         $this->db->update($this->table, $data, $where);
         return $this->db->affected_rows();
     }
-
 
     public function delete_by_id($id)
     {

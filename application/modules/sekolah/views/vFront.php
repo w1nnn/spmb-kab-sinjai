@@ -3,15 +3,12 @@
         <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
             <div class="iq-card-body">
                 <div class="row">
-                    <!-- Kolom untuk pencarian berdasarkan nama/NPSN -->
                     <div class="col-md-4 mb-2">
                         <label for="search_text">Cari Sekolah</label>
                         <input type="text" id="search_text" class="form-control" placeholder="Nama sekolah atau NPSN..." autofocus>
                     </div>
 
-                    <!-- Kolom untuk pilihan kecamatan -->
                     <?php if ($this->session->userdata('level') === 'superadmin') { ?>
-                        
                     <div class="col-md-4 mb-2">
                         <label for="kecamatan_select">Pilih Kecamatan</label>
                         <select name="kec" id="kecamatan_select" class="form-control select2" style="width:100%" required>
@@ -21,7 +18,6 @@
                             <?php endforeach; ?>
                         </select>
                     </div>
-                    <!-- Desa/Kelurahan -->
                     <div class="col-md-4 mb-2">
                          <label for=""> Desa / Dusun / Kelurahan <span class="text-danger">*</span>
                         </label>
@@ -39,8 +35,6 @@
                         </select>
 					</div>
                     <?php } ?>
-
-                    <!-- Kolom untuk tombol export -->
                     <div class="col-md-5 mb-2">
                         <?php if ($this->session->userdata('level') === 'superadmin') { ?>
                         <label>Export Data</label>
@@ -60,7 +54,6 @@
     </div>
 </div>
 
-<!-- Indikator Loading -->
 <div id="loading_indicator" class="row mb-3" style="display:none;">
     <div class="col-12 text-center">
         <div class="spinner-border text-primary" role="status">
@@ -70,7 +63,6 @@
     </div>
 </div>
 
-<!-- Hasil Pencarian -->
 <div id="result" class="row"></div>
 <script>
     $(document).ready(function() {
@@ -86,9 +78,7 @@
     $("#kecamatan_select").change(function() {
         const kecamatanValue = $('#kecamatan_select').val();
 
-        // Reset dusun select ketika kecamatan berubah
         if (kecamatanValue === '') {
-            // Jika tidak ada kecamatan dipilih, reset ke nilai default
             $("#zonasi").empty().append('<option value="<?= $get->dusun ?>"><?= $get->dusun ?></option>');
             return;
         }
@@ -104,35 +94,26 @@
                 if (e && e.overrideMimeType) {
                     e.overrideMimeType("application/json;charset=UTF-8");
                 }
-                // Tampilkan loading atau disable select
                 $("#zonasi").prop('disabled', true);
             },
             success: function(response) {
-                // RESET/CLEAR semua option terlebih dahulu
                 $("#zonasi").empty();
-                
-                // Tambahkan option default/placeholder
                 $("#zonasi").append('<option value="">Pilih Dusun</option>');
-                
-                // Parse response dan tambahkan option baru
                 const tempContainer = document.createElement('div');
                 tempContainer.innerHTML = "<select>" + response.list_daerah + "</select>";
                 const options = tempContainer.querySelectorAll('option');
 
                 options.forEach(option => {
                     const name = option.textContent.trim();
-                    const value = option.value || name; // gunakan value jika ada, jika tidak gunakan name
+                    const value = option.value || name;
                     if (name !== "") {
                         $("#zonasi").append(`<option value="${value}">${name}</option>`);
                     }
                 });
-
-                // Re-enable select dan trigger change untuk select2
                 $("#zonasi").prop('disabled', false).trigger('change');
             },
             error: function(xhr, ajaxOptions, thrownError) {
                 alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
-                // Re-enable select jika terjadi error
                 $("#zonasi").prop('disabled', false);
             }
         });
@@ -141,10 +122,7 @@
     </script>
 <script>
     $(document).ready(function() {
-        // Load data awal
         load_data();
-
-        // Fungsi untuk mencari berdasarkan teks
         function load_data(query) {
             $("#loading_indicator").show();
             $.ajax({
@@ -165,7 +143,6 @@
             });
         }
 
-        // Fungsi untuk mencari berdasarkan kecamatan
         function load_data_by_kecamatan(kecamatan) {
             $("#loading_indicator").show();
             $.ajax({
@@ -185,8 +162,6 @@
                 }
             });
         }
-
-        // Event handler untuk pencarian berdasarkan teks
         var st;
         $('#search_text').keyup(function() {
             clearTimeout(st);
@@ -197,14 +172,12 @@
             st = setTimeout(() => {
                 if (search !== '') {
                     load_data(search);
-                    $('#kecamatan_select').val(''); // Reset kecamatan select
+                    $('#kecamatan_select').val(''); 
                 } else {
                     load_data();
                 }
             }, 500);
         });
-
-        // Event handler untuk pencarian berdasarkan kecamatan
         $('#kecamatan_select').change(function() {
             const kecamatan = $('#kecamatan_select option:selected').text();
             $("#loading_indicator").show();
@@ -218,16 +191,14 @@
             }
         });
     });
-   // Event handler untuk pencarian berdasarkan dusun
 $('#zonasi').change(function() {
-    const dusunValue = $(this).val(); // Gunakan val() untuk mendapatkan value
+    const dusunValue = $(this).val(); 
     const dusunText = $('#zonasi option:selected').text();
     const kecamatan = $('#kecamatan_select option:selected').text();
     console.log('Dusun Value:', dusunValue);
     console.log('Dusun Text:', dusunText);
     console.log('Kecamatan:', kecamatan);
     
-    // Hanya lakukan request jika ada value yang dipilih dan bukan placeholder
     if (dusunValue && dusunValue !== '' && dusunText !== 'Pilih Dusun' && dusunText !== 'Pilih') {
         $("#loading_indicator").show();
         $('#result').html('');
@@ -238,7 +209,7 @@ $('#zonasi').change(function() {
             data: {
                 dusun: dusunText, 
                 level: '<?= $level ?>',
-                kecamatan: kecamatan // Sertakan kecamatan jika diperlukan
+                kecamatan: kecamatan 
             },
             success: function(data) {
                 $('#result').html(data);
@@ -250,41 +221,33 @@ $('#zonasi').change(function() {
             }
         });
         
-        // Reset pilihan lain
         $('#search_text').val('');
         $('#kecamatan_select').val('');
     } else {
-        // Jika tidak ada pilihan atau pilihan kosong, load data default
         if (dusunValue === '' || !dusunValue) {
             load_data();
         }
     }
 });
-    
-
-   // Script JavaScript yang sudah diperbaiki untuk mengirim parameter dusun pada export
 $('#export_ukuran').click(function() {
     var kecamatan = $('#kecamatan_select option:selected').text();
     var dusun = $('#zonasi option:selected').text();
     var status_dtks = $('select[name="sts_dtks"]').val();
     var url = '<?= base_url() ?>sekolah/ukuran?level=<?= $level ?>';
 
-    // Tambahkan parameter kecamatan jika ada
     if (kecamatan && kecamatan !== 'Pilih') {
         url += '&kecamatan=' + encodeURIComponent(kecamatan);
     }
 
-    // Tambahkan parameter dusun jika ada dan bukan placeholder
     if (dusun && dusun !== 'Pilih Dusun' && dusun !== 'Pilih' && dusun !== '<?= $get->dusun ?>') {
         url += '&dusun=' + encodeURIComponent(dusun);
     }
     
-    // Tambahkan parameter status DTKS jika ada
     if (status_dtks) {
         url += '&sts_dtks=' + encodeURIComponent(status_dtks);
     }
 
-    console.log('Export Ukuran URL:', url); // Untuk debugging
+    console.log('Export Ukuran URL:', url); 
     window.open(url, '_blank');
 });
 
@@ -294,22 +257,19 @@ $('#export_kuota').click(function() {
     var status_dtks = $('select[name="sts_dtks"]').val();
     var url = '<?= base_url() ?>sekolah/export?level=<?= $level ?>';
 
-    // Tambahkan parameter kecamatan jika ada
     if (kecamatan && kecamatan !== 'Pilih') {
         url += '&kecamatan=' + encodeURIComponent(kecamatan);
     }
     
-    // Tambahkan parameter dusun jika ada dan bukan placeholder
     if (dusun && dusun !== 'Pilih Dusun' && dusun !== 'Pilih' && dusun !== '<?= $get->dusun ?>') {
         url += '&dusun=' + encodeURIComponent(dusun);
     }
     
-    // Tambahkan parameter status DTKS jika ada
     if (status_dtks) {
         url += '&sts_dtks=' + encodeURIComponent(status_dtks);
     }
 
-    console.log('Export Kuota URL:', url); // Untuk debugging
+    console.log('Export Kuota URL:', url); 
     window.open(url, '_blank');
 });
 </script>
