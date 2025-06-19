@@ -477,41 +477,23 @@
 								<?php endif; ?>
 							</td>
 						</tr>
-
 					<?php } ?>
-
-
-
-
-
 				</table>
 			</div>
-
-
-
 			<hr>
 			<p><input type="checkbox" required> Saya nyatakan data yang saya isi benar-benar sesuai dengan data yang sesungguhnya dan saya siap mendapatkan sanksi apabila dikemudian hari ada data yg terbukti saya rekayasa. </p>
 			<p> <input type="checkbox" required> Dengan mengisi formulir pendaftaran ini saya nyatakan bersedia mengikuti seluruh peraturan yang berlaku pada sekolah dan tidak menuntut apabila dikemudian hari saya melanggar dan diberi sanksi atau dikeluarkan dari sekolah</p>
-
-
-
 		</div>
 	</div>
 	<hr>
 	<button class="btn btn-success pull-right " type="submit"> Simpan </button>
 	<?php if (level_user() == "siswa") { ?>
-		<!-- <a href="<?= base_url() ?>siswa/profil/lampiran" class="btn btn-warning pull-right mr-3 "> <i class="ri-arrow-left-fill"></i> Kembali </a> -->
 	<?php } else { ?>
 		<a href="<?= base_url() ?>siswa/edit/lampiran?id=<?= $get->id_siswa ?>" class="btn btn-warning pull-right mr-3 "> <i class="ri-arrow-left-fill"></i> Kembali </a>
-
 	<?php } ?>
-
-	<!-- <a href="<?= base_url() ?>siswa/profil/lampiran" class="btn btn-warning pull-right mr-3 "> <i class="ri-arrow-left-fill"></i> Kembali </a> -->
 </form>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
-
-<!-- Notifikasi Toast -->
 <?php if ($this->input->get('alert')): ?>
 	<script>
 		document.addEventListener("DOMContentLoaded", function() {
@@ -528,7 +510,6 @@
 				title: '<?= $this->input->get('message') ?>'
 			});
 
-			// Hapus parameter alert & message dari URL tanpa reload
 			if (history.pushState) {
 				const url = new URL(window.location);
 				url.searchParams.delete('alert');

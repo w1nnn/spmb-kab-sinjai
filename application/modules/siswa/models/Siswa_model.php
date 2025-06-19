@@ -5,9 +5,9 @@ class Siswa_model extends CI_Model
 {
 
     var $table = 'tbl_siswa';
-    var $column_order = array('id', null); //set column field database for datatable orderable
+    var $column_order = array('id', null);
     var $column_search = array('nama_siswa', 'no_ktp', 'no_kk', 'pilihan_sekolah_1', 'no_pendaftaran'); //set column field database for datatable searchable just fisiswatname , lastname , address are searchable
-    var $order = array('id' => 'DESC'); // default order
+    var $order = array('id' => 'DESC'); 
 
     public function __construct()
     {
@@ -17,7 +17,6 @@ class Siswa_model extends CI_Model
 
     private function _get_datatables_query()
     {
-        // active record
         if (level_user() == "sekolah") {
             $jalur = $this->input->get('jalur');
 			$npsn  = $this->session->userdata('npsn');
@@ -61,26 +60,25 @@ class Siswa_model extends CI_Model
 
         $i = 0;
 
-        foreach ($this->column_search as $item) // loop column
+        foreach ($this->column_search as $item) 
         {
-            if ($_POST['search']['value']) // if datatable send POST for search
+            if ($_POST['search']['value']) 
             {
-
-                if ($i === 0) // fisiswat loop
+                if ($i === 0) 
                 {
-                    $this->db->group_start(); // open bracket. query Where with OR clause better with bracket. because maybe can combine with other WHERE with AND.
+                    $this->db->group_start();
                     $this->db->like($item, $_POST['search']['value']);
                 } else {
                     $this->db->or_like($item, $_POST['search']['value']);
                 }
 
-                if (count($this->column_search) - 1 == $i) //last loop
-                    $this->db->group_end(); //close bracket
+                if (count($this->column_search) - 1 == $i) 
+                    $this->db->group_end(); 
             }
             $i++;
         }
 
-        if (isset($_POST['order'])) // here order processing
+        if (isset($_POST['order']))
         {
             $this->db->order_by($this->column_order[$_POST['order']['0']['column']], $_POST['order']['0']['dir']);
         } else if (isset($this->order)) {
@@ -98,7 +96,6 @@ class Siswa_model extends CI_Model
         return $query->result();
     }
 
-
     function count_filtered()
     {
         $this->_get_datatables_query();
@@ -112,7 +109,6 @@ class Siswa_model extends CI_Model
         return $this->db->count_all_results();
     }
 
-
     public function get_all()
     {
         $this->db->from('tbl_siswa');
@@ -120,7 +116,6 @@ class Siswa_model extends CI_Model
         $query = $this->db->get();
         return $query->result();
     }
-
 
     public function get_by_id($id)
     {
@@ -130,7 +125,6 @@ class Siswa_model extends CI_Model
         $query = $this->db->get();
         return $query->row();
     }
-
 
     public function profil($id)
     {
@@ -151,7 +145,6 @@ class Siswa_model extends CI_Model
         $query = $this->db->get();
         return $query->row();
     }
-
 
     public function getByNoKtp($no)
     {
@@ -174,7 +167,6 @@ class Siswa_model extends CI_Model
         return $query->num_rows();
     }
 
-
    public function getBySekolah($npsn, $jalur, $sts_dtks)
 {
     $this->db->select('*');
@@ -182,18 +174,14 @@ class Siswa_model extends CI_Model
     $this->db->where('pilihan_sekolah_1', $npsn);
     $this->db->where('lock', 'y');
     
-    // Filter berdasarkan jalur jika ada dan bukan "all"
     if ($jalur != "all" && $jalur != "" && $jalur !== null) {
         $this->db->where('jalur', $jalur);
     }
     
-    // Filter berdasarkan status DTKS jika ada
     if ($sts_dtks !== null && $sts_dtks !== '') {
         $this->db->where('sts_dtks', $sts_dtks);
     }
-
     $this->db->order_by('tgl_daftar', 'DESC');
-    
     return $this->db->get()->result();
 }
 
@@ -249,13 +237,11 @@ class Siswa_model extends CI_Model
         }
     }
 
-
     function save($data)
     {
         $result = $this->db->insert($this->table, $data);
         return $result;
     }
-
 
     public function update($where, $data)
     {
@@ -264,7 +250,6 @@ class Siswa_model extends CI_Model
         $this->db->update($this->table);
         return $this->db->affected_rows();
     }
-
 
     public function delete_by_id($id)
     {

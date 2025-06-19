@@ -20,29 +20,23 @@
 		<div class="card">
 			<div class="card-body">
 				<?php
-// Query to check if NIK exists in tbl_status_dtks
 $nik = $get->no_ktp;
 $this->db->where('nik', $nik);
 $query = $this->db->get('tbl_status_dtks');
 
 if ($query->num_rows() > 0) {
-    // NIK found in DTKS table, check status
     $dtks_data = $query->row();
     $status = $dtks_data->status;
-    
     if ($status == 'Terdaftar') {
-        // Status: Terdaftar
         echo '<div class="alert alert-primary" role="alert">
                 <i class="ri-checkbox-circle-line mr-2"></i> Selamat NIK Anda Terdaftar di DTKS
               </div>';
     } else {
-        // Status: Tidak Terdaftar
         echo '<div class="alert alert-danger" role="alert">
                 <i class="ri-close-circle-line mr-2"></i> Mohon Maaf NIK Anda Tidak Terdaftar di DTKS
               </div>';
     }
 } else {
-    // NIK not found in DTKS table - need verification
     echo '<div class="alert alert-warning text-dark" role="alert">
             <i class="ri-error-warning-line mr-2"></i> Proses Verifikasi DTKS
           </div>';
@@ -120,9 +114,7 @@ if ($query->num_rows() > 0) {
 								?>
 
 				<?php 
-				// Pengecekan untuk level admin/superadmin dengan kontrol berdasarkan jadwal
 				if (level_user() == "admin" || level_user() == "superadmin") { 
-					// Admin dan superadmin dapat mengakses kapan saja
 					?>
 					<div class="row mb-2">
 						<div class="col-md-4">
@@ -136,12 +128,10 @@ if ($query->num_rows() > 0) {
 							</a>
 						</div>
 						<div class="col-md-4">
-							<!-- <a href="#" data-toggle="modal" data-target="#hapus" class="mt-2 btn btn-lg btn-danger btn-block"> <i class="ri-delete-bin-4-line "></i> Hapus</a> -->
 						</div>
 					</div>
 					<?php 
 				} elseif (level_user() == "sekolah") {
-					// Level sekolah mengikuti jadwal yang sama seperti registrasi
 					if (registerAccess() || (date('Y-m-d') >= configs()->edit_siswa->start && date('Y-m-d') <= configs()->edit_siswa->end)) {
 						?>
 						<div class="row mb-2">
@@ -156,7 +146,6 @@ if ($query->num_rows() > 0) {
 								</a>
 							</div>
 							<div class="col-md-4">
-								<!-- <a href="#" data-toggle="modal" data-target="#hapus" class="mt-2 btn btn-lg btn-danger btn-block"> <i class="ri-delete-bin-4-line "></i> Hapus</a> -->
 							</div>
 						</div>
 						<?php 
@@ -205,10 +194,6 @@ if ($query->num_rows() > 0) {
 														</td>
 													</tr>
 												<?php } ?>
-
-
-
-
 												<?php if ($get->lock == "y") {  ?>
 													<tr>
 														<td width="30%">Nomor Pendaftaran</td>
@@ -278,7 +263,6 @@ if ($query->num_rows() > 0) {
 													<td>:</td>
 													<td> <?= $get->ukuran_baju ?> </td>
 												</tr>
-
 											</table>
 										</div>
 									</div>
@@ -286,8 +270,6 @@ if ($query->num_rows() > 0) {
 										<img src="<?= base_url() ?>uploads/siswa/<?= $get->foto ?>" width="100%;" alt="" class="mt-3 rounded">
 									</div>
 								</div>
-
-
 								<ul class="list-group">
 									<li class="list-group-item active">
 										<h5> Data Orang Tua </h5>
@@ -336,11 +318,8 @@ if ($query->num_rows() > 0) {
 											<td>:</td>
 											<td> <?= $get->no_hp_ortu ?> </td>
 										</tr>
-
 									</table>
-
 								</div>
-
 								<ul class="list-group">
 									<li class="list-group-item active">
 										<h5> Sekolah Tujuan </h5>
@@ -363,18 +342,13 @@ if ($query->num_rows() > 0) {
 												<td> <?= $get->bidang_prestasi  ?> </td>
 											</tr>
 										<?php } ?>
-
 										<tr>
 											<td>Sekolah Pilihan </td>
 											<td>:</td>
 											<td><b> <?= sekolah($get->pilihan_sekolah_1)->nama ?> </b></td>
 										</tr>
-
-
 									</table>
 								</div>
-
-
 								<ul class="list-group">
 									<li class="list-group-item active">
 										<h5> Lampiran Dokumen </h5>
@@ -382,9 +356,6 @@ if ($query->num_rows() > 0) {
 								</ul>
 								<div class="table-responsive">
 									<table class="table table-hover">
-
-
-
 										<tr>
 											<td width="40%">KK</td>
 											<td>:</td>
@@ -417,7 +388,6 @@ if ($query->num_rows() > 0) {
 												$title = "Sertifikat / Piagam / Rapor";
 											}
 										?>
-
 											<tr>
 												<td><?= $title ?> </td>
 												<td>:</td>
@@ -430,7 +400,6 @@ if ($query->num_rows() > 0) {
 												</td>
 											</tr>
 										<?php } ?>
-
 										<tr>
 											<td width="20%">
 												<?php echo ($get->tingkat_sekolah == "4") ? "Kartu Imunisasi" : "Surat Keterangan Lulus / Surat Tanda Selesai Belajar (STSB)"   ?>
@@ -456,7 +425,6 @@ if ($query->num_rows() > 0) {
 											</tr>
 										<?php endif; ?>
 										<?php if ($get->jalur == "117") { ?>
-
 											<tr>
 												<td width="20%">
 													Lampiran Bukti Prestasi Lainnya
@@ -470,14 +438,9 @@ if ($query->num_rows() > 0) {
 													<?php endif; ?>
 												</td>
 											</tr>
-
-
 										<?php } ?>
-
-
 									</table>
 								</div>
-
 								<hr>
 								<?php if (level_user() != "siswa") { ?>
 									<?php if (verifyAccess() || (date('Y-m-d') >= configs()->seleksi->start && date('Y-m-d') <= configs()->seleksi->end)) : ?>
@@ -511,7 +474,6 @@ if ($query->num_rows() > 0) {
 								<?php } ?>
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</div>

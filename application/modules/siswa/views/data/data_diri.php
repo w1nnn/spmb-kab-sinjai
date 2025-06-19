@@ -61,7 +61,6 @@
 		color: #6c757d;
 	}
 
-	/* Completed step */
 	.progress-step.completed .progress-marker {
 		background-color: rgba(var(--primary-rgb), 0.1);
 		border-color: var(--primary);
@@ -71,7 +70,6 @@
 		color: var(--primary);
 	}
 
-	/* Active step */
 	.progress-step.active .progress-marker {
 		background-color: var(--primary);
 		border-color: var(--primary);
@@ -113,7 +111,6 @@ $eUsia = $this->session->userdata('error_usia');
 $statusError = $this->session->userdata('status_error');
 $message = $this->session->userdata('error_message');
 
-// Jangan lupa untuk menghapus data setelah digunakan
 if ($eUsia == 'usia' && $statusError == 'danger') {
 	$this->session->unset_userdata('error_usia');
 	$this->session->unset_userdata('status_error');
@@ -125,9 +122,6 @@ if ($eUsia == 'usia' && $statusError == 'danger') {
 		});
 	</script>
 <?php } ?>
-
-
-<!-- Modal Upload File -->
 <div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="uploadModalLabel" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
@@ -190,18 +184,15 @@ if ($eUsia == 'usia' && $statusError == 'danger') {
 			<div class="card">
 				<div class="card-body">
 					<?php
-					// Query to check if NIK exists in tbl_status_dtks
 					$nik = $get->no_ktp;
 					$this->db->where('nik', $nik);
 					$query = $this->db->get('tbl_status_dtks');
 
 					if ($query->num_rows() > 0) {
-						// NIK found in DTKS table
 						echo '<div class="alert alert-primary" role="alert">
                             <i class="ri-checkbox-circle-line mr-2"></i> Terdata di DTKS
                           </div>';
 					} else {
-						// NIK not found in DTKS table
 						echo '<div class="alert alert-warning" role="alert">
         <i class="mr-2"></i> Proses Verifikasi DTKS
     </div>';
@@ -279,7 +270,6 @@ if ($eUsia == 'usia' && $statusError == 'danger') {
 			<div class="form-group">
 				<label for="no_ktp"> Nomor Induk Kependudukan <span class="text-danger">*</span> </label>
 				<?php if (level_user() == "admin" || level_user() == "superadmin") { ?>
-					<!-- Input untuk admin/superadmin - bisa diedit -->
 					<input 
 						type="number" 
 						value="<?= $get->no_ktp ?>" 
@@ -289,7 +279,6 @@ if ($eUsia == 'usia' && $statusError == 'danger') {
 						required
 					>
 				<?php } else { ?>
-					<!-- Input untuk sekolah - readonly -->
 					<input 
 						type="number" 
 						value="<?= $get->no_ktp ?>" 
@@ -299,7 +288,6 @@ if ($eUsia == 'usia' && $statusError == 'danger') {
 						readonly
 						required
 					>
-					<!-- quote -->
 					<small class="text-muted text-danger">* Anda Tidak di Izinkan Untuk Melakukan Perubahan Nomor Induk Kependudukan (NIK) !</small>
 				<?php } ?>
 			</div>
@@ -340,7 +328,6 @@ if ($eUsia == 'usia' && $statusError == 'danger') {
 
 			<div class="form-group">
 				<label for=""> Ukuran Baju <span class="text-danger">*</span> </label>
-				<!-- <input type="text" name="ukuran_baju" class="form-control" value="<?= $get->ukuran_baju ?>" required> -->
 				<select class="form-control" name="ukuran_baju" required>
 					<option value="">Pilih Ukuran Baju</option>
 					<?php
@@ -352,10 +339,6 @@ if ($eUsia == 'usia' && $statusError == 'danger') {
 				</select>
 			</div>
 			<?php if ($get->tingkat_sekolah != "4") {  ?>
-				<!-- <div class="form-group">
-					<label for=""> Asal Sekolah <span class="text-danger">*</span> </label>
-					<input autocomplete="off" type="text" class="form-control" name="asal_sekolah" value="<?= $get->asal_sekolah ?>">
-				</div> -->
 				<div class="form-group">
 					<label for=""> Asal Sekolah <span class="text-danger">*</span> </label>
 					<select name="asal_sekolah" class="form-control select2 sekolah" id="sekolah_1" style="width: 100%;" data-tags="true">
@@ -364,9 +347,6 @@ if ($eUsia == 'usia' && $statusError == 'danger') {
 							<option value="<?= $get->asal_sekolah ?>" selected><?= $get->asal_sekolah ?></option>
 						<?php endif; ?>
 					</select>
-					<!-- <small id="quota_info" class="form-text text-muted"></small> -->
-					<!-- Input Kuota Update -->
-					 <!-- <input type="text" name="kuota_lulusan" id="kuota_lulusan"> -->
 				</div>
 			<?php } ?>
 			<div class="form-group">
@@ -400,26 +380,15 @@ if ($eUsia == 'usia' && $statusError == 'danger') {
 
 	<?php } ?>
 </form>
-<!-- Menambahkan SweetAlert2 JS -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
-
 <script>
-
-
 $(document).ready(function() {
-	// $('#sekolah_1').select2({
-    //     tags: true, // Memungkinkan input manual
-    //     placeholder: "Pilih atau ketik nama sekolah",
-    //     allowClear: true
-    // });
-    // Initialize select2
     $('.select2').select2({
 		tags: true,
         placeholder: "Pilih Sekolah Asal",
         allowClear: true
     });
 
-    // Load schools with Ajax
     loadSekolahAsal();
 
     function loadSekolahAsal() {
@@ -435,7 +404,6 @@ $(document).ready(function() {
             success: function(response) {
                 $("#sekolah_1").html(response.list_sekolah).show();
                 
-                // Preserve selected value if exists
                 <?php if(!empty($get->asal_sekolah)): ?>
                 $("#sekolah_1").val("<?= $get->asal_sekolah ?>").trigger('change');
                 <?php endif; ?>
@@ -446,7 +414,6 @@ $(document).ready(function() {
         });
     }
     
-    // Display quota information when a school is selected
     $('#sekolah_1').on('change', function() {
         var selectedSchool = $(this).val();
         
@@ -460,13 +427,10 @@ $(document).ready(function() {
                     if (response.exists) {
                         if (response.quota > 0) {
                             $('#quota_info').html('<span class="text-success">Kuota tersisa:</span> ' + '<b>' + response.quota +'</b>');
-							// $('.btn-lanjut').attr('disabled', false);
-							// Tampung nilai kuota
 							var quotaLulusanUpdate = response.quota - 1;
 							$('#kuota_lulusan').val(quotaLulusanUpdate);
 						} else {
                             $('#quota_info').html('<span class="text-danger">Tidak ada Kuota lulusan Tersedia!</span>');
-							// $('.btn-lanjut').attr('disabled', true);
                         }
                     } else {
                         $('#quota_info').html('');
@@ -478,7 +442,6 @@ $(document).ready(function() {
         }
     });
 });
-	// alert($('.kecamatan').find(":selected").val());
 	$(document).ready(function() {
 		if ('<?php echo $eUsia ?>' == 'usia') {
 			$("input[name='tgl_lahir']").focus();
@@ -535,76 +498,20 @@ $(document).ready(function() {
 		});
 	});
 </script>
-<!-- <script>
-	// Menampilkan preview dan validasi file
-	$(document).ready(function() {
-		// Menampilkan modal upload file jika ada error dan status 'danger'
-		<?php if ($eUsia && $statusError == 'danger'): ?>
-			$('#uploadModal').modal('show');
-		<?php endif; ?>
-
-		// File input change handler
-		$('#fileUpload').change(function() {
-			// Get the file input value and file size
-			var file = this.files[0];
-			var fileSize = file.size / 1024; // Size in KB
-			var fileName = file.name;
-			var fileExtension = fileName.split('.').pop().toLowerCase();
-
-			// Validasi file extension (hanya gambar dan pdf)
-			var validExtensions = ['jpg', 'jpeg', 'png', 'pdf'];
-			if ($.inArray(fileExtension, validExtensions) == -1) {
-				alert("File harus berupa gambar (JPG, JPEG, PNG) atau PDF.");
-				$('#fileUpload').val(''); // Clear the input
-				$('#filePreview').hide(); // Hide preview
-				return;
-			}
-
-			// Validasi ukuran file (maksimal 500 KB)
-			if (fileSize > 500) {
-				alert("Ukuran file maksimal 500 KB.");
-				$('#fileUpload').val(''); // Clear the input
-				$('#filePreview').hide(); // Hide preview
-				return;
-			}
-
-			// Menampilkan preview file berdasarkan jenis file
-			if (fileExtension == 'pdf') {
-				// Jika file PDF
-				$('#filePreview').show();
-				$('#previewContainer').html('<embed src="' + URL.createObjectURL(file) + '" width="100%" height="400px" type="application/pdf">');
-			} else if (['jpg', 'jpeg', 'png'].includes(fileExtension)) {
-				// Jika file gambar
-				var reader = new FileReader();
-				reader.onload = function(e) {
-					$('#filePreview').show();
-					$('#previewContainer').html('<img src="' + e.target.result + '" class="img-fluid" alt="Preview">');
-				};
-				reader.readAsDataURL(file);
-			}
-		});
-	});
-</script> -->
 <script>
-	// Menampilkan preview dan validasi file
 	$(document).ready(function() {
-		// Menampilkan modal upload file jika error dan status 'danger'
 		<?php if ($eUsia && $statusError == 'danger'): ?>
 			$('#uploadModal').modal('show');
 		<?php endif; ?>
 
-		// File input change handler
 		$('#fileUpload').change(function() {
-			// Get the file input value and file size
 			var file = this.files[0];
 			var fileSize = file.size / 1024; // Size in KB
 			var fileName = file.name;
 			var fileExtension = fileName.split('.').pop().toLowerCase();
 
-			// Validasi file extension (hanya gambar dan pdf)
 			var validExtensions = ['jpg', 'jpeg', 'png', 'pdf'];
 			if ($.inArray(fileExtension, validExtensions) == -1) {
-				// Menampilkan alert menggunakan SweetAlert2
 				Swal.fire({
 					icon: 'error',
 					title: 'File tidak valid!',
@@ -614,10 +521,7 @@ $(document).ready(function() {
 				$('#filePreview').hide(); // Hide preview
 				return;
 			}
-
-			// Validasi ukuran file (maksimal 500 KB)
 			if (fileSize > 500) {
-				// Menampilkan alert menggunakan SweetAlert2
 				Swal.fire({
 					icon: 'error',
 					title: 'Ukuran file terlalu besar!',
@@ -628,13 +532,10 @@ $(document).ready(function() {
 				return;
 			}
 
-			// Menampilkan preview file berdasarkan jenis file
 			if (fileExtension == 'pdf') {
-				// Jika file PDF
 				$('#filePreview').show();
 				$('#previewContainer').html('<embed src="' + URL.createObjectURL(file) + '" width="100%" height="400px" type="application/pdf">');
 			} else if (['jpg', 'jpeg', 'png'].includes(fileExtension)) {
-				// Jika file gambar
 				var reader = new FileReader();
 				reader.onload = function(e) {
 					$('#filePreview').show();

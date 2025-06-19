@@ -59,7 +59,6 @@ class Pengumuman extends CI_Controller
 			"recordsFiltered" => $this->pengumuman->count_filtered(),
 			"data" => $data,
 		);
-		//output to json format
 		echo json_encode($output);
 	}
 

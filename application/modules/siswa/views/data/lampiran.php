@@ -61,7 +61,6 @@
 		color: #6c757d;
 	}
 
-	/* Completed step */
 	.progress-step.completed .progress-marker {
 		background-color: rgba(var(--primary-rgb), 0.1);
 		border-color: var(--primary);
@@ -71,7 +70,6 @@
 		color: var(--primary);
 	}
 
-	/* Active step */
 	.progress-step.active .progress-marker {
 		background-color: var(--primary);
 		border-color: var(--primary);
@@ -119,18 +117,15 @@
 			<div class="card">
 				<div class="card-body">
 					<?php
-					// Query to check if NIK exists in tbl_status_dtks
 					$nik = $get->no_ktp;
 					$this->db->where('nik', $nik);
 					$query = $this->db->get('tbl_status_dtks');
 
 					if ($query->num_rows() > 0) {
-						// NIK found in DTKS table
 						echo '<div class="alert alert-primary" role="alert">
                             <i class="ri-checkbox-circle-line mr-2"></i> Terdata di DTKS
                           </div>';
 					} else {
-						// NIK not found in DTKS table
 						echo '<div class="alert alert-warning" role="alert">
         <i class="ri-error-warning-line mr-2"></i> Proses Verifikasi DTKS
     </div>';
@@ -211,8 +206,6 @@
 						<th width="40%"> Pilih File</th>
 						<th> #</th>
 					</tr>
-
-					<!-- Foto -->
 					<tr>
 						<td><b onclick="$(this).closest('tr').find('input[type=file]').click()"> Foto <span class="text-danger">*</span> </b></td>
 						<td>Foto ukuran 3x4 , file jpg, Max 500 kb<br>
@@ -223,8 +216,6 @@
 							<img src="<?= base_url() ?>uploads/siswa/<?= $get->foto ?>" width="100px;" alt="" id="fotoPreview" style="display: <?= $get->foto ? 'block' : 'none'; ?>" required>
 						</td>
 					</tr>
-
-					<!-- Kartu Keluarga -->
 					<tr>
 						<td><b onclick="$(this).closest('tr').find('input[type=file]').click()"> Kartu Keluarga <span class="text-danger">*</span></b></td>
 						<td>File pdf / jpg, Max 500 kb<br>
@@ -234,7 +225,6 @@
 							<span class="text-danger"> <?= (!empty($this->session->flashdata('error_kk'))) ? " " . $this->session->flashdata('message') . " " : ""; ?> </span>
 							<div id="kkPreview" style="display: <?= $get->kk ? 'block' : 'none'; ?>">
 								<?php if ($get->kk) : ?>
-									<!-- <img src="<?= base_url() ?>uploads/siswa/<?= $get->kk ?>" width="100px;" alt=""> -->
 									<a href="<?= base_url() ?>uploads/siswa/<?= $get->kk ?>" target="_blank" class="btn btn-sm btn-primary"><i class="fa fa-search" aria-hidden="true"></i> Lihat</a>
 								<?php elseif ($get->kk) : ?>
 									<a href="<?= base_url() ?>uploads/siswa/<?= $get->kk ?>" target="_blank" class="btn btn-sm btn-primary"><i class="fa fa-search" aria-hidden="true"></i> Lihat</a>
@@ -244,8 +234,6 @@
 							</div>
 						</td>
 					</tr>
-
-					<!-- Akta Kelahiran -->
 					<tr>
 						<td><b onclick="$(this).closest('tr').find('input[type=file]').click()"> Akta Kelahiran Calon Siswa <span class="text-danger">*</span></b></td>
 						<td>File pdf / jpg, Max 500 kb<br>
@@ -265,8 +253,6 @@
 							</div>
 						</td>
 					</tr>
-
-					<!-- Surat Keterangan Lulus -->
 					<tr>
 						<td>
 							<b onclick="$(this).closest('tr').find('input[type=file]').click()"><?php echo ($get->tingkat_sekolah == "4") ? "Kartu Imunisasi" : "Surat Keterangan Lulus / Surat Tanda Selesai Belajar (STSB)"   ?></b>
@@ -289,7 +275,6 @@
 						</td>
 					</tr>
 
-					<!-- Surat Keterangan Tidak Mampu / Pindah Tugas -->
 					<?php if ($get->jalur != "114") {
 						if ($get->jalur == "115") {
 							$title = "Surat Keterangan Tidak Mampu";
@@ -333,7 +318,6 @@
 </form>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
-	// Fungsi untuk memeriksa ukuran file dan menampilkan gambar jika file tidak melebihi 500KB
 	function previewImage(input, previewId) {
 		var file = input.files[0];
 		var maxSize = 500 * 1024; // 500KB dalam byte
@@ -356,7 +340,6 @@
 		}
 	}
 
-	// Fungsi untuk memverifikasi gambar atau dokumen PDF
 	function previewFile(input, previewId) {
 		var file = input.files[0];
 		var maxSize = 500 * 1024; // 500KB dalam byte

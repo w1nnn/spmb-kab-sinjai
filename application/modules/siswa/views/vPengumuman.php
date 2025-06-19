@@ -55,15 +55,13 @@
 			</div>
 			<script type="text/javascript">
 
-			var save_method; //for save method string
+			var save_method; 
 			var table;
 
 
 			$(document).ready(function () {
-				//datatables
 
 				table = $('#table').DataTable({
-					//
 					"oLanguage": {
 						"oPaginate": {
 							"sPrevious": '<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>',
@@ -73,50 +71,40 @@
 						"sSearchPlaceholder": "Cari Nama Anda Disini",
 					},
 					dom: 'Bfrtip',
-					"processing": true, //Feature control the processing indicator.
-					"serverSide": true, //Feature control DataTables' server-side processing mode.
-					"order": [], //Initial no order.
-
-					// Load data for the table's content from an Ajax source
+					"processing": true, 
+					"serverSide": true, 
+					"order": [], 
 					"ajax": {
 						"url": "<?php echo site_url('siswa/pengumuman/ajax_list?npsn='.$npsn.' ')  ?>",
 						"type": "POST"
 					},
 
-					//Set column definition initialisation properties.
 					"columnDefs": [
 						{
-							"targets": [-1], //last column
-							"orderable": false, //set not orderable
+							"targets": [-1],
+							"orderable": false,
 						},
 					],
 
 				});
-
-				//set input/textarea/select event when change value, remove class error and remove text help block
 				$("input").change(function () {
 					$(this).parent().parent().removeClass('has-error');
 					$(this).next().empty();
 				});
-
-
 			});
 
 			function reload_table() {
-				table.ajax.reload(null, false); //reload datatable ajax
+				table.ajax.reload(null, false);
 			}
 
 
 			function delete_(id) {
 				if (confirm('Anda yakin ingin menghapus data ?')) {
-					// ajax delete data to database
-
 					$.ajax({
 						url: "<?php echo site_url('siswa/daftar/ajax_delete')?>/" + id,
 						type: "POST",
 						dataType: "JSON",
 						success: function (data) {
-							//if success reload ajax table
 							reload_table();
 							toastr.error('Berhasil Menghapus Data');
 
@@ -128,8 +116,6 @@
 
 				}
 			}
-
-
 			</script>
 		<?php } ?>
 	</div>

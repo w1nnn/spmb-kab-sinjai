@@ -61,7 +61,6 @@
 		color: #6c757d;
 	}
 
-	/* Completed step */
 	.progress-step.completed .progress-marker {
 		background-color: rgba(var(--primary-rgb), 0.1);
 		border-color: var(--primary);
@@ -71,7 +70,6 @@
 		color: var(--primary);
 	}
 
-	/* Active step */
 	.progress-step.active .progress-marker {
 		background-color: var(--primary);
 		border-color: var(--primary);
@@ -118,18 +116,15 @@
 			<div class="card">
 				<div class="card-body">
 					<?php
-					// Query to check if NIK exists in tbl_status_dtks
 					$nik = $get->no_ktp;
 					$this->db->where('nik', $nik);
 					$query = $this->db->get('tbl_status_dtks');
 
 					if ($query->num_rows() > 0) {
-						// NIK found in DTKS table
 						echo '<div class="alert alert-primary" role="alert">
                             <i class="ri-checkbox-circle-line mr-2"></i> Terdata di DTKS
                           </div>';
 					} else {
-						// NIK not found in DTKS table
 						echo '<div class="alert alert-warning" role="alert">
         <i class="ri-error-warning-line mr-2"></i> Proses Verifikasi DTKS
     </div>';

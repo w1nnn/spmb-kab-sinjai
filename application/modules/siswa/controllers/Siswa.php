@@ -75,15 +75,10 @@ class Siswa extends CI_Controller
 		}
 	}
 
-
 	public function edit()
 	{
 		cek_session();
-
-
 		$id = $this->input->get('id');
-
-
 		$pages = $this->uri->segment(3);
 
 		if ($pages == "datadiri") {
@@ -108,11 +103,8 @@ class Siswa extends CI_Controller
 		$data['sekolah'] = $this->sekolah->get_all();
 		$data['jalur'] = $this->jalur->get_all();
 		$data['kecamatan'] = $this->kecamatan->get_all();
-
-
 		$this->template->load('home/layouts', 'vProfil', $data);
 	}
-
 
 	public function save()
 	{
@@ -120,18 +112,6 @@ class Siswa extends CI_Controller
 		$id = $this->input->post('id');
 $page = $this->input->post('page');
 $next = $this->input->post('lanjut');
-
-// Ambil data siswa berdasarkan ID
-
-
-// die(); // Stop biar output bisa dibaca
-
-
-
-// die();
-
-
-		
 
 		if ($page == "jalur") {
 
@@ -153,18 +133,15 @@ $next = $this->input->post('lanjut');
 $student = $this->db->get('tbl_siswa')->row();
 
 if ($student) {
-    // Debug status daftar siswa
     echo "Status Daftar Sebelumnya: " . $student->sts_daftar . "<br>";
 
     if ((int)$student->sts_daftar !== 1) {
         $kuotaLulusan = $this->input->post('kuota_lulusan');
         $nama_sekolah = trim($this->input->post('asal_sekolah'));
 
-        // Debug nilai input
         echo "Nama Sekolah: $nama_sekolah<br>";
         echo "Kuota Lulusan Baru: $kuotaLulusan<br>";
 
-        // Cek apakah sekolah ada
         $this->db->where('nama', $nama_sekolah);
         $school = $this->db->get('tbl_sekolah')->row();
 
@@ -188,7 +165,6 @@ if ($student) {
         echo "Siswa sudah terdaftar, kuota sekolah tidak diupdate.<br>";
     }
 
-    // Update status daftar siswa ke 1
     $this->db->where('id_siswa', $id);
     $this->db->update('tbl_siswa', ['sts_daftar' => 1]);
 
@@ -263,7 +239,6 @@ if ($student) {
 			);
 		} else if ($page == "lampiran") {
 
-
 			$config['upload_path'] = './uploads/siswa/';
 			$config['allowed_types'] = 'pdf|jpg|png|jpeg';
 			$config['remove_spaces'] = TRUE;
@@ -289,7 +264,6 @@ if ($student) {
 					redirect(base_url('siswa/profil/' . $page . ''));
 				}
 			}
-
 
 			if ($this->upload->do_upload("kk")) {
 				$kk = $this->siswa->get_by_id($id)->kk;
@@ -362,7 +336,6 @@ if ($student) {
 				$this->siswa->update(array('id_siswa' => $id), $skl);
 			}
 
-
 			if ($this->upload->do_upload("suket_prestasi")) {
 				$suket_prestasi = $this->siswa->get_by_id($id)->suket_prestasi;
 				if ($suket_prestasi && is_file(FCPATH . '/uploads/siswa/' . $suket_prestasi)) {
@@ -373,8 +346,6 @@ if ($student) {
 				$suket_prestasi = array('suket_prestasi' => $filename);
 				$this->siswa->update(array('id_siswa' => $id), $suket_prestasi);
 			}
-
-
 
 			$data = array('bidang_prestasi' => $this->input->post('bidang_prestasi'));
 		} else if ($page == "selesai") {
@@ -387,7 +358,6 @@ if ($student) {
 		}
 
 		$this->siswa->update(array('id_siswa' => $id), $data);
-		// $this->session->set_flashdata(array('status' => "info", 'message' => "Data sementara berhasil disimpan"));
 
 		if (level_user() == "siswa") {
 			redirect(base_url('siswa/profil/' . $next . '?alert=info&message=' . urlencode('Data berhasil disimpan')));
@@ -407,9 +377,8 @@ if ($student) {
 		cek_session();
 
 		$id = $this->input->post('id');
-		$next = $this->input->post('lanjut'); // Ambil nilai next dari input tersembunyi
+		$next = $this->input->post('lanjut'); 
 
-		// Konfigurasi upload file
 		$config['upload_path'] = './uploads/siswa/psikolog/';
 		$config['allowed_types'] = 'pdf|jpg|jpeg|png';
 		$config['remove_spaces'] = TRUE;
@@ -417,23 +386,19 @@ if ($student) {
 
 		$this->load->library('upload', $config);
 
-		// Buat folder jika belum ada
 		if (!is_dir($config['upload_path'])) {
 			mkdir($config['upload_path'], 0777, true);
 		}
 
-		// Data default (selalu disimpan)
 		$data = [
-			'sts_psikolog' => 1 // Menandakan bahwa surat telah diunggah
+			'sts_psikolog' => 1 
 		];
 
-		// Cek apakah file baru diupload
 		if (!empty($_FILES['lampiran']['name'])) {
 			if ($this->upload->do_upload('lampiran')) {
 				$file = $this->upload->data();
 				$filename = $file['file_name'];
 
-				// Hapus file lama jika ada
 				$siswa = $this->siswa->get_by_id($id);
 				if (!empty($siswa->lampiran_psikolog)) {
 					$old_file = FCPATH . 'uploads/siswa/psikolog/' . $siswa->lampiran_psikolog;
@@ -451,24 +416,14 @@ if ($student) {
 			}
 		}
 
-		// Update data ke database
 		$this->siswa->update(['id_siswa' => $id], $data);
-
-		// Flash pesan berhasil
-		// $this->session->set_flashdata('status', 'success');
-		// $this->session->set_flashdata('message', 'Surat keterangan psikolog berhasil diproses.');
-
-		// Redirect
+		
 		if (level_user() == "siswa") {
 			redirect(base_url('siswa/profil/' . $next));
 		} else {
 			redirect(base_url('siswa/edit/' . $next . '/?id=' . $id));
 		}
 	}
-
-
-
-
 
 	public function preview()
 	{
@@ -481,8 +436,6 @@ if ($student) {
 		$data['title'] = "Preview Data Pendaftaran ";
 		$data['subtitle'] = "Pendaftaran";
 		$data['get'] = $this->siswa->profil($id);
-
-
 		$this->template->load('home/layouts', 'vPreview', $data);
 	}
 
@@ -501,24 +454,12 @@ if ($student) {
 		$this->pdf->load_view('vBuktiPdf', $data, TRUE);
 	}
 
-
-	// public function delete()
-	// {
-	// 	$id = $this->uri->segment(3);
-	// 	$this->siswa->delete_by_id($id);
-	// 	$this->session->set_flashdata(array('status' => "danger", "message" => "Berhasil menghapus data "));
-	// 	redirect(base_url('siswa/daftar/index'));
-	// }
 	public function delete()
 	{
 		$id = $this->uri->segment(3);
 		$this->siswa->delete_by_id($id);
 		redirect(base_url('siswa/daftar/index?alert=danger&message=' . urlencode('Berhasil menghapus data')));
 	}
-
-
-	//auth
-
 
 	public function register()
 	{
@@ -557,15 +498,12 @@ if ($student) {
 			);
 			$this->session->set_userdata($accountSession);
 
-			// $this->session->set_flashdata(array('status' => "success", 'message' => "Berhasil Registrasi Akun"));
 			redirect(base_url('siswa/profil'));
 		} else {
-
 			$this->session->set_flashdata(array('status' => "error", 'message' => "Maaf, NIK \"" . $this->input->post('no_ktp') . "\" Telah Terdaftar, Silahkan Masukan NIK Lain"));
 			redirect(base_url('siswa/register'));
 		}
 	}
-
 
 	public function login()
 	{
@@ -584,7 +522,6 @@ if ($student) {
 		$hp = $this->input->post('no_ktp', TRUE);
 		$password = $this->input->post('password', TRUE);
 		if ($this->siswa->auth($hp, $password)) {
-			// $this->session->set_flashdata(array('status' => "success", 'message' => "Login Berhasil"));
 			redirect(base_url('siswa/profil'));
 		} else {
 			$this->session->set_flashdata(array('status' => "error", "email" => $hp, 'password' => $password));

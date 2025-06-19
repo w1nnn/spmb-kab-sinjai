@@ -12,11 +12,9 @@ if (!empty($check)) {
 <html lang="en">
 
 <head>
-	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Buat Akun - SPMB </title>
-	<!-- Favicon -->
 	<link rel="shortcut icon" href="<?= base_url() ?>assets/images/page-img/29.png" />
 	<meta name="description" content="Selamat Datang Di Sistem Penerimaan Peserta Didik Baru Kabupaten Sinjai  ">
 	<meta property='fb:app_id' content='1617259004961144' />
@@ -25,29 +23,20 @@ if (!empty($check)) {
 	<meta property='og:title' content='Pendaftaran | Penerimaan Peserta Didik Baru Kabupaten Sinjai ' />
 	<meta property='og:image' content='<?= base_url() ?>assets/images/page-img/29.png' />
 	<meta property='og:description' content='Selamat Datang Di Sistem Penerimaan Peserta Didik Baru Kabupaten Sinjai '>
-	<!-- Bootstrap CSS -->
-
 	<link rel="stylesheet" href="<?= base_url() ?>assets/css/bootstrap.min.css">
-	<!-- Typography CSS -->
 	<link rel="stylesheet" href="<?= base_url() ?>assets/css/typography.css">
-	<!-- Style CSS -->
 	<link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css">
-	<!-- Responsive CSS -->
 	<link rel="stylesheet" href="<?= base_url() ?>assets/css/responsive.css">
 	<style>
-		/* Media query untuk menyembunyikan gambar pada layar mobile */
 		@media (max-width: 768px) {
 			#bg {
 				background-image: none !important;
-				/* Menghilangkan gambar latar belakang */
 			}
 		}
 	</style>
 </head>
 
 <body>
-
-	<!-- Sign in Start -->
 	<section class="sign-in-page bg-white">
 		<div class="container-fluid p-0">
 			<div class="row no-gutters" style="background-color: #e5e5e5;">
@@ -115,21 +104,17 @@ if (!empty($check)) {
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script>
 		function validateForm() {
-			// Get the value of the "no_kk" field
 			var noKk = document.querySelector('input[name="no_ktp"]').value;
-
-			// Check if the length of the No. KK is not 16 digits
 			if (noKk.length !== 16) {
-				// Display SweetAlert message
 				Swal.fire({
 					icon: 'error',
 					title: 'Invalid Nomor Induk Kependudukan',
 					text: 'Nomor Induk Kependudukan harus terdiri dari 16 digit.',
 					confirmButtonText: 'Ok'
 				});
-				return false; // Prevent form submission
+				return false; 
 			}
-			return true; // Allow form submission if validation passes
+			return true; 
 		}
 
 		function togglePassword() {
@@ -137,19 +122,15 @@ if (!empty($check)) {
 			var toggleIcon = document.getElementById("togglePasswordIcon");
 
 			if (passwordField.type === "password") {
-				passwordField.type = "text"; // Menampilkan password
+				passwordField.type = "text";
 				toggleIcon.src = "https://img.icons8.com/ios-filled/50/000000/visible.png"; // Ikon mata terbuka
 			} else {
-				passwordField.type = "password"; // Menyembunyikan password
+				passwordField.type = "password";
 				toggleIcon.src = "https://img.icons8.com/ios-filled/50/000000/invisible.png"; // Ikon mata tertutup
 			}
 		}
 	</script>
 
-	<!-- Sign in END -->
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<!-- Appear JavaScript -->
 	<script src="<?= base_url() ?>assets/js/jquery.min.js"></script>
 	<script src="<?= base_url() ?>assets/js/popper.min.js"></script>
 	<script src="<?= base_url() ?>assets/js/bootstrap.min.js"></script>
@@ -202,8 +183,6 @@ if (!empty($check)) {
 
 		$(document).ready(function() {
 			$('#submit').click(function() {
-				// alert('clicked');
-
 				$(this).val("Changed");
 			});
 		});​

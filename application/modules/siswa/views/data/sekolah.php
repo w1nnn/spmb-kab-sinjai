@@ -8,18 +8,15 @@
 			<div class="card">
 				<div class="card-body">
 					<?php
-					// Query to check if NIK exists in tbl_status_dtks
 					$nik = $get->no_ktp;
 					$this->db->where('nik', $nik);
 					$query = $this->db->get('tbl_status_dtks');
 
 					if ($query->num_rows() > 0) {
-						// NIK found in DTKS table
 						echo '<div class="alert alert-primary" role="alert">
                             <i class="ri-checkbox-circle-line mr-2"></i> Terdata di DTKS
                           </div>';
 					} else {
-						// NIK not found in DTKS table
 						echo '<div class="alert alert-warning text-dark" role="alert">
                                     <i class="ri-error-warning-line mr-2"></i> Proses Verifikasi DTKS
                               </div>';
@@ -133,42 +130,32 @@
 					<option value=""></option>
 				</select>
 			</div>
-				<!-- <input type="text" name="kuota_lulusan" id="kuota_lulusan"> -->
                 <div id="quota_info"></div>
-                <!-- Cek semua pendaftar yang memilih sekolah 1 -->
             <?php
                 $pilihan_sekolah_1 = $get->pilihan_sekolah_1; 
 
-                // Default koordinat
                 $default_longitude = 120.150347;
                 $default_latitude = -5.201962;
 
-                // Tambilkan data sekolah dari database
                 $this->db->where('npsn', $pilihan_sekolah_1);
                 $sekolah = $this->db->get('tbl_sekolah')->row();
 
-                // Inisialisasi variabel
                 $kordinat_default = '';
                 $longitude = $default_longitude;
                 $latitude = $default_latitude;
                 $nama_sekolah = '';
 
-                // Jika data sekolah ditemukan
                 if ($sekolah) {
                     $nama_sekolah = $sekolah->nama;
                     $kordinat_default = $sekolah->kordinat;
                     
-                    // Parse koordinat jika tersedia
                     if (!empty($kordinat_default)) {
-                        // Parse koordinat (format diasumsikan "longitude,latitude")
                         $coords = explode(',', $kordinat_default);
                         $longitude = (isset($coords[0]) && trim($coords[0]) !== '') ? trim($coords[0]) : $default_longitude;
                         $latitude = (isset($coords[1]) && trim($coords[1]) !== '') ? trim($coords[1]) : $default_latitude;
                     }
                 }
-                // var_dump($nama_sekolah);
                 ?>
-            
             <?php if ($get->jalur == "114") { ?>
 			<div class="card mt-4">
 				<div class="card-body">
@@ -190,17 +177,13 @@
 
 </form>
 
-<!-- OpenLayers CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.4.0/ol.css" type="text/css">
 
-<!-- OpenLayers JS -->
 <script src="https://cdn.jsdelivr.net/npm/ol@v7.4.0/dist/ol.js"></script>
 
 <script>
 $('#sekolah_1').on('change', function() {
   var selectedSchool = $(this).val();
-  // console.log(selectedSchool);
-  
   if (selectedSchool) {
     $.ajax({
       type: "POST",
@@ -238,8 +221,6 @@ $('#sekolah_1').on('change', function() {
 });
 </script>
 <script>
-    // var listSekolah = document.getElementById('sekolah_1').options;
-	// console.log(listSekolah);
     const areaSelect = document.getElementById('jalur');
     const mapElement = document.getElementById('map');
 
@@ -250,22 +231,15 @@ $('#sekolah_1').on('change', function() {
             mapElement.style.display = 'block';
         }
     }
-
-    // Jalankan saat halaman load
     toggleMap();
-
-    // Jalankan saat opsi diubah
     areaSelect.addEventListener('change', toggleMap);
 </script>
 <script>
 	$(document).ready(function() {
-    // Koordinat dari database
     const schoolLongitude = <?php echo $longitude; ?>;
     const schoolLatitude = <?php echo $latitude; ?>;
     const schoolName = "<?= $nama_sekolah ?>"; 
-    // console.log(schoolLongitude);
 
-    // Create base map layers directly in the group
     const baseLayerGroup = new ol.layer.Group({
         layers: [
             new ol.layer.Tile({
@@ -305,31 +279,24 @@ $('#sekolah_1').on('change', function() {
         ]
     });
 
-    // Initialize the map
     const map = new ol.Map({
         target: 'map',
-        layers: [baseLayerGroup], // Add the layer group instead of individual layers
+        layers: [baseLayerGroup], 
         view: new ol.View({
-            // Center on the school location
             center: ol.proj.fromLonLat([schoolLatitude, schoolLongitude]),
             zoom: 15
         })
     });
-
-    // Create custom marker styles with better visibility
     const customMarkerStyle = new ol.style.Style({
         image: new ol.style.Icon({
-            anchor: [0.5, 1], // Anchor at the bottom center of the image
+            anchor: [0.5, 1], 
             anchorXUnits: 'fraction',
             anchorYUnits: 'fraction',
-            src: '<?= base_url() ?>assets/marker.png', // Path to your custom marker image
+            src: '<?= base_url() ?>assets/marker.png', 
             scale: 0.05
         }),
-        // Add a drop shadow effect using a second style
         zIndex: 2
     });
-
-    // Create a blue circle style for school markers with improved styling
     const schoolMarkerStyle = new ol.style.Style({
         image: new ol.style.Circle({
             radius: 10,
@@ -343,8 +310,6 @@ $('#sekolah_1').on('change', function() {
         }),
         zIndex: 1
     });
-
-    // Create a red circle style for domisili markers with improved styling
     const domisiliMarkerStyle = new ol.style.Style({
         image: new ol.style.Circle({
             radius: 10,
@@ -359,38 +324,31 @@ $('#sekolah_1').on('change', function() {
         zIndex: 1
     });
 
-    // Create a vector source for the school marker
     const schoolSource = new ol.source.Vector();
-
-    // Create a feature for the school location with the custom image marker
     const schoolFeature = new ol.Feature({
         geometry: new ol.geom.Point(ol.proj.fromLonLat([schoolLatitude, schoolLongitude])),
         name: schoolName,
         type: 'school'
     });
-    schoolFeature.setStyle(customMarkerStyle); // Use the custom image marker for the school
+    schoolFeature.setStyle(customMarkerStyle); 
     schoolSource.addFeature(schoolFeature);
 
-    // Create vector layer for school marker
     const schoolLayer = new ol.layer.Vector({
         source: schoolSource
     });
 
-    // Create vector source and layer for other points (using blue circles)
     const vectorSource = new ol.source.Vector();
     const vectorLayer = new ol.layer.Vector({
         source: vectorSource,
         style: schoolMarkerStyle
     });
 
-    // Create vector source and layer for domisili points (using red circles)
     const domisiliSource = new ol.source.Vector();
     const domisiliLayer = new ol.layer.Vector({
         source: domisiliSource,
         style: domisiliMarkerStyle
     });
 
-    // Source and layer for routing lines
     const routeSource = new ol.source.Vector();
     const routeLayer = new ol.layer.Vector({
         source: routeSource,
@@ -405,18 +363,13 @@ $('#sekolah_1').on('change', function() {
         })
     });
 
-    // Add all layers to the map
-    map.addLayer(schoolLayer);   // Custom image marker for school
-    map.addLayer(vectorLayer);   // Blue circles for other points
-    map.addLayer(domisiliLayer); // Red circles for domisili points
-    map.addLayer(routeLayer);    // Route lines
+    map.addLayer(schoolLayer);   
+    map.addLayer(vectorLayer);   
+    map.addLayer(domisiliLayer); 
+    map.addLayer(routeLayer);    
 
-    // Function to add school markers to the map
     function addSchoolMarkers(schools) {
-        // Clear existing markers
         vectorSource.clear();
-        
-        // Add markers for each school
         schools.forEach(function(school) {
             if (school.lat && school.lon) {
                 const marker = new ol.Feature({
@@ -431,16 +384,14 @@ $('#sekolah_1').on('change', function() {
             }
         });
         
-        // Zoom to fit all markers if there are any
         if (vectorSource.getFeatures().length > 0) {
             map.getView().fit(vectorSource.getExtent(), {
-                padding: [100, 100, 100, 100], // Increased padding for better view
+                padding: [100, 100, 100, 100], 
                 maxZoom: 15
             });
         }
     }
 
-    // Function to add domisili marker with coordinates stored
     function addDomisiliMarker(longitude, latitude, name) {
         const feature = new ol.Feature({
             geometry: new ol.geom.Point(ol.proj.fromLonLat([longitude, latitude])),
@@ -451,7 +402,6 @@ $('#sekolah_1').on('change', function() {
         domisiliSource.addFeature(feature);
     }
 
-    // Create and style a custom popup container
     const container = document.createElement('div');
     container.className = 'ol-popup';
     container.style.position = 'absolute';
@@ -464,9 +414,8 @@ $('#sekolah_1').on('change', function() {
     container.style.maxWidth = '300px';
     container.style.zIndex = '1000';
     container.style.transform = 'translate(-50%, -100%)';
-    container.style.marginBottom = '-15px'; // Adjust the spacing between marker and popup
+    container.style.marginBottom = '-15px'; 
 
-    // Add a small arrow at the bottom of the popup
     const arrow = document.createElement('div');
     arrow.style.position = 'absolute';
     arrow.style.bottom = '-10px';
@@ -480,7 +429,6 @@ $('#sekolah_1').on('change', function() {
     arrow.style.zIndex = '1001';
     container.appendChild(arrow);
 
-    // Add a close button to the popup
     const closer = document.createElement('a');
     closer.className = 'ol-popup-closer';
     closer.style.position = 'absolute';
@@ -500,25 +448,21 @@ $('#sekolah_1').on('change', function() {
     };
     container.appendChild(closer);
 
-    // Content container for the popup
     const content = document.createElement('div');
     content.className = 'ol-popup-content';
     container.appendChild(content);
 
-    // Add popup overlay to the map
     const popup = new ol.Overlay({
         element: container,
         positioning: 'top-center',
-        stopEvent: true, // Changed to true to prevent map interactions behind popup
+        stopEvent: true, 
         offset: [0, -15]
     });
     map.addOverlay(popup);
 
-    // Variable to store the currently selected feature
     let selectedFeature = null;
     let endFeature = null;
 
-    // Function to decode polyline for routing
     function decodePolyline(encoded) {
         const len = encoded.length;
         let index = 0;
@@ -558,7 +502,6 @@ $('#sekolah_1').on('change', function() {
         return points;
     }
 
-    // Create a route information container
     const routeInfoContainer = document.createElement('div');
     routeInfoContainer.className = 'route-info-legend';
     routeInfoContainer.style.position = 'absolute';
@@ -578,20 +521,16 @@ $('#sekolah_1').on('change', function() {
         </div>
     `;
 
-    // Add the route info to the map
     map.getViewport().appendChild(routeInfoContainer);
 
-    // Function to update the route info legend
     function updateRouteInfoLegend(startFeature, endFeature, summary) {
         const distance = summary.distance;
         const duration = summary.duration;
 
-        // Format distance (meters to km if large)
         let distanceText = distance < 1000 ? 
             Math.round(distance) + ' m' : 
             (distance / 1000).toFixed(2) + ' km';
 
-        // Format duration (seconds to minutes/hours)
         let durationText;
         if (duration < 60) {
             durationText = Math.round(duration) + ' detik';
@@ -603,7 +542,6 @@ $('#sekolah_1').on('change', function() {
             durationText = hours + ' jam ' + minutes + ' menit';
         }
 
-        // Update the route info in the legend
         const routeDetailsElement = document.getElementById('route-details');
         if (routeDetailsElement) {
             routeDetailsElement.innerHTML = `
@@ -654,7 +592,7 @@ $('#sekolah_1').on('change', function() {
         }
     }
 
-    let selectedRouteType = 'cycling-regular'; // Default route type
+    let selectedRouteType = 'cycling-regular'; 
     window.addEventListener('change', function(event) {
     const target = event.target;
     if (target && target.name === 'route' && target.type === 'radio') {
@@ -663,9 +601,6 @@ $('#sekolah_1').on('change', function() {
     }
 });
 
-
-
-    // Function to calculate route between two points
     function calculateRoute(start, end) {
     const routeData = {
         coordinates: [start, end]
@@ -717,17 +652,14 @@ $('#sekolah_1').on('change', function() {
 }
 
 
-    // Function to update popup with route information
     function updatePopupWithRouteInfo(summary) {
         const distance = summary.distance;
         const duration = summary.duration;
 
-        // Format distance (meters to km if large)
         let distanceText = distance < 1000 ? 
             Math.round(distance) + ' m' : 
             (distance / 1000).toFixed(2) + ' km';
 
-        // Format duration (seconds to minutes/hours)
         let durationText;
         if (duration < 60) {
             durationText = Math.round(duration) + ' detik';
@@ -738,11 +670,7 @@ $('#sekolah_1').on('change', function() {
             const minutes = Math.round((duration % 3600) / 60);
             durationText = hours + ' jam ' + minutes + ' menit';
         }
-
-       
     }
-
-    // Display popup on click
     map.on('click', function(evt) {
         const feature = map.forEachFeatureAtPixel(evt.pixel, function(feature) {
             return feature;
@@ -752,12 +680,10 @@ $('#sekolah_1').on('change', function() {
             const coordinates = feature.getGeometry().getCoordinates();
             popup.setPosition(coordinates);
             
-            // Get coordinates for Google Maps
             const lonLat = ol.proj.toLonLat(coordinates);
             const longitude = lonLat[0].toFixed(6);
             const latitude = lonLat[1].toFixed(6);
             
-            // Create Google Maps URL
             const googleMapsUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
             
             if (feature.get('type') === 'domisili') {
@@ -774,7 +700,6 @@ $('#sekolah_1').on('change', function() {
                         </a>
                     </div>`;
             } else if (feature.get('type') === 'school' || feature.get('type') === 'other_school') {
-                // For both main school and other schools
                 content.innerHTML = 
                     `<div class="popup-header" style="margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 8px;">
                         <h5 style="margin: 0; font-size: 16px; color: #333;">${feature.get('name')}</h5>
@@ -788,15 +713,12 @@ $('#sekolah_1').on('change', function() {
                         </a>
                     </div>`;
                 
-                // Select this school in the dropdown if it has an ID
                 if (feature.get('id')) {
                     $('#sekolah_1').val(feature.get('id')).trigger('change');
                 }
             }
 
-            // If we have a previously selected feature and it's different from the current one
             if (selectedFeature && selectedFeature !== feature && feature.get('coordinates')) {
-                // Calculate route between the two features
                 const startCoords = selectedFeature.get('coordinates');
                 const endCoords = feature.get('coordinates');
                 
@@ -805,7 +727,6 @@ $('#sekolah_1').on('change', function() {
                     calculateRoute(startCoords, endCoords);
                 }
             } else {
-                // Set this as the selected feature for potential future routing
                 selectedFeature = feature;
             }
         } else {
@@ -814,7 +735,6 @@ $('#sekolah_1').on('change', function() {
         }
     });
 
-    // Add hover effect to markers
     const pointerMoveHandler = function(e) {
         if (e.dragging) {
             return;
@@ -827,7 +747,6 @@ $('#sekolah_1').on('change', function() {
     };
     map.on('pointermove', pointerMoveHandler);
 
-    // Initial jalur selection
     const jalurSelected = $('#jalur').find(":selected").val();
 
     $.ajax({
@@ -845,7 +764,6 @@ $('#sekolah_1').on('change', function() {
             }
         },
         success: function(response) {
-            // console.log(response.list_sekolah);
             $("#sekolah_1").html(response.list_sekolah).show();
             
             if (response.schools_data) {
@@ -859,16 +777,12 @@ $('#sekolah_1').on('change', function() {
 
     $("#jalur").change(function() {
         let jalur = $(this).val();
-        
-        // Clear previous markers
         domisiliSource.clear();
-        routeSource.clear(); // Also clear route lines when changing jalur
+        routeSource.clear();
         
-        // Reset selected features
         selectedFeature = null;
         endFeature = null;
         
-        // Load schools based on selected jalur
         $.ajax({
             type: "POST",
             url: "<?php echo base_url("sekolah/zonasi/get_sekolah"); ?>",
@@ -883,18 +797,13 @@ $('#sekolah_1').on('change', function() {
                     e.overrideMimeType("application/json;charset=UTF-8");
                 }
             },
-            // Inside success callback for the "jalur" change event handler:
 success: function(response) {
     $("#sekolah_1").html(response.list_sekolah).show();
     
-    // If Area Domisili is selected
     if (jalur === "zonasi") {
-        // Parse the options to get school names
         let parser = new DOMParser();
         let htmlDoc = parser.parseFromString(response.list_sekolah, 'text/html');
         let options = htmlDoc.querySelectorAll('option');
-        
-        // Ambil semua nama sekolah, kecuali yang kosong atau 'Pilih'
         let dataSekolah = [];
         
         options.forEach(option => {
@@ -908,25 +817,21 @@ success: function(response) {
             }
         });
         // console.log(dataSekolah);
-
-        // Clear previous markers first
         domisiliSource.clear();
 
-        // Style untuk marker dengan shadow effect
         const markerIconStyle = new ol.style.Style({
             image: new ol.style.Icon({
                 anchor: [0.5, 1],
                 anchorXUnits: 'fraction',
                 anchorYUnits: 'fraction',
-                src: '<?= base_url() ?>assets/marker.png', // Path to your custom marker image',
-                scale: 0.05 // Increased size
+                src: '<?= base_url() ?>assets/marker.png', 
+                scale: 0.05 
             }),
             zIndex: 2
         });
 
         let processedCount = 0;
 
-        // Add markers with delay effect for better visualization
         dataSekolah.forEach((school, index) => {
             const koordinatStr = school.kordinat;
             if (!koordinatStr) return;
@@ -939,17 +844,15 @@ success: function(response) {
                     name: school.name,
                     id: school.id,
                     type: 'domisili',
-                    coordinates: [bujur, lintang] // Store raw coordinates for routing
+                    coordinates: [bujur, lintang] 
                 });
                 
                 marker.setStyle(markerIconStyle);
                 
-                // Add with delay for visual effect
                 setTimeout(() => {
                     domisiliSource.addFeature(marker);
                     processedCount++;
                     
-                    // When all features are added, fit the view
                     if (processedCount === dataSekolah.filter(s => s.kordinat).length) {
                         setTimeout(() => {
                             if (domisiliSource.getFeatures().length > 0) {
@@ -964,7 +867,6 @@ success: function(response) {
             }
         });
     } else {
-        // If not Area Domisili, just show schools on map
         if (response.schools_data) {
             addSchoolMarkers(response.schools_data);
         }
@@ -976,22 +878,18 @@ success: function(response) {
         });
     });
 
-    // Update map when school is selected with smooth animation
     $("#sekolah_1").on('change', function() {
         const selectedSchoolId = $(this).val();
         
-        // First check in regular school layer
         let found = false;
         vectorSource.getFeatures().forEach(function(feature) {
             if (feature.get('id') == selectedSchoolId) {
-                // Zoom to the selected school with smooth animation
                 map.getView().animate({
                     center: feature.getGeometry().getCoordinates(),
                     zoom: 16,
                     duration: 1000
                 });
                 
-                // Show popup for the selected school
                 setTimeout(() => {
                     popup.setPosition(feature.getGeometry().getCoordinates());
                     content.innerHTML = 
@@ -1006,18 +904,14 @@ success: function(response) {
             }
         });
         
-        // If not found in school layer, check in domisili layer
         if (!found) {
             domisiliSource.getFeatures().forEach(function(feature) {
                 if (feature.get('id') == selectedSchoolId) {
-                    // Zoom to the selected domisili point with smooth animation
                     map.getView().animate({
                         center: feature.getGeometry().getCoordinates(),
                         zoom: 16,
                         duration: 1000
                     });
-                    
-                    // Show popup for the selected domisili point with delay for better UX
                     setTimeout(() => {
                         popup.setPosition(feature.getGeometry().getCoordinates());
                         content.innerHTML = 
@@ -1032,8 +926,6 @@ success: function(response) {
             });
         }
     });
-
-    // Add a legend to the map
     const legendContainer = document.createElement('div');
     legendContainer.className = 'map-legend';
     legendContainer.style.position = 'absolute';
@@ -1045,14 +937,9 @@ success: function(response) {
     legendContainer.style.boxShadow = '0 1px 4px rgba(0,0,0,0.2)';
     legendContainer.style.zIndex = '1';
     legendContainer.style.fontSize = '12px';
-    legendContainer.innerHTML = `
-        
-    `;
+    legendContainer.innerHTML = ``;
     
-    // Add the legend to the map
     map.getViewport().appendChild(legendContainer);
-    
-    // Create layer switcher control UI
     const layerSwitcherContainer = document.createElement('div');
     layerSwitcherContainer.className = 'layer-switcher';
     layerSwitcherContainer.style.position = 'absolute';
@@ -1100,28 +987,23 @@ success: function(response) {
         </div>
     `;
     
-    // Add the layer switcher to the map
     map.getViewport().appendChild(layerSwitcherContainer);
     
-    // Add event listeners to layer switcher links
     const layerLinks = layerSwitcherContainer.querySelectorAll('.progress-bar a');
     layerLinks.forEach((link) => {
         link.addEventListener('click', (event) => {
             event.preventDefault();
             
-            // Remove active class from all links
             layerLinks.forEach(l => {
                 l.style.backgroundColor = '';
                 l.classList.remove('active');
             });
             
-            // Add active class to clicked link
             link.style.backgroundColor = '#f0f0f0';
             link.classList.add('active');
             
             const selectedLayer = link.getAttribute('data-layer');
             
-            // Toggle layer visibility
             baseLayerGroup.getLayers().forEach(function(element) {
                 const layerTitle = element.get('title');
                 element.setVisible(layerTitle === selectedLayer);
@@ -1132,9 +1014,7 @@ success: function(response) {
 </script>
 
 <script>
-	// hapus semua session set_flashdata
 	$(document).ready(function() {
-		// Override semua fungsi toastr agar tidak melakukan apapun
 		if (typeof toastr !== 'undefined') {
 			toastr.success = function() {};
 			toastr.info = function() {};
@@ -1142,7 +1022,7 @@ success: function(response) {
 			toastr.error = function() {};
 			toastr.clear = function() {};
 			toastr.remove = function() {};
-			toastr.options = {}; // reset opsinya juga kalau perlu
+			toastr.options = {}; 
 		}
 	});
 </script>
@@ -1210,7 +1090,6 @@ success: function(response) {
 		color: #6c757d;
 	}
 
-	/* Completed step */
 	.progress-step.completed .progress-marker {
 		background-color: rgba(var(--primary-rgb), 0.1);
 		border-color: var(--primary);
@@ -1220,7 +1099,6 @@ success: function(response) {
 		color: var(--primary);
 	}
 
-	/* Active step */
 	.progress-step.active .progress-marker {
 		background-color: var(--primary);
 		border-color: var(--primary);

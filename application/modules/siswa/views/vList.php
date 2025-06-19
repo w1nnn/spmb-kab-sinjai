@@ -67,10 +67,8 @@
 									<th style="width:2%">No.</th>
 									<th>Foto </th>
 									<th>Nama </th>
-
 									<th>TTL </th>
 									<?php if (level_user() == "admin" || level_user() == "superadmin") { ?>
-										<!-- Nik -->
 										<th>NIK </th>
 										<th> Sekolah Tujuan </th>
 									<?php } ?>

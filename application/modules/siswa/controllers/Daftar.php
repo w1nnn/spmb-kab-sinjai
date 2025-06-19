@@ -45,7 +45,6 @@ class Daftar extends CI_Controller
 		$data['subtitle'] = "Daftar Siswa Yang Telah Mendaftar";
 		$data['url'] = $url;
 
-		// Tambahkan ini agar flashdata dibaca dan terhapus otomatis setelah 1 kali tampil
 		$data['status'] = $this->session->flashdata('status');
 		$data['message'] = $this->session->flashdata('message');
 		$this->template->load('home/layouts', 'vList', $data);
@@ -54,8 +53,6 @@ class Daftar extends CI_Controller
 	public function ajax_list()
 	{
 		cek_session();
-		
-		// Update status DTKS secara massal sebelum menampilkan data
 		$this->bulk_update_dtks_status();
 		
 		$list = $this->siswa->get_datatables();
@@ -105,31 +102,8 @@ class Daftar extends CI_Controller
 		echo json_encode($output);
 	}
 
-	/**
-	 * Method untuk melakukan update status DTKS secara massal
-	 * Lebih efisien dibanding update satu per satu
-	 */
-// 	private function bulk_update_dtks_status()
-// {
-//     // Single query yang lebih efisien
-//     $sql = "UPDATE tbl_siswa 
-//             SET sts_dtks = CASE 
-//                 WHEN no_ktp IS NOT NULL 
-//                 AND no_ktp != '' 
-//                 AND EXISTS (
-//                     SELECT 1 
-//                     FROM tbl_status_dtks 
-//                     WHERE nik = tbl_siswa.no_ktp 
-//                     AND status = 'Terdaftar'
-//                 ) THEN 1 
-//                 ELSE 0 
-//             END";
-    
-//     return $this->db->query($sql);
-// }
 private function bulk_update_dtks_status()
 {
-    // Query dengan 3 kondisi: Terdaftar=1, Tidak Terdaftar=0, Tidak Ada Data=3
     $sql = "UPDATE tbl_siswa 
             SET sts_dtks = CASE 
                 WHEN no_ktp IS NOT NULL 
@@ -153,39 +127,10 @@ private function bulk_update_dtks_status()
     
     return $this->db->query($sql);
 }
-
-	/**
-	 * Alternative method menggunakan JOIN untuk database yang sangat besar
-	 * Uncomment dan gunakan method ini jika data lebih dari 100rb records
-	 */
-	/*
-	private function bulk_update_dtks_status_join()
-	{
-		// Reset semua sts_dtks menjadi 0
-		$this->db->update('tbl_siswa', array('sts_dtks' => 0));
-		
-		// Update menggunakan JOIN - lebih efisien untuk data besar
-		$sql = "UPDATE tbl_siswa s 
-				INNER JOIN tbl_status_dtks d ON s.no_ktp = d.nik 
-				SET s.sts_dtks = 1 
-				WHERE s.no_ktp IS NOT NULL 
-				AND s.no_ktp != '' 
-				AND d.nik IS NOT NULL 
-				AND d.nik != ''";
-		
-		$this->db->query($sql);
-	}
-	*/
-
-	/**
-	 * Method untuk melakukan update DTKS secara manual/terpisah
-	 * Bisa dipanggil melalui URL atau dijadwalkan via cron job
-	 */
 	public function update_dtks_manual()
 	{
 		cek_session();
 		
-		// Pastikan hanya admin yang bisa akses
 		if (!in_array(level_user(), ['admin', 'superadmin'])) {
 			show_error('Unauthorized access', 403);
 		}
@@ -216,11 +161,9 @@ private function bulk_update_dtks_status()
 
 		$this->siswa->update(array('id_siswa' => $id), $data);
 
-		// Buat pesan dan status untuk query string
 		$status  = 'info';
 		$message = urlencode('Verifikasi berhasil disimpan');
 
-		// Redirect dengan query string
 		redirect(base_url("siswa/profil/{$id}?alert={$status}&message={$message}"));
 	}
 

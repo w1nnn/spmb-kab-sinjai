@@ -12,7 +12,6 @@
 			margin: 0;
 			padding: 10px;
 			background-color: #f5f5f5;
-			/* background-color: #fff; */
 			color: #333;
 			font-size: 13px;
 		}
@@ -62,7 +61,6 @@
 			font-size: 0.9em;
 		}
 
-		/* Fixed header right section for DTKS status */
 		.header-right {
 			text-align: center;
 			font-weight: bold;
@@ -104,7 +102,7 @@
 		}
 
 		.left-section {
-			min-width: 0; /* Allows grid item to shrink below content size */
+			min-width: 0; 
 		}
 
 		.right-section {
@@ -119,7 +117,6 @@
 			height: 130px;
 			object-fit: cover;
 			border-radius: 5px;
-			/* border: 1px solid #ddd; */
 			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 		}
 
@@ -209,7 +206,6 @@
 			padding-top: 8px;
 		}
 
-		/* Responsive design */
 		@media (max-width: 768px) {
 			.header {
 				flex-direction: column;
@@ -229,7 +225,7 @@
 			
 			.right-section {
 				justify-self: center;
-				order: -1; /* Photo appears on top on mobile */
+				order: -1; 
 			}
 			
 			.photo {
@@ -426,7 +422,6 @@
 				<?php endif; ?>
 			<?php endif; ?>
 		</div>
-<!-- Status DTKS -->
 			<div class="header-right <?php 
 				if ($get->sts_dtks == '1') echo 'dtks-accepted';
 				elseif ($get->sts_dtks == '0') echo 'dtks-rejected'; 

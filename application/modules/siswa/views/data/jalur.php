@@ -61,7 +61,6 @@
 		color: #6c757d;
 	}
 
-	/* Completed step */
 	.progress-step.completed .progress-marker {
 		background-color: rgba(var(--primary-rgb), 0.1);
 		border-color: var(--primary);
@@ -71,7 +70,6 @@
 		color: var(--primary);
 	}
 
-	/* Active step */
 	.progress-step.active .progress-marker {
 		background-color: var(--primary);
 		border-color: var(--primary);
@@ -112,20 +110,16 @@
 	<input type="hidden" name="id" value="<?= $get->id_siswa ?>">
 	<input type="hidden" name="lanjut" value="datadiri">
 	<input type="hidden" name="page" value="jalur">
-	<!-- Add this card after the existing form begins but before the row with columns -->
 	<div class="row mb-0">
 		<div class="col-12">
 			<div class="card">
 				<div class="card-body">
 					<?php
-					// Query to check if NIK exists in tbl_status_dtks
 					$nik = $get->no_ktp;
 					$this->db->where('nik', $nik);
 					$query = $this->db->get('tbl_status_dtks');
 
 					if ($query->num_rows() > 0) {
-						// NIK found in DTKS table
-						// Update tbl_siswa set sts_dtks to 1 (terdaftar)
 						$this->db->where('no_ktp', $nik);
 						$this->db->update('tbl_siswa', array('sts_dtks' => 1));
 
@@ -133,8 +127,6 @@
         <i class="ri-checkbox-circle-line mr-2"></i> Terdata di DTKS
     </div>';
 					} else {
-						// NIK not found in DTKS table
-						// Update tbl_siswa set sts_dtks to 0 (tidak terdaftar)
 						$this->db->where('no_ktp', $nik);
 						$this->db->update('tbl_siswa', array('sts_dtks' => 0));
 
