@@ -115,21 +115,35 @@
 		<div class="col-12">
 			<div class="card">
 				<div class="card-body">
-					<?php
-					$nik = $get->no_ktp;
-					$this->db->where('nik', $nik);
-					$query = $this->db->get('tbl_status_dtks');
+				<?php
+// Query to check if NIK exists in tbl_status_dtks
+$nik = $get->no_ktp;
+$this->db->where('nik', $nik);
+$query = $this->db->get('tbl_status_dtks');
 
-					if ($query->num_rows() > 0) {
-						echo '<div class="alert alert-primary" role="alert">
-                            <i class="ri-checkbox-circle-line mr-2"></i> Terdata di DTKS
-                          </div>';
-					} else {
-						echo '<div class="alert alert-warning" role="alert">
-        <i class="ri-error-warning-line mr-2"></i> Proses Verifikasi DTKS
-    </div>';
-					}
-					?>  
+if ($query->num_rows() > 0) {
+    // NIK found in DTKS table, check status
+    $dtks_data = $query->row();
+    $status = $dtks_data->status;
+    
+    if ($status == 'Terdaftar') {
+        // Status: Terdaftar
+        echo '<div class="alert alert-primary" role="alert">
+                <i class="ri-checkbox-circle-line mr-2"></i> Selamat NIK Anda Terdaftar di DTKS
+              </div>';
+    } else {
+        // Status: Tidak Terdaftar
+        echo '<div class="alert alert-danger" role="alert">
+                <i class="ri-close-circle-line mr-2"></i> Mohon Maaf NIK Anda Tidak Terdaftar di DTKS
+              </div>';
+    }
+} else {
+    // NIK not found in DTKS table - need verification
+    echo '<div class="alert alert-warning text-dark" role="alert">
+            <i class="ri-error-warning-line mr-2"></i> Proses Verifikasi DTKS
+          </div>';
+}
+?>
 				</div>
 			</div>
 		</div>

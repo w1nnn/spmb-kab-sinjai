@@ -65,52 +65,52 @@
 	'<h4></h4>'+
 	'<div id="bodyContent">'+
 	'<ul class="list-group list-group-unbordered">'+
-		'<li class="list-group-item text-info"><a href="https://sekolah.data.kemdikbud.go.id/index.php/chome/profil/00010BBD-0D26-E111-9D41-25475164AF4C" target="_blank">40304694</a></li>'+
-		'<li class="list-group-item text-muted">SD Neg. No. 157 Pabaheang</li>'+
-		'<li class="list-group-item text-muted"><b>Alamat</b> : PABEHEANG</li>'+
-		'<li class="list-group-item text-muted"><a href="https://maps.google.co.id/maps?expflags=enable_star_based_justifications:true&ie=UTF8&f=d&daddr=-5.143301700000,120.223868300000" target="_blank">Direction</a></li>'+
+		'<li class="list-group-item text-info"><a href="https://sekolah.data.kemdikbud.go.id/index.php/chome/profil/202609BD-0D26-E111-88B6-5DAEF73A0BF7" target="_blank">40304435</a></li>'+
+		'<li class="list-group-item text-muted">SD Neg. No. 35 Dumme</li>'+
+		'<li class="list-group-item text-muted"><b>Alamat</b> : Jl. Poros Sinjai Kajang</li>'+
+		'<li class="list-group-item text-muted"><a href="https://maps.google.co.id/maps?expflags=enable_star_based_justifications:true&ie=UTF8&f=d&daddr=-5.205800000000,120.290000000000" target="_blank">Direction</a></li>'+
 	'</ul>'+
 	'</div>';
-	var marker = L.marker(L.latLng(-5.143301700000,120.223868300000),{title: title});
+	var marker = L.marker(L.latLng(-5.205800000000,120.290000000000),{title: title});
 	marker.bindPopup(title);
 	markers.addLayer(marker);
 			var title = '<div class="no-margin">'+
 	'<h4></h4>'+
 	'<div id="bodyContent">'+
 	'<ul class="list-group list-group-unbordered">'+
-		'<li class="list-group-item text-info"><a href="https://sekolah.data.kemdikbud.go.id/index.php/chome/profil/E0F307BD-0D26-E111-82A1-7B213F432E93" target="_blank">40304404</a></li>'+
-		'<li class="list-group-item text-muted">SD Neg. No. 27 Tondong</li>'+
-		'<li class="list-group-item text-muted"><b>Alamat</b> : Tondong Desa Kampala</li>'+
-		'<li class="list-group-item text-muted"><a href="https://maps.google.co.id/maps?expflags=enable_star_based_justifications:true&ie=UTF8&f=d&daddr=-5.153400000000,120.221000000000" target="_blank">Direction</a></li>'+
+		'<li class="list-group-item text-info"><a href="https://sekolah.data.kemdikbud.go.id/index.php/chome/profil/60AA0BBD-0D26-E111-A63A-2585648701C4" target="_blank">40304700</a></li>'+
+		'<li class="list-group-item text-muted">SD Neg. No. 162 Dumme</li>'+
+		'<li class="list-group-item text-muted"><b>Alamat</b> : Jl. Persatuan Raya Sanjai</li>'+
+		'<li class="list-group-item text-muted"><a href="https://maps.google.co.id/maps?expflags=enable_star_based_justifications:true&ie=UTF8&f=d&daddr=-5.215325000000,120.301198300000" target="_blank">Direction</a></li>'+
 	'</ul>'+
 	'</div>';
-	var marker = L.marker(L.latLng(-5.153400000000,120.221000000000),{title: title,icon:blue});
+	var marker = L.marker(L.latLng(-5.215325000000,120.301198300000),{title: title,icon:blue});
 	marker.bindPopup(title);
 	markers.addLayer(marker);
 		var title = '<div class="no-margin">'+
 	'<h4></h4>'+
 	'<div id="bodyContent">'+
 	'<ul class="list-group list-group-unbordered">'+
-		'<li class="list-group-item text-info"><a href="https://sekolah.data.kemdikbud.go.id/index.php/chome/profil/D09F07BD-0D26-E111-AAE0-D3BDAA4F0750" target="_blank">40304401</a></li>'+
-		'<li class="list-group-item text-muted">SD Neg. No. 25 Borong Uttie</li>'+
-		'<li class="list-group-item text-muted"><b>Alamat</b> : Jln. Persatuan Raya Saukang Kec. Sinjai Timur Kab. Sinjai</li>'+
-		'<li class="list-group-item text-muted"><a href="https://maps.google.co.id/maps?expflags=enable_star_based_justifications:true&ie=UTF8&f=d&daddr=-5.144618300000,120.236160000000" target="_blank">Direction</a></li>'+
+		'<li class="list-group-item text-info"><a href="https://sekolah.data.kemdikbud.go.id/index.php/chome/profil/805209BD-0D26-E111-9ACD-3B22CA1437A6" target="_blank">40304436</a></li>'+
+		'<li class="list-group-item text-muted">SD Neg. No. 36 Lasiai</li>'+
+		'<li class="list-group-item text-muted"><b>Alamat</b> : Lasiai</li>'+
+		'<li class="list-group-item text-muted"><a href="https://maps.google.co.id/maps?expflags=enable_star_based_justifications:true&ie=UTF8&f=d&daddr=-5.211050000000,120.275823300000" target="_blank">Direction</a></li>'+
 	'</ul>'+
 	'</div>';
-	var marker = L.marker(L.latLng(-5.144618300000,120.236160000000),{title: title,icon:blue});
+	var marker = L.marker(L.latLng(-5.211050000000,120.275823300000),{title: title,icon:blue});
 	marker.bindPopup(title);
 	markers.addLayer(marker);
 		var title = '<div class="no-margin">'+
 	'<h4></h4>'+
 	'<div id="bodyContent">'+
 	'<ul class="list-group list-group-unbordered">'+
-		'<li class="list-group-item text-info"><a href="https://sekolah.data.kemdikbud.go.id/index.php/chome/profil/A0F61FBD-0D26-E111-A318-F7FB97E40FE4" target="_blank">40304615</a></li>'+
-		'<li class="list-group-item text-muted">SD Neg. No. 104 Kalaka</li>'+
-		'<li class="list-group-item text-muted"><b>Alamat</b> : Jl. Ranggong. Dg. Romo</li>'+
-		'<li class="list-group-item text-muted"><a href="https://maps.google.co.id/maps?expflags=enable_star_based_justifications:true&ie=UTF8&f=d&daddr=-5.130636700000,120.233783300000" target="_blank">Direction</a></li>'+
+		'<li class="list-group-item text-info"><a href="https://sekolah.data.kemdikbud.go.id/index.php/chome/profil/40510BBD-0D26-E111-B980-D9DCFC1BDF29" target="_blank">40304696</a></li>'+
+		'<li class="list-group-item text-muted">SD Neg. No. 159 Marana</li>'+
+		'<li class="list-group-item text-muted"><b>Alamat</b> : Marana</li>'+
+		'<li class="list-group-item text-muted"><a href="https://maps.google.co.id/maps?expflags=enable_star_based_justifications:true&ie=UTF8&f=d&daddr=-5.191891700000,120.283418300000" target="_blank">Direction</a></li>'+
 	'</ul>'+
 	'</div>';
-	var marker = L.marker(L.latLng(-5.130636700000,120.233783300000),{title: title,icon:blue});
+	var marker = L.marker(L.latLng(-5.191891700000,120.283418300000),{title: title,icon:blue});
 	marker.bindPopup(title);
 	markers.addLayer(marker);
 		var bounds = markers.getBounds();

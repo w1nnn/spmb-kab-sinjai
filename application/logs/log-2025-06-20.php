@@ -5285,3 +5285,661 @@ DEBUG - 2025-06-20 23:36:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\app
 DEBUG - 2025-06-20 23:36:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
 DEBUG - 2025-06-20 23:36:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
 DEBUG - 2025-06-20 23:36:35 --> Total execution time: 0.3680
+DEBUG - 2025-06-20 23:39:46 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:39:46 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:39:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/regulasi/models/Regulasi_model.php
+DEBUG - 2025-06-20 23:39:47 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/regulasi/views/vJadwal.php
+DEBUG - 2025-06-20 23:39:47 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:39:47 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:39:47 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:39:47 --> Total execution time: 0.2673
+DEBUG - 2025-06-20 23:39:52 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:39:52 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:39:52 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:39:52 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:39:52 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:39:52 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:39:52 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:39:52 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:39:53 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/data/sekolah.php
+DEBUG - 2025-06-20 23:39:53 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vProfil.php
+DEBUG - 2025-06-20 23:39:53 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:39:53 --> Total execution time: 0.2852
+DEBUG - 2025-06-20 23:39:53 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:39:53 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:39:53 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:39:53 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:39:53 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:39:53 --> Total execution time: 0.1262
+DEBUG - 2025-06-20 23:39:55 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:39:55 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:39:55 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:39:55 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:39:55 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:39:55 --> Total execution time: 0.1159
+DEBUG - 2025-06-20 23:39:58 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:39:58 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:39:58 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:39:58 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:39:58 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:39:58 --> Total execution time: 0.2374
+DEBUG - 2025-06-20 23:40:02 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:40:02 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:40:02 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:40:02 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:40:02 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:40:02 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:40:02 --> Total execution time: 0.2491
+DEBUG - 2025-06-20 23:41:05 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:41:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:41:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/regulasi/models/Regulasi_model.php
+DEBUG - 2025-06-20 23:41:05 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:41:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:41:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/regulasi/models/Regulasi_model.php
+DEBUG - 2025-06-20 23:41:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/regulasi/views/vJadwal.php
+DEBUG - 2025-06-20 23:41:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:41:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:41:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:41:05 --> Total execution time: 0.2006
+DEBUG - 2025-06-20 23:41:08 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:41:08 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:41:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:41:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:41:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:41:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/views/zonasi/vList.php
+DEBUG - 2025-06-20 23:41:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:41:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:41:08 --> Total execution time: 0.1874
+DEBUG - 2025-06-20 23:41:08 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:41:08 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:41:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:41:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:41:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:41:08 --> Total execution time: 0.1172
+DEBUG - 2025-06-20 23:41:12 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:41:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:41:12 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:41:12 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:41:12 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:41:12 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/views/zonasi/vAdd.php
+DEBUG - 2025-06-20 23:41:12 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:41:12 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:41:12 --> Total execution time: 0.1507
+DEBUG - 2025-06-20 23:41:12 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:41:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:41:12 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:41:12 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:41:12 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:41:13 --> Total execution time: 0.6129
+DEBUG - 2025-06-20 23:42:29 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:42:29 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:42:29 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:42:29 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:42:29 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:42:30 --> Total execution time: 0.1989
+DEBUG - 2025-06-20 23:42:35 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:42:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:42:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:42:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:42:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:42:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:42:35 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:42:35 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:42:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/data/data_diri.php
+DEBUG - 2025-06-20 23:42:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vProfil.php
+DEBUG - 2025-06-20 23:42:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:42:36 --> Total execution time: 0.2516
+DEBUG - 2025-06-20 23:42:36 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:42:36 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:42:36 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:42:36 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:42:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:42:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:42:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:42:36 --> Total execution time: 0.1082
+DEBUG - 2025-06-20 23:42:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:42:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:42:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:42:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:42:36 --> Total execution time: 0.1289
+DEBUG - 2025-06-20 23:42:36 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:42:36 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:42:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:42:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:42:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:42:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:42:36 --> Total execution time: 0.1522
+DEBUG - 2025-06-20 23:42:46 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:42:46 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:42:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:42:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:42:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:42:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:42:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:42:46 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:42:47 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:42:47 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:42:47 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:42:47 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:42:47 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:42:47 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:42:47 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:42:47 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:42:47 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/data/sekolah.php
+DEBUG - 2025-06-20 23:42:47 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vProfil.php
+DEBUG - 2025-06-20 23:42:47 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:42:47 --> Total execution time: 0.3990
+DEBUG - 2025-06-20 23:42:48 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:42:48 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:42:48 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:42:48 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:42:48 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:42:48 --> Total execution time: 0.1144
+DEBUG - 2025-06-20 23:42:51 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:42:51 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:42:51 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:42:51 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:42:51 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:42:51 --> Total execution time: 0.1564
+DEBUG - 2025-06-20 23:43:25 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:43:25 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:43:25 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:43:25 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:43:25 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:43:25 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:43:25 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:43:25 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:43:26 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/data/data_diri.php
+DEBUG - 2025-06-20 23:43:26 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vProfil.php
+DEBUG - 2025-06-20 23:43:26 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:43:26 --> Total execution time: 0.3298
+DEBUG - 2025-06-20 23:43:26 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:43:26 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:43:26 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:43:26 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:43:26 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:43:26 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:43:26 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:43:26 --> Total execution time: 0.1039
+DEBUG - 2025-06-20 23:43:26 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:43:26 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:43:26 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:43:26 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:43:26 --> Total execution time: 0.1221
+DEBUG - 2025-06-20 23:43:26 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:43:26 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:43:26 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:43:26 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:43:26 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:43:26 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:43:26 --> Total execution time: 0.1121
+DEBUG - 2025-06-20 23:43:44 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:43:45 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:43:45 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:43:45 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:43:45 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:43:45 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:43:45 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:43:45 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:43:45 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:43:46 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:43:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:43:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:43:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:43:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:43:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:43:46 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:43:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/data/sekolah.php
+DEBUG - 2025-06-20 23:43:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vProfil.php
+DEBUG - 2025-06-20 23:43:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:43:46 --> Total execution time: 0.2974
+DEBUG - 2025-06-20 23:43:46 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:43:46 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:43:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:43:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:43:46 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:43:46 --> Total execution time: 0.1122
+DEBUG - 2025-06-20 23:43:49 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:43:49 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:43:49 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:43:49 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:43:49 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:43:49 --> Total execution time: 0.1986
+DEBUG - 2025-06-20 23:43:54 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:43:54 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:43:54 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:43:54 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:43:54 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:43:54 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:43:54 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:43:54 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:43:54 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/data/data_diri.php
+DEBUG - 2025-06-20 23:43:54 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vProfil.php
+DEBUG - 2025-06-20 23:43:54 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:43:54 --> Total execution time: 0.3401
+DEBUG - 2025-06-20 23:43:55 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:43:55 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:43:55 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:43:55 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:43:55 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:43:55 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:43:55 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:43:55 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:43:55 --> Total execution time: 0.0785
+DEBUG - 2025-06-20 23:43:55 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:43:55 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:43:55 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:43:55 --> Total execution time: 0.1290
+DEBUG - 2025-06-20 23:43:55 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:43:55 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:43:55 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:43:55 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:43:55 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:43:55 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:43:55 --> Total execution time: 0.1465
+DEBUG - 2025-06-20 23:44:03 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:44:03 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:44:03 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:44:03 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:44:03 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:44:03 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:44:03 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:44:03 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:44:03 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:44:03 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:44:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:44:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:44:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:44:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:44:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:44:04 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:44:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/data/sekolah.php
+DEBUG - 2025-06-20 23:44:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vProfil.php
+DEBUG - 2025-06-20 23:44:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:44:04 --> Total execution time: 0.2346
+DEBUG - 2025-06-20 23:44:04 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:44:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:44:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:44:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:44:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:44:04 --> Total execution time: 0.1065
+DEBUG - 2025-06-20 23:44:13 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:44:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:44:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:44:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:44:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:44:14 --> Total execution time: 0.2371
+DEBUG - 2025-06-20 23:44:20 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:44:20 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:44:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:44:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:44:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:44:20 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:44:20 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:44:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:44:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:44:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:44:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/views/zonasi/vList.php
+DEBUG - 2025-06-20 23:44:20 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:44:21 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:44:21 --> Total execution time: 0.2070
+DEBUG - 2025-06-20 23:44:21 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:44:21 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:44:21 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:44:21 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:44:21 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:44:21 --> Total execution time: 0.0649
+DEBUG - 2025-06-20 23:44:30 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:44:30 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:44:30 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:44:30 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:44:30 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:44:30 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:44:30 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:44:30 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:44:30 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/data/sekolah.php
+DEBUG - 2025-06-20 23:44:30 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vProfil.php
+DEBUG - 2025-06-20 23:44:30 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:44:30 --> Total execution time: 0.3185
+DEBUG - 2025-06-20 23:44:30 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:44:30 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:44:30 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:44:30 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:44:30 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:44:30 --> Total execution time: 0.1301
+DEBUG - 2025-06-20 23:44:34 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:44:34 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:44:34 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:44:34 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:44:34 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:44:34 --> Total execution time: 0.1658
+DEBUG - 2025-06-20 23:44:42 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:44:42 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:44:42 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:44:42 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:44:42 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:44:42 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:44:42 --> Total execution time: 0.1089
+DEBUG - 2025-06-20 23:45:13 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:45:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:45:13 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:45:13 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:45:13 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:45:13 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:45:15 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:45:15 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/views/vProfil.php
+DEBUG - 2025-06-20 23:45:15 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:45:15 --> Total execution time: 2.2199
+DEBUG - 2025-06-20 23:47:05 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:47:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:47:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:47:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:47:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:47:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:47:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:47:05 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:47:05 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:47:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:47:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:47:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:47:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:47:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:47:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:47:06 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:47:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/data/orangtua.php
+DEBUG - 2025-06-20 23:47:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vProfil.php
+DEBUG - 2025-06-20 23:47:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:47:06 --> Total execution time: 0.3720
+DEBUG - 2025-06-20 23:47:11 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:47:11 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:47:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:47:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:47:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:47:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:47:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:47:11 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:47:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/data/sekolah.php
+DEBUG - 2025-06-20 23:47:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vProfil.php
+DEBUG - 2025-06-20 23:47:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:47:11 --> Total execution time: 0.4140
+DEBUG - 2025-06-20 23:47:11 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:47:11 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:47:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:47:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:47:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:47:11 --> Total execution time: 0.1111
+DEBUG - 2025-06-20 23:47:50 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:47:50 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:47:50 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:47:50 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:47:50 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:47:50 --> Total execution time: 0.1447
+DEBUG - 2025-06-20 23:48:10 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:48:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:48:10 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:48:10 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:48:10 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:48:10 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:48:10 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:48:10 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:48:10 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:48:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:48:10 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:48:10 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:48:10 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:48:10 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:48:10 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:48:10 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:48:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/data/orangtua.php
+DEBUG - 2025-06-20 23:48:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vProfil.php
+DEBUG - 2025-06-20 23:48:11 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:48:11 --> Total execution time: 0.2356
+DEBUG - 2025-06-20 23:48:13 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:48:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:48:13 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:48:13 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:48:13 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:48:13 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:48:13 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:48:13 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:48:14 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:48:14 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:48:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:48:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:48:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:48:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:48:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:48:14 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:48:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/data/lampiran.php
+DEBUG - 2025-06-20 23:48:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vProfil.php
+DEBUG - 2025-06-20 23:48:14 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:48:14 --> Total execution time: 0.3909
+DEBUG - 2025-06-20 23:48:14 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:48:14 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-06-20 23:48:14 --> 404 Page Not Found: /index
+DEBUG - 2025-06-20 23:48:17 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:48:17 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:48:17 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:48:17 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:48:17 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:48:17 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:48:17 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:48:17 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:48:17 --> You did not select a file to upload.
+DEBUG - 2025-06-20 23:48:17 --> You did not select a file to upload.
+DEBUG - 2025-06-20 23:48:17 --> You did not select a file to upload.
+DEBUG - 2025-06-20 23:48:17 --> You did not select a file to upload.
+DEBUG - 2025-06-20 23:48:17 --> You did not select a file to upload.
+DEBUG - 2025-06-20 23:48:18 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:48:18 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:48:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:48:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:48:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:48:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:48:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:48:18 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:48:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/data/selesai.php
+DEBUG - 2025-06-20 23:48:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vProfil.php
+DEBUG - 2025-06-20 23:48:18 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:48:18 --> Total execution time: 0.5884
+DEBUG - 2025-06-20 23:48:18 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:48:18 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-06-20 23:48:18 --> 404 Page Not Found: /index
+DEBUG - 2025-06-20 23:48:27 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:48:27 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:48:28 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:48:28 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:48:28 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:48:28 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:48:28 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:48:28 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:48:28 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:48:28 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:48:28 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:48:28 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:48:28 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:48:28 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:48:28 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:48:28 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:48:29 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vDetail.php
+DEBUG - 2025-06-20 23:48:29 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:48:29 --> Total execution time: 0.6151
+DEBUG - 2025-06-20 23:48:29 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:48:29 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-06-20 23:48:29 --> 404 Page Not Found: /index
+DEBUG - 2025-06-20 23:49:04 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:49:04 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:49:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:49:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:49:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:49:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:49:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:49:04 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:49:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/data/jalur.php
+DEBUG - 2025-06-20 23:49:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vProfil.php
+DEBUG - 2025-06-20 23:49:04 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:49:04 --> Total execution time: 0.0589
+DEBUG - 2025-06-20 23:49:06 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:49:06 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:49:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:49:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:49:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:49:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:49:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:49:06 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:49:06 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:49:06 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:49:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:49:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:49:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:49:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:49:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:49:06 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:49:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/data/data_diri.php
+DEBUG - 2025-06-20 23:49:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vProfil.php
+DEBUG - 2025-06-20 23:49:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:49:06 --> Total execution time: 0.0570
+DEBUG - 2025-06-20 23:49:06 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:49:06 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:49:06 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:49:06 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:49:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:49:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:49:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:49:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:49:06 --> Total execution time: 0.0559
+DEBUG - 2025-06-20 23:49:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:49:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:49:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:49:06 --> Total execution time: 0.1030
+DEBUG - 2025-06-20 23:49:06 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:49:06 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:49:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:49:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:49:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:49:06 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:49:06 --> Total execution time: 0.0533
+DEBUG - 2025-06-20 23:49:15 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:49:15 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:49:15 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:49:15 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:49:15 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:49:15 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:49:15 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:49:15 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:49:15 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:49:15 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:49:15 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:49:15 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:49:15 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:49:15 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:49:15 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:49:15 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:49:15 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/data/sekolah.php
+DEBUG - 2025-06-20 23:49:15 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vProfil.php
+DEBUG - 2025-06-20 23:49:15 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:49:15 --> Total execution time: 0.0523
+DEBUG - 2025-06-20 23:49:15 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:49:15 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:49:15 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:49:15 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:49:15 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:49:15 --> Total execution time: 0.0645
+DEBUG - 2025-06-20 23:49:24 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:49:24 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:49:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:49:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:49:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:49:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:49:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:49:24 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:49:24 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:49:24 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:49:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:49:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:49:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:49:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:49:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:49:24 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:49:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/data/orangtua.php
+DEBUG - 2025-06-20 23:49:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vProfil.php
+DEBUG - 2025-06-20 23:49:24 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:49:24 --> Total execution time: 0.0565
+DEBUG - 2025-06-20 23:50:57 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:50:57 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:50:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:50:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:50:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:50:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:50:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:50:57 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:50:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/data/orangtua.php
+DEBUG - 2025-06-20 23:50:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vProfil.php
+DEBUG - 2025-06-20 23:50:57 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:50:57 --> Total execution time: 0.0633
+DEBUG - 2025-06-20 23:51:05 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:51:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:51:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:51:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:51:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:51:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:51:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:51:05 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:51:05 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:51:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:51:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:51:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:51:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:51:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:51:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:51:05 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:51:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/data/lampiran.php
+DEBUG - 2025-06-20 23:51:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vProfil.php
+DEBUG - 2025-06-20 23:51:05 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:51:05 --> Total execution time: 0.0678
+DEBUG - 2025-06-20 23:51:05 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:51:05 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-06-20 23:51:05 --> 404 Page Not Found: /index
+DEBUG - 2025-06-20 23:51:08 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:51:08 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:51:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:51:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:51:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:51:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:51:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:51:08 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:51:08 --> You did not select a file to upload.
+DEBUG - 2025-06-20 23:51:08 --> You did not select a file to upload.
+DEBUG - 2025-06-20 23:51:08 --> You did not select a file to upload.
+DEBUG - 2025-06-20 23:51:08 --> You did not select a file to upload.
+DEBUG - 2025-06-20 23:51:08 --> You did not select a file to upload.
+DEBUG - 2025-06-20 23:51:08 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:51:08 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:51:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:51:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:51:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:51:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:51:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:51:08 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:51:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/data/selesai.php
+DEBUG - 2025-06-20 23:51:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vProfil.php
+DEBUG - 2025-06-20 23:51:08 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:51:08 --> Total execution time: 0.0811
+DEBUG - 2025-06-20 23:51:09 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:51:09 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-06-20 23:51:09 --> 404 Page Not Found: /index
+DEBUG - 2025-06-20 23:51:36 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:51:36 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2025-06-20 23:51:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/models/Siswa_model.php
+DEBUG - 2025-06-20 23:51:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Sekolah_model.php
+DEBUG - 2025-06-20 23:51:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/jalur/models/Jalur_model.php
+DEBUG - 2025-06-20 23:51:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Kecamatan_model.php
+DEBUG - 2025-06-20 23:51:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/kecamatan/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:51:36 --> File already loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/sekolah/models/Zonasi_model.php
+DEBUG - 2025-06-20 23:51:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/data/selesai.php
+DEBUG - 2025-06-20 23:51:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/siswa/views/vProfil.php
+DEBUG - 2025-06-20 23:51:36 --> File loaded: C:\xampp\htdocs\spmb-kab-sinjai\application\modules/home/views/layouts.php
+DEBUG - 2025-06-20 23:51:36 --> Total execution time: 0.0730
+DEBUG - 2025-06-20 23:51:36 --> UTF-8 Support Enabled
+DEBUG - 2025-06-20 23:51:36 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2025-06-20 23:51:36 --> 404 Page Not Found: /index
