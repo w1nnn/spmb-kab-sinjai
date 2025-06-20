@@ -184,20 +184,28 @@ if ($eUsia == 'usia' && $statusError == 'danger') {
 			<div class="card">
 				<div class="card-body">
 					<?php
-					$nik = $get->no_ktp;
-					$this->db->where('nik', $nik);
-					$query = $this->db->get('tbl_status_dtks');
+$nik = $get->no_ktp;
+$this->db->where('nik', $nik);
+$query = $this->db->get('tbl_status_dtks');
 
-					if ($query->num_rows() > 0) {
-						echo '<div class="alert alert-primary" role="alert">
-                            <i class="ri-checkbox-circle-line mr-2"></i> Terdata di DTKS
-                          </div>';
-					} else {
-						echo '<div class="alert alert-warning" role="alert">
-        <i class="mr-2"></i> Proses Verifikasi DTKS
-    </div>';
-					}
-					?>
+if ($query->num_rows() > 0) {
+    $dtks_data = $query->row();
+    $status = $dtks_data->status;
+    if ($status == 'Terdaftar') {
+        echo '<div class="alert alert-primary" role="alert">
+                <i class="ri-checkbox-circle-line mr-2"></i> Selamat NIK Anda Terdaftar di DTKS
+              </div>';
+    } else {
+        echo '<div class="alert alert-danger" role="alert">
+                <i class="ri-close-circle-line mr-2"></i> Mohon Maaf NIK Anda Tidak Terdaftar di DTKS
+              </div>';
+    }
+} else {
+    echo '<div class="alert alert-warning text-dark" role="alert">
+            <i class="ri-error-warning-line mr-2"></i> Proses Verifikasi DTKS
+          </div>';
+}
+?>
 				</div>
 			</div>
 		</div>
@@ -343,9 +351,6 @@ if ($eUsia == 'usia' && $statusError == 'danger') {
 					<label for=""> Asal Sekolah <span class="text-danger">*</span> </label>
 					<select name="asal_sekolah" class="form-control select2 sekolah" id="sekolah_1" style="width: 100%;" data-tags="true">
 						<option value=""></option>
-						<?php if(!empty($get->asal_sekolah)): ?>
-							<option value="<?= $get->asal_sekolah ?>" selected><?= $get->asal_sekolah ?></option>
-						<?php endif; ?>
 					</select>
 				</div>
 			<?php } ?>
@@ -384,36 +389,50 @@ if ($eUsia == 'usia' && $statusError == 'danger') {
 <script>
 $(document).ready(function() {
     $('.select2').select2({
-		tags: true,
+        tags: true,
         placeholder: "Pilih Sekolah Asal",
         allowClear: true
     });
 
-    loadSekolahAsal();
-
-    function loadSekolahAsal() {
-        $.ajax({
-            type: "POST",
-            url: "<?= base_url('sekolah/get_all_sekolah') ?>",
-            dataType: "JSON",
-            beforeSend: function(e) {
-                if (e && e.overrideMimeType) {
-                    e.overrideMimeType("application/json;charset=UTF-8");
-                }
-            },
-            success: function(response) {
-                $("#sekolah_1").html(response.list_sekolah).show();
-                
-                <?php if(!empty($get->asal_sekolah)): ?>
-                $("#sekolah_1").val("<?= $get->asal_sekolah ?>").trigger('change');
-                <?php endif; ?>
-            },
-            error: function(xhr, ajaxOptions, thrownError) {
-                alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
-            }
-        });
-    }
+    var existingSchool = "<?= $get->asal_sekolah ?>";
     
+    // Load semua sekolah dari server
+    $.ajax({
+        type: "POST",
+        url: "<?= base_url('sekolah/get_all_sekolah') ?>",
+        dataType: "JSON",
+        success: function(response) {
+            // Clear existing options
+            $("#sekolah_1").empty().append('<option value=""></option>');
+            
+            // Add existing school first if it exists
+            if (existingSchool && existingSchool.trim() !== '') {
+                $("#sekolah_1").append('<option value="' + existingSchool + '" selected>' + existingSchool + '</option>');
+            }
+            
+            // Parse response and add other schools
+            if (response.list_sekolah) {
+                var $tempDiv = $('<div>').html(response.list_sekolah);
+                $tempDiv.find('option').each(function() {
+                    var value = $(this).val();
+                    var text = $(this).text();
+                    
+                    // Only add if not empty and not already selected
+                    if (value && value !== existingSchool) {
+                        $("#sekolah_1").append('<option value="' + value + '">' + text + '</option>');
+                    }
+                });
+            }
+            
+            // Trigger change to update select2
+            $("#sekolah_1").trigger('change');
+        },
+        error: function(xhr, ajaxOptions, thrownError) {
+            console.error('Error loading schools:', thrownError);
+        }
+    });
+    
+    // Handle school selection change
     $('#sekolah_1').on('change', function() {
         var selectedSchool = $(this).val();
         
@@ -427,9 +446,9 @@ $(document).ready(function() {
                     if (response.exists) {
                         if (response.quota > 0) {
                             $('#quota_info').html('<span class="text-success">Kuota tersisa:</span> ' + '<b>' + response.quota +'</b>');
-							var quotaLulusanUpdate = response.quota - 1;
-							$('#kuota_lulusan').val(quotaLulusanUpdate);
-						} else {
+                            var quotaLulusanUpdate = response.quota - 1;
+                            $('#kuota_lulusan').val(quotaLulusanUpdate);
+                        } else {
                             $('#quota_info').html('<span class="text-danger">Tidak ada Kuota lulusan Tersedia!</span>');
                         }
                     } else {
@@ -454,7 +473,7 @@ $(document).ready(function() {
 			data: {
 				kecamatan: kecamatanDefault,
 				'id_siswa': '<?= $get->id_siswa  ?>'
-			}, // data yang akan dikirim ke file yang dituju
+			}, 
 			dataType: "JSON",
 			beforeSend: function(e) {
 				if (e && e.overrideMimeType) {
@@ -465,8 +484,8 @@ $(document).ready(function() {
 				$("#zonasi").html(response.list_daerah).show();
 
 			},
-			error: function(xhr, ajaxOptions, thrownError) { // Ketika ada error
-				alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError); // Munculkan alert error
+			error: function(xhr, ajaxOptions, thrownError) {
+				alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError); 
 			}
 		});
 
@@ -480,7 +499,7 @@ $(document).ready(function() {
 				data: {
 					kecamatan: kecamatanValue,
 					'id_siswa': '<?= $get->id_siswa  ?>'
-				}, // data yang akan dikirim ke file yang dituju
+				}, 
 				dataType: "JSON",
 				beforeSend: function(e) {
 					if (e && e.overrideMimeType) {
@@ -491,8 +510,8 @@ $(document).ready(function() {
 					$("#zonasi").html(response.list_daerah).show();
 
 				},
-				error: function(xhr, ajaxOptions, thrownError) { // Ketika ada error
-					alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError); // Munculkan alert error
+				error: function(xhr, ajaxOptions, thrownError) {
+					alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError); 
 				}
 			});
 		});
@@ -506,7 +525,7 @@ $(document).ready(function() {
 
 		$('#fileUpload').change(function() {
 			var file = this.files[0];
-			var fileSize = file.size / 1024; // Size in KB
+			var fileSize = file.size / 1024; 
 			var fileName = file.name;
 			var fileExtension = fileName.split('.').pop().toLowerCase();
 
@@ -517,8 +536,8 @@ $(document).ready(function() {
 					title: 'File tidak valid!',
 					text: 'File harus berupa gambar (JPG, JPEG, PNG) atau PDF.'
 				});
-				$('#fileUpload').val(''); // Clear the input
-				$('#filePreview').hide(); // Hide preview
+				$('#fileUpload').val(''); 
+				$('#filePreview').hide(); 
 				return;
 			}
 			if (fileSize > 500) {
@@ -527,8 +546,8 @@ $(document).ready(function() {
 					title: 'Ukuran file terlalu besar!',
 					text: 'Ukuran file maksimal 500 KB.'
 				});
-				$('#fileUpload').val(''); // Clear the input
-				$('#filePreview').hide(); // Hide preview
+				$('#fileUpload').val(''); 
+				$('#filePreview').hide(); 
 				return;
 			}
 

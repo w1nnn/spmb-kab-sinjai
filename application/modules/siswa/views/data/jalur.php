@@ -115,26 +115,28 @@
 			<div class="card">
 				<div class="card-body">
 					<?php
-					$nik = $get->no_ktp;
-					$this->db->where('nik', $nik);
-					$query = $this->db->get('tbl_status_dtks');
+$nik = $get->no_ktp;
+$this->db->where('nik', $nik);
+$query = $this->db->get('tbl_status_dtks');
 
-					if ($query->num_rows() > 0) {
-						$this->db->where('no_ktp', $nik);
-						$this->db->update('tbl_siswa', array('sts_dtks' => 1));
-
-						echo '<div class="alert alert-primary" role="alert">
-        <i class="ri-checkbox-circle-line mr-2"></i> Terdata di DTKS
-    </div>';
-					} else {
-						$this->db->where('no_ktp', $nik);
-						$this->db->update('tbl_siswa', array('sts_dtks' => 0));
-
-						echo '<div class="alert alert-warning" role="alert">
-        <i class="ri-error-warning-line mr-2"></i> Proses Verifikasi DTKS
-    </div>';
-					}
-					?>
+if ($query->num_rows() > 0) {
+    $dtks_data = $query->row();
+    $status = $dtks_data->status;
+    if ($status == 'Terdaftar') {
+        echo '<div class="alert alert-primary" role="alert">
+                <i class="ri-checkbox-circle-line mr-2"></i> Selamat NIK Anda Terdaftar di DTKS
+              </div>';
+    } else {
+        echo '<div class="alert alert-danger" role="alert">
+                <i class="ri-close-circle-line mr-2"></i> Mohon Maaf NIK Anda Tidak Terdaftar di DTKS
+              </div>';
+    }
+} else {
+    echo '<div class="alert alert-warning text-dark" role="alert">
+            <i class="ri-error-warning-line mr-2"></i> Proses Verifikasi DTKS
+          </div>';
+}
+?>
 				</div>
 			</div>
 		</div>
