@@ -129,7 +129,7 @@ if ($query->num_rows() > 0) {
 			</table>
 			<?php if ($get->jalur == "114") { ?>
 				<div class="form-group">
-					<label for=""> Pilih Jalur <span class="text-danger">*</span> </label>
+					<label for=""> Pilih Area <span class="text-danger">*</span> </label>
 					<select name="area" class="form-control" id="jalur">
 						<option value=""> Pilih</option>
 						<option value="zonasi"> Area Jarak Terdekat</option>

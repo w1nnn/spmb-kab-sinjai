@@ -285,6 +285,8 @@ if ($query->num_rows() > 0) {
 						name="no_ktp" 
 						id="no_ktp"
 						required
+						oninput="this.value=this.value.slice(0,this.maxLength)"
+						maxlength="16"
 					>
 				<?php } else { ?>
 					<input 
@@ -295,6 +297,8 @@ if ($query->num_rows() > 0) {
 						id="no_ktp"
 						readonly
 						required
+						oninput="this.value=this.value.slice(0,this.maxLength)"
+						maxlength="16"
 					>
 					<small class="text-muted text-danger">* Anda Tidak di Izinkan Untuk Melakukan Perubahan Nomor Induk Kependudukan (NIK) !</small>
 				<?php } ?>
