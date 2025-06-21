@@ -72,13 +72,6 @@ if (preg_match('/<div[^>]*id=["\']map["\'][^>]*>.*?<\/div>/s', $result, $mapDivM
 
 if (preg_match('/<script[^>]*language=["\']javascript["\'][^>]*>(.*?)<\/script>/s', $result, $scriptMatches)) {
     $mapScript = $scriptMatches[1];
-    
-    $mapScript = preg_replace('/,\s*{\s*title:\s*title\s*}/', '', $mapScript);
-    $mapScript = preg_replace('/,\s*{\s*title:\s*title\s*,\s*icon:\s*([^}]+)\s*}/', ',{icon:$1}', $mapScript);
-    $mapScript = preg_replace('/L\.marker\([^)]+,\s*{\s*title:\s*title\s*}\)/', 'L.marker($1)', $mapScript);
-    
-    $mapScript = preg_replace('/title:\s*title\s*,?\s*/', '', $mapScript);
-    $mapScript = preg_replace('/,\s*title:\s*[^,}]+\s*/', '', $mapScript);
 }
 
 $mapHtml = '<!DOCTYPE html>
@@ -109,13 +102,6 @@ $mapHtml = '<!DOCTYPE html>
 if (empty($mapDiv) || empty($mapScript)) {
     $mapPattern = '/(<div[^>]*id=["\']map["\'][^>]*>.*?<\/div>.*?<script[^>]*language=["\']javascript["\'][^>]*>.*?<\/script>)/s';
     if (preg_match($mapPattern, $result, $mapMatches)) {
-        $mapContent = $mapMatches[1];
-        
-        $mapContent = preg_replace('/,\s*{\s*title:\s*title\s*}/', '', $mapContent);
-        $mapContent = preg_replace('/,\s*{\s*title:\s*title\s*,\s*icon:\s*([^}]+)\s*}/', ',{icon:$1}', $mapContent);
-        $mapContent = preg_replace('/title:\s*title\s*,?\s*/', '', $mapContent);
-        $mapContent = preg_replace('/,\s*title:\s*[^,}]+\s*/', '', $mapContent);
-        
         $mapHtml = '<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -154,7 +140,7 @@ if (empty($mapDiv) || empty($mapScript)) {
     </style>
 </head>
 <body>
-    ' . $mapContent . '
+    ' . $mapMatches[1] . '
 </body>
 </html>';
     }
