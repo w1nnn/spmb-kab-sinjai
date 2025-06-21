@@ -21,8 +21,11 @@
     <div class="col-sm-12 iq-card iq-card-block iq-card-stretch iq-card-height">
     <form action="" method="POST">
   <div class="iq-card-body">
-    <h5>Update Status Pertanggal</h5>
-
+    <h5>Update Data Pemadanan</h5>
+    <p class="text-orimary">
+    <i class="ri-alert-line" style="margin-right: 5px;"></i>
+    Proses ini akan mengubah status siswa yang NIK-nya sedang dalam proses pemadanan data.
+    </p>
     <label for="range1" class="form-label mt-3">Tanggal Mulai</label>
     <input type="date" name="range1" id="range1" class="form-control" required>
 
@@ -34,8 +37,8 @@
       Saya telah memperhatikan rentang waktu yang telah ditentukan.
     </p>
 
-    <button type="submit" name="set" class="btn btn-success mt-3" style="width:100%;">
-      Set Data Pemadanan DTKS
+    <button type="submit" name="set" class="btn mt-3" style="width:100%; background-color:#343a40; color:#fefae0; border:none;">
+      Update Data
     </button>
   </div>
 </form>
@@ -51,10 +54,10 @@
                         <h5 class="card-title mb-0">Data DTKS</h5>
 
                         <div class="btn-group" role="group">
-                            <a href="<?= base_url() ?>dtks/manage/add" class="btn btn-primary"> 
+                            <a href="<?= base_url() ?>dtks/manage/add" class="btn" style="background-color:#274c77; color:#fefae0; border:none;"> 
                                 <i class="ri-add-circle-line"></i> Tambah 
                             </a>
-                            <button type="button" class="btn btn-info" onclick="reset_all_data()"> 
+                            <button type="button" class="btn" onclick="reset_all_data()" style="background-color:#197278; color:#fefae0; border:none;"> 
                                 <i class="ri-loop-left-line"></i> Reset Semua Data 
                             </button>
                         </div>
