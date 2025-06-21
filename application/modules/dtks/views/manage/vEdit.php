@@ -19,6 +19,7 @@
 								<option value="">-- Pilih Status --</option>
 								<option value="Terdaftar" <?= $get->status == 'Terdaftar' ? 'selected' : '' ?>>Terdaftar</option>
 								<option value="Tidak Terdaftar" <?= $get->status == 'Tidak Terdaftar' ? 'selected' : '' ?>>Tidak Terdaftar</option>
+                                <option value="NIK Tidak Valid" <?= $get->status == 'NIK Tidak Valid' ? 'selected' : '' ?>>NIK Tidak Valid</option>
 							</select>
 						</div>
 						<button class="btn btn-primary pull-right" type="submit"> <i class="ri-refresh-line "></i>  Update  </button>

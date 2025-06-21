@@ -40,6 +40,7 @@
                                             <option value="" disabled selected>Pilih Status</option>
                                             <option value="Terdaftar">Terdaftar</option>
                                             <option value="Tidak Terdaftar">Tidak Terdaftar</option>
+                                            <option value="NIK Tidak Valid">Nik Tidak Valid</option>
                                         </select>
                                     </div>
                                     <hr>
