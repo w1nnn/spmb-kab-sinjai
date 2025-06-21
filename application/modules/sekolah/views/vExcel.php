@@ -45,6 +45,8 @@
 							echo "Proses Verifikasi Data DTKS";
 						} elseif ($this->input->get('sts_dtks') == "4") {
 							echo "Data Tidak Valid";
+						} elseif ($this->input->get('sts_dtks') == "5") {
+							echo "Pemadanan Data";
 						}  else {
 							echo "Data Campuran";
 						}
@@ -160,6 +162,8 @@
 								echo "Proses Verifikasi DTKS";
 							} elseif ($siswa->sts_dtks == "4") {
 								echo "Data Tidak Valid";
+							} elseif ($siswa->sts_dtks == "5") {
+								echo "Pemadanan Data";
 							} else {
 								echo "Tidak Diketahui";
 							}
@@ -211,6 +215,8 @@
 							echo "Proses Verifikasi Data DTKS";
 						} elseif ($this->input->get('sts_dtks') == "4") {
 							echo "Data Tidak Valid";
+						} elseif ($this->input->get('sts_dtks') == "5") {
+							echo "Pemadanan Data";
 						} else {
 							echo "Data Campuran";
 						}
@@ -321,6 +327,8 @@
 								echo "Proses Verifikasi DTKS";
 							} elseif ($siswa->sts_dtks == "4") {
 								echo "Data Tidak Valid";
+							}  elseif ($siswa->sts_dtks == "5") {
+								echo "Pemadanan Data";
 							} else {
 								echo "Tidak Diketahui";
 							}

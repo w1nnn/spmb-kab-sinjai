@@ -27,13 +27,17 @@ header("Content-Disposition: attachment; filename=Data Kuota Pendaftar.xls");
     <tr>
         <td><b>STATUS DTKS</b></td>
         <td><b>
-        <?php if ($this->input->get('sts_dtks') == "1") {
+       <?php if ($this->input->get('sts_dtks') == "1") {
 							echo "Data Terdaftar di DTKS";
 						} elseif ($this->input->get('sts_dtks') == "0") {
 							echo "Data Tidak Terdaftar di DTKS";
 						} elseif ($this->input->get('sts_dtks') == "3") {
-							echo "Proses Verivikasi DTKS";
-						} else {
+							echo "Proses Verifikasi Data DTKS";
+						} elseif ($this->input->get('sts_dtks') == "4") {
+							echo "Data Tidak Valid";
+						} elseif ($this->input->get('sts_dtks') == "5") {
+							echo "Pemadanan Data";
+						}  else {
 							echo "Data Campuran";
 						}
 						?> 

@@ -47,7 +47,7 @@
 											'0' => 'Tidak Terdaftar DTKS',
 											'4' => 'NIK Tidak Valid',
 											'3' => 'Proses Verivikasi DTKS',
-
+										    '5' => 'Pemadanan Data',
 										]; ?>
 										<?php foreach ($status_dtks as $v => $n) : ?>
 											<option <?= (string)$v == (string)$this->input->get('sts_dtks') ? 'selected' : '' ?> value="<?php echo $v ?>"><?php echo $n ?></option>

@@ -32,10 +32,10 @@
     <label for="range2" class="form-label mt-3">Tanggal Akhir</label>
     <input type="date" name="range2" id="range2" class="form-control" value="<?= date('Y-m-d') ?>" required>
 
-    <p class="mt-4">
+    <!-- <p class="mt-4">
       <input type="checkbox" required>
       Saya telah memperhatikan rentang waktu yang telah ditentukan.
-    </p>
+    </p> -->
 
     <button type="submit" name="set" class="btn mt-3" style="width:100%; background-color:#343a40; color:#fefae0; border:none;">
       Update Data

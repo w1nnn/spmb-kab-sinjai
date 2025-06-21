@@ -33,6 +33,7 @@
                             <option value="0">Tidak Terdaftar DTKS</option>
                             <option value="4">NIK Tidak Valid</option>
                             <option value="3">Proses Verivikasi DTKS</option>
+                            <option value="5">Pemadanan Data</option>
                         </select>
 					</div>
                     <?php } ?>

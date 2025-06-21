@@ -106,7 +106,7 @@
                         <td>&nbsp;&nbsp;&nbsp;</td>
                         <td>Nama</td>
                         <td>:</td>
-                        <td>UPTD SMP NEGERI 3 SINJAI</td>
+                        <td>SD Unggulan Al-Wahdah Sinjai</td>
                     </tr>
                     <!-- edit 20200602 -->
                     <tr>
@@ -114,7 +114,7 @@
                         <td>NPSN</td>
                         <td>:</td>
                         <td>
-                            <a style="text-decoration: none;" class="link1" target="_blank" href="https://sekolah.data.kemdikbud.go.id/index.php/Chome/profil/008D55C0-0D26-E111-83AC-C5DDEB8C9CCB">40304529</a>
+                            <a style="text-decoration: none;" class="link1" target="_blank" href="https://sekolah.data.kemdikbud.go.id/index.php/Chome/profil/EBB6B544-7908-45C9-A368-5873053CB6A5">70052543</a>
                         </td>
 
                     </tr>
@@ -122,7 +122,7 @@
                         <td>&nbsp;</td>
                         <td>Alamat</td>
                         <td>:</td>
-                        <td>Jln. Persatuan No. 58 Manipi</td>
+                        <td>Jl. Poros Sinjai Kajang </td>
                     </tr>
                     <tr>
                         <td></td>
@@ -131,13 +131,13 @@
                         <td>&nbsp;</td>
                         <td>Desa/Kelurahan</td>
                         <td>:</td>
-                        <td>TASSILILU</td>
+                        <td>SAMATARING</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Kecamatan/Kota (LN)</td>
                         <td>:</td>
-                        <td>KEC. SINJAI BARAT</td>
+                        <td>KEC. SINJAI TIMUR</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
@@ -155,13 +155,13 @@
                         <td>&nbsp;</td>
                         <td>Status Sekolah</td>
                         <td>:</td>
-                        <td>NEGERI</td>
+                        <td>SWASTA</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Bentuk Pendidikan</td>
                         <td>:</td>
-                        <td>SMP</td>
+                        <td>SD</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
@@ -188,7 +188,7 @@
                         <td>&nbsp;&nbsp;&nbsp;</td>
                         <td>Naungan</td>
                         <td>:</td>
-                        <td>Pemerintah Daerah</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>&nbsp;&nbsp;&nbsp;</td>
@@ -200,45 +200,45 @@
                         <td>&nbsp;</td>
                         <td>No. SK. Pendirian</td>
                         <td>:</td>
-                        <td>030/U/979</td>
+                        <td>QR.310/YPAIS/VI/1445</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Tanggal SK. Pendirian</td>
                         <td>:</td>
-                        <td>01-04-1979</td>
+                        <td>06-02-2024</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Nomor SK Operasional</td>
                         <td>:</td>
-                        <td>530/I06/TU/97/26-4-1997</td>
+                        <td>0058/SD/02/XII/2024</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Tanggal SK Operasional</td>
                         <td>:</td>
-                        <td>26-04-1997</td>
+                        <td>09-12-2024</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>File SK Operasional ()</td>
                         <td>:</td>
-                        <td>                                    <a class="link1" target="_blank" href="https://vervalsp.data.kemdikbud.go.id/verval/dokumen/skoperasional/377635-1536720-2039664754.pdf">Lihat SK Operasional</a>
+                        <td>                                    <a class="link1" target="_blank" href="https://vervalsp.data.kemdikbud.go.id/verval/dokumen/skoperasional/281924-910992-326881-90976257-157989434.pdf">Lihat SK Operasional</a>
                                                         </td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Tanggal Upload SK Op.</td>
                         <td>:</td>
-                        <td>                                06-01-2020 09:05:09                            </td>
+                        <td>                                24-12-2024 20:19:26                            </td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Akreditasi</td>
                         <td>:</td>
                         <td>
-                            <a target="_blank" class="btn-link" href="https://ban-pdm.id/satuanpendidikan/40304529">B</a></td>
+                            -</td>
                     </tr>
                 </table>
             </div>
@@ -253,26 +253,26 @@
                         <td>&nbsp;&nbsp;&nbsp;</td>
                         <td>Luas Tanah</td>
                         <td>:</td>
-                        <td>10.240 m<sup>2</sup></td>
+                        <td>0 m<sup>2</sup></td>
                     </tr>
                     <!-- edit 20200602 -->
                     <tr>
                         <td>&nbsp;</td>
                         <td>Akses Internet</td>
                         <td>:</td>
-                        <td>1. -</td>
+                        <td>1. </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td></td>
                         <td>:</td>
-                        <td>2. Indosat IM2 (Satelit)</td>
+                        <td>2. </td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Sumber Listrik</td>
                         <td>:</td>
-                        <td>PLN</td>
+                        <td>-</td>
                     </tr>
                 </table>
             </div>
@@ -300,19 +300,19 @@
                         <td>&nbsp;</td>
                         <td>Email</td>
                         <td>:</td>
-                        <td>40304529.sinjaikab@gmail.com</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Website</td>
                         <td>:</td>
-                        <td><a class='link1' target='_blank' href='http://www.smpn3sinjai.sch.id'>http://www.smpn3sinjai.sch.id</a></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Operator</td>
                         <td>:</td>
-                        <td>SRI WAHYUNI</td>
+                        <td></td>
                     </tr>
                                     </table>
             </div>
@@ -325,7 +325,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12"><div id="maps">
 
-                        Lintang: -5.209100000000<br>Bujur: 120.002200000000<br></div></div>
+                        Lintang: .000000000000<br>Bujur: .000000000000<br></div></div>
                 </div>
             </div>
         </div>
@@ -364,15 +364,15 @@
 
       <script>
         var map = L.map('maps').setView({
-            lat: -5.209100000000,
-            lon: 120.002200000000        }, 8);
+            lat: .000000000000,
+            lon: .000000000000        }, 8);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '© OpenStreetMap'
         }).addTo(map);
         L.marker({
-            lat: -5.209100000000,
-            lon: 120.002200000000        }).bindPopup('UPTD SMP NEGERI 3 SINJAI').addTo(map);
+            lat: .000000000000,
+            lon: .000000000000        }).bindPopup('SD Unggulan Al-Wahdah Sinjai').addTo(map);
     </script>
     
   </div><!-- Body inner end -->
