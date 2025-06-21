@@ -45,6 +45,7 @@
 											'' => 'Semua Pendaftar',
 											'1' => 'Terdaftar DTKS',
 											'0' => 'Tidak Terdaftar DTKS',
+											'4' => 'NIK Tidak Valid',
 											'3' => 'Proses Verivikasi DTKS',
 
 										]; ?>

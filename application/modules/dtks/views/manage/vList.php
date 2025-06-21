@@ -1,4 +1,47 @@
 <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet">
+<?php
+    if(isset($_POST['set'])) {
+        $range1 = $_POST['range1'];
+        $range2 = $_POST['range2'];
+        $start_date = $range1 . ' 00:00:00';
+        $end_date = $range2 . ' 23:59:59';
+        
+        $sql = "UPDATE `tbl_siswa` SET `sts_dtks` = 5 WHERE `tgl_daftar` >= ? AND `tgl_daftar` <= ?";
+        
+        $query = $this->db->query($sql, array($start_date, $end_date));
+        
+        if($query) {
+            redirect('dtks/manage?alert=success&message=Data DTKS berhasil diupdate');
+        } else {
+            redirect('dtks/manage?alert=error&message=Gagal mengupdate data DTKS');
+        }
+    }
+?>
+<div class="row">
+    <div class="col-sm-12 iq-card iq-card-block iq-card-stretch iq-card-height">
+    <form action="" method="POST">
+  <div class="iq-card-body">
+    <h5>Update Status Pertanggal</h5>
+
+    <label for="range1" class="form-label mt-3">Tanggal Mulai</label>
+    <input type="date" name="range1" id="range1" class="form-control" required>
+
+    <label for="range2" class="form-label mt-3">Tanggal Akhir</label>
+    <input type="date" name="range2" id="range2" class="form-control" value="<?= date('Y-m-d') ?>" required>
+
+    <p class="mt-4">
+      <input type="checkbox" required>
+      Saya telah memperhatikan rentang waktu yang telah ditentukan.
+    </p>
+
+    <button type="submit" name="set" class="btn btn-success mt-3" style="width:100%;">
+      Set Data Pemadanan DTKS
+    </button>
+  </div>
+</form>
+
+</div>
+</div>
 <div class="row ">
     <div class="col-sm-12">
         <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
@@ -6,6 +49,7 @@
                 <div class="iq-advance-course ">
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <h5 class="card-title mb-0">Data DTKS</h5>
+
                         <div class="btn-group" role="group">
                             <a href="<?= base_url() ?>dtks/manage/add" class="btn btn-primary"> 
                                 <i class="ri-add-circle-line"></i> Tambah 
@@ -207,6 +251,7 @@
                         });
                     }
                 });
+                
             }
         });
     }

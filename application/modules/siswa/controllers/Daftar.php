@@ -102,6 +102,65 @@ class Daftar extends CI_Controller
 		echo json_encode($output);
 	}
 
+// private function bulk_update_dtks_status()
+// {
+//     $sql = "UPDATE tbl_siswa 
+//             SET sts_dtks = CASE 
+//                 WHEN no_ktp IS NOT NULL 
+//                 AND no_ktp != '' 
+//                 AND EXISTS (
+//                     SELECT 1 
+//                     FROM tbl_status_dtks 
+//                     WHERE nik = tbl_siswa.no_ktp 
+//                     AND status = 'Terdaftar'
+//                 ) THEN 1
+//                 WHEN no_ktp IS NOT NULL 
+//                 AND no_ktp != '' 
+//                 AND EXISTS (
+//                     SELECT 1 
+//                     FROM tbl_status_dtks 
+//                     WHERE nik = tbl_siswa.no_ktp 
+//                     AND status = 'Tidak Terdaftar'
+//                 ) THEN 0
+//                 ELSE 3 
+//             END";
+    
+//     return $this->db->query($sql);
+// }
+
+// private function bulk_update_dtks_status()
+// {
+//     $sql = "UPDATE tbl_siswa 
+//             SET sts_dtks = CASE 
+//                 WHEN no_ktp IS NOT NULL 
+//                 AND no_ktp != '' 
+//                 AND EXISTS (
+//                     SELECT 1 
+//                     FROM tbl_status_dtks 
+//                     WHERE nik = tbl_siswa.no_ktp 
+//                     AND status = 'Terdaftar'
+//                 ) THEN 1
+//                 WHEN no_ktp IS NOT NULL 
+//                 AND no_ktp != '' 
+//                 AND EXISTS (
+//                     SELECT 1 
+//                     FROM tbl_status_dtks 
+//                     WHERE nik = tbl_siswa.no_ktp 
+//                     AND status = 'Tidak Terdaftar'
+//                 ) THEN 0
+//                 WHEN no_ktp IS NOT NULL 
+//                 AND no_ktp != '' 
+//                 AND EXISTS (
+//                     SELECT 1 
+//                     FROM tbl_status_dtks 
+//                     WHERE nik = tbl_siswa.no_ktp 
+//                     AND status = 'NIK Tidak Valid'
+//                 ) THEN 4
+//                 ELSE 3 
+//             END";
+    
+//     return $this->db->query($sql);
+// }
 private function bulk_update_dtks_status()
 {
     $sql = "UPDATE tbl_siswa 
@@ -122,8 +181,17 @@ private function bulk_update_dtks_status()
                     WHERE nik = tbl_siswa.no_ktp 
                     AND status = 'Tidak Terdaftar'
                 ) THEN 0
+                WHEN no_ktp IS NOT NULL 
+                AND no_ktp != '' 
+                AND EXISTS (
+                    SELECT 1 
+                    FROM tbl_status_dtks 
+                    WHERE nik = tbl_siswa.no_ktp 
+                    AND status = 'NIK Tidak Valid'
+                ) THEN 4
                 ELSE 3 
-            END";
+            END
+            WHERE sts_dtks != 5";
     
     return $this->db->query($sql);
 }

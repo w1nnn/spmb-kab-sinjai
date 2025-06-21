@@ -27,6 +27,8 @@ header("Content-Disposition: attachment; filename=Data Ukuran Baju.xls");
 							echo "Data Tidak Terdaftar di DTKS";
 						} elseif ($this->input->get('sts_dtks') == "3") {
 							echo "Proses Verivikasi DTKS";
+						} elseif ($this->input->get('sts_dtks') == "4") {
+							echo "Data Tidak Valid";
 						}  else {
 							echo "Data Campuran";
 						}

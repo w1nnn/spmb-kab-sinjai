@@ -43,7 +43,9 @@
 							echo "Data Tidak Terdaftar di DTKS";
 						} elseif ($this->input->get('sts_dtks') == "3") {
 							echo "Proses Verifikasi Data DTKS";
-						} else {
+						} elseif ($this->input->get('sts_dtks') == "4") {
+							echo "Data Tidak Valid";
+						}  else {
 							echo "Data Campuran";
 						}
 						?> 
@@ -156,6 +158,8 @@
 								echo "Tidak Terdaftar di DTKS";
 							} elseif ($siswa->sts_dtks == "3") {
 								echo "Proses Verifikasi DTKS";
+							} elseif ($siswa->sts_dtks == "4") {
+								echo "Data Tidak Valid";
 							} else {
 								echo "Tidak Diketahui";
 							}
@@ -205,6 +209,8 @@
 							echo "Data Tidak Terdaftar di DTKS";
 						} elseif ($this->input->get('sts_dtks') == "3") {
 							echo "Proses Verifikasi Data DTKS";
+						} elseif ($this->input->get('sts_dtks') == "4") {
+							echo "Data Tidak Valid";
 						} else {
 							echo "Data Campuran";
 						}
@@ -313,6 +319,8 @@
 								echo "Tidak Terdaftar di DTKS";
 							} elseif ($siswa->sts_dtks == "3") {
 								echo "Proses Verifikasi DTKS";
+							} elseif ($siswa->sts_dtks == "4") {
+								echo "Data Tidak Valid";
 							} else {
 								echo "Tidak Diketahui";
 							}

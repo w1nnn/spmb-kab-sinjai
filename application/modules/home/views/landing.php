@@ -3,7 +3,7 @@
 $host = "localhost";
 $user = "root";
 $password = "";
-$dbname = "ppdb";
+$dbname = "spmg9739_spmb";
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $password);

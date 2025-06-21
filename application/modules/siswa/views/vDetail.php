@@ -27,18 +27,27 @@ $query = $this->db->get('tbl_status_dtks');
 if ($query->num_rows() > 0) {
     $dtks_data = $query->row();
     $status = $dtks_data->status;
+    
     if ($status == 'Terdaftar') {
-        echo '<div class="alert alert-primary" role="alert">
+        echo '<div class="alert alert-success" role="alert">
                 <i class="ri-checkbox-circle-line mr-2"></i> Selamat NIK Anda Terdaftar di DTKS
               </div>';
-    } else {
+    } elseif ($status == 'Tidak Terdaftar') {
         echo '<div class="alert alert-danger" role="alert">
                 <i class="ri-close-circle-line mr-2"></i> Mohon Maaf NIK Anda Tidak Terdaftar di DTKS
               </div>';
+    } elseif ($status == 'NIK Tidak Valid') {
+        echo '<div class="alert alert-warning text-dark" role="alert">
+                <i class="ri-error-warning-line mr-2"></i> NIK Tidak Valid, Silakan Periksa Kembali
+              </div>';
+    } else {
+        echo '<div class="alert alert-info" role="alert">
+                <i class="ri-information-line mr-2"></i> Proses Verifikasi DTKS
+              </div>';
     }
 } else {
-    echo '<div class="alert alert-warning text-dark" role="alert">
-            <i class="ri-error-warning-line mr-2"></i> Proses Verifikasi DTKS
+    echo '<div class="alert alert-secondary" role="alert">
+            <i class="ri-question-line mr-2"></i> Data Tidak Ditemukan - Proses Verifikasi DTKS
           </div>';
 }
 ?>

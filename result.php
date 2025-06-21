@@ -106,7 +106,7 @@
                         <td>&nbsp;&nbsp;&nbsp;</td>
                         <td>Nama</td>
                         <td>:</td>
-                        <td>SD Neg. No. 35 Dumme</td>
+                        <td>UPTD SMP NEGERI 3 SINJAI</td>
                     </tr>
                     <!-- edit 20200602 -->
                     <tr>
@@ -114,7 +114,7 @@
                         <td>NPSN</td>
                         <td>:</td>
                         <td>
-                            <a style="text-decoration: none;" class="link1" target="_blank" href="https://sekolah.data.kemdikbud.go.id/index.php/Chome/profil/202609BD-0D26-E111-88B6-5DAEF73A0BF7">40304435</a>
+                            <a style="text-decoration: none;" class="link1" target="_blank" href="https://sekolah.data.kemdikbud.go.id/index.php/Chome/profil/008D55C0-0D26-E111-83AC-C5DDEB8C9CCB">40304529</a>
                         </td>
 
                     </tr>
@@ -122,7 +122,7 @@
                         <td>&nbsp;</td>
                         <td>Alamat</td>
                         <td>:</td>
-                        <td>Jl. Poros Sinjai Kajang</td>
+                        <td>Jln. Persatuan No. 58 Manipi</td>
                     </tr>
                     <tr>
                         <td></td>
@@ -131,13 +131,13 @@
                         <td>&nbsp;</td>
                         <td>Desa/Kelurahan</td>
                         <td>:</td>
-                        <td>SANJAI</td>
+                        <td>TASSILILU</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Kecamatan/Kota (LN)</td>
                         <td>:</td>
-                        <td>KEC. SINJAI TIMUR</td>
+                        <td>KEC. SINJAI BARAT</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
@@ -161,7 +161,7 @@
                         <td>&nbsp;</td>
                         <td>Bentuk Pendidikan</td>
                         <td>:</td>
-                        <td>SD</td>
+                        <td>SMP</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
@@ -200,45 +200,45 @@
                         <td>&nbsp;</td>
                         <td>No. SK. Pendirian</td>
                         <td>:</td>
-                        <td>421.1/13/DPPOR</td>
+                        <td>030/U/979</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Tanggal SK. Pendirian</td>
                         <td>:</td>
-                        <td>31-12-1965</td>
+                        <td>01-04-1979</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Nomor SK Operasional</td>
                         <td>:</td>
-                        <td>421,1/13.3991/DPPOR</td>
+                        <td>530/I06/TU/97/26-4-1997</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Tanggal SK Operasional</td>
                         <td>:</td>
-                        <td>31-12-1965</td>
+                        <td>26-04-1997</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>File SK Operasional ()</td>
                         <td>:</td>
-                        <td>                                    <a class="link1" target="_blank" href="https://vervalsp.data.kemdikbud.go.id/verval/dokumen/skoperasional/315118-198220-406900-112789495-310099037.pdf">Lihat SK Operasional</a>
+                        <td>                                    <a class="link1" target="_blank" href="https://vervalsp.data.kemdikbud.go.id/verval/dokumen/skoperasional/377635-1536720-2039664754.pdf">Lihat SK Operasional</a>
                                                         </td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Tanggal Upload SK Op.</td>
                         <td>:</td>
-                        <td>                                22-08-2020 10:37:33                            </td>
+                        <td>                                06-01-2020 09:05:09                            </td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Akreditasi</td>
                         <td>:</td>
                         <td>
-                            <a target="_blank" class="btn-link" href="https://ban-pdm.id/satuanpendidikan/40304435">B</a></td>
+                            <a target="_blank" class="btn-link" href="https://ban-pdm.id/satuanpendidikan/40304529">B</a></td>
                     </tr>
                 </table>
             </div>
@@ -253,7 +253,7 @@
                         <td>&nbsp;&nbsp;&nbsp;</td>
                         <td>Luas Tanah</td>
                         <td>:</td>
-                        <td>6.900 m<sup>2</sup></td>
+                        <td>10.240 m<sup>2</sup></td>
                     </tr>
                     <!-- edit 20200602 -->
                     <tr>
@@ -266,7 +266,7 @@
                         <td></td>
                         <td></td>
                         <td>:</td>
-                        <td>2. 40 Mb</td>
+                        <td>2. Indosat IM2 (Satelit)</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
@@ -300,19 +300,19 @@
                         <td>&nbsp;</td>
                         <td>Email</td>
                         <td>:</td>
-                        <td>sdnegeri35dumme1965@gmail.com</td>
+                        <td>40304529.sinjaikab@gmail.com</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Website</td>
                         <td>:</td>
-                        <td></td>
+                        <td><a class='link1' target='_blank' href='http://www.smpn3sinjai.sch.id'>http://www.smpn3sinjai.sch.id</a></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Operator</td>
                         <td>:</td>
-                        <td>Askar</td>
+                        <td>SRI WAHYUNI</td>
                     </tr>
                                     </table>
             </div>
@@ -325,7 +325,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12"><div id="maps">
 
-                        Lintang: -5.205800000000<br>Bujur: 120.290000000000<br></div></div>
+                        Lintang: -5.209100000000<br>Bujur: 120.002200000000<br></div></div>
                 </div>
             </div>
         </div>
@@ -364,15 +364,15 @@
 
       <script>
         var map = L.map('maps').setView({
-            lat: -5.205800000000,
-            lon: 120.290000000000        }, 8);
+            lat: -5.209100000000,
+            lon: 120.002200000000        }, 8);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '© OpenStreetMap'
         }).addTo(map);
         L.marker({
-            lat: -5.205800000000,
-            lon: 120.290000000000        }).bindPopup('SD Neg. No. 35 Dumme').addTo(map);
+            lat: -5.209100000000,
+            lon: 120.002200000000        }).bindPopup('UPTD SMP NEGERI 3 SINJAI').addTo(map);
     </script>
     
   </div><!-- Body inner end -->
