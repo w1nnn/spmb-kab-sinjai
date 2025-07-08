@@ -20,37 +20,53 @@
 		<div class="card">
 			<div class="card-body">
 				<?php
-$nik = $get->no_ktp;
-$this->db->where('nik', $nik);
-$query = $this->db->get('tbl_status_dtks');
+				$nik = $get->no_ktp;
 
-if ($query->num_rows() > 0) {
-    $dtks_data = $query->row();
-    $status = $dtks_data->status;
-    
-    if ($status == 'Terdaftar') {
-        echo '<div class="alert alert-success" role="alert">
-                <i class="ri-checkbox-circle-line mr-2"></i> Selamat NIK Anda Terdaftar di DTKS
-              </div>';
-    } elseif ($status == 'Tidak Terdaftar') {
-        echo '<div class="alert alert-danger" role="alert">
-                <i class="ri-close-circle-line mr-2"></i> Mohon Maaf NIK Anda Tidak Terdaftar di DTKS
-              </div>';
-    } elseif ($status == 'NIK Tidak Valid') {
-        echo '<div class="alert alert-warning text-dark" role="alert">
-                <i class="ri-error-warning-line mr-2"></i> NIK Tidak Valid, Silakan Periksa Kembali
-              </div>';
-    } else {
-        echo '<div class="alert alert-info" role="alert">
-                <i class="ri-information-line mr-2"></i> Proses Verifikasi DTKS
-              </div>';
-    }
-} else {
-    echo '<div class="alert alert-secondary" role="alert">
-            <i class="ri-question-line mr-2"></i> Data Tidak Ditemukan - Proses Verifikasi DTKS
-          </div>';
-}
-?>
+				$this->db->where('nik', $nik);
+				$query_dtks = $this->db->get('tbl_status_dtks');
+
+				$this->db->where('no_ktp', $nik);
+				$query_siswa = $this->db->get('tbl_siswa');
+
+				$is_proses_pemadanan = false;
+				if ($query_siswa->num_rows() > 0) {
+					$siswa_data = $query_siswa->row();
+					if (isset($siswa_data->sts_dtks) && $siswa_data->sts_dtks == 5) {
+						$is_proses_pemadanan = true;
+					}
+				}
+
+				if ($is_proses_pemadanan) {
+					echo '<div class="alert alert-warning text-dark" role="alert">
+							<i class="ri-time-line mr-2"></i> Proses Pemadanan Data
+						</div>';
+				} elseif ($query_dtks->num_rows() > 0) {
+					$dtks_data = $query_dtks->row();
+					$status = $dtks_data->status;
+					
+					if ($status == 'Terdaftar') {
+						echo '<div class="alert alert-success" role="alert">
+								<i class="ri-checkbox-circle-line mr-2"></i> Selamat NIK Anda Terdaftar di DTKS
+							</div>';
+					} elseif ($status == 'Tidak Terdaftar') {
+						echo '<div class="alert alert-danger" role="alert">
+								<i class="ri-close-circle-line mr-2"></i> Mohon Maaf NIK Anda Tidak Terdaftar di DTKS
+							</div>';
+					} elseif ($status == 'NIK Tidak Valid') {
+						echo '<div class="alert alert-warning text-dark" role="alert">
+								<i class="ri-error-warning-line mr-2"></i> NIK Anda Tidak Valid di DTKS
+							</div>';
+					} else {
+						echo '<div class="alert alert-info" role="alert">
+								<i class="ri-information-line mr-2"></i> Proses Verifikasi DTKS
+							</div>';
+					}
+				} else {
+					echo '<div class="alert alert-secondary" role="alert">
+							<i class="ri-question-line mr-2"></i> Proses Verifikasi DTKS
+						</div>';
+				}
+				?>
 			</div>
 		</div>
 	</div>

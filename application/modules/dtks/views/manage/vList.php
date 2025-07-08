@@ -22,23 +22,23 @@
     <form action="" method="POST">
   <div class="iq-card-body">
     <h5>Update Data Pemadanan</h5>
-    <p class="text-orimary">
-    <i class="ri-alert-line" style="margin-right: 5px;"></i>
-    Proses ini akan mengubah status siswa yang NIK-nya sedang dalam proses pemadanan data.
-    </p>
-    <label for="range1" class="form-label mt-3">Tanggal Mulai</label>
+    <div class="alert mt-3 alert-warning text-dark" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <i class="ri-alert-line" style="margin-right: 5px;"></i> Proses ini akan mengubah status siswa yang telah mendaftar dengan NIK sedang dalam proses pemadanan data.
+    </div>
+    <label for="range1" class="form-label mt-1">Tanggal Mulai</label>
     <input type="date" name="range1" id="range1" class="form-control" required>
 
     <label for="range2" class="form-label mt-3">Tanggal Akhir</label>
-    <input type="date" name="range2" id="range2" class="form-control" value="<?= date('Y-m-d') ?>" required>
-
-    <!-- <p class="mt-4">
-      <input type="checkbox" required>
-      Saya telah memperhatikan rentang waktu yang telah ditentukan.
-    </p> -->
+    <input type="date" name="range2" id="range2" class="form-control" required>
+    <p class="mt-3">
+  <i class="ri-information-line" style="margin-right: 5px;"></i>
+  Pastikan rentang waktu yang Anda pilih mencakup tanggal pendaftaran siswa yang ingin diupdate 
+  (<strong>Input tanggal yang sama jika tidak memiliki rentang waktu khusus</strong>).
+</p>
 
     <button type="submit" name="set" class="btn mt-3" style="width:100%; background-color:#343a40; color:#fefae0; border:none;">
-      Update Data
+      Update Status Pemadanan Data Siswa
     </button>
   </div>
 </form>
@@ -59,6 +59,10 @@
                             </a>
                             <button type="button" class="btn" onclick="reset_all_data()" style="background-color:#197278; color:#fefae0; border:none;"> 
                                 <i class="ri-loop-left-line"></i> Reset Semua Data 
+                            </button>
+                            <button type="button" class="btn" id="syncButton" onclick="synchronize_data()" style="background-color:#606c38; color:#fefae0; border:none;">
+                                <i class="ri-menu-search-line" id="syncIcon"></i> 
+                                <span id="syncText">Sinkronisasi Data</span>
                             </button>
                         </div>
                     </div>
@@ -84,7 +88,13 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
-
+<script>
+    window.setTimeout(function() {
+    $(".alert").fadeTo(500, 0).slideUp(500, function(){
+        $(this).remove(); 
+    });
+}, 4000);
+</script>
 <!-- Notifikasi Toast -->
 <?php if ($this->input->get('alert')): ?>
     <script>
@@ -155,6 +165,121 @@
 
     function reload_table() {
         table.ajax.reload(null, false); //reload datatable ajax
+    }
+
+    function synchronize_data() {
+        Swal.fire({
+            title: 'Konfirmasi Sinkronisasi',
+            text: 'Anda yakin ingin melakukan sinkronisasi data DTKS?',
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#606c38',
+            cancelButtonColor: '#6c757d',
+            confirmButtonText: 'Ya, Sinkronkan!',
+            cancelButtonText: 'Batal'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Ubah tampilan tombol menjadi loading
+                const syncButton = document.getElementById('syncButton');
+                const syncIcon = document.getElementById('syncIcon');
+                const syncText = document.getElementById('syncText');
+                
+                // Disable tombol dan ubah tampilan
+                syncButton.disabled = true;
+                syncButton.style.opacity = '0.7';
+                syncIcon.className = 'ri-loader-4-line';
+                syncIcon.style.animation = 'spin 1s linear infinite';
+                syncText.textContent = 'Sedang Sinkronisasi...';
+                
+                // Tambahkan CSS untuk animasi spinner
+                if (!document.getElementById('spinnerStyle')) {
+                    const style = document.createElement('style');
+                    style.id = 'spinnerStyle';
+                    style.textContent = `
+                        @keyframes spin {
+                            0% { transform: rotate(0deg); }
+                            100% { transform: rotate(360deg); }
+                        }
+                    `;
+                    document.head.appendChild(style);
+                }
+
+                // Lakukan request Ajax untuk sinkronisasi
+                $.ajax({
+                    url: "<?php echo site_url('siswa/daftar/bulk_update_dtks_status') ?>",
+                    type: "POST",
+                    dataType: "JSON",
+                    timeout: 300000, // 5 menit timeout
+                    success: function(data) {
+                        // Reset tampilan tombol
+                        resetSyncButton();
+                        
+                        // Reload table untuk menampilkan data terbaru
+                        reload_table();
+                        
+                        // Cek status response
+                        if (data.status === 'success') {
+                            // Tampilkan notifikasi sukses
+                            Swal.fire({
+                                title: 'Berhasil!',
+                                text: data.message || 'Sinkronisasi data berhasil dilakukan.',
+                                icon: 'success',
+                                timer: 4000,
+                                showConfirmButton: false
+                            });
+                        } else {
+                            // Tampilkan notifikasi error dari server
+                            Swal.fire({
+                                title: 'Error!',
+                                text: data.message || 'Terjadi kesalahan saat sinkronisasi.',
+                                icon: 'error',
+                                confirmButtonText: 'OK'
+                            });
+                        }
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                        // Reset tampilan tombol
+                        resetSyncButton();
+                        
+                        let errorMessage = 'Gagal melakukan sinkronisasi data.';
+                        
+                        if (textStatus === 'timeout') {
+                            errorMessage = 'Proses sinkronisasi timeout. Silakan coba lagi.';
+                        } else if (jqXHR.responseJSON && jqXHR.responseJSON.message) {
+                            errorMessage = jqXHR.responseJSON.message;
+                        } else if (jqXHR.responseText) {
+                            try {
+                                const response = JSON.parse(jqXHR.responseText);
+                                errorMessage = response.message || errorMessage;
+                            } catch (e) {
+                                // Jika tidak bisa parse JSON, gunakan error message default
+                                console.log('Response tidak valid JSON:', jqXHR.responseText);
+                            }
+                        }
+                        
+                        Swal.fire({
+                            title: 'Error!',
+                            text: errorMessage,
+                            icon: 'error',
+                            confirmButtonText: 'OK'
+                        });
+                    }
+                });
+            }
+        });
+    }
+
+    function resetSyncButton() {
+        const syncButton = document.getElementById('syncButton');
+        const syncIcon = document.getElementById('syncIcon');
+        const syncText = document.getElementById('syncText');
+        
+        // Reset tombol ke kondisi normal
+        syncButton.disabled = false;
+        syncButton.style.opacity = '1';
+        syncIcon.className = 'ri-menu-search-line';
+        syncIcon.style.animation = '';
+        syncText.textContent = 'Sinkronisasi Data';
     }
 
     function delete_(id) {

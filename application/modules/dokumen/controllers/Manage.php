@@ -70,53 +70,97 @@ class Manage extends CI_Controller
 
 
 	public function save()
-	{
-		cek_session();
-		$config['upload_path'] = './uploads/lampiran';
-		$config['allowed_types'] = 'pdf|jpg|png';
-		$this->load->library('upload', $config);
-		$this->upload->do_upload("lampiran");
-		$file = $this->upload->data();
-		$filename = $file['file_name'];
-
+{
+	cek_session();
+	$config['upload_path'] = './uploads/lampiran';
+	$config['allowed_types'] = 'pdf|jpg|png|doc|docx';
+	$this->load->library('upload', $config);
+	
+	if (!$this->upload->do_upload("lampiran")) {
+		// Handle upload error
+		$error = $this->upload->display_errors();
+		redirect(base_url('dokumen/manage?alert=danger&message=' . urlencode('Upload gagal: ' . $error)));
+		return;
+	}
+	
+	$file = $this->upload->data();
+	$filename = $file['file_name'];
+	$jenis_file = $this->input->post('jenis_file', TRUE);
+	
+	// Cek apakah sudah ada data dengan jenis_file yang sama
+	$existing_data = $this->dokumen->get_by_jenis_file($jenis_file);
+	
+	if ($existing_data) {
+		// Jika ada data dengan jenis_file yang sama, lakukan update (replace)
+		
+		// Hapus file lama jika ada
+		$old_file = $existing_data->lampiran;
+		if ($old_file && is_file(FCPATH . '/uploads/lampiran/' . $old_file)) {
+			unlink(FCPATH . '/uploads/lampiran/' . $old_file);
+		}
+		
+		// Update data yang sudah ada
 		$data = array(
 			'nama' => $this->input->post('nama', TRUE),
 			'lampiran' => $filename,
-			'tgl_submit' => date('Y-m-d H:i:s')
+			'tgl_submit' => date('Y-m-d H:i:s'),
+			'jenis_file' => $jenis_file
 		);
-
+		
+		$this->dokumen->update(array('id' => $existing_data->id), $data);
+		
+		redirect(base_url('dokumen/manage?alert=info&message=' . urlencode('Berhasil Update Data dengan Jenis File yang Sama')));
+	} else {
+		// Jika tidak ada data dengan jenis_file yang sama, insert data baru
+		$data = array(
+			'nama' => $this->input->post('nama', TRUE),
+			'lampiran' => $filename,
+			'tgl_submit' => date('Y-m-d H:i:s'),
+			'jenis_file' => $jenis_file
+		);
+		
 		$this->dokumen->save($data);
-
-		// gunakan session biasa
+		
 		redirect(base_url('dokumen/manage?alert=success&message=' . urlencode('Berhasil Tambah Data')));
 	}
+}
 
+public function update()
+{
+	cek_session();
 
+	$config['upload_path'] = './uploads/lampiran';
+	$config['allowed_types'] = 'pdf|jpg|png|doc|docx';
+	$this->load->library('upload', $config);
 
-	public function update()
-	{
-		cek_session();
-
-		$config['upload_path'] = './uploads/lampiran';
-		$config['allowed_types'] = 'pdf|jpg|png';
-		$this->load->library('upload', $config);
-
-		if ($this->upload->do_upload("lampiran")) {
-			$file = $this->upload->data();
-			$filename = $file['file_name'];
-			$data = array(
-				'nama' => $this->input->post('nama', TRUE),
-				'lampiran' => $filename
-			);
-		} else {
-			$data = array('nama' => $this->input->post('nama', TRUE));
+	if ($this->upload->do_upload("lampiran")) {
+		
+		// Hapus file lama
+		$id = $this->input->post('id');
+		$old_data = $this->dokumen->get_by_id($id);
+		if ($old_data && $old_data->lampiran && is_file(FCPATH . '/uploads/lampiran/' . $old_data->lampiran)) {
+			unlink(FCPATH . '/uploads/lampiran/' . $old_data->lampiran);
 		}
-
-		$this->dokumen->update(array('id' => $this->input->post('id')), $data);
-
-		// Gunakan session biasa (bukan flashdata)
-		redirect(base_url('dokumen/manage?alert=info&message=' . urlencode('Berhasil Update Data')));
+		
+		$file = $this->upload->data();
+		$filename = $file['file_name'];
+		$data = array(
+			'nama' => $this->input->post('nama', TRUE),
+			'lampiran' => $filename,
+			'jenis_file' => $this->input->post('jenis_file', TRUE)
+		);
+	} else {
+		// Jika tidak ada file baru yang diupload
+		$data = array(
+			'nama' => $this->input->post('nama', TRUE),
+			'jenis_file' => $this->input->post('jenis_file', TRUE)
+		);
 	}
+
+	$this->dokumen->update(array('id' => $this->input->post('id')), $data);
+
+	redirect(base_url('dokumen/manage?alert=info&message=' . urlencode('Berhasil Update Data')));
+}
 
 
 

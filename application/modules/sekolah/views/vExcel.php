@@ -47,7 +47,9 @@
 							echo "Data Tidak Valid";
 						} elseif ($this->input->get('sts_dtks') == "5") {
 							echo "Pemadanan Data";
-						}  else {
+						} elseif ($this->input->get('sts_dtks') == "2") {
+							echo "Data Terdaftar di DTKS dan Memiliki SKTM";
+						}   else {
 							echo "Data Campuran";
 						}
 						?> 
@@ -215,7 +217,9 @@
 							echo "Proses Verifikasi Data DTKS";
 						} elseif ($this->input->get('sts_dtks') == "4") {
 							echo "Data Tidak Valid";
-						} elseif ($this->input->get('sts_dtks') == "5") {
+						}  elseif ($this->input->get('sts_dtks') == "2") {
+							echo "Data Terdaftar di DTKS dan Memiliki SKTM";
+						}  elseif ($this->input->get('sts_dtks') == "5") {
 							echo "Pemadanan Data";
 						} else {
 							echo "Data Campuran";

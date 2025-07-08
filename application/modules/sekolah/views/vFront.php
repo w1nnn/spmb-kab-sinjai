@@ -34,11 +34,12 @@
                             <option value="4">NIK Tidak Valid</option>
                             <option value="3">Proses Verivikasi DTKS</option>
                             <option value="5">Pemadanan Data</option>
+                            <option value="2">Terdaftar DTKS dan Memiliki SKTM</option>
                         </select>
 					</div>
                     <?php } ?>
                     <div class="col-md-5 mb-2">
-                        <?php if ($this->session->userdata('level') === 'superadmin') { ?>
+                        <?php if ($this->session->userdata('level') === 'superadmin' || $this->session->userdata('level') === 'admin') { ?>
                         <label>Export Data</label>
                         <div class="d-flex">
                             <a href="javascript:void(0)" id="export_kuota" class="btn btn-success btn-sm mr-2">

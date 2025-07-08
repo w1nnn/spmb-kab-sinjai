@@ -114,7 +114,12 @@ class Dokumen_model extends CI_Model {
 		$this->db->where('id', $id);
 		$this->db->delete($this->table);
 	}
-	
-	
+
+	public function get_by_jenis_file($jenis_file)
+	{
+		$this->db->where('jenis_file', $jenis_file);
+		$query = $this->db->get('tbl_dokumen');
+		return $query->row();
+	}
 	
 }

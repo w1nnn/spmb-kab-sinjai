@@ -65,6 +65,8 @@ if (level_user() == "admin" || level_user()  == "superadmin") {
 							echo "Data Terdaftar di DTKS";
 						} elseif ($this->input->get('sts_dtks') == "0") {
 							echo "Data Tidak Terdaftar di DTKS";
+						} elseif ($this->input->get('sts_dtks') == "2") {
+							echo "Data Terdaftar di DTKS dan Memiliki SKTM";
 						} elseif ($this->input->get('sts_dtks') == "3") {
 							echo "Proses Verifikasi Data DTKS";
 						} elseif ($this->input->get('sts_dtks') == "4") {

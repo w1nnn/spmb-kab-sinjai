@@ -45,10 +45,10 @@
                                     </div>
                                     <hr>
                                     <!-- Alert -->
-                                    <div class="alert alert-warning text-dark">
+                                    <!-- <div class="alert alert-warning text-dark">
                                         <i class="ri-information-line"></i>  
                                         Pastikan NIK yang dimasukkan sudah benar dan terdaftar di DTKS.
-                                    </div>
+                                    </div> -->
                                     <button class="btn btn-primary pull-right" type="submit"> 
                                         <i class="ri-save-line"></i> Simpan 
                                     </button>

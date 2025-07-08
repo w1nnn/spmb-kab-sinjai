@@ -53,7 +53,7 @@ class Daftar extends CI_Controller
 	public function ajax_list()
 	{
 		cek_session();
-		$this->bulk_update_dtks_status();
+		// $this->bulk_update_dtks_status();
 		
 		$list = $this->siswa->get_datatables();
 		$data = array();
@@ -101,6 +101,74 @@ class Daftar extends CI_Controller
 		
 		echo json_encode($output);
 	}
+
+	public function bulk_update_dtks_status()
+{
+    // Set content type untuk JSON response
+    header('Content-Type: application/json');
+    
+    try {
+        $sql = "UPDATE tbl_siswa 
+                SET sts_dtks = CASE 
+                    WHEN no_ktp IS NOT NULL 
+                    AND no_ktp != '' 
+                    AND EXISTS (
+                        SELECT 1 
+                        FROM tbl_status_dtks 
+                        WHERE nik = tbl_siswa.no_ktp 
+                        AND status = 'Terdaftar'
+                    ) THEN 1
+                    WHEN no_ktp IS NOT NULL 
+                    AND no_ktp != '' 
+                    AND EXISTS (
+                        SELECT 1 
+                        FROM tbl_status_dtks 
+                        WHERE nik = tbl_siswa.no_ktp 
+                        AND status = 'Tidak Terdaftar'
+                    ) THEN 0
+                    WHEN no_ktp IS NOT NULL 
+                    AND no_ktp != '' 
+                    AND EXISTS (
+                        SELECT 1 
+                        FROM tbl_status_dtks 
+                        WHERE nik = tbl_siswa.no_ktp 
+                        AND status = 'NIK Tidak Valid'
+                    ) THEN 4
+                    ELSE 3 
+                END
+                WHERE sts_dtks != 5";
+        
+        $result = $this->db->query($sql);
+        
+        if ($result) {
+            // Hitung jumlah baris yang ter-update
+            $affected_rows = $this->db->affected_rows();
+            
+            $response = [
+                'status' => 'success',
+                'message' => "Sinkronisasi berhasil! {$affected_rows} data siswa telah diperbarui.",
+                'affected_rows' => $affected_rows
+            ];
+        } else {
+            $response = [
+                'status' => 'error',
+                'message' => 'Gagal melakukan sinkronisasi data. Silakan coba lagi.',
+                'error' => $this->db->error()
+            ];
+        }
+        
+    } catch (Exception $e) {
+        $response = [
+            'status' => 'error',
+            'message' => 'Terjadi kesalahan sistem saat melakukan sinkronisasi.',
+            'error' => $e->getMessage()
+        ];
+    }
+    
+    // Return JSON response
+    echo json_encode($response);
+    exit;
+}
 
 // private function bulk_update_dtks_status()
 // {
@@ -161,40 +229,41 @@ class Daftar extends CI_Controller
     
 //     return $this->db->query($sql);
 // }
-private function bulk_update_dtks_status()
-{
-    $sql = "UPDATE tbl_siswa 
-            SET sts_dtks = CASE 
-                WHEN no_ktp IS NOT NULL 
-                AND no_ktp != '' 
-                AND EXISTS (
-                    SELECT 1 
-                    FROM tbl_status_dtks 
-                    WHERE nik = tbl_siswa.no_ktp 
-                    AND status = 'Terdaftar'
-                ) THEN 1
-                WHEN no_ktp IS NOT NULL 
-                AND no_ktp != '' 
-                AND EXISTS (
-                    SELECT 1 
-                    FROM tbl_status_dtks 
-                    WHERE nik = tbl_siswa.no_ktp 
-                    AND status = 'Tidak Terdaftar'
-                ) THEN 0
-                WHEN no_ktp IS NOT NULL 
-                AND no_ktp != '' 
-                AND EXISTS (
-                    SELECT 1 
-                    FROM tbl_status_dtks 
-                    WHERE nik = tbl_siswa.no_ktp 
-                    AND status = 'NIK Tidak Valid'
-                ) THEN 4
-                ELSE 3 
-            END
-            WHERE sts_dtks != 5";
+// public function bulk_update_dtks_status()
+// {
+//     $sql = "UPDATE tbl_siswa 
+//             SET sts_dtks = CASE 
+//                 WHEN no_ktp IS NOT NULL 
+//                 AND no_ktp != '' 
+//                 AND EXISTS (
+//                     SELECT 1 
+//                     FROM tbl_status_dtks 
+//                     WHERE nik = tbl_siswa.no_ktp 
+//                     AND status = 'Terdaftar'
+//                 ) THEN 1
+//                 WHEN no_ktp IS NOT NULL 
+//                 AND no_ktp != '' 
+//                 AND EXISTS (
+//                     SELECT 1 
+//                     FROM tbl_status_dtks 
+//                     WHERE nik = tbl_siswa.no_ktp 
+//                     AND status = 'Tidak Terdaftar'
+//                 ) THEN 0
+//                 WHEN no_ktp IS NOT NULL 
+//                 AND no_ktp != '' 
+//                 AND EXISTS (
+//                     SELECT 1 
+//                     FROM tbl_status_dtks 
+//                     WHERE nik = tbl_siswa.no_ktp 
+//                     AND status = 'NIK Tidak Valid'
+//                 ) THEN 4
+//                 ELSE 3 
+//             END
+//             WHERE sts_dtks != 5";
     
-    return $this->db->query($sql);
-}
+//     return $this->db->query($sql);
+// }
+
 	public function update_dtks_manual()
 	{
 		cek_session();

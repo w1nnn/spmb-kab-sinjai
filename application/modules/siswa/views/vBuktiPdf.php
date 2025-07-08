@@ -69,6 +69,12 @@
 			font-size: 0.85em;
 		}
 
+		.pemadan-data {
+			color: #8e44ad;
+			background-color: rgba(142, 68, 173, 0.1);
+			border: 1px solid #8e44ad;
+		}
+
 		.dtks-accepted {
 			color: #27ae60;
 			background-color: rgba(39, 174, 96, 0.1);
@@ -81,6 +87,13 @@
 			border: 1px solid #e74c3c;
 		}
 
+		/* .dtks-processing, */
+		.dtks-unavailable {
+			color: #f39c12;
+			background-color: rgba(243, 156, 18, 0.1);
+			border: 1px solid #f39c12;
+		}
+
 		.dtks-processing {
 			color: #f39c12;
 			background-color: rgba(243, 156, 18, 0.1);
@@ -88,8 +101,8 @@
 		}
 
 		.dtks-unavailable {
-			color: #7f8c8d;
-			background-color: rgba(127, 140, 141, 0.1);
+			color: #fff;
+			background-color: rgba(229, 163, 87, 0.98);
 			border: 1px solid #7f8c8d;
 		}
 
@@ -426,12 +439,16 @@
 				if ($get->sts_dtks == '1') echo 'dtks-accepted';
 				elseif ($get->sts_dtks == '0') echo 'dtks-rejected'; 
 				elseif ($get->sts_dtks == '3') echo 'dtks-processing';
+				elseif ($get->sts_dtks == '4') echo 'dtks-unavailable';
+				elseif ($get->sts_dtks == '5') echo 'pemadan-data';
 				else echo 'dtks-unavailable';
 			?>">
 				<?php 
 				if ($get->sts_dtks == '1') echo 'Selamat NIK Anda Terdaftar di DTKS';
 				elseif ($get->sts_dtks == '0') echo 'Mohon Maaf NIK Anda Tidak Terdaftar di DTKS';
 				elseif ($get->sts_dtks == '3') echo 'Proses Diverifikasi DTKS';
+				elseif ($get->sts_dtks == '4') echo 'NIK Anda Tidak Valid di DTKS';
+				elseif ($get->sts_dtks == '5') echo 'Proses Pemadanan Data';
 				else echo 'Data DTKS Tidak Tersedia';
 				?>
 		<div class="footer">

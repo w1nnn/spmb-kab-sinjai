@@ -119,8 +119,15 @@ function get_sekolah_by_dusun($level, $dusun = '', $status_dtks = '')
     
     $subquery = "SELECT s.pilihan_sekolah_1 AS npsn, COUNT(*) AS pendaftar FROM tbl_siswa AS s WHERE `lock` = 'y'";
     
+    // Kondisi khusus untuk sts_dtks dalam subquery
     if ($status_dtks !== '' && $status_dtks !== null) {
-        $subquery .= " AND s.sts_dtks = '$status_dtks'";
+        if ($status_dtks == '2') {
+            // Jika sts_dtks = '2', tampilkan siswa yang memiliki SKTM atau sts_dtks = '1'
+            $subquery .= " AND (s.sktm IS NOT NULL OR s.sts_dtks = '1')";
+        } else {
+            // Untuk nilai sts_dtks lainnya, gunakan filter normal
+            $subquery .= " AND s.sts_dtks = '$status_dtks'";
+        }
     }
     
     $subquery .= " GROUP BY s.pilihan_sekolah_1";
@@ -159,8 +166,15 @@ function get_sekolah($level, $kecamatan = '', $status_dtks = '', $dusun = '')
     
     $subquery = "SELECT s.pilihan_sekolah_1 AS npsn, COUNT(*) AS pendaftar FROM tbl_siswa AS s WHERE `lock` = 'y'";
 
+    // Kondisi khusus untuk sts_dtks dalam subquery
     if ($status_dtks !== '' && $status_dtks !== null) {
-        $subquery .= " AND s.sts_dtks = '$status_dtks'";
+        if ($status_dtks == '2') {
+            // Jika sts_dtks = '2', tampilkan siswa yang memiliki SKTM atau sts_dtks = '1'
+            $subquery .= " AND (s.sktm IS NOT NULL OR s.sts_dtks = '1')";
+        } else {
+            // Untuk nilai sts_dtks lainnya, gunakan filter normal
+            $subquery .= " AND s.sts_dtks = '$status_dtks'";
+        }
     }
     
     $subquery .= " GROUP BY s.pilihan_sekolah_1";
@@ -196,23 +210,33 @@ function get_sekolah($level, $kecamatan = '', $status_dtks = '', $dusun = '')
 }
 
     function count_size($npsn, $kelamin, $size, $status_dtks = '')
-    {
-        $this->db->select("COUNT(*) AS jumlah");
-        $this->db->from("spmg9739_spmb.tbl_siswa");
-        $this->db->where('pilihan_sekolah_1', $npsn);
-        $this->db->where('jk', $kelamin);
-        $this->db->where('ukuran_baju', $size);
-        $this->db->where('lock', 'y');
-        
-        if ($status_dtks !== '' && $status_dtks !== null) {
+{
+    $this->db->select("COUNT(*) AS jumlah");
+    $this->db->from("spmg9739_spmb.tbl_siswa");
+    $this->db->where('pilihan_sekolah_1', $npsn);
+    $this->db->where('jk', $kelamin);
+    $this->db->where('ukuran_baju', $size);
+    $this->db->where('lock', 'y');
+    
+    // Kondisi khusus untuk sts_dtks
+    if ($status_dtks !== '' && $status_dtks !== null) {
+        if ($status_dtks == '2') {
+            // Jika sts_dtks = '2', tampilkan siswa yang memiliki SKTM atau sts_dtks = '1'
+            $this->db->group_start();
+            $this->db->where('sktm IS NOT NULL');
+            $this->db->or_where('sts_dtks', '1');
+            $this->db->group_end();
+        } else {
+            // Untuk nilai sts_dtks lainnya, gunakan filter normal
             $this->db->where('sts_dtks', $status_dtks);
         }
-        
-        $query = $this->db->get();
-        $row = $query->row();
-        
-        return $row->jumlah;
     }
+    
+    $query = $this->db->get();
+    $row = $query->row();
+    
+    return $row->jumlah;
+}
 
     function cari_sekolah($query)
     {

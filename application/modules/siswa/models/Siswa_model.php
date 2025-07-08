@@ -15,47 +15,60 @@ class Siswa_model extends CI_Model
         $this->load->database();
     }
 
-    private function _get_datatables_query()
-    {
-        if (level_user() == "sekolah") {
-            $jalur = $this->input->get('jalur');
-			$npsn  = $this->session->userdata('npsn');
-			if ($jalur == "") {
-				$this->db->select('*');
-				$this->db->from('tbl_siswa');
-				$this->db->where('pilihan_sekolah_1', $npsn);
-				$this->db->where('lock', 'y');
-			} else {
-				$this->db->select('*');
-				$this->db->from('tbl_siswa');
-				$this->db->where('pilihan_sekolah_1', $npsn);
-				$this->db->where('jalur', $jalur);
-				$this->db->where('lock', 'y');
-			}
-        } elseif (level_user() == "admin" or level_user() == "superadmin" or level_user() == "kadis") {
-
-            $jalur   = $this->input->get('jalur');
-            $tingkat = $this->input->get('tingkat');
-            $npsn  = $this->input->get('npsn');
-            $sts_dtks = $this->input->get('sts_dtks');
-			log_message('debug', 'DTKS value received: ' . $sts_dtks);
-
+   private function _get_datatables_query()
+{
+    if (level_user() == "sekolah") {
+        $jalur = $this->input->get('jalur');
+        $npsn  = $this->session->userdata('npsn');
+        if ($jalur == "") {
             $this->db->select('*');
             $this->db->from('tbl_siswa');
-            if ($tingkat) {
-                $this->db->where('tingkat_sekolah', $tingkat);
-            }
-            if ($jalur) {
-                $this->db->where('jalur', $jalur);
-            }
-            if ($npsn) {
-                $this->db->where('pilihan_sekolah_1', $npsn);
-            }
-            if ($sts_dtks !== null && $sts_dtks !== '') {
-				$this->db->where('sts_dtks', $sts_dtks);
-			}
+            $this->db->where('pilihan_sekolah_1', $npsn);
+            $this->db->where('lock', 'y');
+        } else {
+            $this->db->select('*');
+            $this->db->from('tbl_siswa');
+            $this->db->where('pilihan_sekolah_1', $npsn);
+            $this->db->where('jalur', $jalur);
             $this->db->where('lock', 'y');
         }
+    } elseif (level_user() == "admin" or level_user() == "superadmin" or level_user() == "kadis") {
+
+        $jalur   = $this->input->get('jalur');
+        $tingkat = $this->input->get('tingkat');
+        $npsn  = $this->input->get('npsn');
+        $sts_dtks = $this->input->get('sts_dtks');
+        log_message('debug', 'DTKS value received: ' . $sts_dtks);
+
+        $this->db->select('*');
+        $this->db->from('tbl_siswa');
+        
+        if ($tingkat) {
+            $this->db->where('tingkat_sekolah', $tingkat);
+        }
+        if ($jalur) {
+            $this->db->where('jalur', $jalur);
+        }
+        if ($npsn) {
+            $this->db->where('pilihan_sekolah_1', $npsn);
+        }
+        
+        // Kondisi khusus untuk sts_dtks
+        if ($sts_dtks !== null && $sts_dtks !== '') {
+            if ($sts_dtks == '2') {
+                // Jika sts_dtks = '2', tampilkan siswa yang memiliki SKTM atau sts_dtks = '1'
+                $this->db->group_start();
+                $this->db->where('sktm IS NOT NULL');
+                $this->db->or_where('sts_dtks', '1');
+                $this->db->group_end();
+            } else {
+                // Untuk nilai sts_dtks lainnya, gunakan filter normal
+                $this->db->where('sts_dtks', $sts_dtks);
+            }
+        }
+        
+        $this->db->where('lock', 'y');
+    }
 
 
         $i = 0;
@@ -185,7 +198,7 @@ class Siswa_model extends CI_Model
     return $this->db->get()->result();
 }
 
-    public function getByCustom()
+        public function getByCustom()
     {
         $jalur = $this->input->get('jalur');
         $tingkat = $this->input->get('tingkat');
@@ -194,6 +207,7 @@ class Siswa_model extends CI_Model
 
         $this->db->select('*');
         $this->db->from('tbl_siswa');
+        
         if ($jalur && $jalur != 'all') {
             $this->db->where('jalur', $jalur);
         }
@@ -203,9 +217,21 @@ class Siswa_model extends CI_Model
         if ($npsn) {
             $this->db->where('pilihan_sekolah_1', $npsn);
         }
+        
+        // Kondisi khusus untuk sts_dtks
         if ($sts_dtks !== null && $sts_dtks !== '') {
-            $this->db->where('sts_dtks', $sts_dtks);
+            if ($sts_dtks == '2') {
+                // Jika sts_dtks = '2', tampilkan siswa yang memiliki SKTM atau sts_dtks = '1'
+                $this->db->group_start();
+                $this->db->where('sktm IS NOT NULL');
+                $this->db->or_where('sts_dtks', '1');
+                $this->db->group_end();
+            } else {
+                // Untuk nilai sts_dtks lainnya, gunakan filter normal
+                $this->db->where('sts_dtks', $sts_dtks);
+            }
         }
+        
         $this->db->where('lock', 'y');
         $this->db->order_by('tingkat_sekolah', 'asc');
         $this->db->order_by('pilihan_sekolah_1', 'asc');

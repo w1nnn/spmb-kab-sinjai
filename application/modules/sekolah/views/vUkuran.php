@@ -31,6 +31,8 @@ header("Content-Disposition: attachment; filename=Data Ukuran Baju.xls");
 							echo "Data Tidak Valid";
 						} elseif ($this->input->get('sts_dtks') == "5") {
 							echo "Pemadanan Data";
+						} elseif ($this->input->get('sts_dtks') == "2") {
+							echo "Data Terdaftar di DTKS dan Memiliki SKTM";
 						}  else {
 							echo "Data Campuran";
 						}

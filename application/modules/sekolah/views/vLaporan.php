@@ -43,6 +43,8 @@
 									<option value="1" <?= ($sts_dtks == "1") ? "selected" : ""; ?>>Terdaftar DTKS</option>
 									<option value="0" <?= ($sts_dtks == "0") ? "selected" : ""; ?>>Tidak Terdaftar DTKS</option>
 									<option value="3" <?= ($sts_dtks == "3") ? "selected" : ""; ?>>Proses Verivikasi DTKS</option>
+									<option value="4" <?= ($sts_dtks == "4") ? "selected" : ""; ?>>NIK Tidak Valid DTKS</option>
+									<option value="5" <?= ($sts_dtks == "5") ? "selected" : ""; ?>>Proses Pemadanan Data</option>
 								</select>
 							</div>
 							<?php } ?>

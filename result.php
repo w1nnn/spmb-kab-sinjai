@@ -106,7 +106,7 @@
                         <td>&nbsp;&nbsp;&nbsp;</td>
                         <td>Nama</td>
                         <td>:</td>
-                        <td>SD Unggulan Al-Wahdah Sinjai</td>
+                        <td>SD Neg. No. 30 Tongke - Tongke</td>
                     </tr>
                     <!-- edit 20200602 -->
                     <tr>
@@ -114,7 +114,7 @@
                         <td>NPSN</td>
                         <td>:</td>
                         <td>
-                            <a style="text-decoration: none;" class="link1" target="_blank" href="https://sekolah.data.kemdikbud.go.id/index.php/Chome/profil/EBB6B544-7908-45C9-A368-5873053CB6A5">70052543</a>
+                            <a style="text-decoration: none;" class="link1" target="_blank" href="https://sekolah.data.kemdikbud.go.id/index.php/Chome/profil/404B08BD-0D26-E111-A0A4-DB91C3BAFDD9">40304419</a>
                         </td>
 
                     </tr>
@@ -122,7 +122,7 @@
                         <td>&nbsp;</td>
                         <td>Alamat</td>
                         <td>:</td>
-                        <td>Jl. Poros Sinjai Kajang </td>
+                        <td>Tongke Tongke</td>
                     </tr>
                     <tr>
                         <td></td>
@@ -131,7 +131,7 @@
                         <td>&nbsp;</td>
                         <td>Desa/Kelurahan</td>
                         <td>:</td>
-                        <td>SAMATARING</td>
+                        <td>TONGKE-TONGKE</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
@@ -155,7 +155,7 @@
                         <td>&nbsp;</td>
                         <td>Status Sekolah</td>
                         <td>:</td>
-                        <td>SWASTA</td>
+                        <td>NEGERI</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
@@ -188,7 +188,7 @@
                         <td>&nbsp;&nbsp;&nbsp;</td>
                         <td>Naungan</td>
                         <td>:</td>
-                        <td></td>
+                        <td>Pemerintah Daerah</td>
                     </tr>
                     <tr>
                         <td>&nbsp;&nbsp;&nbsp;</td>
@@ -200,45 +200,45 @@
                         <td>&nbsp;</td>
                         <td>No. SK. Pendirian</td>
                         <td>:</td>
-                        <td>QR.310/YPAIS/VI/1445</td>
+                        <td>420.3/04.1378/DP</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Tanggal SK. Pendirian</td>
                         <td>:</td>
-                        <td>06-02-2024</td>
+                        <td>31-12-1975</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Nomor SK Operasional</td>
                         <td>:</td>
-                        <td>0058/SD/02/XII/2024</td>
+                        <td>420.3/04.1378/DP</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Tanggal SK Operasional</td>
                         <td>:</td>
-                        <td>09-12-2024</td>
+                        <td>31-12-1975</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>File SK Operasional ()</td>
                         <td>:</td>
-                        <td>                                    <a class="link1" target="_blank" href="https://vervalsp.data.kemdikbud.go.id/verval/dokumen/skoperasional/281924-910992-326881-90976257-157989434.pdf">Lihat SK Operasional</a>
+                        <td>                                    <a class="link1" target="_blank" href="https://vervalsp.data.kemdikbud.go.id/verval/dokumen/skoperasional/411746-689263-239173-140258194-1405050215.pdf">Lihat SK Operasional</a>
                                                         </td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Tanggal Upload SK Op.</td>
                         <td>:</td>
-                        <td>                                24-12-2024 20:19:26                            </td>
+                        <td>                                21-01-2021 08:16:12                            </td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Akreditasi</td>
                         <td>:</td>
                         <td>
-                            -</td>
+                            <a target="_blank" class="btn-link" href="https://ban-pdm.id/satuanpendidikan/40304419">B</a></td>
                     </tr>
                 </table>
             </div>
@@ -253,26 +253,26 @@
                         <td>&nbsp;&nbsp;&nbsp;</td>
                         <td>Luas Tanah</td>
                         <td>:</td>
-                        <td>0 m<sup>2</sup></td>
+                        <td>3.108 m<sup>2</sup></td>
                     </tr>
                     <!-- edit 20200602 -->
                     <tr>
                         <td>&nbsp;</td>
                         <td>Akses Internet</td>
                         <td>:</td>
-                        <td>1. </td>
+                        <td>1. -</td>
                     </tr>
                     <tr>
                         <td></td>
                         <td></td>
                         <td>:</td>
-                        <td>2. </td>
+                        <td>2. 500 Mb</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Sumber Listrik</td>
                         <td>:</td>
-                        <td>-</td>
+                        <td>PLN</td>
                     </tr>
                 </table>
             </div>
@@ -300,19 +300,19 @@
                         <td>&nbsp;</td>
                         <td>Email</td>
                         <td>:</td>
-                        <td></td>
+                        <td>Sdn30tongke2@gmail.com</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Website</td>
                         <td>:</td>
-                        <td></td>
+                        <td><a class='link1' target='_blank' href='http://0'>http://0</a></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>Operator</td>
                         <td>:</td>
-                        <td></td>
+                        <td>DIAH PURNAMASARI</td>
                     </tr>
                                     </table>
             </div>
@@ -325,7 +325,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12"><div id="maps">
 
-                        Lintang: .000000000000<br>Bujur: .000000000000<br></div></div>
+                        Lintang: -5.154120000000<br>Bujur: 120.272723300000<br></div></div>
                 </div>
             </div>
         </div>
@@ -364,15 +364,15 @@
 
       <script>
         var map = L.map('maps').setView({
-            lat: .000000000000,
-            lon: .000000000000        }, 8);
+            lat: -5.154120000000,
+            lon: 120.272723300000        }, 8);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '© OpenStreetMap'
         }).addTo(map);
         L.marker({
-            lat: .000000000000,
-            lon: .000000000000        }).bindPopup('SD Unggulan Al-Wahdah Sinjai').addTo(map);
+            lat: -5.154120000000,
+            lon: 120.272723300000        }).bindPopup('SD Neg. No. 30 Tongke - Tongke').addTo(map);
     </script>
     
   </div><!-- Body inner end -->

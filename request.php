@@ -2,8 +2,8 @@
 set_time_limit(10);
 
 $nama = isset($_POST['selectedSchool']) ? $_POST['selectedSchool'] : '';
+$id_siswa = isset($_POST['id_siswa']) ? $_POST['id_siswa'] : '';
 if (empty($nama)) die("Parameter 'selectedSchool' tidak ditemukan.");
-
 $searchUrl = "https://sekolah.data.kemdikbud.go.id/index.php/Chome/pagingpencarian";
 $postData = "page=1&nama=" . urlencode($nama) . "&kode_kabupaten=&kode_kecamatan=&bentuk_pendidikan=&status_sekolah=";
 
@@ -161,5 +161,9 @@ if (empty($mapDiv) || empty($mapScript)) {
 }
 
 echo $mapHtml;
-file_put_contents('response.php', $mapHtml);
+// file_put_contents($id_siswa . '.html', $mapHtml);
+if (!empty($id_siswa)) {
+    $filePath = 'scraping/response/' . $id_siswa . '.php';
+    file_put_contents($filePath, $mapHtml);
+}
 ?>
