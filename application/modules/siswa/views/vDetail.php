@@ -467,6 +467,70 @@
 									</table>
 								</div>
 								<hr>
+								<!-- <ul class="list-group">
+									<li class="list-group-item active">
+										<h5> SKTM/KIP/KKS </h5>
+									</li>
+								</ul> -->
+								<ul class="list-group">
+	<li class="list-group-item active">
+		<h5> SKTM/KIP/KKS </h5>
+	</li>
+</ul>
+<div class="table-responsive">
+	<table class="table table-hover">
+		<?php if ($get->jenis_lampiran == "sktm") : ?>
+			<tr>
+				<td width="40%">SKTM (Surat Keterangan Tidak Mampu)</td>
+				<td>:</td>
+				<td>
+					<?php if ($get->sktm) : ?>
+						<a href="<?= base_url() ?>uploads/siswa/<?= $get->sktm ?>" target="_blank" class="btn btn-sm btn-primary">
+							<i class="fa fa-search" aria-hidden="true"></i> Lihat Lampiran
+						</a>
+					<?php else : ?>
+						Lampiran tidak tersedia
+					<?php endif; ?>
+				</td>
+			</tr>
+		<?php elseif ($get->jenis_lampiran == "kip") : ?>
+			<tr>
+				<td width="40%">KIP (Kartu Indonesia Pintar)</td>
+				<td>:</td>
+				<td>
+					<?php if ($get->sktm) : ?>
+						<a href="<?= base_url() ?>uploads/siswa/<?= $get->sktm ?>" target="_blank" class="btn btn-sm btn-primary">
+							<i class="fa fa-search" aria-hidden="true"></i> Lihat Lampiran
+						</a>
+					<?php else : ?>
+						Lampiran tidak tersedia
+					<?php endif; ?>
+				</td>
+			</tr>
+		<?php elseif ($get->jenis_lampiran == "kks") : ?>
+			<tr>
+				<td width="40%">KKS (Kartu Keluarga Sejahtera)</td>
+				<td>:</td>
+				<td>
+					<?php if ($get->sktm) : ?>
+						<a href="<?= base_url() ?>uploads/siswa/<?= $get->sktm ?>" target="_blank" class="btn btn-sm btn-primary">
+							<i class="fa fa-search" aria-hidden="true"></i> Lihat Lampiran
+						</a>
+					<?php else : ?>
+						Lampiran tidak tersedia
+					<?php endif; ?>
+				</td>
+			</tr>
+		<?php else : ?>
+			<tr>
+				<td colspan="3" class="text-center">
+					<em>Tidak ada lampiran SKTM/KIP/KKS yang tersedia</em>
+				</td>
+			</tr>
+		<?php endif; ?>
+	</table>
+</div>
+								<hr>
 								<?php if (level_user() != "siswa") { ?>
 									<?php if (verifyAccess() || (date('Y-m-d') >= configs()->seleksi->start && date('Y-m-d') <= configs()->seleksi->end)) : ?>
 										<h4 class="mb-2">Verifikasi Kelulusan </h4>

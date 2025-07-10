@@ -111,9 +111,6 @@ if (level_user() == "admin" || level_user()  == "superadmin") {
 					<th style="border:1px solid black;">Link File Kartu Keluarga </th>
 					<th style="border:1px solid black;">Link File SKL / Kartu Imunisasi </th>
 					<th style="border:1px solid black;">Link File Lampiran </th>
-					<th style="border:1px solid black;">Link File SKTM </th>
-					<th style="border:1px solid black;">Link File KIP </th>
-					<th style="border:1px solid black;">Link File KKS </th>
 					<th style="border:1px solid black;">Status Kelulusan </th>
 					<th style="border:1px solid black;">Catatan Sekolah </th>
 					<th style="border:1px solid black;">No. Pendaftaran </th>
@@ -162,30 +159,6 @@ if (level_user() == "admin" || level_user()  == "superadmin") {
 								echo "-";
 							} else {
 								echo "<a href=" . base_url() . "uploads/siswa/" . $siswa->suket . ">" . base_url() . "uploads/siswa/" . $siswa->suket . "</a>";
-							}  ?>
-						</td>
-						<!-- Kolom SKTM -->
-						<td style="border:1px solid black;">
-							<?php if ($siswa->jenis_lampiran == "sktm" && $siswa->sktm != "") {
-								echo "<a href=" . base_url() . "uploads/siswa/" . $siswa->sktm . ">" . base_url() . "uploads/siswa/" . $siswa->sktm . "</a>";
-							} else {
-								echo "-";
-							}  ?>
-						</td>
-						<!-- Kolom KIP -->
-						<td style="border:1px solid black;">
-							<?php if ($siswa->jenis_lampiran == "kip" && $siswa->sktm != "") {
-								echo "<a href=" . base_url() . "uploads/siswa/" . $siswa->sktm . ">" . base_url() . "uploads/siswa/" . $siswa->sktm . "</a>";
-							} else {
-								echo "-";
-							}  ?>
-						</td>
-						<!-- Kolom KKS -->
-						<td style="border:1px solid black;">
-							<?php if ($siswa->jenis_lampiran == "kks" && $siswa->sktm != "") {
-								echo "<a href=" . base_url() . "uploads/siswa/" . $siswa->sktm . ">" . base_url() . "uploads/siswa/" . $siswa->sktm . "</a>";
-							} else {
-								echo "-";
 							}  ?>
 						</td>
 						<td style="border:1px solid black;">
@@ -285,9 +258,6 @@ if (level_user() == "admin" || level_user()  == "superadmin") {
 					<th style="border:1px solid black;">Link File Kartu Keluarga </th>
 					<th style="border:1px solid black;">Link File SKL / Kartu Imunisasi </th>
 					<th style="border:1px solid black;">Link File Lampiran </th>
-					<th style="border:1px solid black;">Link File SKTM </th>
-					<th style="border:1px solid black;">Link File KIP </th>
-					<th style="border:1px solid black;">Link File KKS </th>
 					<th style="border:1px solid black;">Status Kelulusan </th>
 					<th style="border:1px solid black;">Catatan Sekolah </th>
 					<th style="border:1px solid black;">No. Pendaftaran </th>
@@ -337,30 +307,6 @@ if (level_user() == "admin" || level_user()  == "superadmin") {
 								echo "-";
 							} else {
 								echo "<a href=" . base_url() . "uploads/siswa/" . $siswa->suket . ">" . base_url() . "uploads/siswa/" . $siswa->suket . "</a>";
-							}  ?>
-						</td>
-						<!-- Kolom SKTM -->
-						<td style="border:1px solid black;">
-							<?php if ($siswa->jenis_lampiran == "sktm" && $siswa->sktm != "") {
-								echo "<a href=" . base_url() . "uploads/siswa/" . $siswa->sktm . ">" . base_url() . "uploads/siswa/" . $siswa->sktm . "</a>";
-							} else {
-								echo "-";
-							}  ?>
-						</td>
-						<!-- Kolom KIP -->
-						<td style="border:1px solid black;">
-							<?php if ($siswa->jenis_lampiran == "kip" && $siswa->sktm != "") {
-								echo "<a href=" . base_url() . "uploads/siswa/" . $siswa->sktm . ">" . base_url() . "uploads/siswa/" . $siswa->sktm . "</a>";
-							} else {
-								echo "-";
-							}  ?>
-						</td>
-						<!-- Kolom KKS -->
-						<td style="border:1px solid black;">
-							<?php if ($siswa->jenis_lampiran == "kks" && $siswa->sktm != "") {
-								echo "<a href=" . base_url() . "uploads/siswa/" . $siswa->sktm . ">" . base_url() . "uploads/siswa/" . $siswa->sktm . "</a>";
-							} else {
-								echo "-";
 							}  ?>
 						</td>
 						<td style="border:1px solid black;">
